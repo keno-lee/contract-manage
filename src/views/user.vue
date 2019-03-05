@@ -1,9 +1,8 @@
 <template>
-  <div>
-    新建模板
+  <div class="app-container">
+    用户管理
   </div>
 </template>
 
 <script>
-
 </script>
