@@ -1459,5 +1459,11 @@ export default {
   /* background-color: red; */
   margin: 0 auto;
 }
+
+input {
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
 </style>
 

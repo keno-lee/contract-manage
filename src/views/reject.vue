@@ -1,6 +1,6 @@
-<template>
+r<template>
   <div class="app-container">
-    用户管理
+    被拒绝
   </div>
 </template>
 

@@ -102,8 +102,21 @@ export const constantRouterMap = [
   //     }
   //   ]
   // },
+  // {
+  //   path: '',
+  //   component: Layout,
+  //   redirect: '/home',
+  //   children: [
+  //     {
+  //       path: 'home',
+  //       component: () => import('@/views/home'),
+  //       name: 'home',
+  //       meta: { title: '首页', icon: 'form', noCache: true }
+  //     }
+  //   ]
+  // },
   {
-    path: '',
+    path: '', // 新建合同
     component: Layout,
     redirect: '/new',
     children: [
@@ -116,28 +129,54 @@ export const constantRouterMap = [
     ]
   },
   {
-    path: '',
+    path: '', // 待提交 (草稿箱)
     component: Layout,
-    redirect: '/submitted',
+    redirect: '/draft',
     children: [
       {
-        path: 'submitted',
-        component: () => import('@/views/submitted'),
-        name: 'submitted',
-        meta: { title: '已提交合同', icon: 'form', noCache: true }
+        path: 'draft',
+        component: () => import('@/views/draft'),
+        name: 'draft',
+        meta: { title: '待提交', icon: 'form', noCache: true }
       }
     ]
   },
   {
-    path: '',
+    path: '', // 待审核
     component: Layout,
-    redirect: '/generated',
+    redirect: '/audit',
     children: [
       {
-        path: 'generated',
-        component: () => import('@/views/generated'),
-        name: 'generated',
-        meta: { title: '已生成合同', icon: 'tab', noCache: true }
+        path: 'audit',
+        component: () => import('@/views/audit'),
+        name: 'audit',
+        meta: { title: '待审核', icon: 'form', noCache: true }
+      }
+    ]
+  },
+  {
+    path: '', // 被拒
+    component: Layout,
+    redirect: '/reject',
+    children: [
+      {
+        path: 'reject',
+        component: () => import('@/views/reject'),
+        name: 'reject',
+        meta: { title: '被拒', icon: 'tab', noCache: true }
+      }
+    ]
+  },
+  {
+    path: '', // 审核通过
+    component: Layout,
+    redirect: '/pass',
+    children: [
+      {
+        path: 'pass',
+        component: () => import('@/views/pass'),
+        name: 'pass',
+        meta: { title: '审核通过', icon: 'tab', noCache: true }
       }
     ]
   },
