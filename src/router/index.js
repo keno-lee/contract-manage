@@ -198,6 +198,11 @@ export const constantRouterMap = [
     component: () => import('@/views/preview'),
     hidden: true
   },
+  {
+    path: '/operate',
+    component: () => import('@/views/operate'),
+    hidden: true
+  }
 ]
 
 export default new Router({

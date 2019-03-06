@@ -49,6 +49,9 @@ export default {
       this.contractType = this.selectItem;
       this.step = 2;
     },
+    submit() {
+
+    },
     print() {
       let routeUrl = this.$router.resolve({
         path: "/pdf/download"
