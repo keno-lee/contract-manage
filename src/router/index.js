@@ -192,7 +192,12 @@ export const constantRouterMap = [
         meta: { title: '用户管理', icon: 'user', noCache: true }
       }
     ]
-  }
+  },
+  {
+    path: '/preview',
+    component: () => import('@/views/preview'),
+    hidden: true
+  },
 ]
 
 export default new Router({

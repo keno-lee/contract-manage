@@ -1,5 +1,5 @@
 r<template>
-  <div class="app-container">
+  <div class="preview-index">
     被拒绝
   </div>
 </template>
@@ -7,3 +7,6 @@ r<template>
 <script>
 
 </script>
+<style>
+
+</style>

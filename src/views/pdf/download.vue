@@ -1,14 +1,18 @@
 <template>
-  <div
+  <!-- <div
     v-loading.fullscreen.lock="fullscreenLoading"
     class="main-article"
     element-loading-text="正在生成...PDF"
-  >
-    <div ref="content" class="node-article-content" v-html="article.content"/>
+  >-->
+  <!-- <div ref="content" class="node-article-content" v-html="article.content"/> -->
+  <div>
+    <loan ref="info"></loan>
   </div>
 </template>
 
 <script>
+import loan from "@/components/contract/loan.vue";
+
 export default {
   data() {
     return {
@@ -33,6 +37,9 @@ export default {
         }, 3000);
       });
     }
+  },
+  components: {
+    loan
   }
 };
 </script>
