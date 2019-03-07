@@ -21,11 +21,11 @@
     </div>
     <div v-else-if="step === 2">
       <p style="font-size: 30pt;">二、请填写合同信息</p>
-      <loan ref="info" v-if="contractType === 'loan'"></loan>
+      <loan ref="info" :status="'new'" @save="onsave" @submit="onsubmit" v-if="contractType === 'loan'"></loan>
 
-      <div class="save-btn btn" @click="next">暂存</div>
+      <!-- <div class="save-btn btn" @click="next">暂存</div>
       <div class="submit-btn btn" @click="submit">提交审核</div>
-      <div class="submit-btn btn" @click="print">打印</div>
+      <div class="submit-btn btn" @click="print">打印</div> -->
     </div>
   </div>
 </template>
@@ -49,15 +49,21 @@ export default {
       this.contractType = this.selectItem;
       this.step = 2;
     },
-    submit() {
-
+    onsave(data) {
+      console.log(data)
     },
-    print() {
-      let routeUrl = this.$router.resolve({
-        path: "/pdf/download"
-      });
-      window.open(routeUrl.href, "_blank");
+    onsubmit(data) {
+      console.log(data)
+      this.$ajax.post('http://47.99.242.31:8080/submit', data).then((res) => {
+        console.log(res)
+      })
     }
+    // print() {
+    //   let routeUrl = this.$router.resolve({
+    //     path: "/pdf/download"
+    //   });
+    //   window.open(routeUrl.href, "_blank");
+    // }
   },
   components: {
     loan

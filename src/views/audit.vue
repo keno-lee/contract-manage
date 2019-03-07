@@ -1,5 +1,5 @@
 <template>
-  <div class="preview-index">
+  <div class="app-container">
     <!-- <el-button @click="resetDateFilter">清除日期过滤器</el-button>
     <el-button @click="clearFilter">清除所有过滤器</el-button>-->
     <el-table ref="filterTable" :data="tableData" border style="width: 100%">
@@ -22,7 +22,7 @@
           >{{scope.row.tag}}</el-tag>
         </template>
       </el-table-column>-->
-      <el-table-column label="操作">
+      <el-table-column align="center" width="100" label="操作">
         <template slot-scope="scope">
           <el-button size="mini" type="success" @click="editPreview(1)">去审核</el-button>
         </template>

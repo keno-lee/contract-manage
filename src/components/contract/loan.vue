@@ -367,7 +367,7 @@
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
         <span style="font-family:宋体; font-size:14pt">法定代表人（负责人）：</span>
-        <input type="text"  v-model="c">
+        <input type="text" v-model="c">
         <!-- <span
             style="font-family:宋体; font-size:14pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
@@ -752,7 +752,7 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 100px" type="text"  v-model="a8">
+        <input style="font-family:宋体; width: 100px" type="text" v-model="a8">
         <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
       </p>
       <p style="line-height:22pt; margin:0pt; orphans:0; text-align:justify; widows:0">
@@ -760,7 +760,7 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 50px" type="text"  v-model="a9">
+        <input style="font-family:宋体; width: 50px" type="text" v-model="a9">
         <span style="font-family:宋体; font-size:12pt">年</span>
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
@@ -770,7 +770,7 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 40px" type="text"  v-model="a11">
+        <input style="font-family:宋体; width: 40px" type="text" v-model="a11">
         <span style="font-family:宋体; font-size:12pt">日；</span>
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
@@ -793,7 +793,7 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 40px" type="text"  v-model="a15">
+        <input style="font-family:宋体; width: 40px" type="text" v-model="a15">
         <span style="font-family:宋体; font-size:12pt">日；</span>
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
@@ -850,12 +850,12 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 50px" type="text"  v-model="a17">
+        <input style="font-family:宋体; width: 50px" type="text" v-model="a17">
         <span style="font-family:宋体; font-size:12pt">年</span>
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 40px" type="text"  v-model="a18">
+        <input style="font-family:宋体; width: 40px" type="text" v-model="a18">
         <span style="font-family:宋体; font-size:12pt">月</span>
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
@@ -873,7 +873,7 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 50px" type="text"  v-model="a21">
+        <input style="font-family:宋体; width: 50px" type="text" v-model="a21">
         <span style="font-family:宋体; font-size:12pt">年</span>
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
@@ -906,7 +906,7 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 40px" type="text"  v-model="a27">
+        <input style="font-family:宋体; width: 40px" type="text" v-model="a27">
         <span style="font-family:宋体; font-size:12pt">日；</span>
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
@@ -1233,7 +1233,7 @@
         <!-- <span
             style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="font-family:宋体; width: 40px" type="text"  v-model="a34">
+        <input style="font-family:宋体; width: 40px" type="text" v-model="a34">
         <span style="font-family:宋体; font-size:12pt">种方式解决。</span>
       </p>
       <p
@@ -1367,14 +1367,14 @@
         <span
           style="font-family:宋体; font-size:12pt"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input type="text"  v-model="a40">
+        <input type="text" v-model="a40">
       </p>
       <p style="line-height:22pt; margin:0pt; orphans:0; text-align:justify; widows:0">
         <span style="font-family:宋体; font-size:12pt">签约时间：</span>
         <!-- <span
           style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="width: 40px" type="text"  v-model="a41">
+        <input style="width: 40px" type="text" v-model="a41">
         <span style="font-family:宋体; font-size:12pt">年</span>
         <!-- <span
           style="font-family:宋体; font-size:12pt; text-decoration:underline"
@@ -1395,7 +1395,7 @@
         <!-- <span
           style="font-family:宋体; font-size:12pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <input style="width: 400px" type="text"  v-model="a44">
+        <input style="width: 400px" type="text" v-model="a44">
       </p>
       <p style="margin:0pt; orphans:0; widows:0">
         <span style="font-family:宋体; font-size:14pt">附件:</span>
@@ -1440,7 +1440,7 @@
         style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
       >
         <span style="font-family:宋体; font-size:12pt; font-weight:bold">联系电话：</span>
-        <input style="width: 400px" type="text"  v-model="a47">
+        <input style="width: 400px" type="text" v-model="a47">
         <!-- <span
           style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
@@ -1527,98 +1527,121 @@
       </p>
       <!-- <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
         <span style="font-family:'Times New Roman'; font-size:10.5pt">&nbsp;</span>
-      </p> -->
+      </p>-->
+    </div>
+
+    <!-- 操作 -->
+    <div class="operate-box" v-if="status === 'new'">
+      <div>操作：</div>
+      <br>
+      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）"></textarea>
+      <div class="save-btn btn" @click="save">暂存</div>
+      <div class="submit-btn btn" @click="submit">提交审核</div>
     </div>
   </div>
 </template>
 
 <script>
-var $data =  {
-      a: '',
-      b: '',
-      c: '',
-      d: '',
-      e: '',
-      f: '',
-      g: '',
-      h: '',
-      i: '',
-      j: '',
-      k: '',
-      l: '',
-      m: '',
-      n: '',
-      o: '',
-      p: '',
-      q: '',
-      r: '',
-      s: '',
-      t: '',
-      u: '',
-      v: '',
-      w: '',
-      x: '',
-      y: '',
-      z: '',
-      a1: '',
-      a2: '',
-      a3: '',
-      a4: '',
-      a5: '',
-      a6: '',
-      a7: '',
-      a8: '',
-      a9: '',
-      a10: '',
-      a11: '',
-      a12: '',
-      a13: '',
-      a14: '',
-      a15: '',
-      a16: '',
-      a17: '',
-      a18: '',
-      a19: '',
-      a20: '',
-      a21: '',
-      a22: '',
-      a23: '',
-      a24: '',
-      a25: '',
-      a26: '',
-      a27: '',
-      a28: '',
-      a29: '',
-      a30: '',
-      a31: '',
-      a32: '',
-      a33: '',
-      a34: '',
-      a35: '',
-      a36: '',
-      a37: '',
-      a38: '',
-      a39: '',
-      a40: '',
-      a41: '',
-      a42: '',
-      a43: '',
-      a44: '',
-      a45: '',
-      a46: '',
-      a47: '',
-      a48: '',
-      a49: '',
-      a50: '',
-      a51: '',
-      a52: '',
-      a53: '',
-      a54: '',
-    }
+var $data = {
+  a: "",
+  b: "",
+  c: "",
+  d: "",
+  e: "",
+  f: "",
+  g: "",
+  h: "",
+  i: "",
+  j: "",
+  k: "",
+  l: "",
+  m: "",
+  n: "",
+  o: "",
+  p: "",
+  q: "",
+  r: "",
+  s: "",
+  t: "",
+  u: "",
+  v: "",
+  w: "",
+  x: "",
+  y: "",
+  z: "",
+  a1: "",
+  a2: "",
+  a3: "",
+  a4: "",
+  a5: "",
+  a6: "",
+  a7: "",
+  a8: "",
+  a9: "",
+  a10: "",
+  a11: "",
+  a12: "",
+  a13: "",
+  a14: "",
+  a15: "",
+  a16: "",
+  a17: "",
+  a18: "",
+  a19: "",
+  a20: "",
+  a21: "",
+  a22: "",
+  a23: "",
+  a24: "",
+  a25: "",
+  a26: "",
+  a27: "",
+  a28: "",
+  a29: "",
+  a30: "",
+  a31: "",
+  a32: "",
+  a33: "",
+  a34: "",
+  a35: "",
+  a36: "",
+  a37: "",
+  a38: "",
+  a39: "",
+  a40: "",
+  a41: "",
+  a42: "",
+  a43: "",
+  a44: "",
+  a45: "",
+  a46: "",
+  a47: "",
+  a48: "",
+  a49: "",
+  a50: "",
+  a51: "",
+  a52: "",
+  a53: "",
+  a54: ""
+};
 export default {
   name: "ErrorLog",
+  props: {
+    status: {
+      default: '',
+      type: String
+    }
+  },
   data() {
-    return $data
+    return $data;
+  },
+  methods: {
+    save() {
+      this.$emit('save', $data)
+    },
+    submit() {
+      this.$emit('submit', $data)
+    }
   },
   computed: {
     errorLogs() {
@@ -1644,5 +1667,27 @@ input {
 textarea {
   width: 630px;
   resize: none;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.save-btn {
+  background-color: #909399;
+  float: right;
+}
+
+.submit-btn {
+  background-color: #67c23a;
+  float: right;
+}
+
+.operate-box {
+  height: 300px;
 }
 </style>
