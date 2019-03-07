@@ -5,7 +5,6 @@
         <h3 class="title">
           {{ $t('login.title') }}
         </h3>
-        <lang-select class="set-language" />
       </div>
 
       <el-form-item prop="username">
@@ -41,23 +40,6 @@
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">
         {{ $t('login.logIn') }}
       </el-button>
-
-      <div style="position:relative">
-        <div class="tips">
-          <span>{{ $t('login.username') }} : admin</span>
-          <span>{{ $t('login.password') }} : {{ $t('login.any') }}</span>
-        </div>
-        <div class="tips">
-          <span style="margin-right:18px;">
-            {{ $t('login.username') }} : editor
-          </span>
-          <span>{{ $t('login.password') }} : {{ $t('login.any') }}</span>
-        </div>
-
-        <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
-          {{ $t('login.thirdparty') }}
-        </el-button>
-      </div>
     </el-form>
 
     <el-dialog :title="$t('login.thirdparty')" :visible.sync="showDialog">
@@ -80,18 +62,18 @@ export default {
   components: { LangSelect, SocialSign },
   data() {
     const validateUsername = (rule, value, callback) => {
-      if (!isvalidUsername(value)) {
-        callback(new Error('Please enter the correct user name'))
-      } else {
-        callback()
-      }
+      // if (!isvalidUsername(value)) {
+      //   callback(new Error('Please enter the correct user name'))
+      // } else {
+      //   callback()
+      // }
     }
     const validatePassword = (rule, value, callback) => {
-      if (value.length < 6) {
-        callback(new Error('The password can not be less than 6 digits'))
-      } else {
-        callback()
-      }
+      // if (value.length < 6) {
+      //   callback(new Error('The password can not be less than 6 digits'))
+      // } else {
+      //   callback()
+      // }
     }
     return {
       loginForm: {
@@ -131,20 +113,93 @@ export default {
       }
     },
     handleLogin() {
-      this.$refs.loginForm.validate(valid => {
-        if (valid) {
-          this.loading = true
-          this.$store.dispatch('LoginByUsername', this.loginForm).then(() => {
-            this.loading = false
-            this.$router.push({ path: this.redirect || '/' })
-          }).catch(() => {
-            this.loading = false
-          })
-        } else {
-          console.log('error submit!!')
-          return false
-        }
-      })
+      // this.$refs.loginForm.validate(valid => {
+      //   if (valid) {
+      //     this.loading = true
+      //     this.$store.dispatch('LoginByUsername', this.loginForm).then(() => {
+      //       this.loading = false
+      //       this.$router.push({ path: this.redirect || '/' })
+      //     }).catch(() => {
+      //       this.loading = false
+      //     })
+      //   } else {
+      //     console.log('error submit!!')
+      //     return false
+      //   }
+      // })
+      this.$ajax
+        .get("http://47.99.242.31:8080/login", {
+          params: {
+            userCode: this.loginForm.username,
+            password: this.loginForm.password
+          }
+        })
+        .then(res => {
+          console.log(res.data);
+          //           {
+          //     "msg": "success",
+          //     "userInfo": {
+          //         "id": 2,
+          //         "userCode": "lisi",
+          //         "userPwd": "123",
+          //         "userName": "李四",
+          //         "dept": null,
+          //         "salt": null,
+          //         "locked": false,
+          //         "lastLoginTime": "2019-03-04 20:57:50",
+          //         "createAt": "2019-03-04 20:57:54",
+          //         "lastModifyAt": "2019-03-04 20:57:59",
+          //         "menuList": [
+          //             {
+          //                 "id": 1,
+          //                 "parentId": null,
+          //                 "pmsName": "新建合同",
+          //                 "pmsType": "menu",
+          //                 "pmsUrl": "/contract/new",
+          //                 "icon": null,
+          //                 "order": null,
+          //                 "disabled": null,
+          //                 "createAt": 1551704592000,
+          //                 "lastModifyTime": 1551704596000
+          //             },
+          //             {
+          //                 "id": 2,
+          //                 "parentId": null,
+          //                 "pmsName": "待提交列表",
+          //                 "pmsType": "menu",
+          //                 "pmsUrl": "/contract/w_commit",
+          //                 "icon": null,
+          //                 "order": null,
+          //                 "disabled": null,
+          //                 "createAt": 1551704742000,
+          //                 "lastModifyTime": 1551704746000
+          //             }
+          //         ],
+          //         "operateList": null
+          //     },
+          //     "JSESSIONID": "03D213294F0ED2359D84627778F448FA"
+          // }
+          if (res.data.msg === "success") {
+            setToken(res.data.JSESSIONID);
+            this.$store.commit("saveData", res.data.userInfo);
+            setTimeout(() => {
+              console.log(this.$store.getters);
+            }, 1000);
+          }
+        });
+
+      // permission_routers: [
+      //   { path: "/", hidden: false, components: 'Layout' },
+      //   { path: "/new", hidden: false, components: 'Layout' },
+      //   { path: "/draft", hidden: false, components: 'Layout' },
+      //   { path: "/audit", hidden: false, components: 'Layout' },
+      //   { path: "/reject", hidden: false, components: 'Layout' },
+      //   { path: "/pass", hidden: false, components: 'Layout' },
+      //   { path: "/user", hidden: false, components: 'Layout' },
+      //   { path: "/preview", hidden: false, components: 'Layout' },
+      //   { path: "/operate", hidden: false, components: 'Layout' },
+      //   { path: "/login", hidden: true, components: 'Layout' }
+      // ]
     },
     afterQRScan() {
       // const hash = window.location.hash.slice(1)
