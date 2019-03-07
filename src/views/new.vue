@@ -21,11 +21,17 @@
     </div>
     <div v-else-if="step === 2">
       <p style="font-size: 30pt;">二、请填写合同信息</p>
-      <loan ref="info" :status="'new'" @save="onsave" @submit="onsubmit" v-if="contractType === 'loan'"></loan>
+      <loan
+        ref="info"
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'loan'"
+      ></loan>
 
       <!-- <div class="save-btn btn" @click="next">暂存</div>
       <div class="submit-btn btn" @click="submit">提交审核</div>
-      <div class="submit-btn btn" @click="print">打印</div> -->
+      <div class="submit-btn btn" @click="print">打印</div>-->
     </div>
   </div>
 </template>
@@ -50,13 +56,60 @@ export default {
       this.step = 2;
     },
     onsave(data) {
-      console.log(data)
+      console.log(sendData);
+      let sendData = {
+        contractType: "0001",
+        contractStatus: "0001",
+        jsonData: 'dasds'
+
+        // contractNumber: data.a,
+        // partyA: data.b,
+        // personCharge: data.c,
+        // // cardType 证件类型
+        // // cardNumber 证件号码
+        // phoneNumber: data.d,
+        // opRemark: data.operateTip,
+        // contractCreateDate: data.a37 + data.a38 + data.a39,
+        // contractCreateAddress: data.a44,
+      };
+      console.log(sendData);
+      this.$ajax.post("http://47.99.242.31:8080/save", sendData, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      }).then(res => {
+        console.log(res);
+      });
+      // this.$ajax
+      //   .get("http://47.99.242.31:8080/save", {
+      //     params: {
+      //       contractType: "0001",
+      //       contractStatus: "0001",
+      //       jsonData: 'dadada',
+      //       // contractNumber: '',
+      //       // partyA: '',
+      //       // personCharge: '',
+      //       // // cardType 证件类型
+      //       // // cardNumber 证件号码
+      //       // phoneNumber: '',
+      //       // opRemark: '',
+      //       // contractCreateDate: '',
+      //       // contractCreateAddress: ''
+      //     }
+      //   })
+      //   .then(res => {
+      //     console.log(res);
+      //   });
+      // this.$ajax
+        // .get("http://47.99.242.31:8080/save", {
+        //   params: sendData
+        // })
+        // .then(res => {
+        //   console.log(res);
+        // });
     },
     onsubmit(data) {
-      console.log(data)
-      this.$ajax.post('http://47.99.242.31:8080/submit', data).then((res) => {
-        console.log(res)
-      })
+      console.log(data);
     }
     // print() {
     //   let routeUrl = this.$router.resolve({

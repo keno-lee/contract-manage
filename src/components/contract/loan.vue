@@ -1534,7 +1534,7 @@
     <div class="operate-box" v-if="status === 'new'">
       <div>操作：</div>
       <br>
-      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）"></textarea>
+      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model='operateTip'></textarea>
       <div class="save-btn btn" @click="save">暂存</div>
       <div class="submit-btn btn" @click="submit">提交审核</div>
     </div>
@@ -1622,7 +1622,8 @@ var $data = {
   a51: "",
   a52: "",
   a53: "",
-  a54: ""
+  a54: "",
+  operateTip: ''
 };
 export default {
   name: "ErrorLog",
