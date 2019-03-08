@@ -1678,6 +1678,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
+        nv['auditTip'] = ''
         this.info = nv;
         console.log(this.info);
       },

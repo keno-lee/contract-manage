@@ -14,7 +14,7 @@
       <el-table-column align="center" prop="contractNumber" label="合同编号" width="100"></el-table-column>
       <el-table-column align="center" prop="partyA" label="甲方" width="100"></el-table-column>
       <el-table-column align="center" prop="personCharge" label="负责人" width="100"></el-table-column>
-      <el-table-column align="center" prop="cardType" label="证件号码" width="200"></el-table-column>
+      <!-- <el-table-column align="center" prop="cardType" label="证件号码" width="200"></el-table-column> -->
       <el-table-column align="center" prop="phoneNumber" label="联系方式" width="150"></el-table-column>
       <el-table-column align="center" prop="contractCreateDate" label="合同签订日期" width="150"></el-table-column>
       <el-table-column align="center" prop="operator" label="合同操作者" width="100"></el-table-column>

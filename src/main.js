@@ -23,13 +23,15 @@ import * as filters from './filters'; // global filters
 import axios from 'axios';
 
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset-UTF-8';
+// axios.defaults.headers.withCredentials = true;
+axios.defaults.withCredentials = true
 // axios.defaults.baseURL = 'http://47.99.242.31:8080'
 axios.defaults.baseURL = 'http://roshan.frpgz1.idcfengye.com/'
 axios.interceptors.response.use(
-  function(response) {
+  function (response) {
     return response;
   },
-  function(error) {
+  function (error) {
     Element.MessageBox.alert('网络异常', {
       confirmButtonText: '确定'
     });

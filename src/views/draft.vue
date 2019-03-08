@@ -61,7 +61,7 @@ export default {
         //   operate: "通过"
         // }
       ],
-      total: 100,
+      total: 0,
       listQuery: {
         page: 1,
         limit: 20
@@ -71,13 +71,18 @@ export default {
   },
   created() {
     let sendData = {
-      contractStatus: "0001"
+      contractStatus: "0001", // 当前页是待提交状态，写死
+      sort: 'id', // 根据什么字段来排序
+      order: "desc", // 默认降序
+      page: this.listQuery.page, // 当前页码
+      rows:  this.listQuery.limit // 每页多少数据
     };
     this.$ajax({
       method: "get",
       url: "getList",
       params: sendData
     }).then(res => {
+      console.log(res)
       this.listLoading = false;
       this.tableData = res.data.list;
     });

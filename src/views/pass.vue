@@ -20,9 +20,9 @@
       <el-table-column align="center" prop="checkPerson" label="审核人" width="100"></el-table-column>
       <el-table-column align="center" prop="checkRemark" label="审核意见" width="200"></el-table-column>
       <el-table-column align="center" label="操作" width="150">
-        <template slot-scope="scope">
-          <el-button size="mini" type="success">预览</el-button>
-          <el-button size="mini" type="success">导出</el-button>
+        <template slot-scope="props">
+          <el-button size="mini" type="success" @click="prview(props.row.id)">预览</el-button>
+          <el-button size="mini" type="success" @click="print(props.row.id)">导出</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -93,6 +93,12 @@ export default {
     });
   },
   methods: {
+    prview(id) {
+
+    },
+    print(id) {
+
+    },
     editPreview(id) {
       // console.log('preview')
       this.$router.push("/operate?id=" + id);

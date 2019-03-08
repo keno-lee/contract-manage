@@ -81,14 +81,14 @@ export default {
         }
       }).then(res => {
         if (res.data.msg === "success") {
-          this.$alert("保存状态", "成功", {
+          this.$alert("成功", "保存状态", {
             confirmButtonText: "确定",
             callback: action => {
               this.$router.push("/draft");
             }
           });
         } else {
-          this.$alert("提交状态", "失败", {
+          this.$alert("失败", "提交状态", {
             confirmButtonText: "确定"
           });
         }

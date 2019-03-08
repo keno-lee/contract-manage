@@ -30,27 +30,17 @@ export default {
   },
   methods: {
     onpass(data) {
-      // console.log(data);
+      console.log(data);
       let sendData = {
         contractId: this.$route.query.id,
-        contractType: this.contractType,
         contractStatus: "0004", // 审核通过
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
-        phoneNumber: data.d,
-        opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
-        jsonData: JSON.stringify(data)
+        remark: data.auditTip
       };
       console.log(sendData);
       this.$ajax({
-        method: "post",
+        method: "get",
         url: "/check",
-        data: JSON.stringify(sendData)
+        params: sendData
       }).then(res => {
         if (res.data.msg === "success") {
           this.$alert("成功", "提交状态", {
@@ -67,27 +57,16 @@ export default {
       });
     },
     onreject(data) {
-      // console.log(data);
       let sendData = {
         contractId: this.$route.query.id,
-        contractType: this.contractType,
         contractStatus: "0003", // 审核拒绝
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
-        phoneNumber: data.d,
-        opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
-        jsonData: JSON.stringify(data)
+        remark: data.auditTip
       };
       console.log(sendData);
       this.$ajax({
-        method: "post",
+        method: "get",
         url: "/check",
-        data: JSON.stringify(sendData)
+        params: sendData
       }).then(res => {
         if (res.data.msg === "success") {
           this.$alert("成功", "提交状态", {
