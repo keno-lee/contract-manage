@@ -1,108 +1,24 @@
 <template>
   <div class="preview-index">
-    <loan :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></loan>
+    <loan></loan>
   </div>
 </template>
 
 <script>
 import loan from "@/components/contract/loan.vue";
 export default {
-  data() {
-    return {
-      contractType: "",
-      infoData: {}
-    };
-  },
   created() {
-    let sendData = {
-      contractId: this.$route.query.id
-    };
-    this.$ajax({
-      method: "get",
-      url: "/getContractById",
-      params: sendData
-    }).then(res => {
-      console.log(res);
-      this.listLoading = false;
-      this.infoData = JSON.parse(res.data.jsonData);
-      this.contractType = res.data.contractType;
+    var that = this;
+    // window.onload = function() {
+
+    // };
+    // console.log(document.querySelector('.contract-wrap'))
+    this.$nextTick(() => {
+    // console.log(document.querySelector('.contract-wrap'))
+      that.watermark({ watermark_txt: "测试水印" });
     });
   },
   methods: {
-    onpass(data) {
-      // console.log(data);
-      let sendData = {
-        contractId: this.$route.query.id,
-        contractType: this.contractType,
-        contractStatus: "0004", // 审核通过
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
-        phoneNumber: data.d,
-        opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
-        jsonData: JSON.stringify(data)
-      };
-      console.log(sendData);
-      this.$ajax({
-        method: "post",
-        url: "/check",
-        data: JSON.stringify(sendData)
-      }).then(res => {
-        if (res.data.msg === "success") {
-          this.$alert("成功", "提交状态", {
-            confirmButtonText: "确定",
-            callback: action => {
-              this.$router.push("/");
-            }
-          });
-        } else {
-          this.$alert("失败", "提交状态", {
-            confirmButtonText: "确定"
-          });
-        }
-      });
-    },
-    onreject(data) {
-      // console.log(data);
-      let sendData = {
-        contractId: this.$route.query.id,
-        contractType: this.contractType,
-        contractStatus: "0003", // 审核拒绝
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
-        phoneNumber: data.d,
-        opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
-        jsonData: JSON.stringify(data)
-      };
-      console.log(sendData);
-      this.$ajax({
-        method: "post",
-        url: "/check",
-        data: JSON.stringify(sendData)
-      }).then(res => {
-        if (res.data.msg === "success") {
-          this.$alert("成功", "提交状态", {
-            confirmButtonText: "确定",
-            callback: action => {
-              this.$router.push("/");
-            }
-          });
-        } else {
-          this.$alert("失败", "提交状态", {
-            confirmButtonText: "确定"
-          });
-        }
-      });
-    },
     watermark(settings) {
       //默认设置
       var defaultSettings = {
@@ -246,7 +162,7 @@ export default {
         }
       }
       // console.log(document.querySelector('.contract-wrap'))
-      document.querySelector(".preview-index").appendChild(oTemp);
+      document.querySelector('.preview-index').appendChild(oTemp)
       // document.body.appendChild(oTemp);
     }
   },

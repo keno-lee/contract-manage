@@ -56,67 +56,86 @@ export default {
       this.step = 2;
     },
     onsave(data) {
-      console.log(sendData);
+      // console.log(data);
       let sendData = {
         contractType: "0001",
         contractStatus: "0001",
-        jsonData: 'dasds'
-
-        // contractNumber: data.a,
-        // partyA: data.b,
-        // personCharge: data.c,
-        // // cardType 证件类型
-        // // cardNumber 证件号码
-        // phoneNumber: data.d,
-        // opRemark: data.operateTip,
-        // contractCreateDate: data.a37 + data.a38 + data.a39,
-        // contractCreateAddress: data.a44,
+        contractNumber: data.a,
+        partyA: data.b,
+        personCharge: data.c,
+        // cardType 证件类型
+        // cardNumber 证件号码
+        phoneNumber: data.d,
+        opRemark: data.operateTip,
+        contractCreateDate: data.a37 + data.a38 + data.a39,
+        contractCreateAddress: data.a44,
+        jsonData: JSON.stringify(data)
       };
       console.log(sendData);
-      this.$ajax.post("http://47.99.242.31:8080/save", sendData, {
+      this.$ajax({
+        method: "post",
+        url: "/save",
+        data: JSON.stringify(sendData),
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          "Content-Type": "application/json;charset-UTF-8"
         }
       }).then(res => {
-        console.log(res);
+        if (res.data.msg === "success") {
+          this.$alert("保存状态", "成功", {
+            confirmButtonText: "确定",
+            callback: action => {
+              this.$router.push("/draft");
+            }
+          });
+        } else {
+          this.$alert("提交状态", "失败", {
+            confirmButtonText: "确定"
+          });
+        }
       });
-      // this.$ajax
-      //   .get("http://47.99.242.31:8080/save", {
-      //     params: {
-      //       contractType: "0001",
-      //       contractStatus: "0001",
-      //       jsonData: 'dadada',
-      //       // contractNumber: '',
-      //       // partyA: '',
-      //       // personCharge: '',
-      //       // // cardType 证件类型
-      //       // // cardNumber 证件号码
-      //       // phoneNumber: '',
-      //       // opRemark: '',
-      //       // contractCreateDate: '',
-      //       // contractCreateAddress: ''
-      //     }
-      //   })
-      //   .then(res => {
-      //     console.log(res);
-      //   });
-      // this.$ajax
-        // .get("http://47.99.242.31:8080/save", {
-        //   params: sendData
-        // })
-        // .then(res => {
-        //   console.log(res);
-        // });
     },
+    /**
+     * 提交审核接口
+     */
     onsubmit(data) {
-      console.log(data);
+      // console.log(data);
+      let sendData = {
+        contractType: "0001",
+        contractStatus: "0001",
+        contractNumber: data.a,
+        partyA: data.b,
+        personCharge: data.c,
+        // cardType 证件类型
+        // cardNumber 证件号码
+        phoneNumber: data.d,
+        opRemark: data.operateTip,
+        contractCreateDate: data.a37 + data.a38 + data.a39,
+        contractCreateAddress: data.a44,
+        jsonData: JSON.stringify(data)
+      };
+      console.log(sendData);
+      this.$ajax({
+        method: "post",
+        url: "/saveAndSubmit",
+        data: JSON.stringify(sendData),
+        headers: {
+          "Content-Type": "application/json;charset-UTF-8"
+        }
+      }).then(res => {
+        if (res.data.msg === "success") {
+          this.$alert("提交状态", "成功", {
+            confirmButtonText: "确定",
+            callback: action => {
+              window.location.reload();
+            }
+          });
+        } else {
+          this.$alert("提交状态", "失败", {
+            confirmButtonText: "确定"
+          });
+        }
+      });
     }
-    // print() {
-    //   let routeUrl = this.$router.resolve({
-    //     path: "/pdf/download"
-    //   });
-    //   window.open(routeUrl.href, "_blank");
-    // }
   },
   components: {
     loan

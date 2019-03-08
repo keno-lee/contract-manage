@@ -23,8 +23,8 @@
         ></el-option>
       </el-select>
 
-      <el-input placeholder="请输入内容" style="width:250px;" v-model="input10" clearable></el-input>
-      <el-input placeholder="请输入内容" style="width:250px;" v-model="input10" clearable></el-input>
+      <el-input placeholder="请输入用户名(英文)" style="width:250px;" v-model="username" clearable></el-input>
+      <el-input placeholder="请输入密码" style="width:250px;" v-model="password" clearable></el-input>
 
       <el-button @click="addUser" type="success">新建</el-button>
     </div>
@@ -36,55 +36,57 @@ export default {
   data() {
     return {
       tableData: [
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄"
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄"
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄"
-        }
+        // {
+        //   date: "2016-05-02",
+        //   name: "王小虎",
+        //   address: "上海市普陀区金沙江路 1518 弄"
+        // },
+        // {
+        //   date: "2016-05-04",
+        //   name: "王小虎",
+        //   address: "上海市普陀区金沙江路 1517 弄"
+        // },
+        // {
+        //   date: "2016-05-01",
+        //   name: "王小虎",
+        //   address: "上海市普陀区金沙江路 1519 弄"
+        // },
+        // {
+        //   date: "2016-05-03",
+        //   name: "王小虎",
+        //   address: "上海市普陀区金沙江路 1516 弄"
+        // }
       ],
       options: [
         {
-          value: "选项1",
-          label: "黄金糕"
+          value: "0",
+          label: "管理员"
         },
         {
-          value: "选项2",
-          label: "双皮奶"
+          value: "1",
+          label: "业务经理"
         },
         {
-          value: "选项3",
-          label: "蚵仔煎"
-        },
-        {
-          value: "选项4",
-          label: "龙须面"
-        },
-        {
-          value: "选项5",
-          label: "北京烤鸭"
+          value: "2",
+          label: "风险经理"
         }
       ],
       value: "",
-      input10: "",
+      username: "",
+      password: "",
       currentRow: null
     };
   },
-
+  created() {
+    this.$ajax({
+      method: "get",
+      url: "/user/list"
+    }).then(res => {
+      console.log(res)
+      // this.listLoading = false;
+      this.tableData = res.data.list;
+    });
+  },
   methods: {
     setCurrent(row) {
       this.$refs.singleTable.setCurrentRow(row);
@@ -93,7 +95,7 @@ export default {
       this.currentRow = val;
     },
     addUser() {
-      console.log('新建')
+      console.log("新建");
       // window.location.reload()
     }
   }

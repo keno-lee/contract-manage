@@ -144,7 +144,7 @@ export default {
       //   }
       // })
       this.$ajax
-        .get("http://47.99.242.31:8080/login", {
+        .get("/login", {
           params: {
             userCode: this.loginForm.username,
             password: this.loginForm.password

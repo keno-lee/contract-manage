@@ -137,7 +137,7 @@ export const constantRouterMap = [
         path: 'draft',
         component: () => import('@/views/draft'),
         name: 'draft',
-        meta: { title: '待提交', icon: 'form', noCache: true }
+        meta: { title: '待提交列表', icon: 'form', noCache: true }
       }
     ]
   },
@@ -150,7 +150,7 @@ export const constantRouterMap = [
         path: 'audit',
         component: () => import('@/views/audit'),
         name: 'audit',
-        meta: { title: '待审核', icon: 'form', noCache: true }
+        meta: { title: '待审核列表', icon: 'form', noCache: true }
       }
     ]
   },
@@ -163,7 +163,7 @@ export const constantRouterMap = [
         path: 'reject',
         component: () => import('@/views/reject'),
         name: 'reject',
-        meta: { title: '被拒', icon: 'tab', noCache: true }
+        meta: { title: '审核驳回列表', icon: 'tab', noCache: true }
       }
     ]
   },
@@ -176,7 +176,7 @@ export const constantRouterMap = [
         path: 'pass',
         component: () => import('@/views/pass'),
         name: 'pass',
-        meta: { title: '审核通过', icon: 'tab', noCache: true }
+        meta: { title: '审核通过列表', icon: 'tab', noCache: true }
       }
     ]
   },
@@ -196,6 +196,11 @@ export const constantRouterMap = [
   {
     path: '/preview',
     component: () => import('@/views/preview'),
+    hidden: true
+  },
+  {
+    path: '/preview-water',
+    component: () => import('@/views/preview-water'),
     hidden: true
   },
   {
