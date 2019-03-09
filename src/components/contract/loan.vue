@@ -347,6 +347,11 @@
       >
         <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
       </p>
+      <p
+        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
+      >
+        <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+      </p>
     </div>
     <br style="clear:both; mso-break-type:section-break; page-break-before:always">
     <div>
@@ -1698,6 +1703,8 @@ export default {
   /* height: 891px; */
   /* background-color: red; */
   margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
 input {

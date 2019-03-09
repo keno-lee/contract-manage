@@ -27,9 +27,19 @@ export default {
       url: "/getContractById",
       params: sendData
     }).then(res => {
-      console.log(res);
-      this.listLoading = false;
+      // console.log(res);
       this.infoData = JSON.parse(res.data.jsonData);
+
+      setTimeout(() => {
+        this.fullscreenLoading = false;
+        this.$nextTick(() => {
+          window.print();
+        });
+      }, 1000);
+    });
+    var that = this;
+    this.$nextTick(() => {
+      that.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
     });
   },
   mounted() {
@@ -82,10 +92,10 @@ export default {
       //默认设置
       var defaultSettings = {
         watermark_txt: "text",
-        watermark_x: 50, //水印起始位置x轴坐标
-        watermark_y: 50, //水印起始位置Y轴坐标
+        watermark_x: 30, //水印起始位置x轴坐标
+        watermark_y: 30, //水印起始位置Y轴坐标
         watermark_rows: 500, //水印行数
-        watermark_cols: 20, //水印列数
+        watermark_cols: 3, //水印列数
         watermark_x_space: 100, //水印x轴间隔
         watermark_y_space: 50, //水印y轴间隔
         watermark_color: "#000000", //水印字体颜色
@@ -220,9 +230,7 @@ export default {
           oTemp.appendChild(mask_div);
         }
       }
-      // console.log(document.querySelector('.contract-wrap'))
-      document.querySelector(".preview-index").appendChild(oTemp);
-      // document.body.appendChild(oTemp);
+      document.querySelector(".contract-wrap").appendChild(oTemp);
     }
   },
   components: {
