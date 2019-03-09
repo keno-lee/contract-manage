@@ -9,13 +9,13 @@
           @click="select('loan')"
         >借款合同</div>
         <div class="select-item">借款合同</div>
-        <div class="select-item">借款合同</div>
-        <div class="select-item">借款合同</div>
-        <div class="select-item">借款合同</div>
-        <div class="select-item">借款合同</div>
-        <div class="select-item">借款合同</div>
-        <div class="select-item">借款合同</div>
-        <div class="select-item">借款合同</div>
+        <div class="select-item">xx合同</div>
+        <div class="select-item">yy合同</div>
+        <div class="select-item">zz合同</div>
+        <div class="select-item">aa合同</div>
+        <div class="select-item">bb合同</div>
+        <div class="select-item">bb合同</div>
+        <div class="select-item">cc合同</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
@@ -152,6 +152,7 @@ export default {
   box-sizing: border-box;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
   position: relative;
+  text-align: center;
 }
 .select-item.active::after {
   content: "";
