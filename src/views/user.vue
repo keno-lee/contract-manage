@@ -61,17 +61,20 @@ export default {
     };
   },
   created() {
-    this.$ajax({
-      method: "get",
-      url: "/user/list"
-    }).then(res => {
-      console.log(res);
-      // this.listLoading = false;
-      this.tableData = res.data;
-      // this.tableData.forEach(v)
-    });
+    this.getData();
   },
   methods: {
+    getData() {
+      this.$ajax({
+        method: "get",
+        url: "/user/list"
+      }).then(res => {
+        // console.log(res);
+        // this.listLoading = false;
+        this.tableData = res.data;
+        // this.tableData.forEach(v)
+      });
+    },
     changeInput(i) {
       // console.log(i)
       this.roleId = i;
@@ -96,19 +99,20 @@ export default {
         userPwd: this.userPwd,
         roleId: this.roleId
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "post",
         url: "/user/save",
         data: JSON.stringify(sendData)
       }).then(res => {
-        console.log(res);
+        // console.log(res);
         if (res.data.msg === "success") {
           this.$alert("成功", "保存状态", {
             confirmButtonText: "确定",
             callback: action => {
               // this.$router.push("/");
-              window.location.reload();
+              // window.location.reload();
+              this.getData();
             }
           });
         } else {
@@ -122,13 +126,13 @@ export default {
       let sendData = {
         userId: id
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "get",
         url: "/user/delete",
         params: sendData
       }).then(res => {
-        console.log(res);
+        // console.log(res);
         if (res.data.msg === "success") {
           this.$alert("成功", "保存状态", {
             confirmButtonText: "确定",

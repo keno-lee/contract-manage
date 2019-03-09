@@ -67,20 +67,24 @@ router.beforeEach((to, from, next) => {
       next({ path: '/' })
       NProgress.done()
     } else {
-      if (whiteList.indexOf(to.path) > -1) {
-        NProgress.done()
-        next()
-      } else {
-        let menuList = store.getters.userInfo
-        if (hasPermission(menuList, to.path)) {
-          NProgress.done()
-          next()
-        } else {
-          NProgress.done()
-          next()
-        }
-      }
+      NProgress.done()
+      next()
     }
+    // else {
+    //   if (whiteList.indexOf(to.path) > -1) {
+    //     NProgress.done()
+    //     next()
+    //   } else {
+    //     let menuList = store.getters.userInfo
+    //     if (hasPermission(menuList, to.path)) {
+    //       NProgress.done()
+    //       next()
+    //     } else {
+    //       NProgress.done()
+    //       next()
+    //     }
+    //   }
+    // }
   } else {
     if (whiteList.indexOf(to.path) !== -1) { // 在免登录白名单，直接进入
       next()
@@ -89,7 +93,6 @@ router.beforeEach((to, from, next) => {
       NProgress.done() // if current page is login will not trigger afterEach hook, so manually handle it
     }
   }
-  // next()
 })
 
 router.afterEach(() => {

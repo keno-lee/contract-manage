@@ -151,57 +151,11 @@ export default {
           }
         })
         .then(res => {
-          // console.log(res.data);
-          //    {
-          //     "msg": "success",
-          //     "userInfo": {
-          //         "id": 2,
-          //         "userCode": "lisi",
-          //         "userPwd": "123",
-          //         "userName": "李四",
-          //         "dept": null,
-          //         "salt": null,
-          //         "locked": false,
-          //         "lastLoginTime": "2019-03-04 20:57:50",
-          //         "createAt": "2019-03-04 20:57:54",
-          //         "lastModifyAt": "2019-03-04 20:57:59",
-          //         "menuList": [
-          //             {
-          //                 "id": 1,
-          //                 "parentId": null,
-          //                 "pmsName": "新建合同",
-          //                 "pmsType": "menu",
-          //                 "pmsUrl": "/contract/new",
-          //                 "icon": null,
-          //                 "order": null,
-          //                 "disabled": null,
-          //                 "createAt": 1551704592000,
-          //                 "lastModifyTime": 1551704596000
-          //             },
-          //             {
-          //                 "id": 2,
-          //                 "parentId": null,
-          //                 "pmsName": "待提交列表",
-          //                 "pmsType": "menu",
-          //                 "pmsUrl": "/contract/w_commit",
-          //                 "icon": null,
-          //                 "order": null,
-          //                 "disabled": null,
-          //                 "createAt": 1551704742000,
-          //                 "lastModifyTime": 1551704746000
-          //             }
-          //         ],
-          //         "operateList": null
-          //     },
-          //     "JSESSIONID": "03D213294F0ED2359D84627778F448FA"
-          // }
+          // console.log('登陆', res.data);
           if (res.data.msg === "success") {
             setToken(res.data.JSESSIONID);
             let list = res.data.userInfo.menuList
-            this.$store.commit("saveData", list);
-            // setTimeout(() => {
-            //   console.log(this.$store.getters.userInfo);
-            // }, 1000);
+            localStorage.setItem('roleId', res.data.userInfo.roleId)
             if (this.$route.query.redirect) {
               this.$router.replace(this.$route.query.redirect);
             } else {

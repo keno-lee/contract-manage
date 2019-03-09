@@ -1688,7 +1688,7 @@ export default {
       handler(nv, ov) {
         nv['auditTip'] = ''
         this.info = nv;
-        console.log(this.info);
+        // console.log(this.info);
       },
       immediate: true,
       deep: true

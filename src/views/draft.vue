@@ -97,7 +97,7 @@ export default {
       this.$router.push("/preview?id=" + id);
     },
     submit(id) {
-      console.log(id);
+      // console.log(id);
       let sendData = {
         contractId: id,
         contractStatus: "0002"

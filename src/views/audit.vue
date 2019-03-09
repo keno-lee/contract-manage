@@ -82,7 +82,7 @@ export default {
         url: "getList",
         params: sendData
       }).then(res => {
-        console.log(res);
+        // console.log(res);
         this.listLoading = false;
         this.tableData = res.data.list;
         this.total = res.data.total;
