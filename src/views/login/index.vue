@@ -151,8 +151,8 @@ export default {
           }
         })
         .then(res => {
-          console.log(res.data);
-          //           {
+          // console.log(res.data);
+          //    {
           //     "msg": "success",
           //     "userInfo": {
           //         "id": 2,
@@ -197,10 +197,11 @@ export default {
           // }
           if (res.data.msg === "success") {
             setToken(res.data.JSESSIONID);
-            // this.$store.commit("saveData", res.data.userInfo);
-            // setTimeout(() => {
-            //   console.log(this.$store.getters);
-            // }, 1000);
+            let list = res.data.userInfo.menuList
+            this.$store.commit("saveData", list);
+            setTimeout(() => {
+              console.log(this.$store.getters.userInfo);
+            }, 1000);
             if (this.$route.query.redirect) {
               this.$router.replace(this.$route.query.redirect);
             }

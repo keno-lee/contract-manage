@@ -70,30 +70,34 @@ export default {
     };
   },
   created() {
-    let sendData = {
-      contractStatus: "0001", // 当前页是待提交状态，写死
-      sort: 'id', // 根据什么字段来排序
-      order: "desc", // 默认降序
-      page: this.listQuery.page, // 当前页码
-      rows:  this.listQuery.limit // 每页多少数据
-    };
-    this.$ajax({
-      method: "get",
-      url: "getList",
-      params: sendData
-    }).then(res => {
-      console.log(res)
-      this.listLoading = false;
-      this.tableData = res.data.list;
-    });
+    this.getData(1, 20)
   },
   methods: {
+    getData(page, limit) {
+      let sendData = {
+        contractStatus: "0001", // 当前页是待提交状态，写死
+        sort: "id", // 根据什么字段来排序
+        order: "desc", // 默认降序
+        page: page, // 当前页码
+        rows: limit // 每页多少数据
+      };
+      this.$ajax({
+        method: "get",
+        url: "getList",
+        params: sendData
+      }).then(res => {
+        console.log(res);
+        this.listLoading = false;
+        this.tableData = res.data.list;
+        this.total = res.data.total;
+      });
+    },
     edit(id) {
       // console.log(id)
       this.$router.push("/preview?id=" + id);
     },
     submit(id) {
-      console.log(id)
+      console.log(id);
       let sendData = {
         contractId: id,
         contractStatus: "0002"
@@ -108,7 +112,7 @@ export default {
             confirmButtonText: "确定",
             callback: action => {
               // window.location.reload();
-              this.$router.push('/')
+              this.$router.push("/");
             }
           });
         } else {
@@ -118,7 +122,9 @@ export default {
         }
       });
     },
-    getList() {},
+    getList(info) {
+      this.getData(info.page, info.limit);
+    },
     resetDateFilter() {
       this.$refs.filterTable.clearFilter("date");
     },

@@ -21,8 +21,8 @@
       <el-table-column align="center" prop="checkRemark" label="审核意见" width="200"></el-table-column>
       <el-table-column align="center" label="操作" width="150">
         <template slot-scope="props">
-          <el-button size="mini" type="success" @click="prview(props.row.id)">预览</el-button>
-          <el-button size="mini" type="success" @click="print(props.row.id)">导出</el-button>
+          <el-button size="mini" type="warning" @click="prview(props.row.id)">预览</el-button>
+          <el-button size="mini" type="success" @click="print(props.row.id)">打印</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -67,43 +67,48 @@ export default {
     };
   },
   created() {
-    let sendData = {
-      contractStatus: "0004"
-    };
-    this.$ajax({
-      method: "get",
-      url: "/getList",
-      params: sendData
-    }).then(res => {
-      // console.log(res);
-      this.listLoading = false;
-      this.tableData = res.data.list;
-      if (res.data.msg === "success") {
-        // this.$alert("保存状态", "成功", {
-        //   confirmButtonText: "确定",
-        //   callback: action => {
-        //     this.$router.push("/draft");
-        //   }
-        // });
-      } else {
-        // this.$alert("提交状态", "失败", {
-        //   confirmButtonText: "确定"
-        // });
-      }
-    });
+    this.getData(1, 20);
   },
   methods: {
+    getData(page, limit) {
+      let sendData = {
+        contractStatus: "0004", // 当前页是待提交状态，写死
+        sort: "id", // 根据什么字段来排序
+        order: "desc", // 默认降序
+        page: page, // 当前页码
+        rows: limit // 每页多少数据
+      };
+      this.$ajax({
+        method: "get",
+        url: "getList",
+        params: sendData
+      }).then(res => {
+        console.log(res);
+        this.listLoading = false;
+        this.tableData = res.data.list;
+        this.total = res.data.total;
+      });
+    },
     prview(id) {
-
+      console.log(id);
+      this.$router.push("/preview-water?id=" + id);
     },
     print(id) {
-
+      console.log(id);
+      // this.$router.push("/print?id=" + id);
+      let routeData = this.$router.resolve({
+        path: "/print",
+        query: { id: id }
+      });
+      window.open(routeData.href, "_blank");
     },
     editPreview(id) {
       // console.log('preview')
       this.$router.push("/operate?id=" + id);
     },
-    getList() {},
+    getList(info) {
+      this.getData(info.page, info.limit);
+    },
     resetDateFilter() {
       this.$refs.filterTable.clearFilter("date");
     },

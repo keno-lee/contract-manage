@@ -64,7 +64,7 @@ export default {
         //   operate: "通过"
         // }
       ],
-      total: 100,
+      total: 0,
       listQuery: {
         page: 1,
         limit: 20
@@ -73,37 +73,35 @@ export default {
     };
   },
   created() {
-    let sendData = {
-      contractStatus: "0003"
-    };
-    this.$ajax({
-      method: "get",
-      url: "/getList",
-      params: sendData
-    }).then(res => {
-      // console.log(res);
-      this.listLoading = false;
-      this.tableData = res.data.list;
-      if (res.data.msg === "success") {
-        // this.$alert("保存状态", "成功", {
-        //   confirmButtonText: "确定",
-        //   callback: action => {
-        //     this.$router.push("/draft");
-        //   }
-        // });
-      } else {
-        // this.$alert("提交状态", "失败", {
-        //   confirmButtonText: "确定"
-        // });
-      }
-    });
+    this.getData(1, 20)
   },
   methods: {
+    getData(page, limit) {
+      let sendData = {
+        contractStatus: "0003", // 当前页是待提交状态，写死
+        sort: "id", // 根据什么字段来排序
+        order: "desc", // 默认降序
+        page: page, // 当前页码
+        rows: limit // 每页多少数据
+      };
+      this.$ajax({
+        method: "get",
+        url: "getList",
+        params: sendData
+      }).then(res => {
+        console.log(res);
+        this.listLoading = false;
+        this.tableData = res.data.list;
+        this.total = res.data.total;
+      });
+    },
     editPreview(id) {
       // console.log('preview')
       this.$router.push("/operate?id=" + id);
     },
-    getList() {},
+    getList(info) {
+      this.getData(info.page, info.limit);
+    },
     resetDateFilter() {
       this.$refs.filterTable.clearFilter("date");
     },

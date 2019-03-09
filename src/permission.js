@@ -8,13 +8,13 @@ import { getToken } from '@/utils/auth' // getToken from cookie
 NProgress.configure({ showSpinner: false })// NProgress Configuration
 
 // permission judge function
-function hasPermission(roles, permissionRoles) {
-  if (roles.indexOf('admin') >= 0) return true // admin permission passed directly
-  if (!permissionRoles) return true
-  return roles.some(role => permissionRoles.indexOf(role) >= 0)
-}
+// function hasPermission(roles, permissionRoles) {
+//   if (roles.indexOf('admin') >= 0) return true // admin permission passed directly
+//   if (!permissionRoles) return true
+//   return roles.some(role => permissionRoles.indexOf(role) >= 0)
+// }
 
-const whiteList = ['/login', '/auth-redirect']// no redirect whitelist
+// const whiteList = ['/login', '/auth-redirect']// no redirect whitelist
 
 // router.beforeEach((to, from, next) => {
 //   NProgress.start() // start progress bar
@@ -57,6 +57,7 @@ const whiteList = ['/login', '/auth-redirect']// no redirect whitelist
 //     }
 //   }
 // })
+const whiteList = ['/login', '/preview', '/operate', 'preview-water', 'print']// no redirect whitelist
 
 router.beforeEach((to, from, next) => {
   NProgress.start() // start progress bar
@@ -67,7 +68,19 @@ router.beforeEach((to, from, next) => {
       next({ path: '/' })
       NProgress.done()
     } else {
-      next()
+      if (whiteList.indexOf("to.path") > -1) {
+        NProgress.done()
+        next()
+      } else {
+        let menuList = store.getters.userInfo
+        if (hasPermission(menuList, to.path)) {
+          NProgress.done()
+          next()
+        } else {
+          NProgress.done()
+          next({ path: '/' })
+        }
+      }
     }
   } else {
     if (whiteList.indexOf(to.path) !== -1) { // 在免登录白名单，直接进入
@@ -83,3 +96,13 @@ router.beforeEach((to, from, next) => {
 router.afterEach(() => {
   NProgress.done() // finish progress bar
 })
+
+function hasPermission(menuList, toPath) {
+  let flag = true
+  for (var i = 0; i < menuList.length; i++) {
+    if (toPath === menuList[i].pmsUrl) {
+      flag = false
+    }
+  }
+  return flag
+}

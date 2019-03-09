@@ -1,29 +1,24 @@
 <template>
   <div class="preview-index">
-    <loan :infoData="infoData"></loan>
+    <div
+      v-loading.fullscreen.lock="fullscreenLoading"
+      class="main-article"
+      element-loading-text="正在生成...PDF"
+    ></div>
+    <loan :infoData="infoData" @submit="onsubmit"></loan>
   </div>
 </template>
-
+F
 <script>
 import loan from "@/components/contract/loan.vue";
 export default {
   data() {
     return {
-      contractType: "",
-      infoData: {}
+      infoData: {},
+      fullscreenLoading: true
     };
   },
   created() {
-    var that = this;
-    // window.onload = function() {
-
-    // };
-    // console.log(document.querySelector('.contract-wrap'))
-    this.$nextTick(() => {
-    // console.log(document.querySelector('.contract-wrap'))
-      that.watermark({ watermark_txt: "测试水印" });
-    });
-
     let sendData = {
       contractId: this.$route.query.id
     };
@@ -35,10 +30,54 @@ export default {
       console.log(res);
       this.listLoading = false;
       this.infoData = JSON.parse(res.data.jsonData);
-      this.contractType = res.data.contractType;
     });
   },
+  mounted() {
+    setTimeout(() => {
+      this.fullscreenLoading = false;
+      this.$nextTick(() => {
+        window.print();
+      });
+    }, 3000);
+  },
   methods: {
+    onsubmit(data) {
+      // console.log(data);
+      let sendData = {
+        id: this.$route.query.id,
+        contractType: "0001",
+        contractStatus: "0002",
+        contractNumber: data.a,
+        partyA: data.b,
+        personCharge: data.c,
+        // cardType 证件类型
+        // cardNumber 证件号码
+        phoneNumber: data.d,
+        opRemark: data.operateTip,
+        contractCreateDate: data.a37 + data.a38 + data.a39,
+        contractCreateAddress: data.a44,
+        jsonData: JSON.stringify(data)
+      };
+      console.log(sendData);
+      this.$ajax({
+        method: "post",
+        url: "/saveAndSubmit",
+        data: JSON.stringify(sendData)
+      }).then(res => {
+        if (res.data.msg === "success") {
+          this.$alert("成功", "提交状态", {
+            confirmButtonText: "确定",
+            callback: action => {
+              this.$router.push("/");
+            }
+          });
+        } else {
+          this.$alert("失败", "提交状态", {
+            confirmButtonText: "确定"
+          });
+        }
+      });
+    },
     watermark(settings) {
       //默认设置
       var defaultSettings = {
@@ -182,7 +221,7 @@ export default {
         }
       }
       // console.log(document.querySelector('.contract-wrap'))
-      document.querySelector('.preview-index').appendChild(oTemp)
+      document.querySelector(".preview-index").appendChild(oTemp);
       // document.body.appendChild(oTemp);
     }
   },
