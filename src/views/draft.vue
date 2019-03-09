@@ -10,7 +10,7 @@
       style="width: 100%"
     >
       <el-table-column align="center" prop="id" label="排序" width="50"></el-table-column>
-      <el-table-column align="center" prop="contractType" label="合同类型" width="100"></el-table-column>
+      <el-table-column align="center" prop="contractType" label="合同类型" width="100" :formatter="formatter"></el-table-column>
       <el-table-column align="center" prop="contractNumber" label="合同编号" width="100"></el-table-column>
       <el-table-column align="center" prop="partyA" label="甲方" width="100"></el-table-column>
       <el-table-column align="center" prop="personCharge" label="负责人" width="100"></el-table-column>
@@ -132,7 +132,8 @@ export default {
       this.$refs.filterTable.clearFilter();
     },
     formatter(row, column) {
-      return row.address;
+      // console.log(row)
+      return row.contractType === '0001' ? '贷款合同' : '未添加的类型';
     },
     filterTag(value, row) {
       return row.tag === value;
