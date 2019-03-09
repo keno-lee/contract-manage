@@ -199,11 +199,13 @@ export default {
             setToken(res.data.JSESSIONID);
             let list = res.data.userInfo.menuList
             this.$store.commit("saveData", list);
-            setTimeout(() => {
-              console.log(this.$store.getters.userInfo);
-            }, 1000);
+            // setTimeout(() => {
+            //   console.log(this.$store.getters.userInfo);
+            // }, 1000);
             if (this.$route.query.redirect) {
               this.$router.replace(this.$route.query.redirect);
+            } else {
+              this.$router.replace('/');
             }
           } else {
             this.$alert("用户名或者密码错误", "警告", {

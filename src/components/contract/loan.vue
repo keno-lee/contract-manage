@@ -342,6 +342,11 @@
       >
         <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
       </p>
+      <p
+        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
+      >
+        <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+      </p>
     </div>
     <br style="clear:both; mso-break-type:section-break; page-break-before:always">
     <div>
@@ -402,13 +407,13 @@
         <span style="font-family:宋体; font-size:14pt">贷款人（乙方）：</span>
         <span
           style="font-family:宋体; font-size:14pt; text-decoration:underline"
-        >&nbsp;&nbsp;&nbsp;&nbsp; 安徽省安振小额贷款有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        >&nbsp;&nbsp;&nbsp;&nbsp; 安徽省安振小额贷款有限公司&nbsp;&nbsp;&nbsp;&nbsp;</span>
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
         <span style="font-family:宋体; font-size:14pt">法定代表人（负责人）：</span>
         <span
           style="font-family:宋体; font-size:14pt; text-decoration:underline"
-        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 潘 伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 潘 伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
         <span style="font-family:宋体; font-size:14pt">法定地址：</span>
@@ -417,22 +422,19 @@
         >合肥市庐阳区濉溪路278号财富广场B座东楼17层&nbsp;&nbsp;&nbsp;</span>
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
-        <span style="font-family:宋体; font-size:14pt">电&nbsp;&nbsp;&nbsp; 话：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline">0551-65667870</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span
-          style="font-family:宋体; font-size:14pt; text-decoration:underline"
-        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span style="font-family:宋体; font-size:14pt">电话：</span>
+        <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;0551-65667870&nbsp;&nbsp;</span>
+        
         <span style="font-family:宋体; font-size:14pt">邮政编码：</span>
         <span
           style="font-family:宋体; font-size:14pt; text-decoration:underline"
-        >230041&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        >&nbsp;&nbsp;230041&nbsp;&nbsp;</span>
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
         <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
         <span
           style="font-family:宋体; font-size:14pt; text-decoration:underline"
-        >合肥市庐阳区濉溪路278号财富广场B座东楼17层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        >合肥市庐阳区濉溪路278号财富广场B座东楼17层&nbsp;&nbsp;</span>
       </p>
       <p
         style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
@@ -1543,6 +1545,7 @@
       <div>操作：</div>
       <br>
       <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.operateTip"></textarea>
+      <div class="save-btn btn" @click="save">暂存</div>
       <div class="submit-btn btn" @click="submit">提交审核</div>
     </div>
 

@@ -21,8 +21,8 @@
       <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column>
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="150"></el-table-column>
       <el-table-column align="center" width="100" label="操作">
-        <template slot-scope="scope">
-          <el-button size="mini" type="success" @click="editPreview(1)">去审核</el-button>
+        <template slot-scope="props">
+          <el-button size="mini" type="success" @click="editPreview(props.row.id)">去审核</el-button>
         </template>
       </el-table-column>
     </el-table>

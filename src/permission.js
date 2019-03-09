@@ -57,18 +57,17 @@ NProgress.configure({ showSpinner: false })// NProgress Configuration
 //     }
 //   }
 // })
-const whiteList = ['/login', '/preview', '/operate', 'preview-water', 'print']// no redirect whitelist
+const whiteList = ['/', '/login', '/preview', '/operate', 'preview-water', 'print']// no redirect whitelist
 
 router.beforeEach((to, from, next) => {
   NProgress.start() // start progress bar
   if (getToken()) { // determine if there has token
-    console.log(1)
     /* has token*/
     if (to.path === '/login') {
       next({ path: '/' })
       NProgress.done()
     } else {
-      if (whiteList.indexOf("to.path") > -1) {
+      if (whiteList.indexOf(to.path) > -1) {
         NProgress.done()
         next()
       } else {
@@ -78,7 +77,7 @@ router.beforeEach((to, from, next) => {
           next()
         } else {
           NProgress.done()
-          next({ path: '/' })
+          next()
         }
       }
     }
@@ -90,7 +89,7 @@ router.beforeEach((to, from, next) => {
       NProgress.done() // if current page is login will not trigger afterEach hook, so manually handle it
     }
   }
-  next()
+  // next()
 })
 
 router.afterEach(() => {

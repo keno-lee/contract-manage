@@ -28,10 +28,6 @@
         @submit="onsubmit"
         v-if="contractType === 'loan'"
       ></loan>
-
-      <!-- <div class="save-btn btn" @click="next">暂存</div>
-      <div class="submit-btn btn" @click="submit">提交审核</div>
-      <div class="submit-btn btn" @click="print">打印</div>-->
     </div>
   </div>
 </template>
