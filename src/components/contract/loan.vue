@@ -367,13 +367,14 @@
       >
         <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
       </p>
-      <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
-        <span style="font-family:宋体; font-size:14pt">借款人（甲方）：</span>
-        <input type="text" v-model="info.b">
+      <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt;">
+        <span style="font-family:宋体; font-size:14pt;">借款人（甲方）：</span>
+        <input type="text" style="width:400px" v-if="info.b.length < 20" v-model="info.b">
+        <textarea style="text-decoration:underline; border:none" v-else cols="30" v-model="info.b" rows="3"></textarea>
         <!-- <span
             style="font-family:宋体; font-size:14pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-        <span style="font-family:宋体; font-size:14pt"></span>
+        <!-- <span style="font-family:宋体; font-size:14pt"></span> -->
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
         <span style="font-family:宋体; font-size:14pt">法定代表人（负责人）：</span>
@@ -428,7 +429,9 @@
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
         <span style="font-family:宋体; font-size:14pt">电话：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;0551-65667870&nbsp;&nbsp;</span>
+        <span
+          style="font-family:宋体; font-size:14pt; text-decoration:underline"
+        >&nbsp;&nbsp;0551-65667870&nbsp;&nbsp;</span>
         
         <span style="font-family:宋体; font-size:14pt">邮政编码：</span>
         <span
@@ -1686,7 +1689,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        nv['auditTip'] = ''
+        nv["auditTip"] = "";
         this.info = nv;
         // console.log(this.info);
       },
