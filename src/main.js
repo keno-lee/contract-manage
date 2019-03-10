@@ -16,7 +16,7 @@ import store from './store';
 import i18n from './lang'; // Internationalization
 import './icons'; // icon
 import './errorLog'; // error log
-// import './permission'; // permission control
+import './permission'; // permission control
 import './mock'; // simulation data
 
 import * as filters from './filters'; // global filters
@@ -31,15 +31,14 @@ axios.defaults.withCredentials = true
 axios.defaults.baseURL = 'http://roshan.frpgz1.idcfengye.com/'
 axios.interceptors.response.use(
   function (response) {
+    if (response.data === 'login') {
+      removeToken()
+      router.push('/login')
+      return      
+    }
     return response;
   },
   function (error) {
-    console.log('错误', error)
-    if (error.response && error.response.status === 302) {
-      console.log('未登录')
-      removeToken()
-      router.push('/login')
-    }
     Element.MessageBox.alert('网络异常', {
       confirmButtonText: '确定'
     });
