@@ -369,8 +369,20 @@
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt;">
         <span style="font-family:宋体; font-size:14pt;">借款人（甲方）：</span>
-        <input type="text" style="width:400px" v-if="info.b.length < 20" v-model="info.b">
-        <textarea style="text-decoration:underline; border:none" v-else cols="30" v-model="info.b" rows="3"></textarea>
+        <input
+          type="text"
+          style="width:400px"
+          v-if="info.b.length < 20"
+          v-model="info.b"
+          @input="inputListener"
+        >
+        <textarea
+          style="text-decoration:underline; border:none"
+          v-else
+          cols="30"
+          v-model="info.b"
+          rows="3"
+        ></textarea>
         <!-- <span
             style="font-family:宋体; font-size:14pt; text-decoration:underline"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
@@ -1663,11 +1675,97 @@ export default {
   name: "print",
   data() {
     return {
-      info: {}
+      info: {
+        a: "",
+        b: "",
+        c: "",
+        d: "",
+        e: "",
+        f: "",
+        g: "",
+        h: "",
+        i: "",
+        j: "",
+        k: "",
+        l: "",
+        m: "",
+        n: "",
+        o: "",
+        p: "",
+        q: "",
+        r: "",
+        s: "",
+        t: "",
+        u: "",
+        v: "",
+        w: "",
+        x: "",
+        y: "",
+        z: "",
+        a1: "",
+        a2: "",
+        a3: "",
+        a4: "",
+        a5: "",
+        a6: "",
+        a7: "",
+        a8: "",
+        a9: "",
+        a10: "",
+        a11: "",
+        a12: "",
+        a13: "",
+        a14: "",
+        a15: "",
+        a16: "",
+        a17: "",
+        a18: "",
+        a19: "",
+        a20: "",
+        a21: "",
+        a22: "",
+        a23: "",
+        a24: "",
+        a25: "",
+        a26: "",
+        a27: "",
+        a28: "",
+        a29: "",
+        a30: "",
+        a31: "",
+        a32: "",
+        a33: "",
+        a34: "",
+        a35: "",
+        a36: "",
+        a37: "",
+        a38: "",
+        a39: "",
+        a40: "",
+        a41: "",
+        a42: "",
+        a43: "",
+        a44: "",
+        a45: "",
+        a46: "",
+        a47: "",
+        a48: "",
+        a49: "",
+        a50: "",
+        a51: "",
+        a52: "",
+        a53: "",
+        a54: "",
+        operateTip: "",
+        auditTip: ""
+      }
     };
   },
   created() {},
   methods: {
+    inputListener() {
+      // console.log(info.b)
+    },
     save() {
       this.$emit("save", this.info);
     },
@@ -1690,8 +1788,10 @@ export default {
     infoData: {
       handler(nv, ov) {
         nv["auditTip"] = "";
-        this.info = nv;
-        // console.log(this.info);
+        if (nv.a !== undefined) {
+          console.log('赋值')
+          this.info = nv;
+        }
       },
       immediate: true,
       deep: true

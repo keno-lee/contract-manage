@@ -16,11 +16,13 @@ import store from './store';
 import i18n from './lang'; // Internationalization
 import './icons'; // icon
 import './errorLog'; // error log
-import './permission'; // permission control
+// import './permission'; // permission control
 import './mock'; // simulation data
 
 import * as filters from './filters'; // global filters
 import axios from 'axios';
+import { removeToken } from '@/utils/auth' // getToken from cookie
+
 
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset-UTF-8';
 // axios.defaults.headers.withCredentials = true;
@@ -32,6 +34,12 @@ axios.interceptors.response.use(
     return response;
   },
   function (error) {
+    console.log('错误', error)
+    if (error.response && error.response.status === 302) {
+      console.log('未登录')
+      removeToken()
+      router.push('/login')
+    }
     Element.MessageBox.alert('网络异常', {
       confirmButtonText: '确定'
     });
