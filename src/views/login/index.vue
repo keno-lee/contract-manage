@@ -157,6 +157,7 @@ export default {
             let list = res.data.userInfo.menuList
             localStorage.setItem('roleId', res.data.userInfo.roleId)
             if (this.$route.query.redirect) {
+              console.log('跳转')
               this.$router.replace(this.$route.query.redirect);
             } else {
               this.$router.replace('/');

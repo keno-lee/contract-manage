@@ -23,6 +23,7 @@ import * as filters from './filters'; // global filters
 import axios from 'axios';
 import { removeToken } from '@/utils/auth' // getToken from cookie
 
+store.dispatch('setLanguage', 'zh')
 
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset-UTF-8';
 // axios.defaults.headers.withCredentials = true;
@@ -34,7 +35,7 @@ axios.interceptors.response.use(
     if (response.data === 'login') {
       removeToken()
       router.push('/login')
-      return      
+      return
     }
     return response;
   },

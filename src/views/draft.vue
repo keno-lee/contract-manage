@@ -1,7 +1,27 @@
 <template>
   <div class="app-container">
-    <!-- <el-button @click="resetDateFilter">清除日期过滤器</el-button>
-    <el-button @click="clearFilter">清除所有过滤器</el-button>-->
+    <div style="margin-bottom: 20px;width: 100%">
+      <!-- 日期选择器 -->
+      <el-date-picker
+        v-model="time"
+        type="daterange"
+        align="right"
+        unlink-panels
+        range-separator="至"
+        start-placeholder="开始日期"
+        end-placeholder="结束日期"
+        :picker-options="pickerOptions"
+        value-format="yyyy-MM-dd"
+      ></el-date-picker>
+      <!-- 甲方 partyA -->
+      <el-input v-model="partyA" style="width:200px;" placeholder="请输入甲方"></el-input>
+      <!-- 联系方式 phoneNumber -->
+      <!-- <el-input v-model="phoneNumber" style="width:200px;" placeholder="请输入联系方式"></el-input> -->
+      <!-- 操作人 operator -->
+      <el-input v-model="operator" style="width:200px;" placeholder="请输入操作人"></el-input>
+      <el-button size="medium" type="success" @click="search()">搜索</el-button>
+    </div>
+
     <el-table
       v-loading="listLoading"
       ref="filterTable"
@@ -10,7 +30,13 @@
       style="width: 100%"
     >
       <el-table-column align="center" prop="id" label="排序" width="50"></el-table-column>
-      <el-table-column align="center" prop="contractType" label="合同类型" width="100" :formatter="formatter"></el-table-column>
+      <el-table-column
+        align="center"
+        prop="contractType"
+        label="合同类型"
+        width="100"
+        :formatter="formatter"
+      ></el-table-column>
       <el-table-column align="center" prop="contractNumber" label="合同编号" width="100"></el-table-column>
       <el-table-column align="center" prop="partyA" label="甲方" width="100"></el-table-column>
       <el-table-column align="center" prop="personCharge" label="负责人" width="100"></el-table-column>
@@ -44,36 +70,66 @@ import Pagination from "@/components/Pagination"; // Secondary package based on 
 export default {
   data() {
     return {
-      tableData: [
-        // {
-        //   id: 1,
-        //   contractType: "借款合同",
-        //   contractNumber: "abc123",
-        //   partyA: "合肥xx公司",
-        //   personCharge: "张总",
-        //   cardType: "身份证",
-        //   cardNumber: "342401198999219921",
-        //   phoneNumber: "18888888888",
-        //   contractCreateDate: "2016-05-02",
-        //   operator: "老汉",
-        //   opRemark: "这个客户非常抠",
-        //   lastModifyTime: "2016-05-02",
-        //   operate: "通过"
-        // }
-      ],
+      tableData: [],
       total: 0,
       listQuery: {
         page: 1,
         limit: 20
       },
-      listLoading: true // 表格loading
+      listLoading: true, // 表格loading
+      pickerOptions: {
+        shortcuts: [
+          {
+            text: "最近一周",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);
+              picker.$emit("pick", [start, end]);
+            }
+          },
+          {
+            text: "最近一个月",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);
+              picker.$emit("pick", [start, end]);
+            }
+          },
+          {
+            text: "最近三个月",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 90);
+              picker.$emit("pick", [start, end]);
+            }
+          }
+        ]
+      },
+      time: "",
+      partyA: "",
+      phoneNumber: "",
+      operator: ""
     };
   },
   created() {
-    this.getData(1, 20)
+    this.getData(1, 20);
   },
   methods: {
-    getData(page, limit) {
+    search() {
+      // console.log(this.time, this.partyA, this.operator);
+      let data = {
+        createTimeStart: this.time ? this.time[0] : "",
+        createTimeEnd: this.time ? this.time[1] : "",
+        partyA: this.partyA,
+        operator: this.operator
+      };
+      console.log('sou', data)
+      this.getData(this.listQuery.page, this.listQuery.limit, data);
+    },
+    getData(page, limit, data) {
       let sendData = {
         contractStatus: "0001", // 当前页是待提交状态，写死
         sort: "id", // 根据什么字段来排序
@@ -81,6 +137,8 @@ export default {
         page: page, // 当前页码
         rows: limit // 每页多少数据
       };
+      sendData = Object.assign(sendData, data)
+      console.log('发送', sendData)
       this.$ajax({
         method: "get",
         url: "getList",
@@ -133,7 +191,7 @@ export default {
     },
     formatter(row, column) {
       // console.log(row)
-      return row.contractType === '0001' ? '贷款合同' : '未添加的类型';
+      return row.contractType === "0001" ? "贷款合同" : "未添加的类型";
     },
     filterTag(value, row) {
       return row.tag === value;

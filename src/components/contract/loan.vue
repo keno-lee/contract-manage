@@ -1806,7 +1806,7 @@ export default {
   /* height: 891px; */
   /* background-color: red; */
   margin: 0 auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: relative;
 }
 

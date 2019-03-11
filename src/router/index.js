@@ -193,20 +193,48 @@ export const constantRouterMap = [
       }
     ]
   },
+  // {
+  //   path: '/preview',
+  //   component: () => import('@/views/preview'),
+  //   hidden: true
+  // },
   {
-    path: '/preview',
-    component: () => import('@/views/preview'),
-    hidden: true
+    path: '',
+    component: Layout,
+    redirect: '/preview',
+    hidden: true,
+    children: [
+      {
+        path: 'preview',
+        component: () => import('@/views/preview'),
+        name: 'preview',
+        meta: { title: '预览', icon: 'preview', noCache: true }
+      }
+    ]
   },
   {
     path: '/preview-water',
     component: () => import('@/views/preview-water'),
     hidden: true
   },
+  // {
+  //   path: '/operate',
+  //   component: () => import('@/views/operate'),
+  //   hidden: true
+  // },
   {
-    path: '/operate',
-    component: () => import('@/views/operate'),
-    hidden: true
+    path: '',
+    component: Layout,
+    redirect: '/operate',
+    hidden: true,
+    children: [
+      {
+        path: 'operate',
+        component: () => import('@/views/operate'),
+        name: 'operate',
+        meta: { title: '审核页', icon: 'operate', noCache: true }
+      }
+    ]
   },
   {
     path: '/print',

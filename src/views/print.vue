@@ -42,14 +42,14 @@ export default {
       that.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
     });
   },
-  mounted() {
-    setTimeout(() => {
-      this.fullscreenLoading = false;
-      this.$nextTick(() => {
-        window.print();
-      });
-    }, 3000);
-  },
+  // mounted() {
+  //   setTimeout(() => {
+  //     this.fullscreenLoading = false;
+  //     this.$nextTick(() => {
+  //       window.print();
+  //     });
+  //   }, 3000);
+  // },
   methods: {
     onsubmit(data) {
       // console.log(data);

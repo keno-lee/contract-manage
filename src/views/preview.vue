@@ -1,6 +1,6 @@
 <template>
   <div class="preview-index">
-    <loan :infoData="infoData" :status="'draft'" @submit="onsubmit"></loan>
+    <loan :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loan>
   </div>
 </template>
 
@@ -36,8 +36,6 @@ export default {
         contractNumber: data.a,
         partyA: data.b,
         personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
         phoneNumber: data.d,
         opRemark: data.operateTip,
         contractCreateDate: data.a37 + data.a38 + data.a39,
@@ -55,6 +53,43 @@ export default {
             confirmButtonText: "确定",
             callback: action => {
               this.$router.push("/");
+            }
+          });
+        } else {
+          this.$alert("失败", "提交状态", {
+            confirmButtonText: "确定"
+          });
+        }
+      });
+    },
+    onsave(data) {
+      // console.log(data);
+      let sendData = {
+        contractType: "0001",
+        contractStatus: "0001",
+        contractNumber: data.a,
+        partyA: data.b,
+        personCharge: data.c,
+        phoneNumber: data.d,
+        opRemark: data.operateTip,
+        contractCreateDate: data.a37 + data.a38 + data.a39,
+        contractCreateAddress: data.a44,
+        jsonData: JSON.stringify(data)
+      };
+      console.log(sendData);
+      this.$ajax({
+        method: "post",
+        url: "/save",
+        data: JSON.stringify(sendData),
+        headers: {
+          "Content-Type": "application/json;charset-UTF-8"
+        }
+      }).then(res => {
+        if (res.data.msg === "success") {
+          this.$alert("成功", "保存状态", {
+            confirmButtonText: "确定",
+            callback: action => {
+              this.$router.push("/draft");
             }
           });
         } else {

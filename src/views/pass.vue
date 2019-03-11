@@ -90,8 +90,13 @@ export default {
       });
     },
     prview(id) {
-      console.log(id);
-      this.$router.push("/preview-water?id=" + id);
+      // console.log(id);
+      // this.$router.push("/preview-water?id=" + id);
+      let routeData = this.$router.resolve({
+        path: "/preview-water",
+        query: { id: id }
+      });
+      window.open(routeData.href, "_blank");
     },
     print(id) {
       console.log(id);
