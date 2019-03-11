@@ -2,29 +2,30 @@
   <el-row class="tac">
     <el-col :span="24" style="height: 100%">
       <el-menu
-        default-active="1"
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
-        background-color="#545c64"
-        text-color="#fff"
-        active-text-color="#ffd04b"
+        :show-timeout="200"
+        :default-active="$route.path"
+        mode="vertical"
+        background-color="#304156"
+        text-color="#bfcbd9"
+        active-text-color="#409EFF"
       >
         <el-menu-item
-          :index="i+1 + ''"
+          :class="getSideBarStatus ? '' : 'close'"
+          :index="v.redirect"
           v-for="(v, i) in sideBarShow"
           :key="i"
           @click="$router.push(v.redirect)"
         >
-          <i class="el-icon-menu"></i>
+          <svg-icon :icon-class="v.children[0].meta.icon" />
           <span slot="title">{{v.children[0].meta.title}}</span>
         </el-menu-item>
       </el-menu>
     </el-col>
   </el-row>
 </template>
-
-
 <script>
 import { constantRouterMap, asyncRouterMap } from "@/router";
 export default {
@@ -63,6 +64,16 @@ export default {
     handleClose(key, keyPath) {
       // console.log(key, keyPath);
     }
+  },
+  computed: {
+    getSideBarStatus() {
+      return this.$store.getters.sidebar.opened
+    }
   }
 };
 </script>
+<style scoped>
+.close {
+  padding: 0 10px !important;
+}
+</style>
