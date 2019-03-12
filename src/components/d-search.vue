@@ -12,6 +12,10 @@
       :picker-options="pickerOptions"
       value-format="yyyy-MM-dd"
     ></el-date-picker>
+    <!-- 合同类型 -->
+    <el-select v-model="value" placeholder="请选择合同类型" @change="changeInput">
+      <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
+    </el-select>
     <!-- 甲方 partyA -->
     <el-input v-model="partyA" style="width:200px;" placeholder="请输入甲方"></el-input>
     <!-- 联系方式 phoneNumber -->
@@ -60,21 +64,45 @@ export default {
       time: "",
       partyA: "",
       phoneNumber: "",
-      operator: ""
+      operator: "",
+      options: [
+        {
+          value: "0001",
+          label: "个人借款合同"
+        },
+        {
+          value: "0002",
+          label: "个人综合授信合同"
+        },
+        {
+          value: "0003",
+          label: "最高额抵押合同"
+        },
+        {
+          value: "0004",
+          label: "个人最高额保证合同"
+        }
+      ],
+      value: '',
+      contractType: ''
     };
   },
   methods: {
+    changeInput(i) {
+      // console.log(i)
+      this.contractType = i;
+    },
     search() {
-      // console.log(this.time, this.partyA, this.operator);
+      console.log(this.time, this.partyA, this.operator, this.value);
       let data = {
         createTimeStart: this.time ? this.time[0] : "",
         createTimeEnd: this.time ? this.time[1] : "",
         partyA: this.partyA,
-        operator: this.operator
+        operator: this.operator,
+        contractType: this.contractType
       };
       // console.log("sou", data);
-      // this.getData(this.listQuery.page, this.listQuery.limit, data);
-      this.$emit('search', data)
+      this.$emit("search", data);
     }
   }
 };

@@ -93,6 +93,12 @@ export default {
         : "风险经理";
     },
     addUser() {
+      if (!this.roleId || !this.userName || !this.userCode || !this.userPwd) {
+         this.$alert('内容不为空', '温馨提示', {
+          confirmButtonText: '确定'
+        });
+        return
+      }
       let sendData = {
         userName: this.userName,
         userCode: this.userCode,

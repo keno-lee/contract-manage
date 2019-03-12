@@ -22,11 +22,11 @@
       <!-- <el-table-column align="center" prop="cardType" label="证件类型" width="100"></el-table-column> -->
       <!-- <el-table-column align="center" prop="cardNumber" label="证件号码" width="200"></el-table-column> -->
       <el-table-column align="center" prop="phoneNumber" label="联系方式" width="150"></el-table-column>
-      <el-table-column align="center" prop="contractCreateDate" label="合同签订日期" width="150"></el-table-column>
+      <el-table-column align="center" prop="createTime" label="合同创建日期" width="180"></el-table-column>
       <el-table-column align="center" prop="operator" label="合同操作者" width="100"></el-table-column>
       <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column>
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="200"></el-table-column>
-      <el-table-column align="center" label="操作" width="220">
+      <el-table-column align="center" label="操作" width="220" v-if="hasPermisson">
         <template slot-scope="props">
           <!-- <el-button size="mini" type="success">预览</el-button> -->
           <el-button size="mini" type="danger" @click="edit(props.row.id)">编辑</el-button>
@@ -57,6 +57,7 @@ export default {
         page: 1,
         limit: 20
       },
+      hasPermisson: true, // 是否有权限显示按钮
       listLoading: true, // 表格loading
       pickerOptions: {
         shortcuts: [
@@ -92,6 +93,9 @@ export default {
     };
   },
   created() {
+    if (localStorage.getItem('roleId') === '3') {
+      this.hasPermisson = false
+    }
     this.getData(1, 20);
   },
   methods: {

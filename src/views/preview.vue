@@ -52,7 +52,8 @@ export default {
           this.$alert("成功", "提交状态", {
             confirmButtonText: "确定",
             callback: action => {
-              this.$router.push("/");
+              this.$router.push("/audit");
+              this.$store.commit("DEL_VISITED_VIEW", { path: "/preview" });
             }
           });
         } else {
@@ -90,6 +91,7 @@ export default {
             confirmButtonText: "确定",
             callback: action => {
               this.$router.push("/draft");
+              this.$store.commit("DEL_VISITED_VIEW", { path: "/preview" });
             }
           });
         } else {

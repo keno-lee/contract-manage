@@ -208,7 +208,7 @@ export const constantRouterMap = [
         path: 'preview',
         component: () => import('@/views/preview'),
         name: 'preview',
-        meta: { title: '预览', icon: 'preview', noCache: true }
+        meta: { title: '编辑', icon: 'preview', noCache: true }
       }
     ]
   },

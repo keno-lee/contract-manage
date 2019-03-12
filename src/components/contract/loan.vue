@@ -41,6 +41,9 @@
           <span style="font-family:宋体; font-size:42pt; font-weight:bold">借 款 合 同</span>
         </p>
         <p style="line-height:16pt; margin:5pt 0pt; text-align:center">
+          <span style="font-family:宋体; font-size:16pt; font-weight:bold">（适用于个人）</span>
+        </p>
+        <p style="line-height:16pt; margin:5pt 0pt; text-align:center">
           <span style="font-family:宋体; font-size:16pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
