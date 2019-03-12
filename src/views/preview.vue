@@ -1,6 +1,6 @@
 <template>
   <div class="preview-index">
-    <loanPersonal :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanPersonal>
+    <loanPersonal v-if="contractType === '0001'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanPersonal>
   </div>
 </template>
 
@@ -11,7 +11,8 @@ import loanPersonal from "@/components/contract/loan-personal.vue";
 export default {
   data() {
     return {
-      infoData: {}
+      infoData: {},
+      contractType: ''
     };
   },
   created() {
@@ -26,6 +27,7 @@ export default {
       console.log(res);
       this.listLoading = false;
       this.infoData = JSON.parse(res.data.jsonData);
+      this.contractType = res.data.contractType;
     });
   },
   methods: {
@@ -35,13 +37,12 @@ export default {
         id: this.$route.query.id,
         contractType: "0001",
         contractStatus: "0002",
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        phoneNumber: data.d,
+        contractNumber: data.contractNumber,
+        partyA: data.partyA,
+        phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
+        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
+        contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
       console.log(sendData);
@@ -70,13 +71,12 @@ export default {
       let sendData = {
         contractType: "0001",
         contractStatus: "0001",
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        phoneNumber: data.d,
+        contractNumber: data.contractNumber,
+        partyA: data.partyA,
+        phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
+        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
+        contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
       console.log(sendData);

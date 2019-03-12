@@ -57,15 +57,12 @@ export default {
       let sendData = {
         contractType: "0001",
         contractStatus: "0001",
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
-        phoneNumber: data.d,
+        contractNumber: data.contractNumber,
+        partyA: data.partyA,
+        phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
+        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
+        contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
       console.log(sendData);
@@ -99,15 +96,12 @@ export default {
       let sendData = {
         contractType: "0001",
         contractStatus: "0001",
-        contractNumber: data.a1,
-        partyA: data.a2,
-        // personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
-        phoneNumber: data.a6,
+        contractNumber: data.contractNumber,
+        partyA: data.partyA,
+        phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.a78 + data.a79 + data.a80,
-        contractCreateAddress: data.a44,
+        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
+        contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
       console.log(sendData);

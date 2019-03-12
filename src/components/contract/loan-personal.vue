@@ -114,14 +114,14 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-          <input style="width:250px;" type="text" v-model="info.a1">
+          <input style="width:250px;" type="text" v-model="info.contractNumber">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">借款人（甲方）：</span>
-          <input style="width:250px;" type="text" v-model="info.a2">
+          <input style="width:250px;" type="text" v-model="info.partyA">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
@@ -139,7 +139,7 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <input style="width:250px;" type="text" v-model="info.a6">
+          <input style="width:250px;" type="text" v-model="info.phoneNumber">
           <span style="-aw-bookmark-end:_Hlk2603292"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
@@ -517,7 +517,7 @@
           <span style="font-family:宋体; font-size:12pt">月</span>
           <input style="width: 50px" v-model="info.a43" type="text">
           <span style="font-family:宋体; font-size:12pt">日；</span>
-          <input style="width: 150px" v-model="info.a44" type="text">
+          <input style="width: 150px" v-model="info.contractCreateAddress" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
@@ -960,11 +960,11 @@
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">签署时间：</span>
-          <input style="width: 50px" v-model="info.a78" type="text">
+          <input style="width: 50px" v-model="info.contractCreateDateY" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
-          <input style="width: 50px" v-model="info.a79" type="text">
+          <input style="width: 50px" v-model="info.contractCreateDateM" type="text">
           <span style="font-family:宋体; font-size:12pt">月</span>
-          <input style="width: 50px" v-model="info.a80" type="text">
+          <input style="width: 50px" v-model="info.contractCreateDateD" type="text">
           <span style="font-family:宋体; font-size:12pt">日</span>
         </p>
         <p style="margin:0pt; orphans:0;    widows:0">
@@ -1006,12 +1006,12 @@ export default {
     infoData: {
       default: () => {
         return {
-          a1: "",
-          a2: "",
+          contractNumber: "",
+          partyA: "",
           a3: "",
           a4: "",
           a5: "",
-          a6: "",
+          phoneNumber: "",
           a7: "",
           a8: "",
           a9: "",
@@ -1049,7 +1049,7 @@ export default {
           a41: "",
           a42: "",
           a43: "",
-          a44: "",
+          contractCreateAddress: "",
           a45: "",
           a46: "",
           a47: "",
@@ -1083,9 +1083,9 @@ export default {
           a75: "",
           a76: "",
           a77: "",
-          a78: "",
-          a79: "",
-          a80: "",
+          contractCreateDateY: "",
+          contractCreateDateM: "",
+          contractCreateDateD: "",
           operateTip: "",
           auditTip: ""
         };
@@ -1096,12 +1096,12 @@ export default {
   data() {
     return {
       info: {
-        a1: "",
-        a2: "",
+        contractNumber: "",
+        partyA: "",
         a3: "",
         a4: "",
         a5: "",
-        a6: "",
+        phoneNumber: "",
         a7: "",
         a8: "人民币",
         a9: "",
@@ -1139,7 +1139,7 @@ export default {
         a41: "",
         a42: "",
         a43: "",
-        a44: "",
+        contractCreateAddress: "",
         a45: "",
         a46: "",
         a47: "",
@@ -1173,9 +1173,9 @@ export default {
         a75: "",
         a76: "",
         a77: "",
-        a78: "",
-        a79: "",
-        a80: "",
+        contractCreateDateY: "",
+        contractCreateDateM: "",
+        contractCreateDateD: "",
         operateTip: "",
         auditTip: ""
       }

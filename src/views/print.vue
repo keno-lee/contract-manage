@@ -5,7 +5,7 @@
       class="main-article"
       element-loading-text="正在生成...PDF"
     ></div>
-    <loanPersonal :infoData="infoData" @submit="onsubmit"></loanPersonal>
+    <loanPersonal  v-if="contractType === '0001'" :infoData="infoData" @submit="onsubmit"></loanPersonal>
   </div>
 </template>
 F
@@ -17,7 +17,8 @@ export default {
   data() {
     return {
       infoData: {},
-      fullscreenLoading: true
+      fullscreenLoading: true,
+      contractType: ''
     };
   },
   created() {
@@ -31,6 +32,7 @@ export default {
     }).then(res => {
       // console.log(res);
       this.infoData = JSON.parse(res.data.jsonData);
+      this.contractType = res.data.contractType;
 
       setTimeout(() => {
         this.fullscreenLoading = false;
@@ -65,15 +67,12 @@ export default {
         id: this.$route.query.id,
         contractType: "0001",
         contractStatus: "0002",
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
-        // cardType 证件类型
-        // cardNumber 证件号码
-        phoneNumber: data.d,
+        contractNumber: data.contractNumber,
+        partyA: data.partyA,
+        phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
-        contractCreateAddress: data.a44,
+        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
+        contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
       console.log(sendData);

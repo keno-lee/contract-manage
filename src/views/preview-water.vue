@@ -1,6 +1,6 @@
 <template>
   <div class="preview-index">
-    <loanPersonal :infoData="infoData"></loanPersonal>
+    <loanPersonal v-if="contractType === '0001'" :infoData="infoData"></loanPersonal>
   </div>
 </template>
 
