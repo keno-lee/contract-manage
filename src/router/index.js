@@ -240,6 +240,11 @@ export const constantRouterMap = [
     path: '/print',
     component: () => import('@/views/print'),
     hidden: true
+  },
+  {
+    path: '/test',
+    component: () => import('@/views/test'),
+    hidden: true
   }
 ]
 
