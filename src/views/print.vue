@@ -5,12 +5,14 @@
       class="main-article"
       element-loading-text="正在生成...PDF"
     ></div>
-    <loan :infoData="infoData" @submit="onsubmit"></loan>
+    <loanPersonal :infoData="infoData" @submit="onsubmit"></loanPersonal>
   </div>
 </template>
 F
 <script>
-import loan from "@/components/contract/loan.vue";
+// import loan from "@/components/contract/loan.vue";
+import loanPersonal from "@/components/contract/loan-personal.vue";
+
 export default {
   data() {
     return {
@@ -240,7 +242,7 @@ export default {
     }
   },
   components: {
-    loan
+    loanPersonal
   }
 };
 </script>

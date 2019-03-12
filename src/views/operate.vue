@@ -1,11 +1,13 @@
 <template>
   <div class="preview-index">
-    <loan :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></loan>
+    <loanPersonal :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></loanPersonal>
   </div>
 </template>
 
 <script>
-import loan from "@/components/contract/loan.vue";
+// import loan from "@/components/contract/loan.vue";
+import loanPersonal from "@/components/contract/loan-personal.vue";
+
 export default {
   data() {
     return {
@@ -244,7 +246,7 @@ export default {
     }
   },
   components: {
-    loan
+    loanPersonal
   }
 };
 </script>

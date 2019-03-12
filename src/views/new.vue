@@ -7,33 +7,34 @@
           class="select-item"
           :class="selectItem === 'loan' ? 'active' : ''"
           @click="select('loan')"
-        >借款合同</div>
-        <div class="select-item">借款合同</div>
-        <div class="select-item">xx合同</div>
-        <div class="select-item">yy合同</div>
-        <div class="select-item">zz合同</div>
-        <div class="select-item">aa合同</div>
-        <div class="select-item">bb合同</div>
-        <div class="select-item">bb合同</div>
-        <div class="select-item">cc合同</div>
+        >借款合同(个人)</div>
+        <!-- <div class="select-item">xx合同</div> -->
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
     <div v-else-if="step === 2">
       <p style="font-size: 30pt;">二、请填写合同信息</p>
-      <loan
+      <!-- <loan
         ref="info"
         :status="'new'"
         @save="onsave"
         @submit="onsubmit"
         v-if="contractType === 'loan'"
-      ></loan>
+      ></loan>-->
+      <loanPersonal
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'loan'"
+      ></loanPersonal>
     </div>
   </div>
 </template>
 
 <script>
-import loan from "@/components/contract/loan.vue";
+// import loan from "@/components/contract/loan.vue";
+import loanPersonal from "@/components/contract/loan-personal.vue";
+
 export default {
   data() {
     return {
@@ -98,14 +99,14 @@ export default {
       let sendData = {
         contractType: "0001",
         contractStatus: "0001",
-        contractNumber: data.a,
-        partyA: data.b,
-        personCharge: data.c,
+        contractNumber: data.a1,
+        partyA: data.a2,
+        // personCharge: data.c,
         // cardType 证件类型
         // cardNumber 证件号码
-        phoneNumber: data.d,
+        phoneNumber: data.a6,
         opRemark: data.operateTip,
-        contractCreateDate: data.a37 + data.a38 + data.a39,
+        contractCreateDate: data.a78 + data.a79 + data.a80,
         contractCreateAddress: data.a44,
         jsonData: JSON.stringify(data)
       };
@@ -134,7 +135,7 @@ export default {
     }
   },
   components: {
-    loan
+    loanPersonal
   }
 };
 </script>
@@ -142,7 +143,8 @@ export default {
 .select-item {
   width: 200px;
   height: 200px;
-  background-color: red;
+  /* background-color: red; */
+  border: 1px solid #ccc;
   margin-left: 20px;
   margin-top: 20px;
   float: left;
