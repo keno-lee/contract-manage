@@ -1,27 +1,6 @@
 <template>
   <div class="app-container">
-    <div style="margin-bottom: 20px;width: 100%">
-      <!-- 日期选择器 -->
-      <el-date-picker
-        v-model="time"
-        type="daterange"
-        align="right"
-        unlink-panels
-        range-separator="至"
-        start-placeholder="开始日期"
-        end-placeholder="结束日期"
-        :picker-options="pickerOptions"
-        value-format="yyyy-MM-dd"
-      ></el-date-picker>
-      <!-- 甲方 partyA -->
-      <el-input v-model="partyA" style="width:200px;" placeholder="请输入甲方"></el-input>
-      <!-- 联系方式 phoneNumber -->
-      <!-- <el-input v-model="phoneNumber" style="width:200px;" placeholder="请输入联系方式"></el-input> -->
-      <!-- 操作人 operator -->
-      <el-input v-model="operator" style="width:200px;" placeholder="请输入操作人"></el-input>
-      <el-button size="medium" type="success" @click="search()">搜索</el-button>
-    </div>
-
+    <d-search @search="onsearch"></d-search>
     <el-table
       v-loading="listLoading"
       ref="filterTable"
@@ -67,6 +46,8 @@
 
 <script>
 import Pagination from "@/components/Pagination"; // Secondary package based on el-pagination
+import dSearch from '@/components/d-search.vue'
+
 export default {
   data() {
     return {
@@ -107,26 +88,14 @@ export default {
             }
           }
         ]
-      },
-      time: "",
-      partyA: "",
-      phoneNumber: "",
-      operator: ""
+      }
     };
   },
   created() {
     this.getData(1, 20);
   },
   methods: {
-    search() {
-      // console.log(this.time, this.partyA, this.operator);
-      let data = {
-        createTimeStart: this.time ? this.time[0] : "",
-        createTimeEnd: this.time ? this.time[1] : "",
-        partyA: this.partyA,
-        operator: this.operator
-      };
-      console.log('sou', data)
+    onsearch(data) {
       this.getData(this.listQuery.page, this.listQuery.limit, data);
     },
     getData(page, limit, data) {
@@ -202,7 +171,8 @@ export default {
     }
   },
   components: {
-    Pagination
+    Pagination,
+    dSearch
   }
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <d-search @search="onsearch"></d-search>
     <el-table
       ref="filterTable"
       v-loading="listLoading"
@@ -38,6 +39,8 @@
 
 <script>
 import Pagination from "@/components/Pagination"; // Secondary package based on el-pagination
+import dSearch from "@/components/d-search.vue";
+
 export default {
   data() {
     return {
@@ -70,7 +73,10 @@ export default {
     this.getData(1, 20);
   },
   methods: {
-    getData(page, limit) {
+    onsearch(data) {
+      this.getData(this.listQuery.page, this.listQuery.limit, data);
+    },
+    getData(page, limit, data) {
       let sendData = {
         contractStatus: "0004", // 当前页是待提交状态，写死
         sort: "id", // 根据什么字段来排序
@@ -78,6 +84,7 @@ export default {
         page: page, // 当前页码
         rows: limit // 每页多少数据
       };
+      sendData = Object.assign(sendData, data);
       this.$ajax({
         method: "get",
         url: "getList",
@@ -132,7 +139,8 @@ export default {
     }
   },
   components: {
-    Pagination
+    Pagination,
+    dSearch
   }
 };
 </script>

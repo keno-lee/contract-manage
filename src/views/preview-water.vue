@@ -14,16 +14,7 @@ export default {
     };
   },
   created() {
-    var that = this;
-    // window.onload = function() {
-
-    // };
-    // console.log(document.querySelector('.contract-wrap'))
-    this.$nextTick(() => {
-    // console.log(document.querySelector('.contract-wrap'))
-      that.watermark({ watermark_txt: "测试水印" });
-    });
-
+    this.inputDisable();
     let sendData = {
       contractId: this.$route.query.id
     };
@@ -37,8 +28,25 @@ export default {
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
     });
+    var that = this;
+    this.$nextTick(() => {
+      that.watermark({ watermark_txt: "测试水印" });
+    });
   },
   methods: {
+    /**
+     * 禁用表单
+     */
+    inputDisable() {
+      this.$nextTick(() => {
+        let input = document.querySelectorAll(
+          ".contract-content input, .contract-content textarea"
+        );
+        input.forEach(v => {
+          v.setAttribute("readonly", true);
+        });
+      });
+    },
     watermark(settings) {
       //默认设置
       var defaultSettings = {

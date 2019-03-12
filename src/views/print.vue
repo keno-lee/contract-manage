@@ -41,16 +41,22 @@ export default {
     this.$nextTick(() => {
       that.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
     });
+    this.inputDisable();
   },
-  // mounted() {
-  //   setTimeout(() => {
-  //     this.fullscreenLoading = false;
-  //     this.$nextTick(() => {
-  //       window.print();
-  //     });
-  //   }, 3000);
-  // },
   methods: {
+    /**
+     * 禁用表单
+     */
+    inputDisable() {
+      this.$nextTick(() => {
+        let input = document.querySelectorAll(
+          ".contract-content input, .contract-content textarea"
+        );
+        input.forEach(v => {
+          v.setAttribute("readonly", true);
+        });
+      });
+    },
     onsubmit(data) {
       // console.log(data);
       let sendData = {

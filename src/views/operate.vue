@@ -27,8 +27,22 @@ export default {
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
     });
+    this.inputDisable();
   },
   methods: {
+    /**
+     * 禁用表单
+     */
+    inputDisable() {
+      this.$nextTick(() => {
+        let input = document.querySelectorAll(
+          ".contract-content input, .contract-content textarea"
+        );
+        input.forEach(v => {
+          v.setAttribute("readonly", true);
+        });
+      });
+    },
     onpass(data) {
       console.log(data);
       let sendData = {
