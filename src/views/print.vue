@@ -67,7 +67,7 @@ export default {
       // console.log(data);
       let sendData = {
         id: this.$route.query.id,
-        contractType: "0001",
+        contractType: data.contractType,
         contractStatus: "0002",
         contractNumber: data.contractNumber,
         partyA: data.partyA,

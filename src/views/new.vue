@@ -60,7 +60,7 @@ export default {
     onsave(data) {
       // console.log(data);
       let sendData = {
-        contractType: "0001",
+        contractType: data.contractType,
         contractStatus: "0001",
         contractNumber: data.contractNumber,
         partyA: data.partyA,
@@ -98,7 +98,7 @@ export default {
     onsubmit(data) {
       // console.log(data);
       let sendData = {
-        contractType: "0001",
+        contractType: data.contractType,
         contractStatus: "0001",
         contractNumber: data.contractNumber,
         partyA: data.partyA,

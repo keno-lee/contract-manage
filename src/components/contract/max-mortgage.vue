@@ -118,7 +118,7 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-          <input style="width: 200px" v-model="info.contractNumber" type="text">
+          <input style="width: 300px" v-model="info.contractNumber" type="text">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
@@ -165,15 +165,13 @@
           ></textarea>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:14pt">地</span>
-          <span style="font-family:宋体; font-size:14pt"></span>
-          <span style="font-family:宋体; font-size:14pt">址：</span>
-          <input style="width: 350px" v-model="info.a5" type="text">
+          <span style="font-family:宋体; font-size:14pt">地址：</span>
+          <input style="width: 450px" v-model="info.a5" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <input style="width: 200px" v-model="info.phoneNumber" type="text">
+          <input style="width: 300px" v-model="info.phoneNumber" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
@@ -211,12 +209,7 @@
       <div>
         <p style="line-height:25pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">鉴于乙方为</span>
-          <input style="width: 100px" v-model="info.a7" type="text">
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 300px" v-model="info.a7" type="text">
           <span style="font-family:宋体; font-size:12pt">（下称“债务人”）连续办理下列第</span>
           <input style="width: 50px" v-model="info.a8" type="text">
           <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
@@ -283,10 +276,10 @@
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">2.1 本最高额抵押项下担保责任的最高限额为（币种）</span>
-          <input style="width: 50px" v-model="info.a16" type="text">
+          <input style="width: 150px" v-model="info.a16" type="text">
           <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
           <span style="font-family:宋体; font-size:12pt">(大写金额)</span>
-          <input style="width: 90px" v-model="info.a17" type="text">
+          <input style="width: 250px" v-model="info.a17" type="text">
           <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
           <span style="font-family:宋体; font-size:12pt">。如甲方根据本合同履行担保义务的，该最高额按履行的金额相应递减。</span>
         </p>
@@ -707,10 +700,10 @@
         <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin-left:0pt">
           <tr style="height:84.95pt">
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:35.7pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:40pt"
             >
               <p style="line-height:20pt; margin:0pt; orphans:0; text-align:center; widows:0">
-                <span style="font-family:宋体; font-size:12pt">抵押财产名称</span>
+                <span style="font-family:宋体; font-size:12pt;">抵押财产名称</span>
               </p>
             </td>
             <td
@@ -749,7 +742,7 @@
               </p>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:35.7pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:80pt"
             >
               <p style="line-height:20pt; margin:0pt; orphans:0; text-align:center; widows:0">
                 <span style="font-family:宋体; font-size:12pt">备注</span>
@@ -1160,12 +1153,12 @@
         <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">
             二、
-            <input v-model="info.a36" type="checkbox">本人（本公司）是借款人：如未按时足额偿还贷款本金、支付利息的，自愿承担贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
+            <input v-model="info.a36" type="checkbox">&nbsp;本人（本公司）是借款人：如未按时足额偿还贷款本金、支付利息的，自愿承担贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
           </span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">
-            <input v-model="info.a37" type="checkbox">本人（本公司）是保证人或抵押人或出质人：担保范围除合同约定之外，还包括贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
+            <input v-model="info.a37" type="checkbox">&nbsp;本人（本公司）是保证人或抵押人或出质人：担保范围除合同约定之外，还包括贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
           </span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
@@ -1240,7 +1233,7 @@ export default {
           a5: "",
           phoneNumber: "",
           a7: "",
-          a8: "",
+          a8: "（一）",
           a9: "",
           a10: "",
           a11: "",
@@ -1289,7 +1282,8 @@ export default {
           a54: "",
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
-          auditTip: ""
+          auditTip: "",
+          contractType: '0002'
         };
       }
     },
@@ -1409,6 +1403,9 @@ export default {
           }
           if (nv["auditTip"] === undefined) {
             nv["auditTip"] = "";
+          }
+          if (nv["contractType"] === undefined) {
+            nv["contractType"] = "0002";
           }
           // console.log("赋值");
           this.info = nv;

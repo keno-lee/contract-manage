@@ -38,7 +38,7 @@ export default {
       // console.log(data);
       let sendData = {
         id: this.$route.query.id,
-        contractType: "0001",
+        contractType: data.contractType,
         contractStatus: "0002",
         contractNumber: data.contractNumber,
         partyA: data.partyA,
@@ -71,7 +71,7 @@ export default {
     onsave(data) {
       // console.log(data);
       let sendData = {
-        contractType: "0001",
+        contractType: data.contractType,
         contractStatus: "0001",
         contractNumber: data.contractNumber,
         partyA: data.partyA,

@@ -1067,7 +1067,8 @@ export default {
           a60: "",
           a61: "",
           a62: "",
-          a63: "1. 本合同项下贷款在编号为xxxxxxx的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
+          a63:
+            "1. 本合同项下贷款在编号为xxxxxxx的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
           a64: "",
           a65: "",
           a66: "",
@@ -1086,7 +1087,8 @@ export default {
           contractCreateDateM: "",
           contractCreateDateD: "",
           operateTip: "",
-          auditTip: ""
+          auditTip: "",
+          contractType: "0001"
         };
       }
     },
@@ -1232,6 +1234,9 @@ export default {
           }
           if (nv["auditTip"] === undefined) {
             nv["auditTip"] = "";
+          }
+          if (nv["contractType"] === undefined) {
+            nv["contractType"] = "0001";
           }
           // console.log("赋值");
           this.info = nv;
