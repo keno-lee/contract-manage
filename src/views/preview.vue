@@ -71,6 +71,7 @@ export default {
     onsave(data) {
       // console.log(data);
       let sendData = {
+        id: this.$route.query.id,
         contractType: data.contractType,
         contractStatus: "0001",
         contractNumber: data.contractNumber,
