@@ -1225,7 +1225,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        if (nv.a !== undefined) {
+        if (nv.contractNumber !== undefined) {
           // 如果没有值，就给个空值
           if (nv["operateTip"] === undefined) {
             nv["operateTip"] = "";
