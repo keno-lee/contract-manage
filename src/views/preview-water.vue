@@ -16,7 +16,6 @@ export default {
     };
   },
   created() {
-    this.inputDisable();
     let sendData = {
       contractId: this.$route.query.id
     };
@@ -29,10 +28,11 @@ export default {
       this.listLoading = false;
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
-    });
-    var that = this;
-    this.$nextTick(() => {
-      that.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
+      this.contractType = res.data.contractType;
+      this.$nextTick(() => {
+        this.inputDisable();
+        this.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
+      });
     });
   },
   methods: {
@@ -41,6 +41,7 @@ export default {
      */
     inputDisable() {
       this.$nextTick(() => {
+        console.log('禁用表单')
         let input = document.querySelectorAll(
           ".contract-content input, .contract-content textarea"
         );

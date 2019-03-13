@@ -5,7 +5,7 @@
       class="main-article"
       element-loading-text="正在生成...PDF"
     ></div>
-    <loanPersonal  v-if="contractType === '0001'" :infoData="infoData" @submit="onsubmit"></loanPersonal>
+    <loanPersonal v-if="contractType === '0001'" :infoData="infoData" @submit="onsubmit"></loanPersonal>
   </div>
 </template>
 F
@@ -18,7 +18,7 @@ export default {
     return {
       infoData: {},
       fullscreenLoading: true,
-      contractType: ''
+      contractType: ""
     };
   },
   created() {
@@ -33,6 +33,10 @@ export default {
       // console.log(res);
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
+      this.$nextTick(() => {
+        this.inputDisable();
+        this.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
+      });
 
       setTimeout(() => {
         this.fullscreenLoading = false;
@@ -41,11 +45,6 @@ export default {
         });
       }, 1000);
     });
-    var that = this;
-    this.$nextTick(() => {
-      that.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
-    });
-    this.inputDisable();
   },
   methods: {
     /**
@@ -71,7 +70,10 @@ export default {
         partyA: data.partyA,
         phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
+        contractCreateDate:
+          data.contractCreateDateY +
+          data.contractCreateDateM +
+          data.contractCreateDateD,
         contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
