@@ -5,28 +5,32 @@
         <p style="font-size: 30pt;">一、请选择合同类型</p>
         <div
           class="select-item"
-          :class="selectItem === 'loan' ? 'active' : ''"
-          @click="select('loan')"
+          :class="selectItem === 'loanPersonal' ? 'active' : ''"
+          @click="select('loanPersonal')"
         >借款合同(个人)</div>
+        <div
+          class="select-item"
+          :class="selectItem === 'maxMortgage' ? 'active' : ''"
+          @click="select('maxMortgage')"
+        >最高额抵押合同</div>
         <!-- <div class="select-item">xx合同</div> -->
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
     <div v-else-if="step === 2">
       <p style="font-size: 30pt;">二、请填写合同信息</p>
-      <!-- <loan
-        ref="info"
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'loan'"
-      ></loan>-->
       <loanPersonal
         :status="'new'"
         @save="onsave"
         @submit="onsubmit"
-        v-if="contractType === 'loan'"
+        v-if="contractType === 'loanPersonal'"
       ></loanPersonal>
+      <maxMortgage
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'maxMortgage'"
+      ></maxMortgage>
     </div>
   </div>
 </template>
@@ -34,6 +38,7 @@
 <script>
 // import loan from "@/components/contract/loan.vue";
 import loanPersonal from "@/components/contract/loan-personal.vue";
+import maxMortgage from "@/components/contract/max-mortgage.vue";
 
 export default {
   data() {
@@ -45,8 +50,8 @@ export default {
   },
   methods: {
     select(item) {
-      console.log(item);
-      this.selectItem = "loan";
+      // console.log(item);
+      this.selectItem = item;
     },
     next() {
       this.contractType = this.selectItem;
@@ -127,7 +132,8 @@ export default {
     }
   },
   components: {
-    loanPersonal
+    loanPersonal,
+    maxMortgage
   }
 };
 </script>

@@ -6,12 +6,15 @@
       element-loading-text="正在生成...PDF"
     ></div>
     <loanPersonal v-if="contractType === '0001'" :infoData="infoData" @submit="onsubmit"></loanPersonal>
+    <maxMortgage v-if="contractType === '0002'" :infoData="infoData" @submit="onsubmit"></maxMortgage>
   </div>
 </template>
 F
 <script>
 // import loan from "@/components/contract/loan.vue";
 import loanPersonal from "@/components/contract/loan-personal.vue";
+import maxMortgage from "@/components/contract/max-mortgage.vue";
+
 
 export default {
   data() {
@@ -239,7 +242,8 @@ export default {
     }
   },
   components: {
-    loanPersonal
+    loanPersonal,
+    maxMortgage
   }
 };
 </script>
