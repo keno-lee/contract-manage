@@ -1,7 +1,7 @@
 <template>
   <div class="preview-index">
     <loanPersonal v-if="contractType === '0001'" :infoData="infoData"></loanPersonal>
-    <maxMortgage v-if="contractType === '0002'" :infoData="infoData"></maxMortgage>
+    <maxMortgage v-if="contractType === '0003'" :infoData="infoData"></maxMortgage>
   </div>
 </template>
 

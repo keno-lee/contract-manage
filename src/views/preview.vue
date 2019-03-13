@@ -1,7 +1,7 @@
 <template>
   <div class="preview-index">
     <loanPersonal v-if="contractType === '0001'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanPersonal>
-    <maxMortgage v-if="contractType === '0002'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></maxMortgage>
+    <maxMortgage v-if="contractType === '0003'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></maxMortgage>
   </div>
 </template>
 

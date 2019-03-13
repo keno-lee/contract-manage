@@ -6,7 +6,7 @@
       element-loading-text="正在生成...PDF"
     ></div>
     <loanPersonal v-if="contractType === '0001'" :infoData="infoData" @submit="onsubmit"></loanPersonal>
-    <maxMortgage v-if="contractType === '0002'" :infoData="infoData" @submit="onsubmit"></maxMortgage>
+    <maxMortgage v-if="contractType === '0003'" :infoData="infoData" @submit="onsubmit"></maxMortgage>
   </div>
 </template>
 F

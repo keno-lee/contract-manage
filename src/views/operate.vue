@@ -1,7 +1,7 @@
 <template>
   <div class="preview-index">
     <loanPersonal v-if="contractType === '0001'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></loanPersonal>
-    <maxMortgage v-if="contractType === '0002'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></maxMortgage>
+    <maxMortgage v-if="contractType === '0003'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></maxMortgage>
     <!-- <loanPersonal v-if="contractType === '0003'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></loanPersonal> -->
     <!-- <loanPersonal v-if="contractType === '0004'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></loanPersonal> -->
   </div>
