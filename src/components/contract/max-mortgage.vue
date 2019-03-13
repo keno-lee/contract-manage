@@ -1724,5 +1724,6 @@ textarea {
 
 .operate-box {
   height: 300px;
+  margin-top: 100px;
 }
 </style>

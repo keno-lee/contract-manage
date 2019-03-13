@@ -210,10 +210,7 @@
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">合肥市庐阳区濉溪路278号财富广场B</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">座东</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">楼17层</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
         </p>
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
@@ -1288,5 +1285,6 @@ textarea {
 
 .operate-box {
   height: 300px;
+  margin-top: 100px;
 }
 </style>
