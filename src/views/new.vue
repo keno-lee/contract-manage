@@ -18,6 +18,11 @@
           :class="selectItem === 'creditPersonal' ? 'active' : ''"
           @click="select('creditPersonal')"
         >综合授信合同(个人)</div>
+        <div
+          class="select-item"
+          :class="selectItem === 'guaranteePersonal' ? 'active' : ''"
+          @click="select('guaranteePersonal')"
+        >最高额保证合同(个人)</div>
         <!-- <div class="select-item">xx合同</div> -->
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
@@ -42,6 +47,12 @@
         @submit="onsubmit"
         v-if="contractType === 'creditPersonal'"
       ></creditPersonal>
+      <guaranteePersonal
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'guaranteePersonal'"
+      ></guaranteePersonal>
     </div>
   </div>
 </template>
@@ -51,6 +62,7 @@
 import loanPersonal from "@/components/contract/loan-personal.vue";
 import maxMortgage from "@/components/contract/max-mortgage.vue";
 import creditPersonal from "@/components/contract/credit-personal.vue";
+import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
 
 export default {
   data() {
@@ -146,7 +158,8 @@ export default {
   components: {
     loanPersonal,
     maxMortgage,
-    creditPersonal
+    creditPersonal,
+    guaranteePersonal
   }
 };
 </script>

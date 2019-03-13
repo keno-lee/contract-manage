@@ -3,6 +3,7 @@
     <loanPersonal v-if="contractType === '0001'" :infoData="infoData"></loanPersonal>
     <creditPersonal v-if="contractType === '0002'" :infoData="infoData"></creditPersonal>
     <maxMortgage v-if="contractType === '0003'" :infoData="infoData"></maxMortgage>
+    <guaranteePersonal v-if="contractType === '0004'" :infoData="infoData"></guaranteePersonal>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import loanPersonal from "@/components/contract/loan-personal.vue";
 import maxMortgage from "@/components/contract/max-mortgage.vue";
 import creditPersonal from "@/components/contract/credit-personal.vue";
+import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
 
 export default {
   data() {
@@ -204,7 +206,8 @@ export default {
   components: {
     loanPersonal,
     maxMortgage,
-    creditPersonal
+    creditPersonal,
+    guaranteePersonal
   }
 };
 </script>
