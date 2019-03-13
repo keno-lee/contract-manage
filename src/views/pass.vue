@@ -128,7 +128,13 @@ export default {
       this.$refs.filterTable.clearFilter();
     },
     formatter(row, column) {
-      return row.contractType === '0001' ? '贷款合同' : '未添加的类型';
+      let obj = {
+        '0001': '个人借款合同',
+        '0002': '个人综合授信合同',
+        '0003': '最高额抵押合同',
+        '0004': '个人最高额保证合同',
+      }
+      return obj[row.contractType]
     },
     filterTag(value, row) {
       return row.tag === value;
