@@ -759,7 +759,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table1"
+                v-model="info.table1"
               ></textarea>
             </td>
             <td
@@ -771,7 +771,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table2"
+                v-model="info.table2"
               ></textarea>
             </td>
             <td
@@ -783,7 +783,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table3"
+                v-model="info.table3"
               ></textarea>
             </td>
             <td
@@ -795,7 +795,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table4"
+                v-model="info.table4"
               ></textarea>
             </td>
             <td
@@ -807,7 +807,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table5"
+                v-model="info.table5"
               ></textarea>
             </td>
             <td
@@ -819,7 +819,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table6"
+                v-model="info.table6"
               ></textarea>
             </td>
             <td
@@ -831,7 +831,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table7"
+                v-model="info.table7"
               ></textarea>
             </td>
           </tr>
@@ -845,7 +845,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table8"
+                v-model="info.table8"
               ></textarea>
             </td>
             <td
@@ -857,7 +857,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table9"
+                v-model="info.table9"
               ></textarea>
             </td>
             <td
@@ -869,7 +869,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table10"
+                v-model="info.table10"
               ></textarea>
             </td>
             <td
@@ -881,7 +881,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table11"
+                v-model="info.table11"
               ></textarea>
             </td>
             <td
@@ -893,7 +893,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table12"
+                v-model="info.table12"
               ></textarea>
             </td>
             <td
@@ -905,7 +905,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table13"
+                v-model="info.table13"
               ></textarea>
             </td>
             <td
@@ -917,7 +917,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table14"
+                v-model="info.table14"
               ></textarea>
             </td>
           </tr>
@@ -931,7 +931,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table15"
+                v-model="info.table15"
               ></textarea>
             </td>
             <td
@@ -943,7 +943,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table16"
+                v-model="info.table16"
               ></textarea>
             </td>
             <td
@@ -955,7 +955,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table17"
+                v-model="info.table17"
               ></textarea>
             </td>
             <td
@@ -967,7 +967,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table18"
+                v-model="info.table18"
               ></textarea>
             </td>
             <td
@@ -979,7 +979,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table19"
+                v-model="info.table19"
               ></textarea>
             </td>
             <td
@@ -991,7 +991,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table20"
+                v-model="info.table20"
               ></textarea>
             </td>
             <td
@@ -1003,7 +1003,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table21"
+                v-model="info.table21"
               ></textarea>
             </td>
           </tr>
@@ -1017,7 +1017,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table22"
+                v-model="info.table22"
               ></textarea>
             </td>
             <td
@@ -1029,7 +1029,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table23"
+                v-model="info.table23"
               ></textarea>
             </td>
             <td
@@ -1041,7 +1041,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table24"
+                v-model="info.table24"
               ></textarea>
             </td>
             <td
@@ -1053,7 +1053,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table25"
+                v-model="info.table25"
               ></textarea>
             </td>
             <td
@@ -1065,7 +1065,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table26"
+                v-model="info.table26"
               ></textarea>
             </td>
             <td
@@ -1077,7 +1077,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table27"
+                v-model="info.table27"
               ></textarea>
             </td>
             <td
@@ -1089,7 +1089,7 @@
                 id
                 cols="30"
                 rows="9"
-                v-model="table28"
+                v-model="info.table28"
               ></textarea>
             </td>
           </tr>
