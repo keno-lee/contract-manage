@@ -1784,7 +1784,7 @@ export default {
         let input = document.querySelectorAll(
           ".contract-content input, .contract-content textarea"
         );
-        console.log(input);
+        // console.log(input);
         input.forEach(v => {
           v.setAttribute("readonly", true);
         });

@@ -57,7 +57,7 @@ NProgress.configure({ showSpinner: false })// NProgress Configuration
 //     }
 //   }
 // })
-const whiteList = ['/', '/login', '/preview', '/operate', 'preview-water', 'print']// no redirect whitelist
+const whiteList = ['/', '/login', '/preview', '/edit', '/operate', 'preview-water', 'print', 'test']// no redirect whitelist
 
 router.beforeEach((to, from, next) => {
   NProgress.start() // start progress bar

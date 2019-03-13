@@ -1,6 +1,6 @@
 <template>
   <div class="contract-wrap">
-    <div>
+    <div class="contract-content">
       <div>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
@@ -974,7 +974,7 @@
     </div>
 
     <!-- 操作 -->
-    <div class="operate-box" v-if="status === 'new'">
+    <div class="operate-box" v-if="status === 'new' || status === 'draft'">
       <div>操作：</div>
       <br>
       <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.operateTip"></textarea>
@@ -982,14 +982,13 @@
       <div class="submit-btn btn" @click="submit">提交审核</div>
     </div>
 
-    <div class="operate-box" v-else-if="status === 'draft'">
+    <!-- <div class="operate-box" v-else-if="status === 'draft'">
       <div>操作：</div>
       <br>
       <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.operateTip"></textarea>
       <div class="save-btn btn" @click="save">暂存</div>
       <div class="submit-btn btn" @click="submit">提交审核</div>
-    </div>
-
+    </div>-->
     <div class="operate-box" v-else-if="status === 'operate'">
       <div>操作：</div>
       <br>
@@ -1157,7 +1156,8 @@ export default {
         a59: "",
         a60: "",
         a61: "",
-        a62: "1. 本合同项下贷款在编号为xxxxxxx的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
+        a62:
+          "1. 本合同项下贷款在编号为xxxxxxx的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
         a63: "",
         a64: "",
         a65: "",
@@ -1195,7 +1195,7 @@ export default {
         let input = document.querySelectorAll(
           ".contract-content input, .contract-content textarea"
         );
-        console.log(input);
+        // console.log(input);
         input.forEach(v => {
           v.setAttribute("readonly", true);
         });
@@ -1225,8 +1225,14 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        nv["auditTip"] = "";
         if (nv.a !== undefined) {
+          // 如果没有值，就给个空值
+          if (nv["operateTip"] === undefined) {
+            nv["operateTip"] = "";
+          }
+          if (nv["auditTip"] === undefined) {
+            nv["auditTip"] = "";
+          }
           // console.log("赋值");
           this.info = nv;
         }
