@@ -655,7 +655,7 @@
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">11.11 其他约定事项</span>
-          <textarea name id cols="30" rows="10" v-model="info.a20">各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。</textarea>
+          <textarea name id cols="30" rows="10" v-model="info.a20"></textarea>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; text-decoration:none"></span>
@@ -1266,20 +1266,6 @@ export default {
           a38: "",
           a39: "",
           a40: "",
-          a41: "",
-          a42: "",
-          a43: "",
-          a44: "",
-          a45: "",
-          a46: "",
-          a47: "",
-          a48: "",
-          a49: "",
-          a50: "",
-          a51: "",
-          a52: "",
-          a53: "",
-          a54: "",
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
@@ -1332,20 +1318,6 @@ export default {
         a38: "",
         a39: "",
         a40: "",
-        a41: "",
-        a42: "",
-        a43: "",
-        a44: "",
-        a45: "",
-        a46: "",
-        a47: "",
-        a48: "",
-        a49: "",
-        a50: "",
-        a51: "",
-        a52: "",
-        a53: "",
-        a54: "",
         contractCreateAddress: "",
         operateTip: "",
         auditTip: ""
