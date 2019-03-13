@@ -41,7 +41,6 @@ export default {
         partyA: data.partyA,
         phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
         contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
@@ -75,7 +74,6 @@ export default {
         partyA: data.partyA,
         phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
-        contractCreateDate: data.contractCreateDateY + data.contractCreateDateM + data.contractCreateDateD,
         contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
