@@ -517,7 +517,7 @@
           <span style="font-family:宋体; font-size:12pt">月</span>
           <input style="width: 50px" v-model="info.a43" type="text">
           <span style="font-family:宋体; font-size:12pt">日；</span>
-          <input style="width: 150px" v-model="info.contractCreateAddress" type="text">
+          <input style="width: 150px" v-model="info.a44" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
@@ -889,7 +889,7 @@
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt">签约地点：</span>
-          <input style="width: 500px" v-model="info.a71" type="text">
+          <input style="width: 500px" v-model="info.contractCreateAddress" type="text">
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
@@ -1048,7 +1048,7 @@ export default {
           a41: "",
           a42: "",
           a43: "",
-          contractCreateAddress: "",
+          a44: "",
           a45: "",
           a46: "",
           a47: "",
@@ -1075,7 +1075,7 @@ export default {
           a68: "",
           a69: "",
           a70: "",
-          a71: "",
+          contractCreateAddress: "",
           a72: "",
           a73: "",
           a74: "",
@@ -1138,7 +1138,7 @@ export default {
         a41: "",
         a42: "",
         a43: "",
-        contractCreateAddress: "",
+        a44: "",
         a45: "",
         a46: "",
         a47: "",
@@ -1166,7 +1166,7 @@ export default {
         a68: "",
         a69: "",
         a70: "",
-        a71: "合肥市庐阳区",
+        contractCreateAddress: "合肥市庐阳区",
         a72: "",
         a73: "",
         a74: "",
@@ -1225,7 +1225,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        if (nv.a !== undefined) {
+        if (nv.contractNumber !== undefined) {
           // 如果没有值，就给个空值
           if (nv["operateTip"] === undefined) {
             nv["operateTip"] = "";

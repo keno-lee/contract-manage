@@ -38,8 +38,8 @@
         <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
       </p>
       <p style="line-height:42pt; margin:5pt 0pt; text-align:center">
-          <span style="font-family:宋体; font-size:42pt; font-weight:bold">最高额抵押合同</span>
-        </p>
+        <span style="font-family:宋体; font-size:42pt; font-weight:bold">最高额抵押合同</span>
+      </p>
       <p style="line-height:16pt; margin:5pt 0pt; text-align:center; text-indent:32pt">
         <span style="font-family:宋体; font-size:16pt; font-weight:bold"></span>
       </p>
@@ -117,7 +117,7 @@
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
         <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-        <input style="width: 200px" v-model="info.a1" type="text">
+        <input style="width: 200px" v-model="info.contractNumber" type="text">
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
         <span style="font-family:宋体; font-size:14pt"></span>
@@ -126,7 +126,7 @@
         <span style="font-family:宋体; font-size:14pt">抵押人</span>
         <span style="font-family:宋体; font-size:14pt">(甲方)</span>
         <span style="font-family:宋体; font-size:14pt">：</span>
-        <input style="width: 200px" v-model="info.a2" type="text">
+        <input style="width: 200px" v-model="info.partyA" type="text">
         <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
@@ -154,7 +154,7 @@
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
         <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-        <input style="width: 200px" v-model="info.a6" type="text">
+        <input style="width: 200px" v-model="info.phoneNumber" type="text">
         <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
       </p>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
@@ -1034,19 +1034,19 @@
       </p>
       <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
         <span style="font-family:宋体; font-size:12pt">签约时间：</span>
-        <input style="width: 50px" v-model="info.a29" type="text">
+        <input style="width: 50px" v-model="info.contractCreateDateY" type="text">
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt">年</span>
-        <input style="width: 50px" v-model="info.a30" type="text">
+        <input style="width: 50px" v-model="info.contractCreateDateM" type="text">
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt">月</span>
-        <input style="width: 50px" v-model="info.a31" type="text">
+        <input style="width: 50px" v-model="info.contractCreateDateD" type="text">
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
@@ -1057,7 +1057,7 @@
       </p>
       <p style="line-height:24pt; margin:0pt; orphans:0;  widows:0">
         <span style="font-family:宋体; font-size:12pt">签约地点：</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline">合肥市庐阳区</span>
+        <input style="width: 500px" v-model="info.contractCreateAddress" type="text">
       </p>
     </div>
     <br style="clear:both; mso-break-type:section-break; page-break-before:always">
@@ -1151,15 +1151,80 @@
 <script>
 // 最高额抵押
 export default {
+  props: {
+    infoData: {
+      default: () => {
+        return {
+          contractNumber: "",
+          partyA: "",
+          a3: "",
+          a4: "",
+          a5: "",
+          phoneNumber: "",
+          a7: "",
+          a8: "",
+          a9: "",
+          a10: "",
+          a11: "",
+          a12: "",
+          a13: "",
+          a14: "",
+          a15: "",
+          a16: "",
+          a17: "",
+          a18: "",
+          a19: "",
+          a20: "",
+          a21: "",
+          a22: "",
+          a23: "",
+          a24: "",
+          a25: "",
+          a26: "",
+          a27: "",
+          a28: "",
+          contractCreateDateY: "",
+          contractCreateDateM: "",
+          contractCreateDateD: "",
+          a32: "",
+          a33: "",
+          a34: "",
+          a35: "",
+          a36: "",
+          a37: "",
+          a38: "",
+          a39: "",
+          a40: "",
+          a41: "",
+          a42: "",
+          a43: "",
+          a44: "",
+          a45: "",
+          a46: "",
+          a47: "",
+          a48: "",
+          a49: "",
+          a50: "",
+          a51: "",
+          a52: "",
+          a53: "",
+          a54: "",
+          contractCreateAddress: "",
+          operateTip: "",
+          auditTip: ""
+        };
+      }
+    }
+  },
   data() {
     return {
       info: {
-        a1: "",
-        a2: "",
+        contractNumber: "",
+        partyA: "",
         a3: "",
         a4: "",
         a5: "",
-        a6: "",
+        phoneNumber: "",
         a7: "",
         a8: "",
         a9: "",
@@ -1182,9 +1247,9 @@ export default {
         a26: "",
         a27: "",
         a28: "",
-        a29: "",
-        a30: "",
-        a31: "",
+        contractCreateDateY: "",
+        contractCreateDateM: "",
+        contractCreateDateD: "",
         a32: "",
         a33: "",
         a34: "",
@@ -1208,12 +1273,117 @@ export default {
         a52: "",
         a53: "",
         a54: "",
+        contractCreateAddress: "",
         operateTip: "",
         auditTip: ""
       }
     };
+  },
+  created() {
+    // if (this.$route.disabled === 1) {
+    //   this.inputDisable();
+    // }
+  },
+  methods: {
+    /**
+     * 禁用表单
+     */
+    inputDisable() {
+      this.$nextTick(() => {
+        let input = document.querySelectorAll(
+          ".contract-content input, .contract-content textarea"
+        );
+        // console.log(input);
+        input.forEach(v => {
+          v.setAttribute("readonly", true);
+        });
+      });
+    },
+    inputListener() {
+      // console.log(info.b)
+    },
+    save() {
+      this.$emit("save", this.info);
+    },
+    submit() {
+      this.$emit("submit", this.info);
+    },
+    reject() {
+      this.$emit("reject", this.info);
+    },
+    pass() {
+      this.$emit("pass", this.info);
+    }
+  },
+  computed: {
+    errorLogs() {
+      return this.$store.getters.errorLogs;
+    }
+  },
+  watch: {
+    infoData: {
+      handler(nv, ov) {
+        if (nv.contractNumber !== undefined) {
+          // 如果没有值，就给个空值
+          if (nv["operateTip"] === undefined) {
+            nv["operateTip"] = "";
+          }
+          if (nv["auditTip"] === undefined) {
+            nv["auditTip"] = "";
+          }
+          // console.log("赋值");
+          this.info = nv;
+        }
+      },
+      immediate: true,
+      deep: true
+    }
   }
 };
+</script>
+
+<style scoped>
+.contract-wrap {
+  width: 630px;
+  /* height: 891px; */
+  /* background-color: red; */
+  margin: 0 auto;
+  /* overflow-x: hidden; */
+  position: relative;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+textarea {
+  width: 630px;
+  resize: none;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.save-btn {
+  background-color: #909399;
+  float: right;
+}
+
+.submit-btn {
+  background-color: #67c23a;
+  float: right;
+}
+
+.operate-box {
+  height: 300px;
+}
+</style>
 </script>
 <style scoped>
 .contract-wrap {
