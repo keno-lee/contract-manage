@@ -1283,7 +1283,7 @@ export default {
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
-          contractType: '0002'
+          contractType: '0003'
         };
       }
     },
@@ -1405,7 +1405,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0002";
+            nv["contractType"] = "0003";
           }
           // console.log("赋值");
           this.info = nv;
