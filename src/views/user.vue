@@ -144,7 +144,8 @@ export default {
             confirmButtonText: "确定",
             callback: action => {
               // this.$router.push("/");
-              window.location.reload();
+              // window.location.reload();
+              this.getData();
             }
           });
         } else {

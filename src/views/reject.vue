@@ -110,7 +110,7 @@ export default {
             confirmButtonText: "确定",
             callback: action => {
               // window.location.reload();
-              this.$router.push("/");
+              this.getData(this.listQuery.page, this.listQuery.limit);
             }
           });
         } else {

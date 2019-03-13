@@ -5,8 +5,8 @@
       class="main-article"
       element-loading-text="正在生成...PDF"
     ></div>
-    <loanPersonal v-if="contractType === '0001'" :infoData="infoData" @submit="onsubmit"></loanPersonal>
-    <maxMortgage v-if="contractType === '0003'" :infoData="infoData" @submit="onsubmit"></maxMortgage>
+    <loanPersonal v-if="contractType === '0001'" :infoData="infoData"></loanPersonal>
+    <maxMortgage v-if="contractType === '0003'" :infoData="infoData"></maxMortgage>
   </div>
 </template>
 F
@@ -61,39 +61,6 @@ export default {
         input.forEach(v => {
           v.setAttribute("readonly", true);
         });
-      });
-    },
-    onsubmit(data) {
-      // console.log(data);
-      let sendData = {
-        id: this.$route.query.id,
-        contractType: data.contractType,
-        contractStatus: "0002",
-        contractNumber: data.contractNumber,
-        partyA: data.partyA,
-        phoneNumber: data.phoneNumber,
-        opRemark: data.operateTip,
-        contractCreateAddress: data.contractCreateAddress,
-        jsonData: JSON.stringify(data)
-      };
-      console.log(sendData);
-      this.$ajax({
-        method: "post",
-        url: "/saveAndSubmit",
-        data: JSON.stringify(sendData)
-      }).then(res => {
-        if (res.data.msg === "success") {
-          this.$alert("成功", "提交状态", {
-            confirmButtonText: "确定",
-            callback: action => {
-              this.$router.push("/");
-            }
-          });
-        } else {
-          this.$alert("失败", "提交状态", {
-            confirmButtonText: "确定"
-          });
-        }
       });
     },
     watermark(settings) {
