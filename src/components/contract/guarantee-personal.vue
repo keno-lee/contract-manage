@@ -118,7 +118,22 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">保证人（甲方）：</span>
-          <input type="text" style="width:400px" v-model="info.partyA">
+          <input
+            ref="partyAinput"
+            type="text"
+            style="width:400px"
+            v-show="info.partyA.length < 20"
+            v-model="info.partyA"
+            @input="inputListener"
+          >
+          <textarea
+            ref="partyAtextarea"
+            style="text-decoration:underline; border:none; padding-left: 120px"
+            v-show="info.partyA.length >= 20"
+            cols="30"
+            v-model="info.partyA"
+            rows="5"
+          ></textarea>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
@@ -126,7 +141,21 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">证件号码：</span>
-          <input style="width:250px;" type="text" v-model="info.a4">
+          <input
+            ref="a4input"
+            v-show="info.a4.length < 20"
+            style="width: 400px"
+            v-model="info.a4"
+            type="text"
+          >
+          <textarea
+            ref="a4textarea"
+            style="text-decoration:underline; border:none; padding-left: 120px"
+            v-show="info.a4.length >= 20"
+            cols="30"
+            v-model="info.a4"
+            rows="5"
+          ></textarea>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">地</span>
@@ -788,11 +817,41 @@
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">送达地址：</span>
-          <input style="width: 400px;" v-model="info.a33" type="text">
+          <input
+            ref="a33input"
+            type="text"
+            style="width:400px"
+            v-show="info.a33.length < 20"
+            v-model="info.a33"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a33textarea"
+            style="text-decoration:underline; border:none; padding-left: 120px"
+            v-show="info.a33.length >= 20"
+            cols="30"
+            v-model="info.a33"
+            rows="5"
+          ></textarea>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">收 件 人：</span>
-          <input style="width: 400px;" v-model="info.a34" type="text">
+          <input
+            ref="a34input"
+            type="text"
+            style="width:400px"
+            v-show="info.a34.length < 20"
+            v-model="info.a34"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a34textarea"
+            style="text-decoration:underline; border:none; padding-left: 120px"
+            v-show="info.a34.length >= 20"
+            cols="30"
+            v-model="info.a34"
+            rows="5"
+          ></textarea>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">联系电话：</span>
@@ -1051,6 +1110,62 @@ export default {
       },
       immediate: true,
       deep: true
+    },
+    "info.partyA": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.partyAtextarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.partyAinput.focus();
+          });
+        }
+      }
+    },
+    "info.a4": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a4textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a4input.focus();
+          });
+        }
+      }
+    },
+    "info.a33": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a33textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a33input.focus();
+          });
+        }
+      }
+    },
+    "info.a34": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a34textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a34input.focus();
+          });
+        }
+      }
     }
   }
 };
