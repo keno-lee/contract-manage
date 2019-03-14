@@ -59,19 +59,23 @@ NProgress.configure({ showSpinner: false })// NProgress Configuration
 // })
 const whiteList = ['/', '/login', '/preview', '/edit', '/operate', '/preview-water', '/print', '/test']// no redirect whitelist
 
-let limit = [] // 允许访问的路由
-if (localStorage.getItem("roleId") === '1') {
-  // 管理员
-  limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
-} else if (localStorage.getItem("roleId") === '3') {
-  // 风险经理
-  limit = ["/audit", "/reject", "/pass"];
-} else if (localStorage.getItem("roleId") === '2') {
-  // 业务经理
-  limit = ["/new", "/draft", "/audit", "/reject", "/pass"];
+function retrunRouter() {
+  let limit = [] // 允许访问的路由
+  if (localStorage.getItem("roleId") == 1) {
+    // 管理员
+    limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
+  } else if (localStorage.getItem("roleId") == 2) {
+    // 业务经理
+    limit = ["/new", "/draft", "/audit", "/reject", "/pass"];
+  } else if (localStorage.getItem("roleId") == 3) {
+    // 风险经理
+    limit = ["/audit", "/reject", "/pass"];
+  }
+  let routerCan = [...limit, ...whiteList]
+
+  return routerCan
 }
 
-let routerCan = [...limit, ...whiteList]
 // console.log(routerCan)
 router.beforeEach((to, from, next) => {
   // console.log(to, from)
@@ -83,7 +87,7 @@ router.beforeEach((to, from, next) => {
       NProgress.done()
     } else {
       // 判断是否有跳转权限
-      if (routerCan.indexOf(to.path) > -1) {
+      if (retrunRouter().indexOf(to.path) > -1) {
         NProgress.done()
         next()
       } else {

@@ -19,7 +19,7 @@
           :key="i"
           @click="$router.push(v.redirect)"
         >
-          <svg-icon :icon-class="v.children[0].meta.icon" />
+          <svg-icon :icon-class="v.children[0].meta.icon"/>
           <span slot="title">{{v.children[0].meta.title}}</span>
         </el-menu-item>
       </el-menu>
@@ -40,14 +40,15 @@ export default {
       return v.hidden !== true;
     });
     let limit = [];
-    if (localStorage.getItem("roleId") === '2') {
+    if (localStorage.getItem("roleId") == 1) {
+      // 管理员
+      limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
+    } else if (localStorage.getItem("roleId") == 2) {
       // 业务经理
       limit = ["/new", "/draft", "/audit", "/reject", "/pass"];
-    } else if (localStorage.getItem("roleId") === '3') {
+    } else if (localStorage.getItem("roleId") == 3) {
       // 风险经理
       limit = ["/audit", "/reject", "/pass"];
-    } else {
-      limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
     }
     let arr = [];
     for (var i = 0; i < arrShow.length; i++) {
@@ -55,7 +56,7 @@ export default {
         arr.push(arrShow[i]);
       }
     }
-    this.sideBarShow = arr
+    this.sideBarShow = arr;
   },
   methods: {
     handleOpen(key, keyPath) {
@@ -67,7 +68,7 @@ export default {
   },
   computed: {
     getSideBarStatus() {
-      return this.$store.getters.sidebar.opened
+      return this.$store.getters.sidebar.opened;
     }
   }
 };

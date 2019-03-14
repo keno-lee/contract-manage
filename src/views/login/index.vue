@@ -154,20 +154,26 @@ export default {
           // console.log('登陆', res.data);
           if (res.data.msg === "success") {
             // setToken(res.data.JSESSIONID);
-            let list = res.data.userInfo.menuList
-            localStorage.setItem('roleId', res.data.userInfo.roleId)
-            localStorage.setItem('userName', res.data.userInfo.userName)
-            if (this.$route.query.redirect) {
-              // console.log('跳转')
-              this.$router.replace(this.$route.query.redirect);
+            // let list = res.data.userInfo.menuList;
+            let roleId = res.data.userInfo.roleId;
+            let userName = res.data.userInfo.userName;
+            localStorage.setItem("roleId", roleId);
+            localStorage.setItem("userName", userName);
+
+            // console.log("权限", roleId);
+            // debugger
+            if (roleId == 1 || roleId == 2) {
+              console.log("yewu guanliyuan");
+              this.$router.replace("/new");
             } else {
-              this.$router.replace('/');
+              console.log("fengxian");
+              this.$router.replace("/audit");
             }
           } else {
             this.$alert("用户名或者密码错误", "警告", {
               confirmButtonText: "确定"
             });
-            removeToken()
+            removeToken();
           }
         });
 
