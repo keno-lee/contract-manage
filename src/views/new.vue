@@ -123,7 +123,7 @@ export default {
       // console.log(data);
       let sendData = {
         contractType: data.contractType,
-        contractStatus: "0001",
+        contractStatus: "0002",
         contractNumber: data.contractNumber,
         partyA: data.partyA,
         phoneNumber: data.phoneNumber,
@@ -144,7 +144,9 @@ export default {
           this.$alert("提交状态", "成功", {
             confirmButtonText: "确定",
             callback: action => {
-              window.location.reload();
+              // window.location.reload();
+              this.$router.push("/audit");
+              this.$store.commit("DEL_VISITED_VIEW", { path: "/new" });
             }
           });
         } else {
