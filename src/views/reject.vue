@@ -22,7 +22,7 @@
       <el-table-column align="center" prop="phoneNumber" label="联系方式" width="150"></el-table-column>
       <el-table-column align="center" prop="createTime" label="合同创建日期" width="180"></el-table-column>
       <el-table-column align="center" prop="operator" label="合同操作者" width="100"></el-table-column>
-      <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column>
+      <!-- <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column> -->
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="150"></el-table-column>
       <el-table-column align="center" prop="checkPerson" label="审核人" width="100"></el-table-column>
       <el-table-column align="center" prop="checkRemark" label="审核意见" width="200"></el-table-column>
@@ -84,7 +84,7 @@ export default {
         url: "getList",
         params: sendData
       }).then(res => {
-        console.log(res);
+        // console.log(res);
         this.listLoading = false;
         this.tableData = res.data.list;
         this.total = res.data.total;
@@ -95,7 +95,7 @@ export default {
       this.$router.push("/preview?id=" + id);
     },
     submit(id) {
-      console.log(id);
+      // console.log(id);
       let sendData = {
         contractId: id,
         contractStatus: "0002"

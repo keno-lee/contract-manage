@@ -1,9 +1,33 @@
 <template>
   <div class="preview-index">
-    <loanPersonal v-if="contractType === '0001'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></loanPersonal>
-    <creditPersonal v-if="contractType === '0002'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></creditPersonal>
-    <maxMortgage v-if="contractType === '0003'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></maxMortgage>
-    <guaranteePersonal v-if="contractType === '0004'" :infoData="infoData" :status="'operate'" @reject="onreject" @pass="onpass"></guaranteePersonal>
+    <loanPersonal
+      v-if="contractType === '0001'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></loanPersonal>
+    <creditPersonal
+      v-if="contractType === '0002'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></creditPersonal>
+    <maxMortgage
+      v-if="contractType === '0003'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></maxMortgage>
+    <guaranteePersonal
+      v-if="contractType === '0004'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></guaranteePersonal>
   </div>
 </template>
 
@@ -30,12 +54,14 @@ export default {
       url: "/getContractById",
       params: sendData
     }).then(res => {
-      console.log(res);
+      // console.log(res);
       this.listLoading = false;
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
+      setTimeout(() => {
+        this.inputDisable();
+      }, 0);
     });
-    this.inputDisable();
   },
   methods: {
     /**
@@ -52,13 +78,13 @@ export default {
       });
     },
     onpass(data) {
-      console.log(data);
+      // console.log(data);
       let sendData = {
         contractId: this.$route.query.id,
         contractStatus: "0004", // 审核通过
         remark: data.auditTip
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "get",
         url: "/check",
@@ -85,7 +111,7 @@ export default {
         contractStatus: "0003", // 审核拒绝
         remark: data.auditTip
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "get",
         url: "/check",

@@ -8,14 +8,15 @@
       <template v-if="device!=='mobile'">
         <error-log class="errLog-container right-menu-item"/>
 
-        <el-tooltip :content="$t('navbar.screenfull')" effect="dark" placement="bottom">
+        <el-tooltip class="screenfull-wrap" :content="$t('navbar.screenfull')" effect="dark" placement="bottom">
           <screenfull class="screenfull right-menu-item"/>
         </el-tooltip>
       </template>
 
       <el-dropdown class="avatar-container right-menu-item" trigger="click">
         <div class="avatar-wrapper">
-          <img src="@/assets/logo.jpg" class="user-avatar">
+          <!-- <img src="@/assets/logo.jpg" class="user-avatar"> -->
+          <div class="user-avatar">{{userName}}</div>
           <i class="el-icon-caret-bottom"/>
         </div>
         <el-dropdown-menu slot="dropdown">
@@ -39,6 +40,14 @@ import LangSelect from '@/components/LangSelect'
 import ThemePicker from '@/components/ThemePicker'
 
 export default {
+  data() {
+    return {
+      userName: ''
+    }
+  },
+  created() {
+    this.userName = localStorage.getItem('userName')
+  },
   components: {
     Breadcrumb,
     Hamburger,
@@ -97,8 +106,12 @@ export default {
       display: inline-block;
       margin: 0 8px;
     }
+    .screenfull-wrap {
+      height: 50px;
+      // padding-top: 15px;
+    }
     .screenfull {
-      height: 20px;
+      
     }
     .international{
       vertical-align: top;
@@ -113,10 +126,11 @@ export default {
         margin-top: 5px;
         position: relative;
         .user-avatar {
+          float: left;
           cursor: pointer;
-          width: 40px;
+          min-width: 80px;
           height: 40px;
-          border-radius: 10px;
+          padding: 0 10px;
         }
         .el-icon-caret-bottom {
           cursor: pointer;

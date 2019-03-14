@@ -45,7 +45,7 @@ export default {
       limit = ["/new", "/draft", "/audit", "/reject", "/pass"];
     } else if (localStorage.getItem("roleId") === '3') {
       // 风险经理
-      limit = ["/draft", "/audit", "/reject", "/pass"];
+      limit = ["/audit", "/reject", "/pass"];
     } else {
       limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
     }

@@ -210,7 +210,9 @@
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
+          <span
+            style="font-family:宋体; font-size:14pt; text-decoration:underline"
+          >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
         </p>
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
@@ -326,7 +328,7 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">2.1 利率：本合同执行月利率</span>
           <input style="width: 50px" v-model="info.a16" type="text">
-          <span style="font-family:宋体; font-size:12pt">。该利率系中国人民银行现行相应期限档次贷款的基准利率上浮</span>
+          <span style="font-family:宋体; font-size:12pt">‰。该利率系中国人民银行现行相应期限档次贷款的基准利率上浮</span>
           <input style="width: 50px" v-model="info.a17" type="text">
           
           <span style="font-family:宋体; font-size:12pt">%。</span>
@@ -972,24 +974,15 @@
 
     <!-- 操作 -->
     <div class="operate-box" v-if="status === 'new' || status === 'draft'">
-      <div>操作：</div>
       <br>
-      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.operateTip"></textarea>
-      <div class="save-btn btn" @click="save">暂存</div>
       <div class="submit-btn btn" @click="submit">提交审核</div>
+      <div class="save-btn btn" @click="save">保存</div>
     </div>
 
-    <!-- <div class="operate-box" v-else-if="status === 'draft'">
-      <div>操作：</div>
-      <br>
-      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.operateTip"></textarea>
-      <div class="save-btn btn" @click="save">暂存</div>
-      <div class="submit-btn btn" @click="submit">提交审核</div>
-    </div>-->
     <div class="operate-box" v-else-if="status === 'operate'">
       <div>操作：</div>
       <br>
-      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.auditTip"></textarea>
+      <textarea name id cols="30" rows="10" placeholder="备注信息" v-model="info.auditTip"></textarea>
       <div class="save-btn btn" type="danger" @click="reject">审核拒绝</div>
       <div class="submit-btn btn" type="success" @click="pass">审核通过</div>
     </div>
@@ -1063,7 +1056,8 @@ export default {
           a59: "",
           a60: "",
           a61: "",
-          a62: "1. 本合同项下贷款在编号为xxxxxxx的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
+          a62:
+            "1. 本合同项下贷款在编号为xxxxxxx的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
           a63: "",
           a64: "",
           a65: "",

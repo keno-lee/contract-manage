@@ -30,7 +30,7 @@ export default {
       url: "/getContractById",
       params: sendData
     }).then(res => {
-      console.log(res);
+      // console.log(res);
       this.listLoading = false;
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
@@ -50,7 +50,7 @@ export default {
         contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "post",
         url: "/saveAndSubmit",
@@ -84,7 +84,7 @@ export default {
         contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "post",
         url: "/save",

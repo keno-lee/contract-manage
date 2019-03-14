@@ -30,7 +30,7 @@ export default {
       url: "/getContractById",
       params: sendData
     }).then(res => {
-      console.log(res);
+      // console.log(res);
       this.listLoading = false;
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
@@ -47,7 +47,7 @@ export default {
      */
     inputDisable() {
       this.$nextTick(() => {
-        console.log('禁用表单')
+        // console.log('禁用表单')
         let input = document.querySelectorAll(
           ".contract-content input, .contract-content textarea"
         );

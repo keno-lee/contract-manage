@@ -917,24 +917,15 @@
 
     <!-- 操作 -->
     <div class="operate-box" v-if="status === 'new' || status === 'draft'">
-      <div>操作：</div>
       <br>
-      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.operateTip"></textarea>
-      <div class="save-btn btn" @click="save">暂存</div>
       <div class="submit-btn btn" @click="submit">提交审核</div>
+      <div class="save-btn btn" @click="save">保存</div>
     </div>
 
-    <!-- <div class="operate-box" v-else-if="status === 'draft'">
-      <div>操作：</div>
-      <br>
-      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.operateTip"></textarea>
-      <div class="save-btn btn" @click="save">暂存</div>
-      <div class="submit-btn btn" @click="submit">提交审核</div>
-    </div>-->
     <div class="operate-box" v-else-if="status === 'operate'">
       <div>操作：</div>
       <br>
-      <textarea name id cols="30" rows="10" placeholder="备注信息（可不填写）" v-model="info.auditTip"></textarea>
+      <textarea name id cols="30" rows="10" placeholder="备注信息" v-model="info.auditTip"></textarea>
       <div class="save-btn btn" type="danger" @click="reject">审核拒绝</div>
       <div class="submit-btn btn" type="success" @click="pass">审核通过</div>
     </div>

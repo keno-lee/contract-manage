@@ -118,7 +118,7 @@ export default {
     // window.removeEventListener('hashchange', this.afterQRScan)
   },
   created() {
-    console.log(this.$route.query);
+    // console.log(this.$route.query);
   },
   methods: {
     showPwd() {
@@ -156,8 +156,9 @@ export default {
             // setToken(res.data.JSESSIONID);
             let list = res.data.userInfo.menuList
             localStorage.setItem('roleId', res.data.userInfo.roleId)
+            localStorage.setItem('userName', res.data.userInfo.userName)
             if (this.$route.query.redirect) {
-              console.log('跳转')
+              // console.log('跳转')
               this.$router.replace(this.$route.query.redirect);
             } else {
               this.$router.replace('/');

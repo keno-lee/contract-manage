@@ -32,9 +32,12 @@ axios.defaults.withCredentials = true
 axios.defaults.baseURL = 'http://roshan.frpgz1.idcfengye.com/'
 axios.interceptors.response.use(
   function (response) {
-    if (response.data === 'login') {
+    if (response.data.msg === 'login') {
       removeToken()
       router.push('/login')
+      return
+    } else if (response.data.msg === 'access') {
+      window.alert('您没有该权限')
       return
     }
     return response;

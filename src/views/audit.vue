@@ -17,7 +17,7 @@
       <el-table-column align="center" prop="phoneNumber" label="联系方式" width="150"></el-table-column>
       <el-table-column align="center" prop="createTime" label="合同创建日期" width="180"></el-table-column>      
       <el-table-column align="center" prop="operator" label="合同操作者" width="100"></el-table-column>
-      <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column>
+      <!-- <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column> -->
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="150"></el-table-column>
       <el-table-column align="center" width="100" label="操作" v-if="hasPermisson">
         <template slot-scope="props">

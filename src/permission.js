@@ -57,9 +57,24 @@ NProgress.configure({ showSpinner: false })// NProgress Configuration
 //     }
 //   }
 // })
-const whiteList = ['/', '/login', '/preview', '/edit', '/operate', 'preview-water', 'print', 'test']// no redirect whitelist
+const whiteList = ['/', '/login', '/preview', '/edit', '/operate', '/preview-water', '/print', '/test']// no redirect whitelist
 
+let limit = [] // 允许访问的路由
+if (localStorage.getItem("roleId") === '1') {
+  // 管理员
+  limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
+} else if (localStorage.getItem("roleId") === '3') {
+  // 风险经理
+  limit = ["/audit", "/reject", "/pass"];
+} else if (localStorage.getItem("roleId") === '2') {
+  // 业务经理
+  limit = ["/new", "/draft", "/audit", "/reject", "/pass"];
+}
+
+let routerCan = [...limit, ...whiteList]
+// console.log(routerCan)
 router.beforeEach((to, from, next) => {
+  // console.log(to, from)
   NProgress.start() // start progress bar
   if (getToken()) { // determine if there has token
     /* has token*/
@@ -67,26 +82,17 @@ router.beforeEach((to, from, next) => {
       next({ path: '/' })
       NProgress.done()
     } else {
-      NProgress.done()
-      next()
+      // 判断是否有跳转权限
+      if (routerCan.indexOf(to.path) > -1) {
+        NProgress.done()
+        next()
+      } else {
+        next({ path: from.path })
+        NProgress.done()
+      }
     }
-    // else {
-    //   if (whiteList.indexOf(to.path) > -1) {
-    //     NProgress.done()
-    //     next()
-    //   } else {
-    //     let menuList = store.getters.userInfo
-    //     if (hasPermission(menuList, to.path)) {
-    //       NProgress.done()
-    //       next()
-    //     } else {
-    //       NProgress.done()
-    //       next()
-    //     }
-    //   }
-    // }
   } else {
-    if (whiteList.indexOf(to.path) !== -1) { // 在免登录白名单，直接进入
+    if (whiteList.indexOf(to.path) > -1) { // 在免登录白名单，直接进入
       next()
     } else {
       next(`/login?redirect=${to.path}`) // 否则全部重定向到登录页

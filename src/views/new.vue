@@ -93,7 +93,7 @@ export default {
         contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "post",
         url: "/save",
@@ -131,7 +131,7 @@ export default {
         contractCreateAddress: data.contractCreateAddress,
         jsonData: JSON.stringify(data)
       };
-      console.log(sendData);
+      // console.log(sendData);
       this.$ajax({
         method: "post",
         url: "/saveAndSubmit",

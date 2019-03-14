@@ -24,7 +24,7 @@
       <el-table-column align="center" prop="phoneNumber" label="联系方式" width="150"></el-table-column>
       <el-table-column align="center" prop="createTime" label="合同创建日期" width="180"></el-table-column>
       <el-table-column align="center" prop="operator" label="合同操作者" width="100"></el-table-column>
-      <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column>
+      <!-- <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column> -->
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="200"></el-table-column>
       <el-table-column align="center" label="操作" width="220" v-if="hasPermisson">
         <template slot-scope="props">
@@ -111,13 +111,13 @@ export default {
         rows: limit // 每页多少数据
       };
       sendData = Object.assign(sendData, data)
-      console.log('发送', sendData)
+      // console.log('发送', sendData)
       this.$ajax({
         method: "get",
         url: "getList",
         params: sendData
       }).then(res => {
-        console.log(res);
+        // console.log(res);
         this.listLoading = false;
         this.tableData = res.data.list;
         this.total = res.data.total;
