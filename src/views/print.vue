@@ -70,7 +70,7 @@ export default {
       //默认设置
       var defaultSettings = {
         watermark_txt: "text",
-        watermark_x: 30, //水印起始位置x轴坐标
+        watermark_x: 0, //水印起始位置x轴坐标
         watermark_y: 30, //水印起始位置Y轴坐标
         watermark_rows: 500, //水印行数
         watermark_cols: 2, //水印列数
@@ -80,8 +80,8 @@ export default {
         watermark_alpha: 0.1, //水印透明度
         watermark_fontsize: "18px", //水印字体大小
         watermark_font: "微软雅黑", //水印字体
-        watermark_width: 240, //水印宽度
-        watermark_height: 80, //水印长度
+        watermark_width: 260, //水印宽度
+        watermark_height: 43, //水印长度
         watermark_angle: 15 //水印倾斜度数
       };
       //采用配置项替换默认值，作用类似jquery.extend
@@ -174,12 +174,14 @@ export default {
               defaultSettings.watermark_x_space) *
               j;
 
-          var mask_div = document.createElement("div");
-          mask_div.id = "mask_div" + i + j;
-          mask_div.appendChild(
-            document.createTextNode(defaultSettings.watermark_txt)
-          );
+          var mask_div = document.createElement("img");
+          // mask_div.id = "mask_div" + i + j;
+          // mask_div.appendChild(
+          //   document.createTextNode(defaultSettings.watermark_txt)
+          // );
+          mask_div.src = require('../assets/water-print.png')
           //设置水印div倾斜显示
+          mask_div.style.display = 'block'
           mask_div.style.webkitTransform =
             "rotate(-" + defaultSettings.watermark_angle + "deg)";
           mask_div.style.MozTransform =
