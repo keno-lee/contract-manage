@@ -1,7 +1,7 @@
 <template>
   <div class="contract-wrap">
     <div class="contract-content">
-      <div>
+      <div style="height: 1080px;">
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
@@ -109,13 +109,7 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-      <div>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
+      <div style="height: 1000px;">
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
           <input style="width: 300px" v-model="info.contractNumber" type="text">
@@ -123,8 +117,10 @@
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:14pt">抵押人(甲方)：</span>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt; float: left;">抵押人(甲方)：</span>
           <input
             ref="partyAinput"
             type="text"
@@ -135,44 +131,86 @@
           >
           <textarea
             ref="partyAtextarea"
-            style="text-decoration:underline; border:none; padding-left: 120px"
+            style="text-decoration:underline; border:none; width:400px"
             v-show="info.partyA.length >= 20"
             cols="30"
             v-model="info.partyA"
-            rows="5"
+            rows="1"
           ></textarea>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
           <input style="width: 200px" v-model="info.a3" type="text">
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:14pt">证件号码：</span>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt;float: left;">证件号码：</span>
           <input
             ref="a4input"
             v-show="info.a4.length < 20"
-            style="width: 400px"
+            style="width: 400px; "
             v-model="info.a4"
             type="text"
           >
           <textarea
             ref="a4textarea"
-            style="text-decoration:underline; border:none; padding-left: 120px"
+            style="text-decoration:underline; border:none;width: 400px"
             v-show="info.a4.length >= 20"
             cols="30"
             v-model="info.a4"
-            rows="5"
+            rows="1"
           ></textarea>
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">地址：</span>
           <input style="width: 450px" v-model="info.a5" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+        </p>-->
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt;float: left;">地址：</span>
+          <input
+            ref="a5input"
+            v-show="info.a5.length < 20"
+            style="width: 420px; "
+            v-model="info.a5"
+            type="text"
+          >
+          <textarea
+            ref="a5textarea"
+            style="text-decoration:underline; border:none;width: 420px"
+            v-show="info.a5.length >= 20"
+            cols="30"
+            v-model="info.a5"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
           <input style="width: 300px" v-model="info.phoneNumber" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+        </p>-->
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt;float: left;">联系电话：</span>
+          <input
+            ref="phoneNumberinput"
+            v-show="info.phoneNumber.length < 20"
+            style="width: 420px; "
+            v-model="info.phoneNumber"
+            type="text"
+          >
+          <textarea
+            ref="phoneNumbertextarea"
+            style="text-decoration:underline; border:none;width: 420px"
+            v-show="info.phoneNumber.length >= 20"
+            cols="30"
+            v-model="info.phoneNumber"
+            rows="1"
+          ></textarea>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
@@ -655,7 +693,7 @@
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">11.11 其他约定事项</span>
-          <textarea name id cols="30" rows="10" v-model="info.a20"></textarea>
+          <textarea name id cols="30" rows="1" style="text-indent: 2em" v-model="info.a20"></textarea>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; text-decoration:none"></span>
@@ -757,8 +795,8 @@
                 style="width: 100%; border:none; font-size: 11px"
                 name
                 id
-                cols="30"
-                rows="9"
+                cols="2"
+                rows="1"
                 v-model="info.table1"
               ></textarea>
             </td>
@@ -770,7 +808,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table2"
               ></textarea>
             </td>
@@ -782,7 +820,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table3"
               ></textarea>
             </td>
@@ -794,7 +832,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table4"
               ></textarea>
             </td>
@@ -806,7 +844,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table5"
               ></textarea>
             </td>
@@ -818,7 +856,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table6"
               ></textarea>
             </td>
@@ -830,7 +868,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table7"
               ></textarea>
             </td>
@@ -844,7 +882,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table8"
               ></textarea>
             </td>
@@ -856,7 +894,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table9"
               ></textarea>
             </td>
@@ -868,7 +906,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table10"
               ></textarea>
             </td>
@@ -880,7 +918,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table11"
               ></textarea>
             </td>
@@ -892,7 +930,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table12"
               ></textarea>
             </td>
@@ -904,7 +942,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table13"
               ></textarea>
             </td>
@@ -916,7 +954,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table14"
               ></textarea>
             </td>
@@ -930,7 +968,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table15"
               ></textarea>
             </td>
@@ -942,7 +980,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table16"
               ></textarea>
             </td>
@@ -954,7 +992,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table17"
               ></textarea>
             </td>
@@ -966,7 +1004,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table18"
               ></textarea>
             </td>
@@ -978,7 +1016,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table19"
               ></textarea>
             </td>
@@ -990,7 +1028,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table20"
               ></textarea>
             </td>
@@ -1002,7 +1040,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table21"
               ></textarea>
             </td>
@@ -1016,7 +1054,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table22"
               ></textarea>
             </td>
@@ -1028,7 +1066,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table23"
               ></textarea>
             </td>
@@ -1040,7 +1078,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table24"
               ></textarea>
             </td>
@@ -1052,7 +1090,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table25"
               ></textarea>
             </td>
@@ -1064,7 +1102,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table26"
               ></textarea>
             </td>
@@ -1076,7 +1114,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table27"
               ></textarea>
             </td>
@@ -1088,7 +1126,7 @@
                 name
                 id
                 cols="30"
-                rows="9"
+                rows="1"
                 v-model="info.table28"
               ></textarea>
             </td>
@@ -1232,55 +1270,101 @@
             style="font-family:宋体; font-size:12pt"
           >一、本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold">送达地址：</span>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">送达地址：</span>
           <!-- <input style="width: 400px" v-model="info.a32" type="text"> -->
           <input
             ref="a32input"
             type="text"
-            style="width:400px"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a32.length < 20"
             v-model="info.a32"
             @input="inputListener"
           >
           <textarea
             ref="a32textarea"
-            style="text-decoration:underline; border:none; padding-left: 120px"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
             v-show="info.a32.length >= 20"
             cols="30"
             v-model="info.a32"
-            rows="5"
+            rows="1"
           ></textarea>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold">收 件 人：</span>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">收 件 人：</span>
           <!-- <input style="width: 400px" v-model="info.a33" type="text"> -->
           <input
             ref="a33input"
             type="text"
-            style="width:400px"
+            style="width:400px; margin-left: -20px;text-align: left"
             v-show="info.a33.length < 20"
             v-model="info.a33"
             @input="inputListener"
           >
           <textarea
             ref="a33textarea"
-            style="text-decoration:underline; border:none; padding-left: 120px"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
             v-show="info.a33.length >= 20"
             cols="30"
             v-model="info.a33"
-            rows="5"
+            rows="1"
           ></textarea>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">联系电话：</span>
           <input style="width: 400px" v-model="info.a34" type="text">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">联系电话：</span>
+          <input
+            ref="a34input"
+            type="text"
+            style="width:400px; margin-left: -20px;text-align: left"
+            v-show="info.a34.length < 20"
+            v-model="info.a34"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a34textarea"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
+            v-show="info.a34.length >= 20"
+            cols="30"
+            v-model="info.a34"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">电子邮箱：</span>
           <input style="width: 400px" v-model="info.a35" type="text">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">电子邮箱：</span>
+          <input
+            ref="a35input"
+            type="text"
+            style="width:400px; margin-left: -20px;text-align: left"
+            v-show="info.a35.length < 20"
+            v-model="info.a35"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a35textarea"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
+            v-show="info.a35.length >= 20"
+            cols="30"
+            v-model="info.a35"
+            rows="1"
+          ></textarea>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0;  text-indent:21pt; widows:0">
           <span
@@ -1531,9 +1615,85 @@ export default {
     };
   },
   created() {
-    // if (this.$route.disabled === 1) {
-    //   this.inputDisable();
-    // }
+    this.$nextTick(() => {
+      let textareas = document.querySelectorAll("textarea");
+      textareas.forEach(v => {
+        v.style.height = v.scrollHeight + "px";
+
+        // v.value = v.value.trim()
+        v.addEventListener("input", e => {
+          // console.log("1--->", e.target.scrollHeight);
+          e.target.style.height = "auto";
+          // console.log("2--->", e.target.scrollHeight);
+          e.target.style.height = e.target.scrollHeight + "px";
+        });
+      });
+
+      let inputs = document.querySelectorAll("input");
+      inputs.forEach(v => {
+        v.style.width = v.scrollWidth + "px";
+
+        v.setAttribute("data-width", +v.style.width.replace("px", ""));
+        let arr = [];
+
+        v.addEventListener("input", e => {
+          if (+e.target.dataset.length > e.target.value.length) {
+            let delCount = e.target.dataset.length - e.target.value.length;
+            // 删除
+            arr = JSON.parse(e.target.dataset.scroll);
+            for (var i = 0; i < delCount; i++) {
+              arr.pop();
+            }
+            if (arr.length == 0) {
+              e.target.style.width = e.target.dataset.width + "px";
+            } else {
+              e.target.style.width = arr[arr.length - 1] + "px";
+            }
+          } else {
+            // 增加
+            e.target.style.width = e.target.scrollWidth + "px";
+
+            let addLength;
+            let lastWidth;
+
+            if (
+              !e.target.dataset.scroll ||
+              e.target.dataset.scroll.length == 2
+            ) {
+              // 第一次增加
+              addLength = e.target.value.length; // 增加的字数为当前输入框的字数
+              lastWidth = 0;
+              // console.log("firstadd: addlength = " + addLength);
+              // console.log("firstadd: lastWidth = " + lastWidth);
+            } else {
+              addLength = e.target.value.length - e.target.dataset.length; // 拿到增加的数量
+              arr = JSON.parse(e.target.dataset.scroll);
+              lastWidth = arr[arr.length - 1];
+              // console.log("addlength = " + addLength);
+              // console.log("lastWidth = " + lastWidth);
+            }
+
+            let currentWidthStr = e.target.style.width;
+            let currentWidth = parseInt(
+              currentWidthStr.substr(0, currentWidthStr.length - 2)
+            );
+            let everyWidth = Math.ceil((currentWidth - lastWidth) / addLength); // 这是每次增加的长度
+            // console.log("currentWidth:  = " + currentWidth);
+            // console.log("everyWidth = " + everyWidth);
+            for (var i = 1; i < addLength + 1; i++) {
+              let val = lastWidth + everyWidth * i;
+              // console.log(val);
+              arr.push(
+                val <= e.target.dataset.width ? +e.target.dataset.width : val
+              );
+            }
+          }
+
+          e.target.setAttribute("data-scroll", JSON.stringify(arr));
+          e.target.setAttribute("data-length", e.target.value.length);
+        });
+      });
+    });
   },
   methods: {
     /**
@@ -1647,6 +1807,62 @@ export default {
           });
         }
       }
+    },
+    "info.a34": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a34textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a34input.focus();
+          });
+        }
+      }
+    },
+    "info.a35": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a35textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a35input.focus();
+          });
+        }
+      }
+    },
+    "info.a5": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a5textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a5input.focus();
+          });
+        }
+      }
+    },
+    "info.phoneNumber": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.phoneNumbertextarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.phoneNumberinput.focus();
+          });
+        }
+      }
     }
   }
 };
@@ -1712,8 +1928,13 @@ input {
   text-align: center;
 }
 textarea {
-  width: 630px;
+  /* width: 630px; */
   resize: none;
+  /* text-align: center; */
+  overflow-y: hidden;
+  border: none;
+  text-decoration: underline;
+  line-height: 24px;
 }
 
 .btn {
@@ -1737,5 +1958,13 @@ textarea {
 .operate-box {
   height: 300px;
   margin-top: 100px;
+}
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 </style>

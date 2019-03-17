@@ -845,7 +845,7 @@
           <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">其他约定事项：</span>
         </p>
-        <textarea name id cols="30" rows="10" v-model="info.a62"></textarea>
+        <textarea name id cols="30" style="text-indent: 2em" rows="1" v-model="info.a62"></textarea>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt">甲方或授权代理人（签字）：</span>
           <input style="width: 250px" v-model="info.a63" type="text">
@@ -1174,9 +1174,85 @@ export default {
     };
   },
   created() {
-    // if (this.$route.disabled === 1) {
-    //   this.inputDisable();
-    // }
+    this.$nextTick(() => {
+      let textareas = document.querySelectorAll("textarea");
+      textareas.forEach(v => {
+        v.style.height = v.scrollHeight + "px";
+
+        // v.value = v.value.trim()
+        v.addEventListener("input", e => {
+          // console.log("1--->", e.target.scrollHeight);
+          e.target.style.height = "auto";
+          // console.log("2--->", e.target.scrollHeight);
+          e.target.style.height = e.target.scrollHeight + "px";
+        });
+      });
+
+      let inputs = document.querySelectorAll("input");
+      inputs.forEach(v => {
+        v.style.width = v.scrollWidth + "px";
+
+        v.setAttribute("data-width", +v.style.width.replace("px", ""));
+        let arr = [];
+
+        v.addEventListener("input", e => {
+          if (+e.target.dataset.length > e.target.value.length) {
+            let delCount = e.target.dataset.length - e.target.value.length;
+            // 删除
+            arr = JSON.parse(e.target.dataset.scroll);
+            for (var i = 0; i < delCount; i++) {
+              arr.pop();
+            }
+            if (arr.length == 0) {
+              e.target.style.width = e.target.dataset.width + "px";
+            } else {
+              e.target.style.width = arr[arr.length - 1] + "px";
+            }
+          } else {
+            // 增加
+            e.target.style.width = e.target.scrollWidth + "px";
+
+            let addLength;
+            let lastWidth;
+
+            if (
+              !e.target.dataset.scroll ||
+              e.target.dataset.scroll.length == 2
+            ) {
+              // 第一次增加
+              addLength = e.target.value.length; // 增加的字数为当前输入框的字数
+              lastWidth = 0;
+              // console.log("firstadd: addlength = " + addLength);
+              // console.log("firstadd: lastWidth = " + lastWidth);
+            } else {
+              addLength = e.target.value.length - e.target.dataset.length; // 拿到增加的数量
+              arr = JSON.parse(e.target.dataset.scroll);
+              lastWidth = arr[arr.length - 1];
+              // console.log("addlength = " + addLength);
+              // console.log("lastWidth = " + lastWidth);
+            }
+
+            let currentWidthStr = e.target.style.width;
+            let currentWidth = parseInt(
+              currentWidthStr.substr(0, currentWidthStr.length - 2)
+            );
+            let everyWidth = Math.ceil((currentWidth - lastWidth) / addLength); // 这是每次增加的长度
+            // console.log("currentWidth:  = " + currentWidth);
+            // console.log("everyWidth = " + everyWidth);
+            for (var i = 1; i < addLength + 1; i++) {
+              let val = lastWidth + everyWidth * i;
+              // console.log(val);
+              arr.push(
+                val <= e.target.dataset.width ? +e.target.dataset.width : val
+              );
+            }
+          }
+
+          e.target.setAttribute("data-scroll", JSON.stringify(arr));
+          e.target.setAttribute("data-length", e.target.value.length);
+        });
+      });
+    });
   },
   methods: {
     /**
@@ -1257,6 +1333,11 @@ input {
 textarea {
   width: 630px;
   resize: none;
+  /* text-align: center; */
+  overflow-y: hidden;
+  border: none;
+  text-decoration: underline;
+  line-height: 24px;
 }
 
 .btn {
