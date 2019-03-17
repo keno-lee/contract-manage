@@ -163,11 +163,11 @@ export default {
             // console.log("权限", roleId);
             // debugger
             if (roleId == 1 || roleId == 2) {
-              console.log("yewu guanliyuan");
+              // console.log("yewu guanliyuan");
               this.$router.replace("/new");
             } else {
-              console.log("fengxian");
-              this.$router.replace("/audit");
+              // console.log("fengxian");
+              // this.$router.replace("/audit");
             }
           } else {
             this.$alert("用户名或者密码错误", "警告", {
