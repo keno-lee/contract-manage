@@ -113,18 +113,18 @@
           <p
             style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
           >
-            <span style="font-family:宋体; font-size:14pt;float: left;">保证人（甲方）：</span>
+            <span style="font-family:宋体; font-size:14pt;float: left;">保证人(甲方)：</span>
             <input
               ref="partyAinput"
               type="text"
-              style="width:400px;margin-left:-20px;"
+              style="width:400px;"
               v-show="info.partyA.length < 20"
               v-model="info.partyA"
               @input="inputListener"
             >
             <textarea
               ref="partyAtextarea"
-              style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+              style="text-decoration:underline; border:none;width: 400px;"
               v-show="info.partyA.length >= 20"
               cols="30"
               v-model="info.partyA"
