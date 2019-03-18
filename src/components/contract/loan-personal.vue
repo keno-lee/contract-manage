@@ -114,32 +114,32 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-          <input style="width:250px;" type="text" v-model="info.contractNumber">
+          <input style="width:150px;text-align: left" type="text" v-model="info.contractNumber">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">借款人（甲方）：</span>
-          <input style="width:250px;" type="text" v-model="info.partyA">
+          <input style="width:395px;" type="text" v-model="info.partyA">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
-          <input style="width:350px;" type="text" v-model="info.a3">
+          <input style="width:452px;" type="text" v-model="info.a3">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">证件号码：</span>
-          <input style="width:250px;" type="text" v-model="info.a4">
+          <input style="width:453px;" type="text" v-model="info.a4">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">地</span>
           <span style="font-family:宋体; font-size:14pt"></span>
           <span style="font-family:宋体; font-size:14pt">址：</span>
-          <input style="width:400px;" type="text" v-model="info.a5">
+          <input style="width:485px;" type="text" v-model="info.a5">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <input style="width:250px;" type="text" v-model="info.phoneNumber">
+          <input style="width:453px;" type="text" v-model="info.phoneNumber">
           <span style="-aw-bookmark-end:_Hlk2603292"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
@@ -170,49 +170,35 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">贷款人（乙方）：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">安徽省安振小额贷款有限公司</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            安徽省安振小额贷款有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">负 责 人：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">潘</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">伟</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            潘伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">0551-65667870</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            0551-65667870&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">邮政编码：</span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">230041</span>
+          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            230041
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
           <span
             style="font-family:宋体; font-size:14pt; text-decoration:underline"
-          >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
+          >&nbsp;&nbsp;&nbsp;&nbsp;合肥市庐阳区濉溪路278号财富广场B座东楼17层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </p>
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
@@ -473,9 +459,9 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span
             style="font-family:宋体; font-size:12pt"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款金额</span>
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款金额</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;  text-indent:2em;  widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a29" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -486,7 +472,7 @@
           <input style="width: 150px" v-model="info.a32" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;  text-indent:2em;  widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a33" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -497,7 +483,7 @@
           <input style="width: 150px" v-model="info.a36" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0; text-indent:2em;   widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a37" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -508,7 +494,7 @@
           <input style="width: 150px" v-model="info.a40" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0; text-indent:2em;   widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a41" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -529,9 +515,9 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span
             style="font-family:宋体; font-size:12pt"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款金额</span>
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还款金额</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;   widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a45" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -542,7 +528,7 @@
           <input style="width: 150px" v-model="info.a48" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a49" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -553,7 +539,7 @@
           <input style="width: 150px" v-model="info.a52" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a53" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -564,7 +550,7 @@
           <input style="width: 150px" v-model="info.a56" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a57" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -607,7 +593,7 @@
           <span style="font-family:宋体; font-size:12pt">5.3</span>
           <span style="font-family:宋体; font-size:12pt">通过电话银行、网上银行、手机银行等自动服务工具偿还贷款本息。</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;    text-indent:24pt;widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:normal"></span>
           <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">第六条 提前还款</span>
@@ -637,7 +623,7 @@
             style="font-family:宋体; font-size:12pt"
           >借款人经贷款人同意后提前归还部分本金且缩短剩余还款期数的，剩余的贷款本金仍适用原贷款期限对应的中国人民银行相应期限档次贷款的利率，利率浮动水平和调整仍按本合同第二条约定执行。</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;  text-indent:24pt;  widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:normal"></span>
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">第七条 借款人的陈述与保证</span>
         </p>
@@ -787,7 +773,7 @@
           <span style="font-family:宋体; font-size:12pt">怠</span>
           <span style="font-family:宋体; font-size:12pt">于履行借款合同的，贷款人有权处分抵押物和质押权利，追究保证人连带责任。</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;  text-indent:24pt;  widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:normal"></span>
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十二条 扣划约定</span>
         </p>
@@ -845,7 +831,7 @@
           <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">其他约定事项：</span>
         </p>
-        <textarea name id cols="30" rows="10" v-model="info.a62"></textarea>
+        <textarea name id cols="30" style="text-indent: 2em" rows="1" v-model="info.a62"></textarea>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt">甲方或授权代理人（签字）：</span>
           <input style="width: 250px" v-model="info.a63" type="text">
@@ -866,8 +852,14 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
         </p>
+        <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt">乙方（公章）：</span>
+        </p>
+        <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt">负责人或授权代理人（签字）：</span>
@@ -888,7 +880,7 @@
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt">签约地点：</span>
-          <input style="width: 500px" v-model="info.contractCreateAddress" type="text">
+          <input style="width: 100px" v-model="info.contractCreateAddress" type="text">
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
@@ -1174,9 +1166,85 @@ export default {
     };
   },
   created() {
-    // if (this.$route.disabled === 1) {
-    //   this.inputDisable();
-    // }
+    this.$nextTick(() => {
+      let textareas = document.querySelectorAll("textarea");
+      textareas.forEach(v => {
+        v.style.height = v.scrollHeight + "px";
+
+        // v.value = v.value.trim()
+        v.addEventListener("input", e => {
+          // console.log("1--->", e.target.scrollHeight);
+          e.target.style.height = "auto";
+          // console.log("2--->", e.target.scrollHeight);
+          e.target.style.height = e.target.scrollHeight + "px";
+        });
+      });
+
+      let inputs = document.querySelectorAll("input");
+      inputs.forEach(v => {
+        v.style.width = v.scrollWidth + "px";
+
+        v.setAttribute("data-width", +v.style.width.replace("px", ""));
+        let arr = [];
+
+        v.addEventListener("input", e => {
+          if (+e.target.dataset.length > e.target.value.length) {
+            let delCount = e.target.dataset.length - e.target.value.length;
+            // 删除
+            arr = JSON.parse(e.target.dataset.scroll);
+            for (var i = 0; i < delCount; i++) {
+              arr.pop();
+            }
+            if (arr.length == 0) {
+              e.target.style.width = e.target.dataset.width + "px";
+            } else {
+              e.target.style.width = arr[arr.length - 1] + "px";
+            }
+          } else {
+            // 增加
+            e.target.style.width = e.target.scrollWidth + "px";
+
+            let addLength;
+            let lastWidth;
+
+            if (
+              !e.target.dataset.scroll ||
+              e.target.dataset.scroll.length == 2
+            ) {
+              // 第一次增加
+              addLength = e.target.value.length; // 增加的字数为当前输入框的字数
+              lastWidth = 0;
+              // console.log("firstadd: addlength = " + addLength);
+              // console.log("firstadd: lastWidth = " + lastWidth);
+            } else {
+              addLength = e.target.value.length - e.target.dataset.length; // 拿到增加的数量
+              arr = JSON.parse(e.target.dataset.scroll);
+              lastWidth = arr[arr.length - 1];
+              // console.log("addlength = " + addLength);
+              // console.log("lastWidth = " + lastWidth);
+            }
+
+            let currentWidthStr = e.target.style.width;
+            let currentWidth = parseInt(
+              currentWidthStr.substr(0, currentWidthStr.length - 2)
+            );
+            let everyWidth = Math.ceil((currentWidth - lastWidth) / addLength); // 这是每次增加的长度
+            // console.log("currentWidth:  = " + currentWidth);
+            // console.log("everyWidth = " + everyWidth);
+            for (var i = 1; i < addLength + 1; i++) {
+              let val = lastWidth + everyWidth * i;
+              // console.log(val);
+              arr.push(
+                val <= e.target.dataset.width ? +e.target.dataset.width : val
+              );
+            }
+          }
+
+          e.target.setAttribute("data-scroll", JSON.stringify(arr));
+          e.target.setAttribute("data-length", e.target.value.length);
+        });
+      });
+    });
   },
   methods: {
     /**
@@ -1257,6 +1325,11 @@ input {
 textarea {
   width: 630px;
   resize: none;
+  /* text-align: center; */
+  overflow-y: hidden;
+  border: none;
+  text-decoration: underline;
+  line-height: 24px;
 }
 
 .btn {
