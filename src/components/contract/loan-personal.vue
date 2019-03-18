@@ -119,27 +119,97 @@
         <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">借款人（甲方）：</span>
-          <input style="width:395px;" type="text" v-model="info.partyA">
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0;vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt; float:left">借款人（甲方）：</span>
+          <!-- <input style="width:395px;" type="text" v-model="info.partyA"> -->
+          <input
+            ref="partyAinput"
+            type="text"
+            style="width:392px;"
+            v-show="info.partyA.length < 20"
+            v-model="info.partyA"
+            @input="inputListener"
+          >
+          <textarea
+            ref="partyAtextarea"
+            style="text-decoration:underline; border:none;width: 392px;"
+            v-show="info.partyA.length >= 20"
+            cols="30"
+            v-model="info.partyA"
+            rows="1"
+          ></textarea>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
           <input style="width:452px;" type="text" v-model="info.a3">
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">证件号码：</span>
-          <input style="width:453px;" type="text" v-model="info.a4">
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0;vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt;float:left;">证件号码：</span>
+          <!-- <input style="width:453px;" type="text" v-model="info.a4"> -->
+          <input
+            ref="a4input"
+            type="text"
+            style="width:451px;"
+            v-show="info.a4.length < 20"
+            v-model="info.a4"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a4textarea"
+            style="text-decoration:underline; border:none;width: 451px;"
+            v-show="info.a4.length >= 20"
+            cols="30"
+            v-model="info.a4"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">地</span>
-          <span style="font-family:宋体; font-size:14pt"></span>
-          <span style="font-family:宋体; font-size:14pt">址：</span>
-          <input style="width:485px;" type="text" v-model="info.a5">
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0;vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt;  float:left">地 址：</span>
+          <!-- <input style="width:485px;" type="text" v-model="info.a5"> -->
+          <input
+            ref="a5input"
+            type="text"
+            style="width:475px;"
+            v-show="info.a5.length < 20"
+            v-model="info.a5"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a5textarea"
+            style="text-decoration:underline; border:none;width: 475px;"
+            v-show="info.a5.length >= 20"
+            cols="30"
+            v-model="info.a5"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
-          <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <input style="width:453px;" type="text" v-model="info.phoneNumber">
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0;vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt; float:left">联系电话：</span>
+          <!-- <input style="width:453px;" type="text" v-model="info.phoneNumber"> -->
+          <input
+            ref="phoneNumberinput"
+            type="text"
+            style="width:451px;"
+            v-show="info.phoneNumber.length < 20"
+            v-model="info.phoneNumber"
+            @input="inputListener"
+          >
+          <textarea
+            ref="phoneNumbertextarea"
+            style="text-decoration:underline; border:none;width: 451px;"
+            v-show="info.phoneNumber.length >= 20"
+            cols="30"
+            v-model="info.phoneNumber"
+            rows="1"
+          ></textarea>
           <span style="-aw-bookmark-end:_Hlk2603292"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
@@ -170,35 +240,33 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">贷款人（乙方）：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            安徽省安振小额贷款有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 400px;text-align:center;border-bottom:1px solid #000"
+          >安徽省安振小额贷款有限公司</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">负 责 人：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            潘伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 475px;text-align:center;border-bottom:1px solid #000"
+          >潘 伟</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            0551-65667870&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+          >0551-65667870</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">邮政编码：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            230041
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+          >230041</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
           <span
-            style="font-family:宋体; font-size:14pt; text-decoration:underline"
-          >&nbsp;&nbsp;&nbsp;&nbsp;合肥市庐阳区濉溪路278号财富广场B座东楼17层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+          >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
         </p>
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
@@ -902,21 +970,106 @@
             style="font-family:宋体; font-size:12pt"
           >一、本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">送达地址：</span>
           <input style="width: 350px" v-model="info.a72" type="text">
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">送达地址：</span>
+          <input
+            ref="a72input"
+            type="text"
+            style="width:400px; margin-left: -20px;"
+            v-show="info.a72.length < 20"
+            v-model="info.a72"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a72textarea"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
+            v-show="info.a72.length >= 20"
+            cols="30"
+            v-model="info.a72"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">收 件 人：</span>
           <input style="width: 350px" v-model="info.a73" type="text">
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">收 件 人：</span>
+          <!-- <input style="width: 400px" v-model="info.a33" type="text"> -->
+          <input
+            ref="a73input"
+            type="text"
+            style="width:400px; margin-left: -20px;text-align: left"
+            v-show="info.a73.length < 20"
+            v-model="info.a73"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a73textarea"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
+            v-show="info.a73.length >= 20"
+            cols="30"
+            v-model="info.a73"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">联系电话：</span>
           <input style="width: 350px" v-model="info.a74" type="text">
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">联系电话：</span>
+          <input
+            ref="a74input"
+            type="text"
+            style="width:400px; margin-left: -20px;text-align: left"
+            v-show="info.a74.length < 20"
+            v-model="info.a74"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a74textarea"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
+            v-show="info.a74.length >= 20"
+            cols="30"
+            v-model="info.a74"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">电子邮箱：</span>
           <input style="width: 350px" v-model="info.a75" type="text">
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0; vertical-align:top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold; float: left">电子邮箱：</span>
+          <input
+            ref="a75input"
+            type="text"
+            style="width:400px; margin-left: -20px;text-align: left"
+            v-show="info.a75.length < 20"
+            v-model="info.a75"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a75textarea"
+            style="text-decoration:underline; border:none;  width: 400px;line-height: 24px;margin-left: -20px;"
+            v-show="info.a75.length >= 20"
+            cols="30"
+            v-model="info.a75"
+            rows="1"
+          ></textarea>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0;    text-indent:21pt; widows:0">
           <span
@@ -1302,6 +1455,118 @@ export default {
       },
       immediate: true,
       deep: true
+    },
+    "info.partyA": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.partyAtextarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.partyAinput.focus();
+          });
+        }
+      }
+    },
+    "info.a4": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a4textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a4input.focus();
+          });
+        }
+      }
+    },
+    "info.a5": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a5textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a5input.focus();
+          });
+        }
+      }
+    },
+    "info.phoneNumber": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.phoneNumbertextarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.phoneNumberinput.focus();
+          });
+        }
+      }
+    },
+    "info.a72": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a72textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a72input.focus();
+          });
+        }
+      }
+    },
+    "info.a73": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a73textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a73input.focus();
+          });
+        }
+      }
+    },
+    "info.a74": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a74textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a74input.focus();
+          });
+        }
+      }
+    },
+    "info.a75": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a75textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a75input.focus();
+          });
+        }
+      }
     }
   }
 };

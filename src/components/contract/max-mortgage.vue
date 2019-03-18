@@ -119,10 +119,10 @@
         </p>
         <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
-        </p>
+        </p>-->
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0; vertical-align: top;"
-        > -->
+        >
           <span style="font-family:宋体; font-size:14pt; float: left;">抵押人(甲方)：</span>
           <input
             ref="partyAinput"
@@ -245,32 +245,33 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
-        </p> -->
+        </p>-->
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">抵押权人</span>
           <span style="font-family:宋体; font-size:14pt">(乙方)：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            安徽省安振小额贷款有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 400px;text-align:center;border-bottom:1px solid #000"
+          >安徽省安振小额贷款有限公司</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">负责人：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            潘 伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 475px;text-align:center;border-bottom:1px solid #000"
+          >潘 伟</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
           <span
-            style="font-family:宋体; font-size:14pt; text-decoration:underline"
-          >&nbsp;&nbsp;&nbsp;&nbsp;合肥市庐阳区濉溪路278号财富广场B座东楼17层&nbsp;&nbsp;&nbsp;</span>
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+          >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            0551-65667870&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+          >0551-65667870</span>
         </p>
+
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
         </p>
