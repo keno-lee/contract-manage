@@ -163,10 +163,10 @@ export default {
             // console.log("权限", roleId);
             // debugger
             if (roleId == 1 || roleId == 2) {
-              console.log("yewu guanliyuan");
+              // console.log("yewu guanliyuan");
               this.$router.replace("/new");
             } else {
-              console.log("fengxian");
+              // console.log("fengxian");
               this.$router.replace("/audit");
             }
           } else {
