@@ -108,24 +108,27 @@
       <div style="height: 1000px;">
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-          <input style="width: 300px" v-model="info.contractNumber" type="text">
+          <input style="width: 450px" v-model="info.contractNumber" type="text">
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
-        </p>
+        </p> -->
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">被授信人（甲方）：</span>
-          <input style="width: 200px" v-model="info.partyA" type="text">
+          <input style="width: 376px" v-model="info.partyA" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
-          <input style="width: 300px" v-model="info.a3" type="text">
+          <input style="width: 451px" v-model="info.a3" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">证件号码：</span>
-          <input style="width: 300px" v-model="info.a4" type="text">
+          <input style="width: 451px" v-model="info.a4" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
@@ -134,12 +137,12 @@
           <span style="font-family:宋体; font-size:14pt">地</span>
           <span style="font-family:宋体; font-size:14pt"></span>
           <span style="font-family:宋体; font-size:14pt">址：</span>
-          <input style="width: 300px" v-model="info.a5" type="text">
+          <input style="width: 485px" v-model="info.a5" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <input style="width: 300px" v-model="info.phoneNumber" type="text">
+          <input style="width: 453px" v-model="info.phoneNumber" type="text">
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>

@@ -105,26 +105,29 @@
         <div style="height: 1000px;">
           <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
             <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-            <input style="width: 300px" v-model="info.contractNumber" type="text">
+            <input style="width: 450px" v-model="info.contractNumber" type="text">
           </p>
-          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+          <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+          <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
             <span style="font-family:宋体; font-size:14pt"></span>
           </p>
           <p
             style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
-          >
+          > -->
             <span style="font-family:宋体; font-size:14pt;float: left;">保证人(甲方)：</span>
             <input
               ref="partyAinput"
               type="text"
-              style="width:400px;"
+              style="width:423px;"
               v-show="info.partyA.length < 20"
               v-model="info.partyA"
               @input="inputListener"
             >
             <textarea
               ref="partyAtextarea"
-              style="text-decoration:underline; border:none;width: 400px;"
+              style="text-decoration:underline; border:none;width: 423px;"
               v-show="info.partyA.length >= 20"
               cols="30"
               v-model="info.partyA"
@@ -133,7 +136,7 @@
           </p>
           <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
             <span style="font-family:宋体; font-size:14pt">证件种类：</span>
-            <input style="width: 200px" v-model="info.a3" type="text">
+            <input style="width: 450px" v-model="info.a3" type="text">
           </p>
           <p
             style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
@@ -142,13 +145,13 @@
             <input
               ref="a4input"
               v-show="info.a4.length < 20"
-              style="width: 400px;"
+              style="width: 455px;"
               v-model="info.a4"
               type="text"
             >
             <textarea
               ref="a4textarea"
-              style="text-decoration:underline; border:none;width: 400px;"
+              style="text-decoration:underline; border:none;width: 455px;"
               v-show="info.a4.length >= 20"
               cols="30"
               v-model="info.a4"
@@ -168,13 +171,13 @@
             <input
               ref="a5input"
               v-show="info.a5.length < 20"
-              style="width: 400px;"
+              style="width: 487px;"
               v-model="info.a5"
               type="text"
             >
             <textarea
               ref="a5textarea"
-              style="text-decoration:underline; border:none;width: 400px;"
+              style="text-decoration:underline; border:none;width: 487px;"
               v-show="info.a5.length >= 20"
               cols="30"
               v-model="info.a5"
@@ -192,13 +195,13 @@
             <input
               ref="phoneNumberinput"
               v-show="info.phoneNumber.length < 20"
-              style="width: 400px;"
+              style="width: 455px;"
               v-model="info.phoneNumber"
               type="text"
             >
             <textarea
               ref="phoneNumbertextarea"
-              style="text-decoration:underline; border:none;width: 400px;"
+              style="text-decoration:underline; border:none;width: 455px;"
               v-show="info.phoneNumber.length >= 20"
               cols="30"
               v-model="info.phoneNumber"

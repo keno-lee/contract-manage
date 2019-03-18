@@ -114,32 +114,32 @@
         </p>
         <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-          <input style="width:250px;" type="text" v-model="info.contractNumber">
+          <input style="width:450px;" type="text" v-model="info.contractNumber">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">借款人（甲方）：</span>
-          <input style="width:250px;" type="text" v-model="info.partyA">
+          <input style="width:395px;" type="text" v-model="info.partyA">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
-          <input style="width:350px;" type="text" v-model="info.a3">
+          <input style="width:452px;" type="text" v-model="info.a3">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">证件号码：</span>
-          <input style="width:250px;" type="text" v-model="info.a4">
+          <input style="width:453px;" type="text" v-model="info.a4">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">地</span>
           <span style="font-family:宋体; font-size:14pt"></span>
           <span style="font-family:宋体; font-size:14pt">址：</span>
-          <input style="width:400px;" type="text" v-model="info.a5">
+          <input style="width:485px;" type="text" v-model="info.a5">
         </p>
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <input style="width:250px;" type="text" v-model="info.phoneNumber">
+          <input style="width:453px;" type="text" v-model="info.phoneNumber">
           <span style="-aw-bookmark-end:_Hlk2603292"></span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
@@ -473,9 +473,9 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span
             style="font-family:宋体; font-size:12pt"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款金额</span>
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款金额</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;  text-indent:2em;  widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a29" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -486,7 +486,7 @@
           <input style="width: 150px" v-model="info.a32" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;  text-indent:2em;  widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a33" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -497,7 +497,7 @@
           <input style="width: 150px" v-model="info.a36" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0; text-indent:2em;   widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a37" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -508,7 +508,7 @@
           <input style="width: 150px" v-model="info.a40" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0; text-indent:2em;   widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a41" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -529,9 +529,9 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span
             style="font-family:宋体; font-size:12pt"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放款金额</span>
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还款日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还款金额</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;   widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a45" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -542,7 +542,7 @@
           <input style="width: 150px" v-model="info.a48" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a49" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -553,7 +553,7 @@
           <input style="width: 150px" v-model="info.a52" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a53" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
@@ -564,7 +564,7 @@
           <input style="width: 150px" v-model="info.a56" type="text">
           <span style="font-family:宋体; font-size:12pt">（大写金额）</span>
         </p>
-        <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
+        <p style="line-height:21pt; margin:0pt; orphans:0;text-indent:2em;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
           <input style="width: 50px" v-model="info.a57" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>

@@ -167,7 +167,7 @@ export default {
               this.$router.replace("/new");
             } else {
               // console.log("fengxian");
-              // this.$router.replace("/audit");
+              this.$router.replace("/audit");
             }
           } else {
             this.$alert("用户名或者密码错误", "警告", {
