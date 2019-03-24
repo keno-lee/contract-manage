@@ -510,13 +510,39 @@
             <input style="width: 200px" v-model="info.a24" type="text">《最高额质押合同》；
           </span>
         </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt;  text-indent:30pt">
+        <p
+          style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 29.35pt; padding-left:16.5pt;  text-indent:-16.5pt;vertical-align: center;"
+        >
+          <span style="font-family:宋体;width:80px; font-size:12pt;float:left">
+            <input v-model="info.a25" type="checkbox">
+            &nbsp;其他：
+          </span>
+          <!-- <input style="width: 500px" v-model="info.a26" type="text"> -->
+          <input
+            ref="a26input"
+            type="text"
+            style="width:500px;"
+            v-show="info.a26.length < 20"
+            v-model="info.a26"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a26textarea"
+            style="text-decoration:underline; border:none;width: 500px;"
+            v-show="info.a26.length >= 20"
+            cols="30"
+            v-model="info.a26"
+            rows="1"
+          ></textarea>
+          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+        </p >
+        <!-- <p style="font-size:12pt; line-height:150%; margin:0pt;  text-indent:30pt">
           <span style="font-family:宋体; font-size:12pt">
             <input v-model="info.a25" type="checkbox">其他
             <input style="width: 500px" v-model="info.a26" type="text">
           </span>
           <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        </p>
+        </p> -->
         <p style="font-size:12pt; line-height:150%; margin:0pt; text-align:center">
           <span style="font-family:宋体; font-size:12pt">第八章 合同生效、变更和解除</span>
         </p>
@@ -600,26 +626,12 @@
           <span style="font-family:宋体; font-size:12pt">乙方（公章）：</span>
           <!-- <input style="width: 300px" v-model="info.a33" type="text"> -->
         </p>
-        <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
+        
         <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:12pt">负责人或授权代理人（签字）：</span>
           <input style="width: 300px" v-model="info.a34" type="text">
           <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
           <span style="font-family:宋体; font-size:12pt"></span>
-        </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
-        </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
-        </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
-        </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:12pt">签约时间：</span>
@@ -649,6 +661,9 @@
         </p>
         <p style="font-size:12pt; line-height:150%; margin:0pt;  text-indent:22pt">
           <span style="font-family:宋体; font-size:12pt"></span>
+        </p>
+        <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:12pt">签约地点：</span>
@@ -980,6 +995,20 @@ export default {
         } else {
           this.$nextTick(() => {
             this.$refs.phoneNumberinput.focus();
+          });
+        }
+      }
+    },
+    "info.a26": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a26textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a26input.focus();
           });
         }
       }
