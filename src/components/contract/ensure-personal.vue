@@ -797,7 +797,24 @@
         >
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十一条 其他约定事项</span>
         </p>
-        <textarea name id cols="30" rows="1" style="text-indent: 22pt" v-model="info.a28"></textarea>
+        <!-- <textarea name id cols="30" rows="1" style="text-indent: 22pt" v-model="info.a28"></textarea> -->
+
+        <input
+            ref="a28input"
+            type="text"
+            style="width:600px;text-indent:2em;"
+            v-show="info.a28.length < 20"
+            v-model="info.a28"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a28textarea"
+            style="text-decoration:underline; border:none;width: 600px;;text-indent:2em;"
+            v-show="info.a28.length >= 20"
+            cols="30"
+            v-model="info.a28"
+            rows="1"
+          ></textarea>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
@@ -1143,6 +1160,7 @@ export default {
           a26: "",
           a27: "",
           contractCreateAddress: "合肥市庐阳区",
+          a28: "",
           a29: "",
           a30: "",
           a31: "",
@@ -1195,6 +1213,7 @@ export default {
           a26: "",
           a27: "",
           contractCreateAddress: "",
+          a28: "",
           a29: "",
           a30: "",
           a31: "",
@@ -1375,6 +1394,20 @@ export default {
         } else {
           this.$nextTick(() => {
             this.$refs.a4input.focus();
+          });
+        }
+      }
+    },
+    "info.a28": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a28textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a28input.focus();
           });
         }
       }

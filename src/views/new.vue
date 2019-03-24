@@ -32,7 +32,7 @@
           class="select-item"
           :class="selectItem === 'loanLoopPersonal' ? 'active' : ''"
           @click="select('loanLoopPersonal')"
-        >个人循序借款合同正式版</div>
+        >个人循环借款合同正式版</div>
         <div
           class="select-item"
           :class="selectItem === 'loanBusiness' ? 'active' : ''"
