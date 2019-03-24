@@ -528,6 +528,7 @@ export default {
           a25: "",
           a26: "",
           a27: "",
+          a28: "",
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
