@@ -2,32 +2,93 @@
   <div class="contract-wrap">
     <div class="contract-content">
       <div>
+        <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
+          <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
+        </p>
         <p style="line-height:19pt; margin:0pt; text-align:center">
           <span style="font-family:仿宋; font-size:18pt; font-weight:bold">个人循环借款合同</span>
         </p>
-        <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:258.5pt">
-          <span style="font-family:仿宋; font-size:12pt">合同号：_____________</span>
+        <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:230pt">
+          <span style="font-family:仿宋; font-size:12pt">合同号：</span>
+          <input style="width: 150px; text-align: left;" v-model="info.contractNumber" type="text">
         </p>
-        <p style="line-height:19pt; margin:0pt; text-align:justify">
-          <span style="font-family:仿宋; font-size:12pt">贷款人：__________________________________</span>
+        <p style="line-height:19pt; margin:0pt; text-align:justify;vertical-align: top;">
+          <span style="font-family:仿宋; font-size:12pt;float:left">贷款人：</span>
+          <input
+            ref="partyAinput"
+            type="text"
+            style="width:451px;"
+            v-show="info.partyA.length < 20"
+            v-model="info.partyA"
+            @input="inputListener"
+          >
+          <textarea
+            ref="partyAtextarea"
+            style="text-decoration:underline; border:none;width: 451px;"
+            v-show="info.partyA.length >= 20"
+            cols="30"
+            v-model="info.partyA"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="line-height:19pt; margin:0pt; text-align:justify">
-          <span style="font-family:仿宋; font-size:12pt">借款人：__________________________________</span>
+        <p style="line-height:19pt; margin:0pt; text-align:justify;vertical-align: top;">
+          <span style="font-family:仿宋; font-size:12pt;float:left">借款人：</span>
+          <input
+            ref="a3input"
+            type="text"
+            style="width:451px;"
+            v-show="info.a3.length < 20"
+            v-model="info.a3"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a3textarea"
+            style="text-decoration:underline; border:none;width: 451px;"
+            v-show="info.a3.length >= 20"
+            cols="30"
+            v-model="info.a3"
+            rows="1"
+          ></textarea>
         </p>
-        <p style="line-height:19pt; margin:0pt; text-align:justify">
-          <span style="font-family:仿宋; font-size:12pt">担保人：__________________________________</span>
+        <p style="line-height:19pt; margin:0pt; text-align:justify;vertical-align: top;">
+          <span style="font-family:仿宋; font-size:12pt;float:left">担保人：</span>
+          <input
+            ref="a4input"
+            type="text"
+            style="width:451px;"
+            v-show="info.a4.length < 20"
+            v-model="info.a4"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a4textarea"
+            style="text-decoration:underline; border:none;width: 451px;"
+            v-show="info.a4.length >= 20"
+            cols="30"
+            v-model="info.a4"
+            rows="1"
+          ></textarea>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
           <span style="font-family:仿宋; font-size:12pt">经贷款人、借款人、担保人协商一致，根据国家有关法律、法规和规章规定，签订本合同。</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">第一条 授信额度：</span>
-          <span style="font-family:仿宋; font-size:12pt">本合同项下的借款授信额度为本金人民币________（大写），借款人使用上</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            本合同项下的借款授信额度为本金人民币
+            <input style="width: 50px" v-model="info.a5" type="text">（大写），借款人使用上
+          </span>
           <span style="font-family:仿宋; font-size:12pt">述</span>
           <span style="font-family:仿宋; font-size:12pt">授信</span>
-          <span
-            style="font-family:仿宋; font-size:12pt"
-          >额度的期限为自____年___月___日起至____年___月___日止，在上述期限内，借款人可循环使用上述借款额度，但在该期限内任何一时点上的借款本金余额不得超过该借款授信额度</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            额度的期限为自
+            <input style="width: 50px" v-model="info.a6" type="text">年
+            <input style="width: 50px" v-model="info.a7" type="text">月
+            <input style="width: 50px" v-model="info.a8" type="text">日起至
+            <input style="width: 50px" v-model="info.a9" type="text">年
+            <input style="width: 50px" v-model="info.a10" type="text">月
+            <input style="width: 50px" v-model="info.a11" type="text">日止，在上述期限内，借款人可循环使用上述借款额度，但在该期限内任何一时点上的借款本金余额不得超过该借款授信额度
+          </span>
           <span style="font-family:仿宋; font-size:12pt">。</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
@@ -62,8 +123,10 @@
           <span style="font-family:仿宋; font-size:12pt">款的金额和用途，以</span>
           <span style="font-family:仿宋; font-size:12pt">借款借据或互联网贷款平台上所形成的借款合同及相关电子数据和凭证为准。</span>
           <span style="font-family:仿宋; font-size:12pt">具体每</span>
-          <span style="font-family:仿宋; font-size:12pt">笔借款的期限固定为_</span>
-          <span style="font-family:仿宋; font-size:12pt">__</span>
+          <span style="font-family:仿宋; font-size:12pt">笔借款的期限固定为</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            <input style="width: 50px" v-model="info.a12" type="text">
+          </span>
           <span style="font-family:仿宋; font-size:12pt">个</span>
           <span style="font-family:仿宋; font-size:12pt">月</span>
           <span style="font-family:仿宋; font-size:12pt">，</span>
@@ -76,7 +139,13 @@
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">四</span>
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">条 借款利率：</span>
           <span style="font-family:仿宋; font-size:12pt">本合同项下单笔借款利率</span>
-          <span style="font-family:仿宋; font-size:12pt">按_______（□年 □月 □日）执行。</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            按
+            <input style="width: 50px" v-model="info.a13" type="text">（
+            <input v-model="info.a14" class="only" type="checkbox" @click="chose($event)">年
+            <input v-model="info.a15" class="only" type="checkbox" @click="chose($event)">月
+            <input v-model="info.a16" class="only" type="checkbox" @click="chose($event)">日）执行。
+          </span>
           <span style="font-family:仿宋; font-size:12pt">如遇中国人民银行调整法定利率的，仍按本条约定的利率执行。</span>
         </p>
         <p
@@ -85,7 +154,10 @@
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">第</span>
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">五</span>
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">条 还款方式：</span>
-          <span style="font-family:仿宋; font-size:12pt">本合同项下贷款的还款方式及利息的支付方式为下述第____种方式：</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            本合同项下贷款的还款方式及利息的支付方式为下述第
+            <input style="width: 50px" v-model="info.a17" type="text">种方式：
+          </span>
         </p>
         <p
           style="background-color:#ffffff; line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt"
@@ -157,8 +229,9 @@
           <span style="font-family:仿宋; font-size:12pt">担保人确认:本人同意在上述授</span>
           <span style="font-family:仿宋; font-size:12pt">信期间</span>
           <span style="font-family:仿宋; font-size:12pt">内为借款人向贷款人循环借款承担最高额保证，最高借款本金限额为</span>
-          <span style="font-family:仿宋; font-size:12pt">_</span>
-          <span style="font-family:仿宋; font-size:12pt">________</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            <input style="width: 50px" v-model="info.a18" type="text">
+          </span>
           <span style="font-family:仿宋; font-size:12pt">,保证责任形式为连带责任保证。该</span>
           <span style="font-family:仿宋; font-size:12pt">最</span>
           <span style="font-family:仿宋; font-size:12pt">高额保证适用于借款人通过线下书面及贷款人参与的互联网贷款平台（域名包括但不</span>
@@ -202,17 +275,28 @@
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">条 违约责任：</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
-          <span
-            style="font-family:仿宋; font-size:12pt"
-          >借款人违约及其违约责任：1.未按期归还借款本金，从逾期之日起按借款合同所约定的利率加收____%的罚</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            借款人违约及其违约责任：1.未按期归还借款本金，从逾期之日起按借款合同所约定的利率加收
+            <input
+              style="width: 50px"
+              v-model="info.a19"
+              type="text"
+            >%的罚
+          </span>
           <span style="font-family:仿宋; font-size:12pt">息利率</span>
           <span style="font-family:仿宋; font-size:12pt">计收罚息</span>
           <span style="font-family:仿宋; font-size:12pt">。2.未按期偿付借款利息，按</span>
-          <span style="font-family:仿宋; font-size:12pt">借款合同所约定的利率加收____%的罚</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            借款合同所约定的利率加收
+            <input style="width: 50px" v-model="info.a20" type="text">%的罚
+          </span>
           <span style="font-family:仿宋; font-size:12pt">息利率</span>
           <span style="font-family:仿宋; font-size:12pt">计收罚息</span>
           <span style="font-family:仿宋; font-size:12pt">。</span>
-          <span style="font-family:仿宋; font-size:12pt">3.未按合同约定使用借款，在挪用期间按约定利率加收____%的罚</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            3.未按合同约定使用借款，在挪用期间按约定利率加收
+            <input style="width: 50px" v-model="info.a21" type="text">%的罚
+          </span>
           <span style="font-family:仿宋; font-size:12pt">息利率</span>
           <span style="font-family:仿宋; font-size:12pt">计收罚息。</span>
         </p>
@@ -245,9 +329,9 @@
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">约定事项：</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify">
-          <span
-            style="font-family:仿宋; font-size:12pt; font-weight:bold"
-          >________________________________________________________________________________________________________________________________________</span>
+          <span style="font-family:仿宋; font-size:12pt; font-weight:bold">
+            <textarea name id cols="30" rows="1" style="text-indent: 22pt" v-model="info.a28"></textarea>
+          </span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">第</span>
@@ -266,19 +350,47 @@
             style="font-family:仿宋; font-size:12pt"
           >借款人及担保人分别确认以下送达地址适用于一审、二审、执行程序。如果送达地址有变更，应当及时书面告知出借人变更后的送达地址。</span>
         </p>
-        <p style="line-height:19pt; margin:0pt 0pt 10pt">
-          <span style="font-family:仿宋; font-size:12pt">借款人确认送达地址：</span>
-          <span style="font-family:仿宋; font-size:12pt">_</span>
-          <span
-            style="font-family:仿宋; font-size:12pt"
-          >______________________________________________</span>
+        <p style="line-height:19pt; margin:0pt 0pt 10pt;vertical-align:center;">
+          <span style="font-family:仿宋; font-size:12pt;float:left;">借款人确认送达地址：</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            <input
+              ref="a22input"
+              type="text"
+              style="width:400px;"
+              v-show="info.a22.length < 20"
+              v-model="info.a22"
+              @input="inputListener"
+            >
+            <textarea
+              ref="a22textarea"
+              style="text-decoration:underline; border:none;width: 400px;"
+              v-show="info.a22.length >= 20"
+              cols="30"
+              v-model="info.a22"
+              rows="1"
+            ></textarea>
+          </span>
         </p>
-        <p style="line-height:19pt; margin:0pt 0pt 10pt">
-          <span style="font-family:仿宋; font-size:12pt">担保人确认送达地址：</span>
-          <span style="font-family:仿宋; font-size:12pt">_</span>
-          <span
-            style="font-family:仿宋; font-size:12pt"
-          >______________________________________________</span>
+        <p style="line-height:19pt; margin:0pt 0pt 10pt;vertical-align:center;">
+          <span style="font-family:仿宋; font-size:12pt;float:left;">担保人确认送达地址：</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            <input
+              ref="a23input"
+              type="text"
+              style="width:400px;"
+              v-show="info.a23.length < 20"
+              v-model="info.a23"
+              @input="inputListener"
+            >
+            <textarea
+              ref="a23textarea"
+              style="text-decoration:underline; border:none;width: 400px;"
+              v-show="info.a23.length >= 20"
+              cols="30"
+              v-model="info.a23"
+              rows="1"
+            ></textarea>
+          </span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
           <span style="font-family:仿宋; font-size:12pt; font-weight:bold">第十</span>
@@ -307,45 +419,44 @@
           >四、贷款人已提请借款人对本合同各条款作全面、准确的理解，并按借款人的要求对各条款予以充分说明；本合同各条款在订立前均进行了充分磋商；借款人确认对本合同各条款的含义及相应的法律后果已全部通晓并充分理解。</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
-          <span style="font-family:仿宋; font-size:12pt">五、本合同一式_____份，当事人各执一份，效力同等。</span>
+          <span style="font-family:仿宋; font-size:12pt">
+            五、本合同一式
+            <input style="width: 50px" v-model="info.a24" type="text">份，当事人各执一份，效力同等。
+          </span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
-          <span style="font-family:仿宋; font-size:12pt">贷款人（</span>
-          <span style="font-family:仿宋; font-size:12pt">签章</span>
-          <span style="font-family:仿宋; font-size:12pt">）：</span>
-          <span style="font-family:仿宋; font-size:12pt"></span>
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <span style="font-family:仿宋; font-size:12pt;display:inline-block;width: 50%;">贷款人（签章）：</span>
           <span style="font-family:仿宋; font-size:12pt">借款人（签字）：</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:13.5pt">
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:13.5pt">
-          <span style="font-family:仿宋; font-size:12pt">保证人（签字）：</span>
+          <span style="font-family:仿宋; font-size:12pt;display:inline-block;width: 50%;">保证人（签字）：</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:231pt">
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:231pt">
           <span style="font-family:仿宋; font-size:12pt">签约时间：</span>
           <span style="font-family:仿宋; font-size:12pt"></span>
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <input style="width: 50px" v-model="info.a25" type="text">
           <span style="font-family:仿宋; font-size:12pt">年</span>
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <input style="width: 50px" v-model="info.a26" type="text">
           <span style="font-family:仿宋; font-size:12pt">月</span>
-          <span style="font-family:仿宋; font-size:12pt"></span>
+          <input style="width: 50px" v-model="info.a27" type="text">
           <span style="font-family:仿宋; font-size:12pt">日</span>
         </p>
       </div>
@@ -379,7 +490,7 @@ export default {
           a3: "",
           a4: "",
           a5: "",
-          phoneNumber: "",
+          a6: "",
           a7: "",
           a8: "",
           a9: "",
@@ -401,26 +512,10 @@ export default {
           a25: "",
           a26: "",
           a27: "",
-          a28:
-            "各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
-          a29: "",
-          a30: "",
-          a31: "",
-          a32: "",
-          a33: "",
-          a34: "",
-          a35: "",
-          a36: "",
-          a37: "",
-          a38: "",
-          a39: "",
-          a40: "",
-          a41: "",
-          a42: "",
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
-          contractType: "0002"
+          contractType: "0006"
         };
       }
     },
@@ -434,7 +529,7 @@ export default {
         a3: "",
         a4: "",
         a5: "",
-        phoneNumber: "",
+        a6: "",
         a7: "",
         a8: "",
         a9: "",
@@ -456,30 +551,23 @@ export default {
         a25: "",
         a26: "",
         a27: "",
-        a28: "",
-        a29: "",
-        a30: "",
-        a31: "",
-        a32: "",
-        a33: "",
-        a34: "",
-        a35: "",
-        a36: "",
-        a37: "",
-        a38: "",
-        a39: "",
-        a40: "",
-        a41: "",
-        a42: "",
-        contractCreateAddress: "合肥市庐阳区",
+        contractCreateAddress: "",
         operateTip: "",
         auditTip: "",
-        contractType: "0002"
+        contractType: "0006"
       }
     };
   },
   created() {
     this.$nextTick(() => {
+      // let onlyInputs = document.querySelectorAll('input.only')
+      // // console.log(onlyInputs)
+      // onlyInputs.forEach(v => {
+      //   v.addEventListener("input", e => {
+      //     console.log(v.disable)
+      //     if ()
+      //   })
+      // })
       let textareas = document.querySelectorAll("textarea");
       textareas.forEach(v => {
         v.style.height = v.scrollHeight + "px";
@@ -500,66 +588,81 @@ export default {
         v.setAttribute("data-width", +v.style.width.replace("px", ""));
         let arr = [];
 
-        v.addEventListener("input", e => {
-          if (+e.target.dataset.length > e.target.value.length) {
-            let delCount = e.target.dataset.length - e.target.value.length;
-            // 删除
-            arr = JSON.parse(e.target.dataset.scroll);
-            for (var i = 0; i < delCount; i++) {
-              arr.pop();
-            }
-            if (arr.length == 0) {
-              e.target.style.width = e.target.dataset.width + "px";
-            } else {
-              e.target.style.width = arr[arr.length - 1] + "px";
-            }
-          } else {
-            // 增加
-            e.target.style.width = e.target.scrollWidth + "px";
-
-            let addLength;
-            let lastWidth;
-
-            if (
-              !e.target.dataset.scroll ||
-              e.target.dataset.scroll.length == 2
-            ) {
-              // 第一次增加
-              addLength = e.target.value.length; // 增加的字数为当前输入框的字数
-              lastWidth = 0;
-              // console.log("firstadd: addlength = " + addLength);
-              // console.log("firstadd: lastWidth = " + lastWidth);
-            } else {
-              addLength = e.target.value.length - e.target.dataset.length; // 拿到增加的数量
+        if (!v.classList.contains("only")) {
+          v.addEventListener("input", e => {
+            if (+e.target.dataset.length > e.target.value.length) {
+              let delCount = e.target.dataset.length - e.target.value.length;
+              // 删除
               arr = JSON.parse(e.target.dataset.scroll);
-              lastWidth = arr[arr.length - 1];
-              // console.log("addlength = " + addLength);
-              // console.log("lastWidth = " + lastWidth);
-            }
+              for (var i = 0; i < delCount; i++) {
+                arr.pop();
+              }
+              if (arr.length == 0) {
+                e.target.style.width = e.target.dataset.width + "px";
+              } else {
+                e.target.style.width = arr[arr.length - 1] + "px";
+              }
+            } else {
+              // 增加
+              e.target.style.width = e.target.scrollWidth + "px";
 
-            let currentWidthStr = e.target.style.width;
-            let currentWidth = parseInt(
-              currentWidthStr.substr(0, currentWidthStr.length - 2)
-            );
-            let everyWidth = Math.ceil((currentWidth - lastWidth) / addLength); // 这是每次增加的长度
-            // console.log("currentWidth:  = " + currentWidth);
-            // console.log("everyWidth = " + everyWidth);
-            for (var i = 1; i < addLength + 1; i++) {
-              let val = lastWidth + everyWidth * i;
-              // console.log(val);
-              arr.push(
-                val <= e.target.dataset.width ? +e.target.dataset.width : val
+              let addLength;
+              let lastWidth;
+
+              if (
+                !e.target.dataset.scroll ||
+                e.target.dataset.scroll.length == 2
+              ) {
+                // 第一次增加
+                addLength = e.target.value.length; // 增加的字数为当前输入框的字数
+                lastWidth = 0;
+                // console.log("firstadd: addlength = " + addLength);
+                // console.log("firstadd: lastWidth = " + lastWidth);
+              } else {
+                addLength = e.target.value.length - e.target.dataset.length; // 拿到增加的数量
+                arr = JSON.parse(e.target.dataset.scroll);
+                lastWidth = arr[arr.length - 1];
+                // console.log("addlength = " + addLength);
+                // console.log("lastWidth = " + lastWidth);
+              }
+
+              let currentWidthStr = e.target.style.width;
+              let currentWidth = parseInt(
+                currentWidthStr.substr(0, currentWidthStr.length - 2)
               );
+              let everyWidth = Math.ceil(
+                (currentWidth - lastWidth) / addLength
+              ); // 这是每次增加的长度
+              // console.log("currentWidth:  = " + currentWidth);
+              // console.log("everyWidth = " + everyWidth);
+              for (var i = 1; i < addLength + 1; i++) {
+                let val = lastWidth + everyWidth * i;
+                // console.log(val);
+                arr.push(
+                  val <= e.target.dataset.width ? +e.target.dataset.width : val
+                );
+              }
             }
-          }
 
-          e.target.setAttribute("data-scroll", JSON.stringify(arr));
-          e.target.setAttribute("data-length", e.target.value.length);
-        });
+            e.target.setAttribute("data-scroll", JSON.stringify(arr));
+            e.target.setAttribute("data-length", e.target.value.length);
+          });
+        }
       });
     });
   },
   methods: {
+    chose(e) {
+      // console.log(e)
+      // debugger
+      // let onlyInputs = document.querySelectorAll("input.only");
+      // onlyInputs.forEach(v => {
+      //   console.log(v);
+      //   v.checked = false;
+      // });
+      // console.log(e.target);
+      // e.target.checked = true;
+    },
     /**
      * 禁用表单
      */
@@ -607,7 +710,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0002";
+            nv["contractType"] = "0006";
           }
           // console.log("赋值");
           this.info = nv;
@@ -630,6 +733,20 @@ export default {
         }
       }
     },
+    "info.a3": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a3textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a3input.focus();
+          });
+        }
+      }
+    },
     "info.a4": {
       handler(nv, ov) {
         // console.log(this.$refs);
@@ -644,44 +761,30 @@ export default {
         }
       }
     },
-    "info.a5": {
+    "info.a22": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.a5textarea.focus();
+            this.$refs.a22textarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.a5input.focus();
+            this.$refs.a22input.focus();
           });
         }
       }
     },
-    "info.phoneNumber": {
+    "info.a23": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.phoneNumbertextarea.focus();
+            this.$refs.a23textarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.phoneNumberinput.focus();
-          });
-        }
-      }
-    },
-    "info.a26": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a26textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a26input.focus();
+            this.$refs.a23input.focus();
           });
         }
       }

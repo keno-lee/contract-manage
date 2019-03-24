@@ -81,6 +81,22 @@ export default {
         {
           value: "0004",
           label: "个人最高额保证合同"
+        },
+        {
+          value: "0005",
+          label: "保证合同（个人）"
+        },
+        {
+          value: "0006",
+          label: "个人循环借款合同正式版"
+        },
+        {
+          value: "0007",
+          label: "借款合同(企业)"
+        },
+        {
+          value: "0008",
+          label: "综合授信合同(企业)"
         }
       ],
       value: '',

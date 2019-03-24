@@ -1,95 +1,99 @@
 <template>
   <div class="contract-wrap">
     <div class="contract-content">
-      <div>
-        <p style="font-size:15pt; line-height:150%; margin:0pt; orphans:0; widows:0">
-          <span style="font-family:宋体; font-size:15pt; font-weight:bold"></span>
+      <div style="height: 1080px;">
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p style="line-height:42pt; margin:5pt 0pt; text-align:center; text-indent:84pt">
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="line-height:42pt; margin:5pt 0pt; text-align:center">
           <span style="font-family:宋体; font-size:42pt; font-weight:bold">保 证 合 同</span>
         </p>
         <p style="line-height:16pt; margin:5pt 0pt; text-align:center; text-indent:32pt">
           <span style="font-family:宋体; font-size:16pt; font-weight:bold">（适用于个人）</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p
           style="font-size:18pt; line-height:150%; margin:0pt; orphans:0; text-align:center; widows:0"
@@ -98,9 +102,10 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-      <div>
+      <div style="height: 1000px;">
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
+          <input style="width: 150px; text-align: left;" v-model="info.contractNumber" type="text">
         </p>
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
@@ -108,85 +113,160 @@
           <span style="font-family:宋体; font-size:14pt"></span>
         </p>
         <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0;vertical-align: top;"
         >
-          <span style="font-family:宋体; font-size:14pt">保证人（甲方）：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:14pt;float:left">保证人（甲方）：</span>
+          <input
+            ref="partyAinput"
+            type="text"
+            style="width:376px;"
+            v-show="info.partyA.length < 20"
+            v-model="info.partyA"
+            @input="inputListener"
+          >
+          <textarea
+            ref="partyAtextarea"
+            style="text-decoration:underline; border:none;width: 376px;"
+            v-show="info.partyA.length >= 20"
+            cols="30"
+            v-model="info.partyA"
+            rows="1"
+          ></textarea>
         </p>
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
         >
           <span style="font-family:宋体; font-size:14pt">证件种类：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <input style="width: 451px" v-model="info.a3" type="text">
         </p>
         <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0;vertical-align: top;"
         >
-          <span style="font-family:宋体; font-size:14pt">证件号码：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:14pt;float:left">证件号码：</span>
+          <input
+            ref="a4input"
+            type="text"
+            style="width:451px;"
+            v-show="info.a4.length < 20"
+            v-model="info.a4"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a4textarea"
+            style="text-decoration:underline; border:none;width: 451px;"
+            v-show="info.a4.length >= 20"
+            cols="30"
+            v-model="info.a4"
+            rows="1"
+          ></textarea>
         </p>
         <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0;vertical-align: top;"
         >
-          <span style="font-family:宋体; font-size:14pt">地</span>
+          <span style="font-family:宋体; font-size:14pt;float:left">地 址：</span>
+          <input
+            ref="a5input"
+            type="text"
+            style="width:485px;"
+            v-show="info.a5.length < 20"
+            v-model="info.a5"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a5textarea"
+            style="text-decoration:underline; border:none;width: 485px;"
+            v-show="info.a5.length >= 20"
+            cols="30"
+            v-model="info.a5"
+            rows="1"
+          ></textarea>
+        </p>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0;vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:14pt;float:left">联系电话：</span>
+          <input
+            ref="phoneNumberinput"
+            type="text"
+            style="width:453px;"
+            v-show="info.phoneNumber.length < 20"
+            v-model="info.phoneNumber"
+            @input="inputListener"
+          >
+          <textarea
+            ref="phoneNumbertextarea"
+            style="text-decoration:underline; border:none;width: 453px;"
+            v-show="info.phoneNumber.length >= 20"
+            cols="30"
+            v-model="info.phoneNumber"
+            rows="1"
+          ></textarea>
+        </p>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p
+          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
-          <span style="font-family:宋体; font-size:14pt">址：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt"></span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt"></span>
-        </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt">债权人（乙方）：</span>
+        <p style="font-size:14px; line-height:150%; margin:0pt; orphans:0;  widows:0">
+          <span style="font-family:宋体; font-size:14pt">授信人（乙方）：</span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">安徽省安振小额贷款有限公司</span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 400px;text-align:center;border-bottom:1px solid #000"
+          >安徽省安振小额贷款有限公司</span>
           <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">负责人：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">潘 伟</span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 475px;text-align:center;border-bottom:1px solid #000"
+          >潘 伟</span>
         </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
           <span
-            style="font-family:宋体; font-size:14pt; text-decoration:underline"
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
           >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt 22.25pt 0pt 0pt; text-align:justify">
-          <span style="font-family:宋体; font-size:14pt">电 话：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">0551-65667870</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+          <span style="font-family:宋体; font-size:14pt">电话：</span>
+          <span
+            style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+          >0551-65667870</span>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">邮政编码：</span>
-          <span style="font-family:宋体; font-size:14pt; text-decoration:underline">230041</span>
+          <span
+            style="font-family:宋体; font-size:14pt;display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+          >230041</span>
         </p>
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
@@ -235,18 +315,16 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-      <div>
+      <div style="height: 5200px;">
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt">为确保</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a7" type="text">
           <span style="font-family:宋体; font-size:12pt">（以下称“债务人”）与乙方签订的编号为</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a8" type="text">
           <span style="font-family:宋体; font-size:12pt">的《</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a9" type="text">
           <span
             style="font-family:宋体; font-size:12pt"
           >》（以下称“主合同”）的履行，保障乙方债权的实现，甲方愿意为债务人在主合同项下的债务提供连带责任保证。甲乙双方经协商一致，订立本合同，以便共同遵守。</span>
@@ -254,12 +332,12 @@
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -268,34 +346,34 @@
         </p>
         <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">1.1 保证人担保的主债权为主合同债务人在债权人办理主合同项下贷款的本金（大写）</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 150px" v-model="info.a10" type="text">
           <span style="font-family:宋体; font-size:12pt">；币种</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a11" type="text">
           <span style="font-family:宋体; font-size:12pt">；月利率：</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a12" type="text">
           <span style="font-family:宋体; font-size:12pt">；贷款期限自</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a13" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a14" type="text">
           <span style="font-family:宋体; font-size:12pt">月</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a15" type="text">
           <span style="font-family:宋体; font-size:12pt">日始至</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a16" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a17" type="text">
           <span style="font-family:宋体; font-size:12pt">月</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 100px" v-model="info.a18" type="text">
           <span style="font-family:宋体; font-size:12pt">日止。</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -313,12 +391,12 @@
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -335,12 +413,12 @@
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -365,12 +443,12 @@
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -416,12 +494,12 @@
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:28.5pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:28.5pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:28.5pt; widows:0"
@@ -495,12 +573,12 @@
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -539,12 +617,12 @@
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -584,7 +662,7 @@
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -601,7 +679,7 @@
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -705,45 +783,25 @@
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt; font-weight:normal">10.9 本合同一式</span>
-          <span
-            style="font-family:宋体; font-size:12pt; font-weight:normal; text-decoration:underline"
-          ></span>
+          
+          <input style="width: 50px" v-model="info.a19" type="text">
           <span style="font-family:宋体; font-size:12pt; font-weight:normal">份。</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-        </p>
-        <p
-          style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-        >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十一条 其他约定事项</span>
         </p>
-        <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        </p>
-        <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        </p>
-        <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        </p>
-        <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
-        </p>
+        <textarea name id cols="30" rows="1" style="text-indent: 22pt" v-model="info.a28"></textarea>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -775,52 +833,51 @@
           >12.4 甲方确认自己对债务人的资产、债务、经营、信用、信誉等情况、是否具备签订主合同的主体资格和权限以及主合同的所有内容已经充分了解。</span>
         </p>
         <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">甲方或授权代理人（签字）：</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <input style="width: 50px" v-model="info.a20" type="text">
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">签约时间：</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a21" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a22" type="text">
           <span style="font-family:宋体; font-size:12pt">月</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a23" type="text">
           <span style="font-family:宋体; font-size:12pt">日</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">乙方（公章）：</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">负责人或授权代理人（签字）：</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a24" type="text">
           <span style="font-family:宋体; font-size:12pt"></span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">签约时间：</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a25" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a26" type="text">
           <span style="font-family:宋体; font-size:12pt">月</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a27" type="text">
           <span style="font-family:宋体; font-size:12pt">日</span>
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
@@ -828,37 +885,37 @@
         </p>
         <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">签约地点：</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline">合肥市庐阳区</span>
+          <input style="width: 100px" type="text" v-model="info.contractCreateAddress">
         </p>
         <p style="line-height:20pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="margin:0pt; orphans:0; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
@@ -888,25 +945,85 @@
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">送达地址：</span>
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
+          <input
+            ref="a29input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a29.length < 20"
+            v-model="info.a29"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a29textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a29.length >= 20"
+            cols="30"
+            v-model="info.a29"
+            rows="1"
+          ></textarea>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">收 件 人：</span>
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
+          <input
+            ref="a30input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a30.length < 20"
+            v-model="info.a30"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a30textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a30.length >= 20"
+            cols="30"
+            v-model="info.a30"
+            rows="1"
+          ></textarea>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">联系电话：</span>
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
+          <input
+            ref="a31input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a31.length < 20"
+            v-model="info.a31"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a35textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a31.length >= 20"
+            cols="30"
+            v-model="info.a31"
+            rows="1"
+          ></textarea>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">电子邮箱：</span>
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
+          <input
+            ref="a32input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a32.length < 20"
+            v-model="info.a32"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a32textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a32.length >= 20"
+            cols="30"
+            v-model="info.a32"
+            rows="1"
+          ></textarea>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -918,16 +1035,17 @@
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span
-            style="font-family:宋体; font-size:12pt"
-          >二、□本人（本公司）是借款人：如未按时足额偿还贷款本金、支付利息的，自愿承担贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。</span>
+          <span style="font-family:宋体; font-size:12pt">
+            二、
+            <input v-model="info.a33" type="checkbox"> 本人（本公司）是借款人：如未按时足额偿还贷款本金、支付利息的，自愿承担贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
+          </span>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span
-            style="font-family:宋体; font-size:12pt"
-          >□本人（本公司）是保证人或抵押人或出质人：担保范围除合同约定之外，还包括贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。</span>
+          <span style="font-family:宋体; font-size:12pt">
+            <input v-model="info.a34" type="checkbox"> 本人（本公司）是保证人或抵押人或出质人：担保范围除合同约定之外，还包括贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
+          </span>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -958,11 +1076,11 @@
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt">签署时间：</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width:50px;" v-model="info.a35" type="text">
           <span style="font-family:宋体; font-size:12pt">年</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width:50px;" v-model="info.a36" type="text">
           <span style="font-family:宋体; font-size:12pt">月</span>
-          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+          <input style="width:50px;" v-model="info.a37" type="text">
           <span style="font-family:宋体; font-size:12pt">日</span>
         </p>
         <p style="margin:0pt; orphans:0; widows:0">
@@ -991,7 +1109,7 @@
   </div>
 </template>
 <script>
-// 个人最高额度保证
+// 个人保证
 export default {
   props: {
     infoData: {
@@ -1004,7 +1122,7 @@ export default {
           a5: "",
           phoneNumber: "",
           a7: "",
-          a8: "（一）",
+          a8: "",
           a9: "",
           a10: "",
           a11: "",
@@ -1015,17 +1133,20 @@ export default {
           a16: "",
           a17: "",
           a18: "",
-          a19: "五",
-          a20: "三",
+          a19: "",
+          a20: "",
           a21: "",
-          a22:
-            "各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
+          a22: "",
           a23: "",
           a24: "",
           a25: "",
           a26: "",
           a27: "",
-          a28: "",
+          contractCreateAddress: "合肥市庐阳区",
+          a29: "",
+          a30: "",
+          a31: "",
+          a32: "",
           a29: "",
           a30: "",
           a31: "",
@@ -1035,14 +1156,9 @@ export default {
           a35: "",
           a36: "",
           a37: "",
-          a38: "",
-          a39: "",
-          a40: "",
-          a41: "",
-          contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
-          contractType: "0004"
+          contractType: "0005" // TODO 修改
         };
       }
     },
@@ -1052,50 +1168,48 @@ export default {
     return {
       info: {
         contractNumber: "",
-        partyA: "",
-        a3: "",
-        a4: "",
-        a5: "",
-        phoneNumber: "",
-        a7: "",
-        a8: "",
-        a9: "",
-        a10: "",
-        a11: "",
-        a12: "",
-        a13: "",
-        a14: "",
-        a15: "",
-        a16: "",
-        a17: "",
-        a18: "",
-        a19: "",
-        a20: "",
-        a21: "",
-        a22: "",
-        a23: "",
-        a24: "",
-        a25: "",
-        a26: "",
-        a27: "",
-        a28: "",
-        a29: "",
-        a30: "",
-        a31: "",
-        a32: "",
-        a33: "",
-        a34: "",
-        a35: "",
-        a36: "",
-        a37: "",
-        a38: "",
-        a39: "",
-        a40: "",
-        a41: "",
-        contractCreateAddress: "",
-        operateTip: "",
-        auditTip: "",
-        contractType: ""
+          partyA: "",
+          a3: "",
+          a4: "",
+          a5: "",
+          phoneNumber: "",
+          a7: "",
+          a8: "",
+          a9: "",
+          a10: "",
+          a11: "",
+          a12: "",
+          a13: "",
+          a14: "",
+          a15: "",
+          a16: "",
+          a17: "",
+          a18: "",
+          a19: "",
+          a20: "",
+          a21: "",
+          a22: "",
+          a23: "",
+          a24: "",
+          a25: "",
+          a26: "",
+          a27: "",
+          contractCreateAddress: "",
+          a29: "",
+          a30: "",
+          a31: "",
+          a32: "",
+          a29: "",
+          a30: "",
+          a31: "",
+          a32: "",
+          a33: "",
+          a34: "",
+          a35: "",
+          a36: "",
+          a37: "",
+          operateTip: "",
+          auditTip: ""
       }
     };
   },
@@ -1228,7 +1342,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0004";
+            nv["contractType"] = "0005";
           }
           // console.log("赋值");
           this.info = nv;
@@ -1265,58 +1379,58 @@ export default {
         }
       }
     },
-    "info.a33": {
+    "info.a29": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.a33textarea.focus();
+            this.$refs.a29textarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.a33input.focus();
+            this.$refs.a29input.focus();
           });
         }
       }
     },
-    "info.a34": {
+    "info.a30": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.a34textarea.focus();
+            this.$refs.a30textarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.a34input.focus();
+            this.$refs.a30input.focus();
           });
         }
       }
     },
-    "info.a35": {
+    "info.a31": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.a35textarea.focus();
+            this.$refs.a31textarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.a35input.focus();
+            this.$refs.a31input.focus();
           });
         }
       }
     },
-    "info.a36": {
+    "info.a32": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.a36textarea.focus();
+            this.$refs.a32textarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.a36input.focus();
+            this.$refs.a32input.focus();
           });
         }
       }

@@ -28,6 +28,34 @@
       @reject="onreject"
       @pass="onpass"
     ></guaranteePersonal>
+    <ensurePersonal
+      v-if="contractType === '0005'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></ensurePersonal>
+    <loanLoopPersonal
+      v-if="contractType === '0006'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></loanLoopPersonal>
+    <loanBusiness
+      v-if="contractType === '0007'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></loanBusiness>
+    <creditBusiness
+      v-if="contractType === '0008'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></creditBusiness>
   </div>
 </template>
 
@@ -37,6 +65,10 @@ import loanPersonal from "@/components/contract/loan-personal.vue";
 import maxMortgage from "@/components/contract/max-mortgage.vue";
 import creditPersonal from "@/components/contract/credit-personal.vue";
 import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
+import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保证合同（个人）
+import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
+import loanBusiness from "@/components/contract/loan-business.vue";
+import creditBusiness from "@/components/contract/credit-business.vue";
 
 export default {
   data() {
@@ -283,7 +315,11 @@ export default {
     loanPersonal,
     maxMortgage,
     creditPersonal,
-    guaranteePersonal
+    guaranteePersonal,
+    ensurePersonal,
+    loanLoopPersonal,
+    loanBusiness,
+    creditBusiness
   }
 };
 </script>
