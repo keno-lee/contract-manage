@@ -104,12 +104,9 @@
           <span style="font-family:宋体; font-size:14pt">合同编号：</span>
           <input style="width: 150px; text-align: left;" v-model="info.contractNumber" type="text">
         </p>
-        <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        <p style="font-size:12pt; line-height:400%; margin:0pt; orphans:0;  widows:0">
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
-        <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:14pt"></span>
-        </p>-->
         <p
           style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0;vertical-align: top;"
         >
@@ -229,39 +226,8 @@
           ></textarea>
         </p>
         
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
-        <p
-          style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-        >
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:14pt"></span>
-        </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:14pt"></span>
-        </p>
-        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
-          <span style="font-family:宋体; font-size:14pt"></span>
+        <p style="font-size:12pt; line-height:400%; margin:0pt; orphans:0;  widows:0">
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="font-size:14px; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:14pt">贷款人（乙方）：</span>
