@@ -108,12 +108,9 @@
               type="text"
             >
           </p>
-          <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
-            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-          </p>
-          <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
-            <span style="font-family:宋体; font-size:14pt"></span>
-          </p>-->
+          <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
           <p
             style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
           >
@@ -168,17 +165,18 @@
           <p
             style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
           >
-            <span style="font-family:宋体; font-size:14pt;float: left;">地 址：</span>
+            <span style="font-family:宋体; font-size:14pt;float: left;">地</span>
+            <span style="font-family:宋体; font-size:14pt;float: left;margin-left:37px;">址：</span>
             <input
               ref="a5input"
               v-show="info.a5.length < 20"
-              style="width: 487px;"
+              style="width: 453px;"
               v-model="info.a5"
               type="text"
             >
             <textarea
               ref="a5textarea"
-              style="text-decoration:underline; border:none;width: 487px;"
+              style="text-decoration:underline; border:none;width: 453px;"
               v-show="info.a5.length >= 20"
               cols="30"
               v-model="info.a5"
@@ -209,31 +207,9 @@
               rows="1"
             ></textarea>
           </p>
-          <p
-            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-          </p>
-          <p
-            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-          </p>
-          <p
-            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-          </p>
-          <p
-            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-          </p>
-          <p
-            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-          </p>
+          <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
           <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
             <span style="font-family:宋体; font-size:14pt">债权人（乙方）：</span>
             <span
