@@ -56,6 +56,20 @@
       @reject="onreject"
       @pass="onpass"
     ></creditBusiness>
+    <guaranteeBusiness
+      v-if="contractType === '0009'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></guaranteeBusiness>
+    <mortgage
+      v-if="contractType === '0010'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></mortgage>
   </div>
 </template>
 
@@ -69,6 +83,9 @@ import ensurePersonal from "@/components/contract/ensure-personal.vue"; // ‰øùËØ
 import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
 import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
+import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
+import mortgage from "@/components/contract/mortgage.vue";
+
 
 export default {
   data() {
@@ -319,7 +336,9 @@ export default {
     ensurePersonal,
     loanLoopPersonal,
     loanBusiness,
-    creditBusiness
+    creditBusiness,
+    guaranteeBusiness,
+    mortgage
   }
 };
 </script>

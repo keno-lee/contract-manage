@@ -1,873 +1,1029 @@
 <template>
   <div class="contract-wrap">
-    <div>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p style="line-height:42pt; margin:5pt 0pt; text-align:center; text-indent:84pt">
-        <span style="font-family:宋体; font-size:42pt; font-weight:bold">保 证 合 同</span>
-      </p>
-      <p style="line-height:16pt; margin:5pt 0pt; text-align:center; text-indent:32pt">
-        <span style="font-family:宋体; font-size:16pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:18pt; line-height:150%; margin:0pt; orphans:0; text-align:center; widows:0"
-      >
-        <span style="font-family:宋体; font-size:18pt">安徽省安振小额贷款有限公司</span>
-      </p>
-    </div>
-    <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-    <div>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">合同编号：</span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">保证人（甲方）：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">证件种类：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">证件号码：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">地</span>
-        <span style="font-family:宋体; font-size:14pt"></span>
-        <span style="font-family:宋体; font-size:14pt">址：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt"></span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">债权人（乙方）：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline">安徽省安振小额贷款有限公司</span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">负责人：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline">潘 伟</span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
-        <span
-          style="font-family:宋体; font-size:14pt; text-decoration:underline"
-        >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
-      </p>
-      <p
-        style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:14pt">联系电话：</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline">0551-65667870</span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:14pt; text-decoration:underline"></span>
-      </p>
-    </div>
-    <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-    <div>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">为确保</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">（以下称“债务人”）与乙方签订的编号为</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">的《</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline">借款合同</span>
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >》（以下称“主合同”）的履行，保障乙方债权的实现，甲方愿意为债务人在主合同项下的债务提供连带责任保证。甲乙双方经协商一致，订立本合同，以便共同遵守。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第一条 担保的主债权的种类、金额和期限</span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt">1.1 保证人担保的主债权为主合同债务人在债权人办理主合同项下贷款的本金（大写）</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">；币种</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">；月利率：</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">；贷款期限自</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">年</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">月</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">日始至</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">年</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">月</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">日止。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第二条 保证担保的范围</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">2.1 保证的范围</span>
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >为主合同项下债权本金及利息、复利、罚息、违约金、损害赔偿金和债权人实现债权而发生的费用（包括但不限于催收费用、诉讼费或仲裁费、保全费、公告费、执行费、律师费、差旅费）以及其它所有主合同债务人的应付费用。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第三条 保证方式</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >3.1 本合同项下的保证方式为连带责任保证，当债务人未按主合同约定按时清偿本合同担保范围内债务时，债权人有权直接向保证人追偿，保证人应立即向债权人清偿债务人的全部到期应付款项。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第四条 保证期间</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >4.1 自本合同生效之日起至主合同项下债务履行期限届满之日后两年止。甲方同意债务展期的，保证期间至展期协议重新约定的债务履行期限届满之日后两年止。若乙方根据主合同约定,宣布债务提前到期的,保证期间至乙方宣布的债务提前到期日后两年止。如果主合同项下的债务分期履行，则对每期债务而言，保证期间均至最后一期债务履行期限届满之日后两年止。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >4.2 本合同的效力独立于主合同，主合同不成立、不生效、无效、部分无效或被撤销、被解除并不影响本合同的效力。如主合同被确认为不成立、不生效、无效、部分无效或被撤销、被解除，则甲方对于债务人因返还财产或赔偿损失而形成的债务也承担连带责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第五条 主合同的变更</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >5.1 如果乙方与债务人协议变更主合同条款（包括但不限于变更偿还币种、还款方式、贷款账号、还款账号、用款计划、还款计划、起息日、结息日、在债务履行期限不延长的情况下债务履行期限的起始日或截止日变更），甲方同意对变更后的主合同项下债务承担连带保证责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >但未经甲方事先同意，乙方与债务人协议延长债务履行期限或增加债权本金金额的，甲方仅依照本合同的约定对变更前的主合同项下债务承担连带保证责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">5.2 甲方的保证责任不因出现下列任一情况而减免：</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">（1）乙方或债务人发生改制、合并、兼并、分立、增减资本、合资、联营、更名等情形；</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">（2）乙方委托第三方履行其在主合同项下的义务。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >5.3 主合同项下债权或债务的转移行为未生效、无效、被撤销、被解除，甲方仍按照本合同对乙方承担连带保证责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第六条 保证人的陈述与保证</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">6.1 甲方清楚地知悉乙方的经营范围、授权权限。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >6.2 甲方已阅读本合同及主合同所有条款。应甲方要求，乙方已经就本合同及主合同做了相应的条款说明。甲方对本合同及主合同条款的含义及相应的法律后果已全部通晓并充分理解。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >6.3 甲方具备担当保证人的合法资格，甲方在本合同项下的担保行为符合法律、行政法规、规章和甲方章程或内部组织文件的规定，且已获得公司内部有权机构及/或国家有权机关的批准。因甲方无权签署本合同而产生的一切责任均由</span>
-        <span style="font-family:宋体; font-size:12pt">甲方承担,包括但不限于全额赔偿乙方因此遭受的损失。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >6.4 甲方确认自己对债务人的资产、债务、经营、信用、信誉等情况、是否具备签订主合同的主体资格和权限以及主合同的所有内容已经充分了解。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第七条 保证责任</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >7.1 如果主合同项下债务到期或者乙方根据主合同的约定或法律规定宣布债务提前到期，债务人未按时足额履行，或者债务人违反主合同的其他约定，甲方应在保证范围内立即承担保证责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >7.2 无论乙方对主合同项下的债权是否拥有其他担保（包括但不限于保证、抵押、质押、保函、备用信用证等担保方式），不论上述其他担保何时成立、是否有效、乙方是否向其他担保人提出权利主张，也不论是否有第三方同意承担主合同项下的全部或部分债务，也不论其他担保是否由债务人自己所提供，甲方在本合同项下的保证责任均不因此减免，乙方均可直接要求甲方依照本合同约定在其保证范围内承担保证责任，甲方将不提出任何异议。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >7.3 如果甲方只对主合同项下的部分债务提供保证，则甲方同意，即使因债务人清偿、乙方实现其他担保权利或任何其他原因导致主合同项下的债务部分消灭，甲方仍应按照本合同的约定在保证范围内对尚未消灭的债务承担保证责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >7.4 如果甲方只为主合同项下的部分债务提供保证，在其承担保证责任后主合同项下的债务仍未获完全清偿，则甲方承诺，其向债务人或其他担保人主张（包括预先行使）代位权或追偿权，不应使乙方利益受到任何损害，并同意主合同项下债务的清偿优先于甲方代位权或追偿权的实现。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">具体而言，在乙方债权未被全部清偿前，</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >（1）甲方同意不向债务人或其他担保人主张代位权或追偿权；如因任何原因，甲方实现了上述权利，则应将所获款项优先用于清偿乙方尚未获偿的债权；</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >（2）主合同项下的债务如有物的担保，甲方同意不以行使代位权为由或任何其他原因对该担保物或其处分后所得价款提出权利主张，上述担保物及所得价款应优先用于清偿乙方尚未获偿的债权；</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >（3）若债务人或其他担保人为甲方提供了反担保，则甲方基于上述反担保而获得的款项应优先用于清偿乙方尚未获偿的债权。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >7.5 甲方已充分认识到利率风险。如果乙方根据主合同的约定或者国家的利率政策变化而调整利率水平、计息或结息方式，导致债务人应偿还的利息、罚息、复利增加的，对增加部分，甲方也承担连带保证责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第八条 甲方的其他义务</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >8.1 甲方应对债务人借款使用情况（包括用途）进行监督，并接受乙方对甲方资金、财产和经营状况的监督，根据乙方的要求提供财务报表等有关信息、</span>
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >文件、资料，并保证其准确、真实、完整与有效；如因甲方提供虚假的资料导致乙方的债权受损，甲方应承担相应的赔偿责任。未经乙方书面同意，甲方</span>
-        <span style="font-family:宋体; font-size:12pt">不得向第三方提供超出其自身负担能力的担保。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >8.2 发生承包、托管（接管）、租赁、股份制改造、减少注册资本金、投资、联营、合并、兼并 、收购重组、分立、合资、（被）申请停业整顿、申请解散、被撤销、（被）申请破产、控股股东/实际控制人变更或重大资产转让、停产、歇业、被有权机关施以高额罚款、被注销登记、被吊销营业执照、涉及重大法律纠纷、生产经营出现严重困难或财务状况恶化、法定代表人或主要负责人无法正常履行职责，或者因任何原因丧失或可能丧失担保能力，甲方应立即书面通知乙方，并按照乙方要求落实本合同项下保证责任的承担、转移或承继，或者为主合同的履行提供乙方认可的新担保。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >8.3 甲方发生名称、法定代表人（负责人）、住所、经营范围、注册资本金或公司（企业）章程等工商登记事项变更的，应当在变更后</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">个工作日内书面通知乙方，并附变更后的相关材料。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第九条 扣划约定</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">9.1甲方有到期应付的债务时，授权乙方扣划甲方在委托银行开立的任一账户中的资金用于清偿。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">9.2 扣划后，债权人应将扣划所涉账号、主合同号、保证合同号、扣划金额、债务余额通知保证人。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >9.3 扣划所得款项不足以清偿保证人全部债务时，应首先用于抵偿到期未付的费用，再按以下约定扣划：</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >贷款本金及利息逾期不足90天的，抵偿费用后的余额先用于抵偿到期未付的利息或罚息、复利，再用于抵偿到期未付的本金；本金或利息逾期90天的，抵偿费用后的余额先用于抵偿到期未付的本金，再用于抵偿到期未付的利息或罚息、复利。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >9.4 扣划所得款项与需抵偿的债务币种不一致的,按委托银行在扣划日公布的汇率折算为抵偿债务的金额。</span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十条 争议解决</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:33pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >本合同在履行过程中发生争议，可以通过协商解决，协商不成，任一方均可向乙方住所地人民法院起诉解决。在诉讼期间，本合同不涉及争议部分的条款仍须履行。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十一条 其他条款</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:28.5pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >11.1 甲方有逃避乙方监督、拖欠保证债务、恶意逃废债等行为时，乙方有权将该种行为向有关单位通报，并在新闻媒体上公告。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:27.75pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >11.2本合同经甲方法定代表人（负责人）或授权代理人签字或加盖公章及乙方负责人或授权代理人签字或加盖公章后生效。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">11.3 甲方信息的使用</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >甲方同意乙方向中国人民银行及信贷征信主管部门批准建立的信用数据库或有关单位、部门查询甲方的信用状况，并同意乙方将甲方信息提供给中国人民银行及信贷征信主管部门批准建立的信用数据库。甲方并同意，乙方为业务需要也可以合理使用并披露甲方信息。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">11.4 公告催收</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">对甲方的违约情形，乙方有权向有关部门或单位予以通报，有权通过新闻媒体进行公告催收。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">11.5 乙方记录的证据效力</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >除非有可靠、确定的相反证据，乙方有关本金、利息、费用和还款记录等内容的内部账务记载，乙方制作或保留的债务人办理提款、还款、付利息等业务过程中发生的单据、凭证及乙方催收贷款的记录、凭证，均构成有效证明主合同项下债权关系的确定证据。甲方不能仅因为上述记录、记载、单据、凭证由乙方单方制作或保留，而提出异议。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">11.6 权利保留</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >乙方在本合同项下的权利并不影响和排除其根据法律、法规和其它合同所享有的任何权利。任何对违约或延误行为施以任何宽容、宽限、优惠或延缓行使本合同项下的任何权利，均不能视为对本合同项下权利、权益的放弃或对任何违反本合同行为的许可或认可，也不影响、阻止和妨碍对该权利的继续行使或对其任何其它权利的行使，也不因此导致乙方对甲方承担义务和责任。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >如果乙方不行使或延缓行使主合同项下的任何权利或未用尽主合同项下的任何救济，甲方在本合同项下的保证责任并不因此减免，但是乙方若减免主合同项下债务，甲方在本合同项下的保证责任相应减免。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">11.7 债务人解散或破产</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >甲方知道债务人进入解散或破产程序后，应当立即通知乙方申报债权，同时自己应及时参加解散或破产程序，预先行使追偿权。甲方知道或者应当知道债务人进入解散或破产程序，但未能及时预先行使追偿权的，其损失由甲方自行承担。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >尽管有11.6条的约定，在债务人破产程序中，如果乙方与债务人达成和解协议，或者同意重整计划，本合同项下乙方的权利不因和解协议或重整计划而受到损害，甲方的保证责任不予以减免。甲方不得以和解协议、重整计划规定的条件对抗乙方的权利主张。乙方在和解协议、重整计划中对债务人作出让步而未能获得清偿的债权部分，仍有权要求甲方继续予以清偿。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">11.8 甲方解散或破产</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:28.5pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >甲方发生解散或破产的，即使乙方在主合同项下债权尚未到期，乙方也有权参加甲方清算或破产程序，申报权利。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >11.9 甲方的通讯地址或联系方式如发生变动，应立即书面通知乙方，因未及时通知而造成的损失由甲方自行承担。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">11.10 本合同一式</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">份。</span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
-      </p>
-      <p
-        style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十二条 其他约定事项</span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt">甲方（公章）：</span>
-        <span style="font-family:宋体; font-size:12pt"></span>
-        <span style="font-family:宋体; font-size:12pt"></span>
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt">法定代表人（负责人）或授权代理人（签字）：</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; widows:0">
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">年</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">月</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">日</span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt">乙方（公章）：</span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt">负责人或授权代理人（签字）：</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">年</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">月</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">日</span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt">签约地点：</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline">合肥市庐阳区</span>
-      </p>
-    </div>
-    <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-    <div>
-      <p style="margin:0pt; orphans:0; widows:0">
-        <span style="font-family:宋体; font-size:14pt">附件:</span>
-      </p>
-      <p style="margin:0pt; orphans:0; text-align:center; widows:0">
-        <span style="font-family:黑体; font-size:9pt"></span>
-      </p>
-      <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt">致安徽省安振小额贷款有限公司：</span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">作为本合同附件，本人（本公司）承诺如下：</span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >一、本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">送达地址：</span>
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">收 件 人：</span>
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">联系电话：</span>
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold">电子邮箱：</span>
-        <span style="font-family:宋体; font-size:12pt; font-weight:bold; text-decoration:underline"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >本人（本公司）认可：如因本人（本公司）提供的上述地址不准确、送达地址变更未及时告知贵公司、本人（本公司）或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人（本公司）实际接收的，文书退回之日视为送达之日。</span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >二、□本人（本公司）是借款人：如未按时足额偿还贷款本金、支付利息的，自愿承担贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。</span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:12pt"
-        >□本人（本公司）是保证人或抵押人或出质人：担保范围除合同约定之外，还包括贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。</span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">承诺人签章：</span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p
-        style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:宋体; font-size:12pt">签署时间：</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">年</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">月</span>
-        <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
-        <span style="font-family:宋体; font-size:12pt">日</span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:宋体; font-size:12pt"></span>
-      </p>
-      <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:'Times New Roman'; font-size:10.5pt"></span>
-      </p>
+    <div class="contract-content">
+      <div>
+        <div style="height: 1080px;">
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="line-height:42pt; margin:5pt 0pt; text-align:center">
+            <span style="font-family:宋体; font-size:42pt; font-weight:bold">保 证 合 同</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p
+            style="font-size:18pt; line-height:150%; margin:0pt; orphans:0; text-align:center; widows:0"
+          >
+            <span style="font-family:宋体; font-size:18pt">安徽省安振小额贷款有限公司</span>
+          </p>
+        </div>
+        <div style="height: 1000px;">
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+            <span style="font-family:宋体; font-size:14pt">合同编号：</span>
+            <input
+              style="width: 150px; text-align: left;"
+              v-model="info.contractNumber"
+              type="text"
+            >
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:5pt 0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+            <span style="font-family:宋体; font-size:14pt"></span>
+          </p>-->
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
+          >
+            <span style="font-family:宋体; font-size:14pt;float: left;">保证人(甲方)：</span>
+            <input
+              ref="partyAinput"
+              type="text"
+              style="width:423px;"
+              v-show="info.partyA.length < 20"
+              v-model="info.partyA"
+              @input="inputListener"
+            >
+            <textarea
+              ref="partyAtextarea"
+              style="text-decoration:underline; border:none;width: 423px;"
+              v-show="info.partyA.length >= 20"
+              cols="30"
+              v-model="info.partyA"
+              rows="1"
+            ></textarea>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+            <span style="font-family:宋体; font-size:14pt">证件种类：</span>
+            <input style="width: 450px" v-model="info.a3" type="text">
+          </p>
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
+          >
+            <span style="font-family:宋体; font-size:14pt;float: left;">证件号码：</span>
+            <input
+              ref="a4input"
+              v-show="info.a4.length < 20"
+              style="width: 455px;"
+              v-model="info.a4"
+              type="text"
+            >
+            <textarea
+              ref="a4textarea"
+              style="text-decoration:underline; border:none;width: 455px;"
+              v-show="info.a4.length >= 20"
+              cols="30"
+              v-model="info.a4"
+              rows="1"
+            ></textarea>
+          </p>
+          <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+          <span style="font-family:宋体; font-size:14pt">地</span>
+          <span style="font-family:宋体; font-size:14pt"></span>
+          <span style="font-family:宋体; font-size:14pt">址：</span>
+          <input style="width:400px;" type="text" v-model="info.a5">
+          </p>-->
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
+          >
+            <span style="font-family:宋体; font-size:14pt;float: left;">地 址：</span>
+            <input
+              ref="a5input"
+              v-show="info.a5.length < 20"
+              style="width: 487px;"
+              v-model="info.a5"
+              type="text"
+            >
+            <textarea
+              ref="a5textarea"
+              style="text-decoration:underline; border:none;width: 487px;"
+              v-show="info.a5.length >= 20"
+              cols="30"
+              v-model="info.a5"
+              rows="1"
+            ></textarea>
+          </p>
+          <!-- <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+          <span style="font-family:宋体; font-size:14pt">联系方式：</span>
+          <input style="width:250px;" type="text" v-model="info.phoneNumber">
+          </p>-->
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0; vertical-align: top;"
+          >
+            <span style="font-family:宋体; font-size:14pt;float: left;">联系方式：</span>
+            <input
+              ref="phoneNumberinput"
+              v-show="info.phoneNumber.length < 20"
+              style="width: 455px;"
+              v-model="info.phoneNumber"
+              type="text"
+            >
+            <textarea
+              ref="phoneNumbertextarea"
+              style="text-decoration:underline; border:none;width: 455px;"
+              v-show="info.phoneNumber.length >= 20"
+              cols="30"
+              v-model="info.phoneNumber"
+              rows="1"
+            ></textarea>
+          </p>
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+          >
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+          >
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+          >
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+          >
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p
+            style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    text-indent:24pt; widows:0"
+          >
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+            <span style="font-family:宋体; font-size:14pt">债权人（乙方）：</span>
+            <span
+              style="font-family:宋体; font-size:14pt; display: inline-block;width: 400px;text-align:center;border-bottom:1px solid #000"
+            >安徽省安振小额贷款有限公司</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+            <span style="font-family:宋体; font-size:14pt">负责人：</span>
+            <span
+              style="font-family:宋体; font-size:14pt; display: inline-block;width: 475px;text-align:center;border-bottom:1px solid #000"
+            >潘 伟</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+            <span style="font-family:宋体; font-size:14pt">通讯地址：</span>
+            <span
+              style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+            >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+            <span style="font-family:宋体; font-size:14pt">联系电话：</span>
+            <span
+              style="font-family:宋体; font-size:14pt; display: inline-block;width: 463px;text-align:center;border-bottom:1px solid #000"
+            >0551-65667870</span>
+          </p>
+
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+          <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+            <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+          </p>
+        </div>
+      </div>
+      <br style="clear:both; mso-break-type:section-break; page-break-before:always">
+      <div>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">为确保</span>
+          <input style="width: 50px" v-model="info.a7" type="text">
+          <span style="font-family:宋体; font-size:12pt">（以下称“债务人”）与乙方签订的编号为</span>
+          <input style="width: 50px" v-model="info.a8" type="text">
+          <span style="font-family:宋体; font-size:12pt">的《</span>
+          <span style="font-family:宋体; font-size:12pt; text-decoration:underline">借款合同</span>
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >》（以下称“主合同”）的履行，保障乙方债权的实现，甲方愿意为债务人在主合同项下的债务提供连带责任保证。甲乙双方经协商一致，订立本合同，以便共同遵守。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第一条 担保的主债权的种类、金额和期限</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">1.1 保证人担保的主债权为主合同债务人在债权人办理主合同项下贷款的本金（大写）</span>
+          <input style="width: 50px" v-model="info.a9" type="text">
+          <span style="font-family:宋体; font-size:12pt">；币种</span>
+          <input style="width: 50px" v-model="info.a10" type="text">
+          <span style="font-family:宋体; font-size:12pt">；月利率：</span>
+          <input style="width: 50px" v-model="info.a11" type="text">
+          <span style="font-family:宋体; font-size:12pt">；贷款期限自</span>
+          <input style="width: 50px" v-model="info.a12" type="text">
+          <span style="font-family:宋体; font-size:12pt">年</span>
+          <input style="width: 50px" v-model="info.a13" type="text">
+          <span style="font-family:宋体; font-size:12pt">月</span>
+          <input style="width: 50px" v-model="info.a14" type="text">
+          <span style="font-family:宋体; font-size:12pt">日始至</span>
+          <input style="width: 50px" v-model="info.a15" type="text">
+          <span style="font-family:宋体; font-size:12pt">年</span>
+          <input style="width: 50px" v-model="info.a16" type="text">
+          <span style="font-family:宋体; font-size:12pt">月</span>
+          <input style="width: 50px" v-model="info.a17" type="text">
+          <span style="font-family:宋体; font-size:12pt">日止。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第二条 保证担保的范围</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">2.1 保证的范围</span>
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >为主合同项下债权本金及利息、复利、罚息、违约金、损害赔偿金和债权人实现债权而发生的费用（包括但不限于催收费用、诉讼费或仲裁费、保全费、公告费、执行费、律师费、差旅费）以及其它所有主合同债务人的应付费用。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第三条 保证方式</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >3.1 本合同项下的保证方式为连带责任保证，当债务人未按主合同约定按时清偿本合同担保范围内债务时，债权人有权直接向保证人追偿，保证人应立即向债权人清偿债务人的全部到期应付款项。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第四条 保证期间</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >4.1 自本合同生效之日起至主合同项下债务履行期限届满之日后两年止。甲方同意债务展期的，保证期间至展期协议重新约定的债务履行期限届满之日后两年止。若乙方根据主合同约定,宣布债务提前到期的,保证期间至乙方宣布的债务提前到期日后两年止。如果主合同项下的债务分期履行，则对每期债务而言，保证期间均至最后一期债务履行期限届满之日后两年止。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >4.2 本合同的效力独立于主合同，主合同不成立、不生效、无效、部分无效或被撤销、被解除并不影响本合同的效力。如主合同被确认为不成立、不生效、无效、部分无效或被撤销、被解除，则甲方对于债务人因返还财产或赔偿损失而形成的债务也承担连带责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第五条 主合同的变更</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >5.1 如果乙方与债务人协议变更主合同条款（包括但不限于变更偿还币种、还款方式、贷款账号、还款账号、用款计划、还款计划、起息日、结息日、在债务履行期限不延长的情况下债务履行期限的起始日或截止日变更），甲方同意对变更后的主合同项下债务承担连带保证责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >但未经甲方事先同意，乙方与债务人协议延长债务履行期限或增加债权本金金额的，甲方仅依照本合同的约定对变更前的主合同项下债务承担连带保证责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">5.2 甲方的保证责任不因出现下列任一情况而减免：</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">（1）乙方或债务人发生改制、合并、兼并、分立、增减资本、合资、联营、更名等情形；</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">（2）乙方委托第三方履行其在主合同项下的义务。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >5.3 主合同项下债权或债务的转移行为未生效、无效、被撤销、被解除，甲方仍按照本合同对乙方承担连带保证责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第六条 保证人的陈述与保证</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">6.1 甲方清楚地知悉乙方的经营范围、授权权限。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >6.2 甲方已阅读本合同及主合同所有条款。应甲方要求，乙方已经就本合同及主合同做了相应的条款说明。甲方对本合同及主合同条款的含义及相应的法律后果已全部通晓并充分理解。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >6.3 甲方具备担当保证人的合法资格，甲方在本合同项下的担保行为符合法律、行政法规、规章和甲方章程或内部组织文件的规定，且已获得公司内部有权机构及/或国家有权机关的批准。因甲方无权签署本合同而产生的一切责任均由</span>
+          <span style="font-family:宋体; font-size:12pt">甲方承担,包括但不限于全额赔偿乙方因此遭受的损失。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >6.4 甲方确认自己对债务人的资产、债务、经营、信用、信誉等情况、是否具备签订主合同的主体资格和权限以及主合同的所有内容已经充分了解。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第七条 保证责任</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >7.1 如果主合同项下债务到期或者乙方根据主合同的约定或法律规定宣布债务提前到期，债务人未按时足额履行，或者债务人违反主合同的其他约定，甲方应在保证范围内立即承担保证责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >7.2 无论乙方对主合同项下的债权是否拥有其他担保（包括但不限于保证、抵押、质押、保函、备用信用证等担保方式），不论上述其他担保何时成立、是否有效、乙方是否向其他担保人提出权利主张，也不论是否有第三方同意承担主合同项下的全部或部分债务，也不论其他担保是否由债务人自己所提供，甲方在本合同项下的保证责任均不因此减免，乙方均可直接要求甲方依照本合同约定在其保证范围内承担保证责任，甲方将不提出任何异议。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >7.3 如果甲方只对主合同项下的部分债务提供保证，则甲方同意，即使因债务人清偿、乙方实现其他担保权利或任何其他原因导致主合同项下的债务部分消灭，甲方仍应按照本合同的约定在保证范围内对尚未消灭的债务承担保证责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >7.4 如果甲方只为主合同项下的部分债务提供保证，在其承担保证责任后主合同项下的债务仍未获完全清偿，则甲方承诺，其向债务人或其他担保人主张（包括预先行使）代位权或追偿权，不应使乙方利益受到任何损害，并同意主合同项下债务的清偿优先于甲方代位权或追偿权的实现。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">具体而言，在乙方债权未被全部清偿前，</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >（1）甲方同意不向债务人或其他担保人主张代位权或追偿权；如因任何原因，甲方实现了上述权利，则应将所获款项优先用于清偿乙方尚未获偿的债权；</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >（2）主合同项下的债务如有物的担保，甲方同意不以行使代位权为由或任何其他原因对该担保物或其处分后所得价款提出权利主张，上述担保物及所得价款应优先用于清偿乙方尚未获偿的债权；</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >（3）若债务人或其他担保人为甲方提供了反担保，则甲方基于上述反担保而获得的款项应优先用于清偿乙方尚未获偿的债权。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >7.5 甲方已充分认识到利率风险。如果乙方根据主合同的约定或者国家的利率政策变化而调整利率水平、计息或结息方式，导致债务人应偿还的利息、罚息、复利增加的，对增加部分，甲方也承担连带保证责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第八条 甲方的其他义务</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >8.1 甲方应对债务人借款使用情况（包括用途）进行监督，并接受乙方对甲方资金、财产和经营状况的监督，根据乙方的要求提供财务报表等有关信息、</span>
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >文件、资料，并保证其准确、真实、完整与有效；如因甲方提供虚假的资料导致乙方的债权受损，甲方应承担相应的赔偿责任。未经乙方书面同意，甲方</span>
+          <span style="font-family:宋体; font-size:12pt">不得向第三方提供超出其自身负担能力的担保。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >8.2 发生承包、托管（接管）、租赁、股份制改造、减少注册资本金、投资、联营、合并、兼并 、收购重组、分立、合资、（被）申请停业整顿、申请解散、被撤销、（被）申请破产、控股股东/实际控制人变更或重大资产转让、停产、歇业、被有权机关施以高额罚款、被注销登记、被吊销营业执照、涉及重大法律纠纷、生产经营出现严重困难或财务状况恶化、法定代表人或主要负责人无法正常履行职责，或者因任何原因丧失或可能丧失担保能力，甲方应立即书面通知乙方，并按照乙方要求落实本合同项下保证责任的承担、转移或承继，或者为主合同的履行提供乙方认可的新担保。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >8.3 甲方发生名称、法定代表人（负责人）、住所、经营范围、注册资本金或公司（企业）章程等工商登记事项变更的，应当在变更后</span>
+          <input style="width: 50px" v-model="info.a18" type="text">
+          <span style="font-family:宋体; font-size:12pt">个工作日内书面通知乙方，并附变更后的相关材料。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第九条 扣划约定</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">9.1甲方有到期应付的债务时，授权乙方扣划甲方在委托银行开立的任一账户中的资金用于清偿。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >9.2 扣划后，债权人应将扣划所涉账号、主合同号、保证合同号、扣划金额、债务余额通知保证人。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >9.3 扣划所得款项不足以清偿保证人全部债务时，应首先用于抵偿到期未付的费用，再按以下约定扣划：</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >贷款本金及利息逾期不足90天的，抵偿费用后的余额先用于抵偿到期未付的利息或罚息、复利，再用于抵偿到期未付的本金；本金或利息逾期90天的，抵偿费用后的余额先用于抵偿到期未付的本金，再用于抵偿到期未付的利息或罚息、复利。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >9.4 扣划所得款项与需抵偿的债务币种不一致的,按委托银行在扣划日公布的汇率折算为抵偿债务的金额。</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十条 争议解决</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:33pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >本合同在履行过程中发生争议，可以通过协商解决，协商不成，任一方均可向乙方住所地人民法院起诉解决。在诉讼期间，本合同不涉及争议部分的条款仍须履行。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十一条 其他条款</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:28.5pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >11.1 甲方有逃避乙方监督、拖欠保证债务、恶意逃废债等行为时，乙方有权将该种行为向有关单位通报，并在新闻媒体上公告。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:27.75pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >11.2本合同经甲方法定代表人（负责人）或授权代理人签字或加盖公章及乙方负责人或授权代理人签字或加盖公章后生效。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">11.3 甲方信息的使用</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >甲方同意乙方向中国人民银行及信贷征信主管部门批准建立的信用数据库或有关单位、部门查询甲方的信用状况，并同意乙方将甲方信息提供给中国人民银行及信贷征信主管部门批准建立的信用数据库。甲方并同意，乙方为业务需要也可以合理使用并披露甲方信息。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">11.4 公告催收</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">对甲方的违约情形，乙方有权向有关部门或单位予以通报，有权通过新闻媒体进行公告催收。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">11.5 乙方记录的证据效力</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >除非有可靠、确定的相反证据，乙方有关本金、利息、费用和还款记录等内容的内部账务记载，乙方制作或保留的债务人办理提款、还款、付利息等业务过程中发生的单据、凭证及乙方催收贷款的记录、凭证，均构成有效证明主合同项下债权关系的确定证据。甲方不能仅因为上述记录、记载、单据、凭证由乙方单方制作或保留，而提出异议。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">11.6 权利保留</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >乙方在本合同项下的权利并不影响和排除其根据法律、法规和其它合同所享有的任何权利。任何对违约或延误行为施以任何宽容、宽限、优惠或延缓行使本合同项下的任何权利，均不能视为对本合同项下权利、权益的放弃或对任何违反本合同行为的许可或认可，也不影响、阻止和妨碍对该权利的继续行使或对其任何其它权利的行使，也不因此导致乙方对甲方承担义务和责任。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >如果乙方不行使或延缓行使主合同项下的任何权利或未用尽主合同项下的任何救济，甲方在本合同项下的保证责任并不因此减免，但是乙方若减免主合同项下债务，甲方在本合同项下的保证责任相应减免。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">11.7 债务人解散或破产</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >甲方知道债务人进入解散或破产程序后，应当立即通知乙方申报债权，同时自己应及时参加解散或破产程序，预先行使追偿权。甲方知道或者应当知道债务人进入解散或破产程序，但未能及时预先行使追偿权的，其损失由甲方自行承担。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >尽管有11.6条的约定，在债务人破产程序中，如果乙方与债务人达成和解协议，或者同意重整计划，本合同项下乙方的权利不因和解协议或重整计划而受到损害，甲方的保证责任不予以减免。甲方不得以和解协议、重整计划规定的条件对抗乙方的权利主张。乙方在和解协议、重整计划中对债务人作出让步而未能获得清偿的债权部分，仍有权要求甲方继续予以清偿。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">11.8 甲方解散或破产</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:28.5pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >甲方发生解散或破产的，即使乙方在主合同项下债权尚未到期，乙方也有权参加甲方清算或破产程序，申报权利。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >11.9 甲方的通讯地址或联系方式如发生变动，应立即书面通知乙方，因未及时通知而造成的损失由甲方自行承担。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">11.10 本合同一式</span>
+          <input style="width: 50px" v-model="info.a19" type="text">
+          <span style="font-family:宋体; font-size:12pt">份。</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">第十二条 其他约定事项</span>
+        </p>
+        <textarea name id cols="30" rows="1" style="text-indent: 2em" v-model="info.a20"></textarea>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt; text-decoration:underline"></span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt"></span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">甲方（公章）：</span>
+          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt"></span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">法定代表人（负责人）或授权代理人（签字）：</span>
+          <input style="width: 50px" v-model="info.a21" type="text">
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; widows:0">
+          <input style="width: 50px" v-model="info.a22" type="text">
+          <span style="font-family:宋体; font-size:12pt">年</span>
+          <input style="width: 50px" v-model="info.a23" type="text">
+          <span style="font-family:宋体; font-size:12pt">月</span>
+          <input style="width: 50px" v-model="info.a24" type="text">
+          <span style="font-family:宋体; font-size:12pt">日</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">乙方（公章）：</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">负责人或授权代理人（签字）：</span>
+          <input style="width: 50px" v-model="info.a25" type="text">
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <input style="width: 50px" v-model="info.a26" type="text">
+          <span style="font-family:宋体; font-size:12pt">年</span>
+          <input style="width: 50px" v-model="info.a27" type="text">
+          <span style="font-family:宋体; font-size:12pt">月</span>
+          <input style="width: 50px" v-model="info.a28" type="text">
+          <span style="font-family:宋体; font-size:12pt">日</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">签约地点：</span>
+          <input style="width: 100px;" v-model="info.contractCreateAddress" type="text">
+        </p>
+      </div>
+      <br style="clear:both; mso-break-type:section-break; page-break-before:always">
+      <div>
+        <p style="margin:0pt; orphans:0; widows:0">
+          <span style="font-family:宋体; font-size:14pt">附件:</span>
+        </p>
+        <p style="margin:0pt; orphans:0; text-align:center; widows:0">
+          <span style="font-family:黑体; font-size:9pt">&nbsp;</span>
+        </p>
+        <p style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt">致安徽省安振小额贷款有限公司：</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">作为本合同附件，本人（本公司）承诺如下：</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >一、本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold;float: left;">送达地址：</span>
+          <input
+            ref="a29input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a29.length < 20"
+            v-model="info.a29"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a29textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a29.length >= 20"
+            cols="30"
+            v-model="info.a29"
+            rows="1"
+          ></textarea>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold;float: left;">收 件 人：</span>
+          <input
+            ref="a30input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a30.length < 20"
+            v-model="info.a30"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a30textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a30.length >= 20"
+            cols="30"
+            v-model="info.a30"
+            rows="1"
+          ></textarea>
+        </p>
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">联系电话：</span>
+          <input style="width: 400px;" v-model="info.a35" type="text">
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold;float: left;">联系电话：</span>
+          <input
+            ref="a31input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a31.length < 20"
+            v-model="info.a31"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a31textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a31.length >= 20"
+            cols="30"
+            v-model="info.a31"
+            rows="1"
+          ></textarea>
+        </p>
+        <!-- <p style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">电子邮箱：</span>
+          <input style="width: 400px;" v-model="info.a36" type="text">
+        </p>-->
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-indent:20pt; widows:0; vertical-align: top;"
+        >
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold;float: left;">电子邮箱：</span>
+          <input
+            ref="a32input"
+            type="text"
+            style="width:400px;margin-left:-20px;"
+            v-show="info.a32.length < 20"
+            v-model="info.a32"
+            @input="inputListener"
+          >
+          <textarea
+            ref="a32textarea"
+            style="text-decoration:underline; border:none;width: 400px;margin-left:-20px;"
+            v-show="info.a32.length >= 20"
+            cols="30"
+            v-model="info.a32"
+            rows="1"
+          ></textarea>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+        >
+          <span
+            style="font-family:宋体; font-size:12pt"
+          >本人（本公司）认可：如因本人（本公司）提供的上述地址不准确、送达地址变更未及时告知贵公司、本人（本公司）或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人（本公司）实际接收的，文书退回之日视为送达之日。</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">
+            二、
+            <input v-model="info.a33" type="checkbox"> 本人（本公司）是借款人：如未按时足额偿还贷款本金、支付利息的，自愿承担贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
+          </span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">
+            <input v-model="info.a34" type="checkbox"> 本人（本公司）是保证人或抵押人或出质人：担保范围除合同约定之外，还包括贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。
+          </span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">承诺人签章：</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt"></span>
+        </p>
+        <p
+          style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:12pt">签署时间：</span>
+          <input style="width: 50px" v-model="info.a35" type="text">
+          <span style="font-family:宋体; font-size:12pt">年</span>
+          <input style="width: 50px" v-model="info.a36" type="text">
+          <span style="font-family:宋体; font-size:12pt">月</span>
+          <input style="width: 50px" v-model="info.a37" type="text">
+          <span style="font-family:宋体; font-size:12pt">日</span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt"></span>
+        </p>
+        <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:宋体; font-size:12pt"></span>
+        </p>
+        <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
+          <span style="font-family:'Times New Roman'; font-size:10.5pt"></span>
+        </p>
+      </div>
     </div>
 
     <!-- 操作 -->
@@ -900,7 +1056,7 @@ export default {
           a5: "",
           phoneNumber: "",
           a7: "",
-          a8: "（一）",
+          a8: "",
           a9: "",
           a10: "",
           a11: "",
@@ -911,11 +1067,11 @@ export default {
           a16: "",
           a17: "",
           a18: "",
-          a19: "五",
-          a20: "三",
-          a21: "",
-          a22:
+          a19: "",
+          a20:
             "各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
+          a21: "",
+          a22: "",
           a23: "",
           a24: "",
           a25: "",
@@ -931,14 +1087,10 @@ export default {
           a35: "",
           a36: "",
           a37: "",
-          a38: "",
-          a39: "",
-          a40: "",
-          a41: "",
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
-          contractType: "0004"
+          contractType: "0009"
         };
       }
     },
@@ -991,7 +1143,7 @@ export default {
         contractCreateAddress: "",
         operateTip: "",
         auditTip: "",
-        contractType: ""
+        contractType: "0009"
       }
     };
   },
@@ -1124,7 +1276,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0004";
+            nv["contractType"] = "0009";
           }
           // console.log("赋值");
           this.info = nv;
@@ -1161,62 +1313,6 @@ export default {
         }
       }
     },
-    "info.a33": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a33textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a33input.focus();
-          });
-        }
-      }
-    },
-    "info.a34": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a34textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a34input.focus();
-          });
-        }
-      }
-    },
-    "info.a35": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a35textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a35input.focus();
-          });
-        }
-      }
-    },
-    "info.a36": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a36textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a36input.focus();
-          });
-        }
-      }
-    },
     "info.a5": {
       handler(nv, ov) {
         // console.log(this.$refs);
@@ -1241,6 +1337,62 @@ export default {
         } else {
           this.$nextTick(() => {
             this.$refs.phoneNumberinput.focus();
+          });
+        }
+      }
+    },
+        "info.a29": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a29textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a29input.focus();
+          });
+        }
+      }
+    },
+    "info.a30": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a30textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a30input.focus();
+          });
+        }
+      }
+    },
+    "info.a31": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a31textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a31input.focus();
+          });
+        }
+      }
+    },
+    "info.a32": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.a32textarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.a32input.focus();
           });
         }
       }

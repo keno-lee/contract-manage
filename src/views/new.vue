@@ -43,6 +43,17 @@
           :class="selectItem === 'creditBusiness' ? 'active' : ''"
           @click="select('creditBusiness')"
         >综合授信合同（企业）</div>
+
+        <div
+          class="select-item"
+          :class="selectItem === 'guaranteeBusiness' ? 'active' : ''"
+          @click="select('guaranteeBusiness')"
+        >保 证 合 同（企业）</div>
+        <div
+          class="select-item"
+          :class="selectItem === 'mortgage' ? 'active' : ''"
+          @click="select('mortgage')"
+        >抵 押 合 同</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
@@ -96,6 +107,18 @@
         @submit="onsubmit"
         v-if="contractType === 'creditBusiness'"
       ></creditBusiness>
+      <guaranteeBusiness
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'guaranteeBusiness'"
+      ></guaranteeBusiness>
+      <mortgage
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'mortgage'"
+      ></mortgage>
     </div>
   </div>
 </template>
@@ -110,6 +133,8 @@ import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保�
 import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
 import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
+import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
+import mortgage from "@/components/contract/mortgage.vue";
 
 export default {
   data() {
@@ -214,7 +239,9 @@ export default {
     ensurePersonal,
     loanLoopPersonal,
     loanBusiness,
-    creditBusiness
+    creditBusiness,
+    guaranteeBusiness,
+    mortgage
   }
 };
 </script>

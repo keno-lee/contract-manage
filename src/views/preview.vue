@@ -8,6 +8,8 @@
     <loanLoopPersonal v-if="contractType === '0006'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanLoopPersonal>
     <loanBusiness v-if="contractType === '0007'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanBusiness>
     <creditBusiness v-if="contractType === '0008'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></creditBusiness>
+    <guaranteeBusiness v-if="contractType === '0009'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></guaranteeBusiness>
+    <mortgage v-if="contractType === '0010'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></mortgage>
   </div>
 </template>
 
@@ -21,6 +23,8 @@ import ensurePersonal from "@/components/contract/ensure-personal.vue"; // ‰øùËØ
 import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
 import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
+import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
+import mortgage from "@/components/contract/mortgage.vue";
 
 export default {
   data() {
@@ -273,7 +277,9 @@ export default {
     ensurePersonal,
     loanLoopPersonal,
     loanBusiness,
-    creditBusiness
+    creditBusiness,
+    guaranteeBusiness,
+    mortgage
   }
 };
 </script>
