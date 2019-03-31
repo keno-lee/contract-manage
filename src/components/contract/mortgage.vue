@@ -1480,7 +1480,7 @@
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">法定代表人（负责人）或授权代理人（签字）：</span>
-          <input style="width: 50px" v-model="info.a20" type="text">
+          <input style="width: 150px" v-model="info.a20" type="text">
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">
@@ -1500,7 +1500,7 @@
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">负责人或授权代理人（签字）：</span>
-          <input style="width: 50px" v-model="info.a24" type="text">
+          <input style="width: 150px" v-model="info.a24" type="text">
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">
