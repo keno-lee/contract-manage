@@ -312,7 +312,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -348,7 +348,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -398,7 +398,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -419,7 +419,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -473,7 +473,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.8pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.8pt; widows:0"
@@ -504,7 +504,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -565,7 +565,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -598,7 +598,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -623,7 +623,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -735,7 +735,7 @@
         <p
           style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:24.1pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt 0.35pt 0pt 0pt; orphans:0; text-align:justify; text-indent:24.1pt; widows:0"
@@ -818,7 +818,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -1008,7 +1008,7 @@
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt; font-weight:bold"></span>
+          <span style="font-family:宋体; font-size:12pt; font-weight:bold">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -1429,7 +1429,7 @@
           </tr>
         </table>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p
           style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; text-indent:19.6pt; widows:0"
@@ -1494,10 +1494,10 @@
           <span style="font-family:宋体; font-size:12pt">13.9 甲方提供本抵押担保不损害任何第三人的合法利益，不违背甲方的法定与约定义务。</span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">甲方（公章）：</span>
@@ -1514,10 +1514,10 @@
           </span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">乙方（公章）：</span>
@@ -1534,10 +1534,10 @@
           </span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p style="line-height:25pt; margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:12pt">签约地点：</span>
@@ -1686,12 +1686,12 @@
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -1701,12 +1701,12 @@
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:12pt"></span>
+          <span style="font-family:宋体; font-size:12pt">&nbsp;</span>
         </p>
         <p
           style="line-height:24pt; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
