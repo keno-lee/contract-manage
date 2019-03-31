@@ -54,6 +54,16 @@
           :class="selectItem === 'mortgage' ? 'active' : ''"
           @click="select('mortgage')"
         >抵 押 合 同</div>
+        <div
+          class="select-item"
+          :class="selectItem === 'ensureBusiness' ? 'active' : ''"
+          @click="select('ensureBusiness')"
+        >最高额保证合同（企业）</div>
+        <div
+          class="select-item"
+          :class="selectItem === 'maxZhizha' ? 'active' : ''"
+          @click="select('maxZhizha')"
+        >最高额质押合同</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
@@ -119,6 +129,18 @@
         @submit="onsubmit"
         v-if="contractType === 'mortgage'"
       ></mortgage>
+      <ensureBusiness
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'ensureBusiness'"
+      ></ensureBusiness>
+      <maxZhizha
+        :status="'new'"
+        @save="onsave"
+        @submit="onsubmit"
+        v-if="contractType === 'maxZhizha'"
+      ></maxZhizha>
     </div>
   </div>
 </template>
@@ -135,6 +157,8 @@ import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
 import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
 import mortgage from "@/components/contract/mortgage.vue";
+import ensureBusiness from "@/components/contract/ensure-business.vue";
+import maxZhizha from "@/components/contract/max-zhizha.vue";
 
 export default {
   data() {
@@ -241,7 +265,9 @@ export default {
     loanBusiness,
     creditBusiness,
     guaranteeBusiness,
-    mortgage
+    mortgage,
+    ensureBusiness,
+    maxZhizha
   }
 };
 </script>
@@ -293,7 +319,7 @@ export default {
 }
 
 .save-btn {
-  background-color: #909399;
+  background-color: #67c23a;
   float: right;
 }
 

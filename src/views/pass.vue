@@ -12,8 +12,8 @@
       <el-table-column align="center" prop="contractType" label="合同类型" width="100" :formatter="formatter"></el-table-column>
       <el-table-column align="center" prop="contractNumber" label="合同编号" width="100"></el-table-column>
       <el-table-column align="center" prop="partyA" label="甲方" width="100"></el-table-column>
-      <el-table-column align="center" prop="personCharge" label="负责人" width="100"></el-table-column>
-      <el-table-column align="center" prop="phoneNumber" label="联系方式" width="150"></el-table-column>
+      
+      
       <el-table-column align="center" prop="createTime" label="合同创建日期" width="180"></el-table-column>
       <el-table-column align="center" prop="operator" label="合同操作者" width="100"></el-table-column>
       <!-- <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column> -->
