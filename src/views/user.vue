@@ -6,10 +6,9 @@
       <el-table-column align="center" prop="userName" label="姓名" width="150"></el-table-column>
       <el-table-column align="center" prop="userCode" label="账号" width="150"></el-table-column>
       <el-table-column align="center" prop="userPwd" label="密码" width="150"></el-table-column>
-      <el-table-column align="center" label="操作" width="250">
+      <el-table-column align="center" label="操作" width="150">
         <template slot-scope="props">
           <el-button size="mini" type="danger" @click="deleteUser(props.row.id)">删除</el-button>
-          <el-button size="mini" type="success" @click="updateUser(props.row.id)">修改密码</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -64,7 +63,7 @@ export default {
     };
   },
   created() {
-    // this.getData();
+    this.getData();
   },
   methods: {
     getData() {
@@ -97,10 +96,10 @@ export default {
     },
     addUser() {
       if (!this.roleId || !this.userName || !this.userCode || !this.userPwd) {
-         this.$alert('内容不为空', '温馨提示', {
-          confirmButtonText: '确定'
+        this.$alert("内容不为空", "温馨提示", {
+          confirmButtonText: "确定"
         });
-        return
+        return;
       }
       let sendData = {
         userName: this.userName,
@@ -157,28 +156,6 @@ export default {
           });
         }
       });
-    },
-    updateUser(id) {
-      console.log(id)
-
-      this.$prompt('请输入新密码', '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          // inputPattern: /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/,
-          // inputErrorMessage: '邮箱格式不正确'
-        }).then(({ value }) => {
-
-          console.log('修改密码')
-          this.$message({
-            type: 'success',
-            message: '修改成功'
-          });
-        }).catch(() => {
-          this.$message({
-            type: 'info',
-            message: '取消输入'
-          });       
-        });
     }
   }
 };

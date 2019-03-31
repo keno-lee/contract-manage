@@ -67,7 +67,7 @@ export default {
     };
   },
   created() {
-    if (localStorage.getItem('roleId') === '2') {
+    if (localStorage.getItem('roleId') === '2' || localStorage.getItem('roleId') === '1') {
       this.hasPermisson = false
     }
     this.getData(1, 20)

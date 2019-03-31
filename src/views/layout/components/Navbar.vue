@@ -21,6 +21,7 @@
         </div>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item>
+            <span style="display:block;" @click="updateUser">修改密码</span>
             <span style="display:block;" @click="logout">{{ $t('navbar.logOut') }}</span>
           </el-dropdown-item>
         </el-dropdown-menu>
@@ -73,6 +74,42 @@ export default {
       this.$store.dispatch('LogOut').then(() => {
         location.reload()// In order to re-instantiate the vue-router object to avoid bugs
       })
+    },
+    updateUser() {
+      this.$prompt("请输入新密码", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消"
+        // inputPattern: /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/,
+        // inputErrorMessage: '邮箱格式不正确'
+      })
+        .then(({ value }) => {
+          // console.log(value);
+          let sendData = {
+            userPwd: value
+          };
+          this.$ajax({
+            method: "get",
+            url: "/update/pwd?userPwd="+value
+          }).then(res => {
+            if (res.data.msg === "success") {
+              this.$message({
+                type: "success",
+                message: "修改成功"
+              });
+            } else {
+              this.$message({
+                type: "info",
+                message: res.data.msg
+              });
+            }
+          });
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "取消输入"
+          });
+        });
     }
   }
 }
