@@ -12,12 +12,8 @@
       <el-table-column align="center" prop="contractType" label="合同类型" width="100" :formatter="formatter"></el-table-column>
       <el-table-column align="center" prop="contractNumber" label="合同编号" width="100"></el-table-column>
       <el-table-column align="center" prop="partyA" label="甲方" width="100"></el-table-column>
-      
-      <!-- <el-table-column align="center" prop="cardType" label="证件号码" width="200"></el-table-column> -->
-      
       <el-table-column align="center" prop="createTime" label="合同创建日期" width="180"></el-table-column>      
       <el-table-column align="center" prop="operator" label="合同操作者" width="100"></el-table-column>
-      <!-- <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column> -->
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="150"></el-table-column>
       <el-table-column align="center" width="100" label="操作" v-if="hasPermisson">
         <template slot-scope="props">
@@ -119,6 +115,10 @@ export default {
         '0006': '个人循环借款合同正式版',
         '0007': '借款合同(企业)',
         '0008': '综合授信合同(企业)',
+        '0009': '保证合同(企业)',
+        '0010': '抵押合同',
+        '0011': '最高额保证合同(企业)',
+        '0012': '最高额质押合同',
       }
       return obj[row.contractType]
     },

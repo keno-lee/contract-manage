@@ -25,7 +25,7 @@
       <!-- <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column> -->
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="150"></el-table-column>
       <el-table-column align="center" prop="checkPerson" label="审核人" width="100"></el-table-column>
-      <el-table-column align="center" prop="checkRemark" label="审核意见" width="200"></el-table-column>
+      <!-- <el-table-column align="center" prop="checkRemark" label="审核意见" width="200"></el-table-column> -->
       <el-table-column align="center" label="操作" width="150"  v-if="hasPermisson">
         <template slot-scope="props">
           <el-button size="mini" type="success" @click="edit(props.row.id)">编辑</el-button>
@@ -143,6 +143,10 @@ export default {
         '0006': '个人循环借款合同正式版',
         '0007': '借款合同(企业)',
         '0008': '综合授信合同(企业)',
+        '0009': '保证合同(企业)',
+        '0010': '抵押合同',
+        '0011': '最高额保证合同(企业)',
+        '0012': '最高额质押合同',
       }
       return obj[row.contractType]
     },

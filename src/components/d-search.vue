@@ -21,7 +21,7 @@
     <!-- 联系方式 phoneNumber -->
     <!-- <el-input v-model="phoneNumber" style="width:200px;" placeholder="请输入联系方式"></el-input> -->
     <!-- 操作人 operator -->
-    <el-input v-model="operator" style="width:200px;" placeholder="请输入操作人"></el-input>
+    <!-- <el-input v-model="operator" style="width:200px;" placeholder="请输入操作人"></el-input> -->
     <el-button size="medium" type="success" @click="search()">搜索</el-button>
   </div>
 </template>
@@ -97,6 +97,22 @@ export default {
         {
           value: "0008",
           label: "综合授信合同(企业)"
+        },
+        {
+          value: "0009",
+          label: "保证合同(企业)"
+        },
+        {
+          value: "0010",
+          label: "抵押合同"
+        },
+        {
+          value: "0011",
+          label: "最高额保证合同(企业)"
+        },
+        {
+          value: "0012",
+          label: "最高额质押合同"
         }
       ],
       value: '',

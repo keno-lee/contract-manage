@@ -24,7 +24,7 @@
       <!-- <el-table-column align="center" prop="opRemark" label="操作批注" width="200"></el-table-column> -->
       <el-table-column align="center" prop="lastModifyTime" label="最后操作时间" width="200"></el-table-column>
       <el-table-column align="center" prop="checkPerson" label="审核人" width="100"></el-table-column>
-      <el-table-column align="center" prop="checkRemark" label="审核意见" width="200"></el-table-column>
+      <!-- <el-table-column align="center" prop="checkRemark" label="审核意见" width="200"></el-table-column> -->
       <el-table-column align="center" label="操作" width="250">
         <template slot-scope="props">
           <el-button size="mini" type="warning" @click="prview(props.row.id)">预览</el-button>
