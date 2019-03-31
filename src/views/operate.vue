@@ -70,6 +70,20 @@
       @reject="onreject"
       @pass="onpass"
     ></mortgage>
+    <ensureBusiness
+      v-if="contractType === '0011'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></ensureBusiness>
+    <maxZhizha
+      v-if="contractType === '0012'"
+      :infoData="infoData"
+      :status="'operate'"
+      @reject="onreject"
+      @pass="onpass"
+    ></maxZhizha>
   </div>
 </template>
 
@@ -85,7 +99,8 @@ import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
 import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
 import mortgage from "@/components/contract/mortgage.vue";
-
+import ensureBusiness from "@/components/contract/ensure-business.vue";
+import maxZhizha from "@/components/contract/max-zhizha.vue";
 
 export default {
   data() {
@@ -338,7 +353,9 @@ export default {
     loanBusiness,
     creditBusiness,
     guaranteeBusiness,
-    mortgage
+    mortgage,
+    ensureBusiness,
+    maxZhizha
   }
 };
 </script>

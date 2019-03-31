@@ -11,8 +11,8 @@
 // import loan from "@/components/contract/loan-business.vue";
 // import loan from "@/components/contract/credit-business.vue";
 
-// import loan from "@/components/contract/guarantee-business.vue";
-import loan from "@/components/contract/mortgage.vue";
+import loan from "@/components/contract/guarantee-business.vue";
+// import loan from "@/components/contract/mortgage.vue";
 // import loan from "@/components/contract/ensure-business.vue";
 // import loan from "@/components/contract/max-zhizha.vue";
 
