@@ -138,14 +138,14 @@
           <input
             ref="personChargeinput"
             type="text"
-            style="width:346px;"
+            style="width:370px;"
             v-show="info.personCharge.length < 12"
             v-model="info.personCharge"
             @input="inputListener"
           >
           <textarea
             ref="personChargetextarea"
-            style="text-decoration:underline; border:none;width: 346px;"
+            style="text-decoration:underline; border:none;width: 370px;"
             v-show="info.personCharge.length >= 12"
             cols="30"
             v-model="info.personCharge"
@@ -184,14 +184,14 @@
           <input
             ref="phoneNumberinput"
             type="text"
-            style="width:460px;"
+            style="width:456px;"
             v-show="info.phoneNumber.length < 20"
             v-model="info.phoneNumber"
             @input="inputListener"
           >
           <textarea
             ref="phoneNumbertextarea"
-            style="text-decoration:underline; border:none;width: 460px;"
+            style="text-decoration:underline; border:none;width: 456px;"
             v-show="info.phoneNumber.length >= 20"
             cols="30"
             v-model="info.phoneNumber"
@@ -205,14 +205,14 @@
           <input
             ref="a5input"
             type="text"
-            style="width:460px;"
+            style="width:465px;"
             v-show="info.a5.length < 20"
             v-model="info.a5"
             @input="inputListener"
           >
           <textarea
             ref="a5textarea"
-            style="text-decoration:underline; border:none;width: 460px;"
+            style="text-decoration:underline; border:none;width: 465px;"
             v-show="info.a5.length >= 20"
             cols="30"
             v-model="info.a5"
@@ -565,14 +565,14 @@
           <span style="font-family:宋体; font-size:12pt">第七条 甲方的其他义务</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:27pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:12pt"
           >一、甲方应对债务人借款使用情况（包括用途）进行监督，并接受乙方对甲方资金、财产和经营状况的监督，根据乙方的要求提供财务报表等有关信息、文件、资料，并保证其准确、真实、完整与有效；未经乙方书面同意，甲方不得向第三方提供超出其自身负担能力的担保；</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0;text-indent:26pt;"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0;text-indent:20pt;"
         >
           <span style="font-family:宋体; font-size:12pt">二、发生承包、托管（接管）、租赁、股份制改造、减少注册资本金、投资、联营、</span>
           <span
@@ -596,10 +596,11 @@
         >
           <span style="font-family:宋体; font-size:12pt"></span>
         </p>
+        
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:20pt; widows:0;"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:20pt; widows:0;text-indent:20pt;"
         >
-          <span style="width:21pt; text-indent:0pt; display:inline-block"></span>
+          <!-- <span style="width:21pt; text-indent:0pt; display:inline-block"></span> -->
           <span style="font-family:宋体; font-size:12pt">第八条 其他条款</span>
         </p>
         <p
@@ -637,12 +638,12 @@
           >除非有可靠、确定的相反证据，乙方有关本金、利息、费用和还款记录等内容的内部账务记载，乙方制作或保留的债务人办理提款、还款、付利息等业务过程中发生的单据、凭证及乙方催收贷款的记录、凭证，均构成有效证明主合同项下债权关系的确定证据。甲方不能仅因为上述记录、记载、单据、凭证由乙方单方制作或保留，而提出异议。</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:25pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt">四、权利保留</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:25pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:12pt"
@@ -683,7 +684,7 @@
           <span style="font-family:宋体; font-size:12pt">六、甲方解散或破产</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:28.5pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:12pt"
@@ -702,7 +703,7 @@
           <span style="font-family:宋体; font-size:12pt">八、争议解决方式</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:33pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:12pt"
@@ -714,14 +715,14 @@
           <span style="font-family:宋体; font-size:12pt">九、合同生效条件</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:27.75pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:12pt"
           >本合同经甲方法定代表人（负责人）或授权代理人签字并加盖公章及乙方负责人或授权代理人签字并加盖公章后生效。</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:27.75pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt">十、本合同一式</span>
           <input style="width: 50px;" v-model="info.a18" type="text">
@@ -731,7 +732,7 @@
           <span style="font-family:宋体; font-size:12pt">。</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-indent:27pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:12pt">十一、其他约定事项：</span>
           <input
@@ -757,27 +758,27 @@
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0;text-indent:20pt;">
           <span style="font-family:宋体; font-size:12pt"></span>
           <span style="font-family:宋体; font-size:12pt">第九条 甲方陈述与保证</span>
         </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0;text-indent:20pt;">
           <span style="font-family:宋体; font-size:12pt">一、甲方清楚地知悉乙方的经营范围、授权权限。</span>
         </p>
-        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  widows:0;text-indent:20pt;">
           <span
             style="font-family:宋体; font-size:12pt"
           >二、甲方已阅读本合同及主合同所有条款。应甲方要求，乙方已经就本合同及主合同做了相应的条款说明。甲方对本合同及主合同条款的含义及相应的法律后果已全部通晓并充分理解。</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:27pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:12pt"
           >三、甲方具备担当保证人的合法资格，甲方在本合同项下的担保行为符合法律、行政法规、规章和甲方章程或内部组织文件的规定，且已获得公司内部有权机构及/或国家有权机关的批准。因甲方无权签署本合同而产生的一切责任均由甲方承担,包括但不限于全额赔偿乙方因此遭受的损失。</span>
         </p>
         <p
-          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:27pt; widows:0"
+          style="font-size:12pt; line-height:150%; margin:0pt; orphans:0;  text-indent:20pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:12pt"
