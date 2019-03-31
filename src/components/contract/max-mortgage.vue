@@ -277,7 +277,7 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-      <div>
+      <div style="height: 9450px;">
         <p style="line-height:25pt; margin:0pt; orphans:0;  text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:12pt">鉴于乙方为</span>
           <input style="width: 300px" v-model="info.a7" type="text">
@@ -1342,7 +1342,7 @@
           <input
             ref="a33input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a33.length < 20"
             v-model="info.a33"
             @input="inputListener"
@@ -1368,7 +1368,7 @@
           <input
             ref="a34input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a34.length < 20"
             v-model="info.a34"
             @input="inputListener"
@@ -1394,7 +1394,7 @@
           <input
             ref="a35input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a35.length < 20"
             v-model="info.a35"
             @input="inputListener"
@@ -1939,7 +1939,7 @@ textarea {
 }
 
 .save-btn {
-  background-color: #909399;
+  background-color: #67c23a;
   float: right;
 }
 
@@ -1988,7 +1988,7 @@ textarea {
 }
 
 .save-btn {
-  background-color: #909399;
+  background-color: #67c23a;
   float: right;
 }
 

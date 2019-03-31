@@ -266,7 +266,7 @@
       </p>
     </div>
     <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-    <div>
+    <div style="height: 6300px;">
       <p
         style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
       >
@@ -1099,7 +1099,7 @@
           <input
             ref="a60input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a60.length < 20"
             v-model="info.a60"
             @input="inputListener"
@@ -1124,7 +1124,7 @@
           <input
             ref="a61input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a61.length < 20"
             v-model="info.a61"
             @input="inputListener"
@@ -1149,7 +1149,7 @@
           <input
             ref="a62input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a62.length < 20"
             v-model="info.a62"
             @input="inputListener"
@@ -1733,7 +1733,7 @@ textarea {
 }
 
 .save-btn {
-  background-color: #909399;
+  background-color: #67c23a;
   float: right;
 }
 
@@ -1782,7 +1782,7 @@ textarea {
 }
 
 .save-btn {
-  background-color: #909399;
+  background-color: #67c23a;
   float: right;
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="contract-wrap">
     <div class="contract-content">
-      <div>
+      <div style="height: 1080px;">
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
@@ -105,7 +105,7 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-      <div>
+      <div style="height: 1000px;">
         <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
@@ -320,7 +320,7 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-      <div>
+      <div style="height: 6250px;">
         <p style="line-height:21pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span
             style="font-family:宋体; font-size:12pt; font-weight:normal"
@@ -1011,7 +1011,7 @@
           <input
             ref="a73input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a73.length < 20"
             v-model="info.a73"
             @input="inputListener"
@@ -1036,7 +1036,7 @@
           <input
             ref="a74input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a74.length < 20"
             v-model="info.a74"
             @input="inputListener"
@@ -1061,7 +1061,7 @@
           <input
             ref="a75input"
             type="text"
-            style="width:400px; margin-left: -20px;text-align: left"
+            style="width:400px; margin-left: -20px;"
             v-show="info.a75.length < 20"
             v-model="info.a75"
             @input="inputListener"
@@ -1610,7 +1610,7 @@ textarea {
 }
 
 .save-btn {
-  background-color: #909399;
+  background-color: #67c23a;
   float: right;
 }
 
