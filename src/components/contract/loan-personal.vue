@@ -320,7 +320,7 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:always">
-      <div style="height: 6250px;">
+      <div style="height: 5230px;">
         <p style="line-height:21pt; margin:0pt; orphans:0;    text-indent:24pt; widows:0">
           <span
             style="font-family:宋体; font-size:12pt; font-weight:normal"
@@ -900,7 +900,7 @@
           <span style="font-family:宋体; font-size:12pt; font-weight:bold">其他约定事项：</span>
         </p>
         <textarea name id cols="30" style="text-indent: 2em" rows="1" v-model="info.a62"></textarea>
-        <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
@@ -923,7 +923,7 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
         </p>
-        <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+        <p style="font-size:14pt; line-height:250%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
@@ -947,7 +947,7 @@
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:12pt"></span>
         </p>
-        <p style="font-size:14pt; line-height:350%; margin:0pt; orphans:0;    widows:0">
+        <p style="font-size:14pt; line-height:250%; margin:0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="line-height:21pt; margin:0pt; orphans:0;    widows:0">
