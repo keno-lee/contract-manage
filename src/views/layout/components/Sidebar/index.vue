@@ -42,7 +42,7 @@ export default {
     let limit = [];
     if (localStorage.getItem("roleId") == 1) {
       // 管理员
-      limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
+      limit = ["/draft", "/audit", "/reject", "/pass", "/user"];
     } else if (localStorage.getItem("roleId") == 2) {
       // 业务经理
       limit = ["/new", "/draft", "/audit", "/reject", "/pass"];

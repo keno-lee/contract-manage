@@ -63,7 +63,7 @@ function retrunRouter() {
   let limit = [] // 允许访问的路由
   if (localStorage.getItem("roleId") == 1) {
     // 管理员
-    limit = ["/new", "/draft", "/audit", "/reject", "/pass", "/user"];
+    limit = ["/draft", "/audit", "/reject", "/pass", "/user"];
   } else if (localStorage.getItem("roleId") == 2) {
     // 业务经理
     limit = ["/new", "/draft", "/audit", "/reject", "/pass"];
@@ -91,7 +91,7 @@ router.beforeEach((to, from, next) => {
         NProgress.done()
         next()
       } else {
-        next({ path: from.path })
+        next({ path: '/pass' }) // 没权限都去共有的页面
         NProgress.done()
       }
     }
