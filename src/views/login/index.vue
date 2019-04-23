@@ -153,7 +153,7 @@ export default {
         .then(res => {
           // console.log('登陆', res.data);
           if (res.data.msg === "success") {
-            setToken(res.data.JSESSIONID);
+            // setToken(res.data.JSESSIONID);
             // let list = res.data.userInfo.menuList;
             let roleId = res.data.userInfo.roleId;
             let userName = res.data.userInfo.userName;
