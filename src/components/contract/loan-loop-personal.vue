@@ -1,7 +1,7 @@
 <template>
   <div class="contract-wrap">
     <div class="contract-content">
-      <div>
+      <div style="height:3120px;">
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
           <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
@@ -17,14 +17,14 @@
           <input
             ref="partyAinput"
             type="text"
-            style="width:451px;"
+            style="width:462px;"
             v-show="info.partyA.length < 20"
             v-model="info.partyA"
             @input="inputListener"
           >
           <textarea
             ref="partyAtextarea"
-            style="text-decoration:underline; border:none;width: 451px;"
+            style="text-decoration:underline; border:none;width: 462px;"
             v-show="info.partyA.length >= 20"
             cols="30"
             v-model="info.partyA"
@@ -36,14 +36,14 @@
           <input
             ref="a3input"
             type="text"
-            style="width:451px;"
+            style="width:462px;"
             v-show="info.a3.length < 20"
             v-model="info.a3"
             @input="inputListener"
           >
           <textarea
             ref="a3textarea"
-            style="text-decoration:underline; border:none;width: 451px;"
+            style="text-decoration:underline; border:none;width: 462px;"
             v-show="info.a3.length >= 20"
             cols="30"
             v-model="info.a3"
@@ -55,19 +55,22 @@
           <input
             ref="a4input"
             type="text"
-            style="width:451px;"
+            style="width:462px;"
             v-show="info.a4.length < 20"
             v-model="info.a4"
             @input="inputListener"
           >
           <textarea
             ref="a4textarea"
-            style="text-decoration:underline; border:none;width: 451px;"
+            style="text-decoration:underline; border:none;width: 462px;"
             v-show="info.a4.length >= 20"
             cols="30"
             v-model="info.a4"
             rows="1"
           ></textarea>
+        </p>
+        <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
           <span style="font-family:仿宋; font-size:12pt">经贷款人、借款人、担保人协商一致，根据国家有关法律、法规和规章规定，签订本合同。</span>
@@ -434,6 +437,8 @@
             style="font-family:仿宋; font-size:12pt; font-weight:bold"
           >四、贷款人已提请借款人对本合同各条款作全面、准确的理解，并按借款人的要求对各条款予以充分说明；本合同各条款在订立前均进行了充分磋商；借款人确认对本合同各条款的含义及相应的法律后果已全部通晓并充分理解。</span>
         </p>
+      </div>
+      <div>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:22pt">
           <span style="font-family:仿宋; font-size:12pt">
             五、本合同一式
@@ -459,7 +464,7 @@
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:13.5pt">
           <span style="font-family:仿宋; font-size:12pt">&nbsp;</span>
         </p>
-        <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:13.5pt">
+        <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:11pt">
           <span style="font-family:仿宋; font-size:12pt;display:inline-block;width: 50%;">保证人（签字）：</span>
         </p>
         <p style="line-height:19pt; margin:0pt; text-align:justify; text-indent:231pt">
