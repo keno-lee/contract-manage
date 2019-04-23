@@ -55,10 +55,15 @@ export default {
       // console.log(res);
       this.infoData = JSON.parse(res.data.jsonData);
       this.contractType = res.data.contractType;
-      this.$nextTick(() => {
+      // this.$nextTick(() => {
+      //   this.inputDisable();
+      //   this.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
+      // });
+
+      setTimeout(() => {
         this.inputDisable();
         this.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
-      });
+      }, 500)
 
       setTimeout(() => {
         this.fullscreenLoading = false;
@@ -238,8 +243,10 @@ export default {
     loanLoopPersonal,
     loanBusiness,
     creditBusiness,
+    guaranteeBusiness,
     mortgage,
-    ensureBusiness
+    ensureBusiness,
+    maxZhizha
   }
 };
 </script>
