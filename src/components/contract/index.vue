@@ -108,6 +108,26 @@
       @reject="reject"
       @pass="pass"
     ></maxZhizha>
+
+    <maxMortgage2
+      v-if="contractType === '0013'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></maxMortgage2>
+
+    <loanLoopPersonal2
+      v-if="contractType === '0014'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></loanLoopPersonal2>
   </div>
 </template>
 <script>
@@ -126,6 +146,8 @@ import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
 import mortgage from "@/components/contract/mortgage.vue";
 import ensureBusiness from "@/components/contract/ensure-business.vue";
 import maxZhizha from "@/components/contract/max-zhizha.vue";
+import maxMortgage2 from "@/components/contract/max-mortgage2.vue"; // 最高额抵押合同-2
+import loanLoopPersonal2 from "@/components/contract/loan-loop-personal2.vue"; // 个人循环借款合同-2
 
 export default {
   components: {
@@ -140,7 +162,9 @@ export default {
     guaranteeBusiness,
     mortgage,
     ensureBusiness,
-    maxZhizha
+    maxZhizha,
+    maxMortgage2,
+    loanLoopPersonal2
   },
   data() {
     return {};
