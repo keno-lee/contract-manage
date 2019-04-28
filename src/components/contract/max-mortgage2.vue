@@ -1029,7 +1029,7 @@ export default {
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
-          contractType: "00013"
+          contractType: "0013"
         };
       }
     },
@@ -1062,7 +1062,7 @@ export default {
         contractCreateAddress: "合肥市庐阳区",
         operateTip: "",
         auditTip: "",
-        contractType: "00013"
+        contractType: "0013"
       }
     };
   },
@@ -1195,7 +1195,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0003";
+            nv["contractType"] = "0013";
           }
           // console.log("赋值");
           this.info = nv;
@@ -1203,118 +1203,6 @@ export default {
       },
       immediate: true,
       deep: true
-    },
-    "info.partyA": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.partyAtextarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.partyAinput.focus();
-          });
-        }
-      }
-    },
-    "info.a4": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a4textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a4input.focus();
-          });
-        }
-      }
-    },
-    "info.a32": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a32textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a32input.focus();
-          });
-        }
-      }
-    },
-    "info.a33": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a33textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a33input.focus();
-          });
-        }
-      }
-    },
-    "info.a34": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a34textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a34input.focus();
-          });
-        }
-      }
-    },
-    "info.a35": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a35textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a35input.focus();
-          });
-        }
-      }
-    },
-    "info.a5": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a5textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a5input.focus();
-          });
-        }
-      }
-    },
-    "info.phoneNumber": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.phoneNumbertextarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.phoneNumberinput.focus();
-          });
-        }
-      }
     }
   }
 };

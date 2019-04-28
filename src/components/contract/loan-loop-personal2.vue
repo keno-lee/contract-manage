@@ -795,7 +795,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0006";
+            nv["contractType"] = "0014";
           }
           // console.log("赋值");
           this.info = nv;
@@ -803,90 +803,6 @@ export default {
       },
       immediate: true,
       deep: true
-    },
-    "info.partyA": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.partyAtextarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.partyAinput.focus();
-          });
-        }
-      }
-    },
-    "info.a3": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a3textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a3input.focus();
-          });
-        }
-      }
-    },
-    "info.a4": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a4textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a4input.focus();
-          });
-        }
-      }
-    },
-    "info.a22": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a22textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a22input.focus();
-          });
-        }
-      }
-    },
-    "info.a23": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a23textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a23input.focus();
-          });
-        }
-      }
-    },
-    "info.a28": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a28textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a28input.focus();
-          });
-        }
-      }
     }
   }
 };

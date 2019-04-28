@@ -113,6 +113,14 @@ export default {
         {
           value: "0012",
           label: "最高额质押合同"
+        },
+        {
+          value: "0013",
+          label: "最高额抵押合同(新版)"
+        },
+        {
+          value: "0014",
+          label: "个人循环借款合同正式版(新版)"
         }
       ],
       value: '',
