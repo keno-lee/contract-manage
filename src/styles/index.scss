@@ -199,3 +199,14 @@ code {
 .multiselect--active {
   z-index: 1000 !important;
 }
+
+.clearfix {
+  zoom: 1;
+  &::after {
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    content: '';
+  }
+}

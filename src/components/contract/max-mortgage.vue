@@ -1953,7 +1953,6 @@ textarea {
   margin-top: 100px;
 }
 </style>
-</script>
 <style scoped>
 .contract-wrap {
   width: 630px;
