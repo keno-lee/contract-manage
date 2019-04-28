@@ -92,7 +92,7 @@ export default {
     },
     edit(id) {
       // console.log(id)
-      this.$router.push("/preview?id=" + id);
+      this.$router.push("/edit?id=" + id);
     },
     submit(id) {
       // console.log(id);

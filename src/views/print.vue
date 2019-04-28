@@ -5,35 +5,12 @@
       class="main-article"
       element-loading-text="正在生成...PDF"
     ></div>
-    <loanPersonal v-if="contractType === '0001'" :infoData="infoData"></loanPersonal>
-    <creditPersonal v-if="contractType === '0002'" :infoData="infoData"></creditPersonal>
-    <maxMortgage v-if="contractType === '0003'" :infoData="infoData"></maxMortgage>
-    <guaranteePersonal v-if="contractType === '0004'" :infoData="infoData"></guaranteePersonal>
-    <ensurePersonal v-if="contractType === '0005'" :infoData="infoData"></ensurePersonal>
-    <loanLoopPersonal v-if="contractType === '0006'" :infoData="infoData"></loanLoopPersonal>
-    <loanBusiness v-if="contractType === '0007'" :infoData="infoData"></loanBusiness>
-    <creditBusiness v-if="contractType === '0008'" :infoData="infoData"></creditBusiness>
-    <guaranteeBusiness v-if="contractType === '0009'" :infoData="infoData"></guaranteeBusiness>
-    <mortgage v-if="contractType === '0010'" :infoData="infoData"></mortgage>
-    <ensureBusiness v-if="contractType === '0011'" :infoData="infoData"></ensureBusiness>
-    <maxZhizha v-if="contractType === '0012'" :infoData="infoData"></maxZhizha>
+    <contract :contractType="contractType" :infoData="infoData"></contract>
   </div>
 </template>
-F
+
 <script>
-// import loan from "@/components/contract/loan.vue";
-import loanPersonal from "@/components/contract/loan-personal.vue";
-import maxMortgage from "@/components/contract/max-mortgage.vue";
-import creditPersonal from "@/components/contract/credit-personal.vue";
-import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
-import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保证合同（个人）
-import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
-import loanBusiness from "@/components/contract/loan-business.vue";
-import creditBusiness from "@/components/contract/credit-business.vue";
-import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
-import mortgage from "@/components/contract/mortgage.vue";
-import ensureBusiness from "@/components/contract/ensure-business.vue";
-import maxZhizha from "@/components/contract/max-zhizha.vue";
+import contract from "@/components/contract/index.vue";
 
 export default {
   data() {
@@ -59,7 +36,7 @@ export default {
       setTimeout(() => {
         this.inputDisable();
         this.watermark({ watermark_txt: "安徽省安振小额贷款有限公司" });
-      }, 500)
+      }, 500);
 
       setTimeout(() => {
         this.fullscreenLoading = false;
@@ -196,9 +173,9 @@ export default {
           // mask_div.appendChild(
           //   document.createTextNode(defaultSettings.watermark_txt)
           // );
-          mask_div.src = require('../assets/water-print.png')
+          mask_div.src = require("../assets/water-print.png");
           //设置水印div倾斜显示
-          mask_div.style.display = 'block'
+          mask_div.style.display = "block";
           mask_div.style.webkitTransform =
             "rotate(-" + defaultSettings.watermark_angle + "deg)";
           mask_div.style.MozTransform =
@@ -231,18 +208,7 @@ export default {
     }
   },
   components: {
-    loanPersonal,
-    maxMortgage,
-    creditPersonal,
-    guaranteePersonal,
-    ensurePersonal,
-    loanLoopPersonal,
-    loanBusiness,
-    creditBusiness,
-    guaranteeBusiness,
-    mortgage,
-    ensureBusiness,
-    maxZhizha
+    contract
   }
 };
 </script>

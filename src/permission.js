@@ -57,7 +57,7 @@ NProgress.configure({ showSpinner: false })// NProgress Configuration
 //     }
 //   }
 // })
-const whiteList = ['/', '/login', '/preview', '/edit', '/operate', '/preview-water', '/print', '/test']// no redirect whitelist
+const whiteList = ['/', '/login', '/edit', '/operate', '/preview-water', '/print', '/test']// no redirect whitelist
 
 function retrunRouter() {
   let limit = [] // 允许访问的路由

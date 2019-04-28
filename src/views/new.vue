@@ -5,160 +5,77 @@
         <p style="font-size: 30pt;">一、请选择合同类型</p>
         <div
           class="select-item"
-          :class="selectItem === 'loanPersonal' ? 'active' : ''"
-          @click="select('loanPersonal')"
+          :class="selectItem === '0001' ? 'active' : ''"
+          @click="select('0001')"
         >借款合同(个人)</div>
         <div
           class="select-item"
-          :class="selectItem === 'maxMortgage' ? 'active' : ''"
-          @click="select('maxMortgage')"
+          :class="selectItem === '0003' ? 'active' : ''"
+          @click="select('0003')"
         >最高额抵押合同</div>
         <div
           class="select-item"
-          :class="selectItem === 'creditPersonal' ? 'active' : ''"
-          @click="select('creditPersonal')"
+          :class="selectItem === '0002' ? 'active' : ''"
+          @click="select('0002')"
         >综合授信合同(个人)</div>
         <div
           class="select-item"
-          :class="selectItem === 'guaranteePersonal' ? 'active' : ''"
-          @click="select('guaranteePersonal')"
+          :class="selectItem === '0004' ? 'active' : ''"
+          @click="select('0004')"
         >最高额保证合同(个人)</div>
         <div
           class="select-item"
-          :class="selectItem === 'ensurePersonal' ? 'active' : ''"
-          @click="select('ensurePersonal')"
+          :class="selectItem === '0005' ? 'active' : ''"
+          @click="select('0005')"
         >保证合同（个人）</div>
         <div
           class="select-item"
-          :class="selectItem === 'loanLoopPersonal' ? 'active' : ''"
-          @click="select('loanLoopPersonal')"
+          :class="selectItem === '0006' ? 'active' : ''"
+          @click="select('0006')"
         >个人循环借款合同正式版</div>
         <div
           class="select-item"
-          :class="selectItem === 'loanBusiness' ? 'active' : ''"
-          @click="select('loanBusiness')"
+          :class="selectItem === '0007' ? 'active' : ''"
+          @click="select('0007')"
         >借款合同（企业）</div>
         <div
           class="select-item"
-          :class="selectItem === 'creditBusiness' ? 'active' : ''"
-          @click="select('creditBusiness')"
+          :class="selectItem === '0008' ? 'active' : ''"
+          @click="select('0008')"
         >综合授信合同（企业）</div>
 
         <div
           class="select-item"
-          :class="selectItem === 'guaranteeBusiness' ? 'active' : ''"
-          @click="select('guaranteeBusiness')"
+          :class="selectItem === '0009' ? 'active' : ''"
+          @click="select('0009')"
         >保 证 合 同（企业）</div>
         <div
           class="select-item"
-          :class="selectItem === 'mortgage' ? 'active' : ''"
-          @click="select('mortgage')"
+          :class="selectItem === '0010' ? 'active' : ''"
+          @click="select('0010')"
         >抵 押 合 同</div>
         <div
           class="select-item"
-          :class="selectItem === 'ensureBusiness' ? 'active' : ''"
-          @click="select('ensureBusiness')"
+          :class="selectItem === '0011' ? 'active' : ''"
+          @click="select('0011')"
         >最高额保证合同（企业）</div>
         <div
           class="select-item"
-          :class="selectItem === 'maxZhizha' ? 'active' : ''"
-          @click="select('maxZhizha')"
+          :class="selectItem === '0012' ? 'active' : ''"
+          @click="select('0012')"
         >最高额质押合同</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
     <div v-else-if="step === 2">
       <p style="font-size: 30pt;">二、请填写合同信息</p>
-      <loanPersonal
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'loanPersonal'"
-      ></loanPersonal>
-      <maxMortgage
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'maxMortgage'"
-      ></maxMortgage>
-      <creditPersonal
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'creditPersonal'"
-      ></creditPersonal>
-      <guaranteePersonal
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'guaranteePersonal'"
-      ></guaranteePersonal>
-      <ensurePersonal
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'ensurePersonal'"
-      ></ensurePersonal>
-      <loanLoopPersonal
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'loanLoopPersonal'"
-      ></loanLoopPersonal>
-      <loanBusiness
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'loanBusiness'"
-      ></loanBusiness>
-      <creditBusiness
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'creditBusiness'"
-      ></creditBusiness>
-      <guaranteeBusiness
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'guaranteeBusiness'"
-      ></guaranteeBusiness>
-      <mortgage
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'mortgage'"
-      ></mortgage>
-      <ensureBusiness
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'ensureBusiness'"
-      ></ensureBusiness>
-      <maxZhizha
-        :status="'new'"
-        @save="onsave"
-        @submit="onsubmit"
-        v-if="contractType === 'maxZhizha'"
-      ></maxZhizha>
+      <contract :status="'new'" :contractType="contractType" @save="onsave" @submit="onsubmit"></contract>
     </div>
   </div>
 </template>
 
 <script>
-// import loan from "@/components/contract/loan.vue";
-import loanPersonal from "@/components/contract/loan-personal.vue";
-import maxMortgage from "@/components/contract/max-mortgage.vue";
-import creditPersonal from "@/components/contract/credit-personal.vue";
-import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
-import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保证合同（个人）
-import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
-import loanBusiness from "@/components/contract/loan-business.vue";
-import creditBusiness from "@/components/contract/credit-business.vue";
-import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
-import mortgage from "@/components/contract/mortgage.vue";
-import ensureBusiness from "@/components/contract/ensure-business.vue";
-import maxZhizha from "@/components/contract/max-zhizha.vue";
+import contract from "@/components/contract/index.vue";
 
 export default {
   data() {
@@ -187,7 +104,7 @@ export default {
         phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
         contractCreateAddress: data.contractCreateAddress,
-        personCharge: data.personCharge || '',
+        personCharge: data.personCharge || "",
         jsonData: JSON.stringify(data)
       };
       // console.log(sendData);
@@ -226,7 +143,7 @@ export default {
         phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
         contractCreateAddress: data.contractCreateAddress,
-        personCharge: data.personCharge || '',
+        personCharge: data.personCharge || "",
         jsonData: JSON.stringify(data)
       };
       // console.log(sendData);
@@ -256,18 +173,7 @@ export default {
     }
   },
   components: {
-    loanPersonal,
-    maxMortgage,
-    creditPersonal,
-    guaranteePersonal,
-    ensurePersonal,
-    loanLoopPersonal,
-    loanBusiness,
-    creditBusiness,
-    guaranteeBusiness,
-    mortgage,
-    ensureBusiness,
-    maxZhizha
+    contract
   }
 };
 </script>

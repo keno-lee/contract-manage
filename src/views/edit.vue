@@ -1,40 +1,23 @@
 <template>
   <div class="preview-index">
-    <loanPersonal v-if="contractType === '0001'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanPersonal>
-    <creditPersonal v-if="contractType === '0002'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></creditPersonal>
-    <maxMortgage v-if="contractType === '0003'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></maxMortgage>
-    <guaranteePersonal v-if="contractType === '0004'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></guaranteePersonal>
-    <ensurePersonal v-if="contractType === '0005'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></ensurePersonal>
-    <loanLoopPersonal v-if="contractType === '0006'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanLoopPersonal>
-    <loanBusiness v-if="contractType === '0007'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></loanBusiness>
-    <creditBusiness v-if="contractType === '0008'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></creditBusiness>
-    <guaranteeBusiness v-if="contractType === '0009'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></guaranteeBusiness>
-    <mortgage v-if="contractType === '0010'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></mortgage>
-    <ensureBusiness v-if="contractType === '0011'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></ensureBusiness>
-    <maxZhizha v-if="contractType === '0012'" :infoData="infoData" :status="'draft'" @submit="onsubmit" @save="onsave"></maxZhizha>
+    <contract
+      :status="'draft'"
+      :contractType="contractType"
+      :infoData="infoData"
+      @save="onsave"
+      @submit="onsubmit"
+    ></contract>
   </div>
 </template>
 
 <script>
-// import loan from "@/components/contract/loan.vue";
-import loanPersonal from "@/components/contract/loan-personal.vue";
-import maxMortgage from "@/components/contract/max-mortgage.vue";
-import creditPersonal from "@/components/contract/credit-personal.vue";
-import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
-import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保证合同（个人）
-import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
-import loanBusiness from "@/components/contract/loan-business.vue";
-import creditBusiness from "@/components/contract/credit-business.vue";
-import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
-import mortgage from "@/components/contract/mortgage.vue";
-import ensureBusiness from "@/components/contract/ensure-business.vue";
-import maxZhizha from "@/components/contract/max-zhizha.vue";
+import contract from "@/components/contract/index.vue";
 
 export default {
   data() {
     return {
       infoData: {},
-      contractType: ''
+      contractType: ""
     };
   },
   created() {
@@ -64,7 +47,7 @@ export default {
         phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
         contractCreateAddress: data.contractCreateAddress,
-        personCharge: data.personCharge || '',
+        personCharge: data.personCharge || "",
         jsonData: JSON.stringify(data)
       };
       // console.log(sendData);
@@ -78,7 +61,7 @@ export default {
             confirmButtonText: "确定",
             callback: action => {
               this.$router.push("/audit");
-              this.$store.commit("DEL_VISITED_VIEW", { path: "/preview" });
+              this.$store.commit("DEL_VISITED_VIEW", { path: "/edit" });
             }
           });
         } else {
@@ -99,7 +82,7 @@ export default {
         phoneNumber: data.phoneNumber,
         opRemark: data.operateTip,
         contractCreateAddress: data.contractCreateAddress,
-        personCharge: data.personCharge || '',
+        personCharge: data.personCharge || "",
         jsonData: JSON.stringify(data)
       };
       // console.log(sendData);
@@ -116,7 +99,7 @@ export default {
             confirmButtonText: "确定",
             callback: action => {
               this.$router.push("/draft");
-              this.$store.commit("DEL_VISITED_VIEW", { path: "/preview" });
+              this.$store.commit("DEL_VISITED_VIEW", { path: "/edit" });
             }
           });
         } else {
@@ -274,18 +257,7 @@ export default {
     }
   },
   components: {
-    loanPersonal,
-    maxMortgage,
-    creditPersonal,
-    guaranteePersonal,
-    ensurePersonal,
-    loanLoopPersonal,
-    loanBusiness,
-    creditBusiness,
-    guaranteeBusiness,
-    mortgage,
-    ensureBusiness,
-    maxZhizha
+    contract
   }
 };
 </script>
