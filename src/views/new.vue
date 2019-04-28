@@ -3,7 +3,7 @@
     <div v-if="step === 1">
       <div class="select-wrap clearfix">
         <p style="font-size: 30pt;">一、请选择合同类型</p>
-        <div
+        <!-- <div
           class="select-item"
           :class="selectItem === '0001' ? 'active' : ''"
           @click="select('0001')"
@@ -63,7 +63,17 @@
           class="select-item"
           :class="selectItem === '0012' ? 'active' : ''"
           @click="select('0012')"
-        >最高额质押合同</div>
+        >最高额质押合同</div> -->
+        <div
+          class="select-item"
+          :class="selectItem === '0013' ? 'active' : ''"
+          @click="select('0013')"
+        >最高额抵押合同</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0014' ? 'active' : ''"
+          @click="select('0014')"
+        >个人循环借款合同正式版</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>

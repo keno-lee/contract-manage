@@ -92,7 +92,9 @@
         <span
           style="font-family:宋体; font-size:9pt; font-weight:bold"
         >您已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline">____</span>
+        <span
+          style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
+        >____</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
       </p>
       <p
@@ -117,7 +119,9 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">授信额度：</span>
         <span style="font-family:宋体; font-size:9pt">本合同项下的借款授信额度为本金人民币</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:60px;" v-model="info.a10" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:60px;" v-model="info.a10" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">万元</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
         <span style="font-family:宋体; font-size:9pt">（大写</span>
@@ -125,17 +129,29 @@
         <input style="width:50px;" v-model="info.a18" type="text">
         <span style="font-family:宋体; font-size:9pt">万元</span>
         <span style="font-family:宋体; font-size:9pt">），借款人使用上述授信额度的期限为自</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:40px;" v-model="info.a11" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:40px;" v-model="info.a11" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">年</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:20px;" v-model="info.a12" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:20px;" v-model="info.a12" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">月</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:20px;" v-model="info.a13" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:20px;" v-model="info.a13" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">日起至</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:40px;" v-model="info.a15" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:40px;" v-model="info.a15" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">年</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:20px;" v-model="info.a16" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:20px;" v-model="info.a16" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">月</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:20px;" v-model="info.a17" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:20px;" v-model="info.a17" type="text">
+        </span>
         <span
           style="font-family:宋体; font-size:9pt"
         >日止，在上述期限内，借款人可循环使用上述借款额度，但在该期限内任何一时点上的借款本金余额不得超过该借款授信额度。</span>
@@ -170,7 +186,9 @@
         <span style="font-family:宋体; font-size:9pt">具体每笔借款的金额和用途，以借款借据或互联网贷款平台上所形成的借款合同及相关电子数据和凭证为准</span>
         <span style="font-family:宋体; font-size:9pt">，但不得晚于本合同第一条中约定的授信到期日</span>
         <span style="font-family:宋体; font-size:9pt">。具体每笔借款的期限固定为</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:30px;" v-model="info.a19" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:30px;" v-model="info.a19" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">个月，如单笔借款到期日超过第一条中约定的授信到期日，则该笔</span>
         <span style="font-family:宋体; font-size:9pt">以第一条中约定的</span>
         <span style="font-family:宋体; font-size:9pt">授信到期日</span>
@@ -187,7 +205,9 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:normal">本合同项下单笔借款利率</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:normal">为固定利率，</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:normal">按月利率</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal"><input style="width:30px;" v-model="info.a20" type="text">‰</span>
+        <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">
+          <input style="width:30px;" v-model="info.a20" type="text">‰
+        </span>
         <span style="font-family:宋体; font-size:9pt; font-weight:normal">执行。</span>
       </p>
       <p
@@ -197,7 +217,9 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">还款方式：</span>
         <span style="font-family:宋体; font-size:9pt">本合同项下贷款的还款方式及利息的支付方式为下述第</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:30px;" v-model="info.a21" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:30px;" v-model="info.a21" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">种方式：</span>
       </p>
       <p
@@ -264,7 +286,9 @@
         <span style="font-family:宋体; font-size:9pt">本人同意在上述授信期间内为借款人向贷款人循环借款承担最高额保证，最高借款本金</span>
         <span style="font-family:宋体; font-size:9pt">余额</span>
         <span style="font-family:宋体; font-size:9pt">限额为</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:50px;" v-model="info.a22" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:50px;" v-model="info.a22" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">万元</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">_,</span>
         <span style="font-family:宋体; font-size:9pt">保证责任形式为连带责任保证。该最高额保证适用于借款人通过线下书面及贷款人参与的互联网</span>
@@ -382,9 +406,9 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十二条</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">补充约定事项：</span>
-        <span
-          style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal"
-        ><input style="width:462px;" v-model="info.a23" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">
+          <input style="width:462px;" v-model="info.a23" type="text">
+        </span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -410,17 +434,17 @@
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
       >
         <span style="font-family:宋体; font-size:9pt">借款人确认送达地址：</span>
-        <span
-          style="font-family:'Times New Roman'; font-size:9pt"
-        ><input style="width:480px;" v-model="info.a24" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:480px;" v-model="info.a24" type="text">
+        </span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
       >
         <span style="font-family:宋体; font-size:9pt">担保人确认送达地址：</span>
-        <span
-          style="font-family:'Times New Roman'; font-size:9pt"
-        ><input style="width:480px;" v-model="info.a25" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:480px;" v-model="info.a25" type="text">
+        </span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -456,7 +480,9 @@
         <span style="font-family:'Times New Roman'; font-size:9pt">4</span>
         <span style="font-family:宋体; font-size:9pt">）</span>
         <span style="font-family:宋体; font-size:9pt">本合同一式</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt"><input style="width:20px;" v-model="info.a26" type="text"></span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">
+          <input style="width:20px;" v-model="info.a26" type="text">
+        </span>
         <span style="font-family:宋体; font-size:9pt">份，当事人各执一份，效力同等。</span>
         <span style="font-family:宋体; font-size:9pt">本合同</span>
         <span style="font-family:宋体; font-size:9pt">自各方签章之日起生效。</span>
@@ -502,9 +528,7 @@
         <input style="width:40px;" v-model="info.a32" type="text">
         <span style="font-family:宋体; font-size:9pt">日</span>
       </p>
-      <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:'Times New Roman'; font-size:10.5pt"></span>
-      </p>
+      <br style="clear:both; mso-break-type:section-break; page-break-before:auto">      
     </div>
 
     <!-- 操作 -->
@@ -531,7 +555,6 @@ export default {
       default: () => {
         return {
           contractNumber: "",
-          partyA: "",
           a1: "",
           a2: "",
           a3: "",
@@ -545,7 +568,7 @@ export default {
           a11: "",
           a12: "",
           a13: "",
-          a14: "安徽省安振小额贷款有限公司",
+          partyA: "安徽省安振小额贷款有限公司",
           a15: "",
           a16: "",
           a17: "",
@@ -579,45 +602,44 @@ export default {
     return {
       info: {
         contractNumber: "",
-          partyA: "",
-          a1: "",
-          a2: "",
-          a3: "",
-          a4: "",
-          a5: "",
-          a6: "",
-          a7: "",
-          a8: "",
-          a9: "",
-          a10: "",
-          a11: "",
-          a12: "",
-          a13: "",
-          a14: "",
-          a15: "",
-          a16: "",
-          a17: "",
-          a18: "",
-          a19: "",
-          a20: "",
-          a21: "",
-          a22: "",
-          a23: "",
-          a24: "",
-          a25: "",
-          a26: "",
-          a27: "",
-          a28: "",
-          a29: "",
-          a30: "",
-          a31: "",
-          a32: "",
-          a33: "",
-          a34: "",
-          contractCreateAddress: "",
-          operateTip: "",
-          auditTip: "",
-          contractType: "0014"
+        a1: "",
+        a2: "",
+        a3: "",
+        a4: "",
+        a5: "",
+        a6: "",
+        a7: "",
+        a8: "",
+        a9: "",
+        a10: "",
+        a11: "",
+        a12: "",
+        a13: "",
+        partyA: "",
+        a15: "",
+        a16: "",
+        a17: "",
+        a18: "",
+        a19: "",
+        a20: "",
+        a21: "",
+        a22: "",
+        a23: "",
+        a24: "",
+        a25: "",
+        a26: "",
+        a27: "",
+        a28: "",
+        a29: "",
+        a30: "",
+        a31: "",
+        a32: "",
+        a33: "",
+        a34: "",
+        contractCreateAddress: "",
+        operateTip: "",
+        auditTip: "",
+        contractType: "0014"
       }
     };
   },

@@ -108,7 +108,6 @@
       @reject="reject"
       @pass="pass"
     ></maxZhizha>
-
     <maxMortgage2
       v-if="contractType === '0013'"
       :status="status"
@@ -118,7 +117,6 @@
       @reject="reject"
       @pass="pass"
     ></maxMortgage2>
-
     <loanLoopPersonal2
       v-if="contractType === '0014'"
       :status="status"
