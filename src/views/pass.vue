@@ -51,6 +51,7 @@
 <script>
 import Pagination from "@/components/Pagination"; // Secondary package based on el-pagination
 import dSearch from "@/components/d-search.vue";
+import contractMapObj from '@/utils/data/contractMapObj.json' // 映射的合同
 
 export default {
   data() {
@@ -205,22 +206,7 @@ export default {
       this.$refs.filterTable.clearFilter();
     },
     formatter(row, column) {
-      let obj = {
-        '0001': '个人借款合同',
-        '0002': '个人综合授信合同',
-        '0003': '最高额抵押合同',
-        '0004': '个人最高额保证合同',
-        '0005': '保证合同（个人）',
-        '0006': '个人循环借款合同正式版',
-        '0007': '借款合同(企业)',
-        '0008': '综合授信合同(企业)',
-        '0009': '保证合同(企业)',
-        '0010': '抵押合同',
-        '0011': '最高额保证合同(企业)',
-        '0012': '最高额质押合同',
-        '0013': '最高额抵押合同(新版)',
-        '0014': '个人循环借款合同正式版(新版)'
-      }
+      let obj = contractMapObj
       return obj[row.contractType];
     },
     filterTag(value, row) {
