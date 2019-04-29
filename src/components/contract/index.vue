@@ -126,13 +126,22 @@
       @reject="reject"
       @pass="pass"
     ></loanLoopPersonal2>
+    <loanPersonal2
+      v-if="contractType === '0015'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></loanPersonal2>
   </div>
 </template>
 <script>
 /**
  * 所有合同的总入口
  */
-import loanPersonal from "@/components/contract/loan-personal.vue";
+import loanPersonal from "@/components/contract/loan-personal.vue"; // 借款合同(个人)
 import maxMortgage from "@/components/contract/max-mortgage.vue";
 import creditPersonal from "@/components/contract/credit-personal.vue";
 import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
@@ -144,8 +153,10 @@ import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
 import mortgage from "@/components/contract/mortgage.vue";
 import ensureBusiness from "@/components/contract/ensure-business.vue";
 import maxZhizha from "@/components/contract/max-zhizha.vue";
-import maxMortgage2 from "@/components/contract/max-mortgage2.vue"; // 最高额抵押合同-2
-import loanLoopPersonal2 from "@/components/contract/loan-loop-personal2.vue"; // 个人循环借款合同-2
+import maxMortgage2 from "@/components/contract/max-mortgage2.vue"; // 最高额抵押合同 -2
+import loanLoopPersonal2 from "@/components/contract/loan-loop-personal2.vue"; // 个人循环借款合同 -2
+import loanPersonal2 from "@/components/contract/loan-personal2.vue"; // 借款合同(个人) -2
+
 
 export default {
   components: {
@@ -162,7 +173,8 @@ export default {
     ensureBusiness,
     maxZhizha,
     maxMortgage2,
-    loanLoopPersonal2
+    loanLoopPersonal2,
+    loanPersonal2
   },
   data() {
     return {};

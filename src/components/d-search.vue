@@ -27,6 +27,8 @@
 </template>
 
 <script>
+import contractSearch from "@/utils/data/contractSearch.json"; // 映射的合同
+
 export default {
   data() {
     return {
@@ -65,66 +67,9 @@ export default {
       partyA: "",
       phoneNumber: "",
       operator: "",
-      options: [
-        {
-          value: "0001",
-          label: "个人借款合同"
-        },
-        {
-          value: "0002",
-          label: "个人综合授信合同"
-        },
-        {
-          value: "0003",
-          label: "最高额抵押合同"
-        },
-        {
-          value: "0004",
-          label: "个人最高额保证合同"
-        },
-        {
-          value: "0005",
-          label: "保证合同（个人）"
-        },
-        {
-          value: "0006",
-          label: "个人循环借款合同正式版"
-        },
-        {
-          value: "0007",
-          label: "借款合同(企业)"
-        },
-        {
-          value: "0008",
-          label: "综合授信合同(企业)"
-        },
-        {
-          value: "0009",
-          label: "保证合同(企业)"
-        },
-        {
-          value: "0010",
-          label: "抵押合同"
-        },
-        {
-          value: "0011",
-          label: "最高额保证合同(企业)"
-        },
-        {
-          value: "0012",
-          label: "最高额质押合同"
-        },
-        {
-          value: "0013",
-          label: "最高额抵押合同(新版)"
-        },
-        {
-          value: "0014",
-          label: "个人循环借款合同正式版(新版)"
-        }
-      ],
-      value: '',
-      contractType: ''
+      options: contractSearch,
+      value: "",
+      contractType: ""
     };
   },
   methods: {
