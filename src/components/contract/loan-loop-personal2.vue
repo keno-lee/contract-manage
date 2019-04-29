@@ -27,7 +27,8 @@
         style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
       >
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">贷款人：</span>
-        <input style="width:160px;" v-model="info.a14" type="text">
+        <!-- <input style="width:160px;" v-model="info.a14" type="text"> -->
+        <input style="width:160px;" v-model="info.partyA" type="text">
         <span style="font-family:宋体; font-size:9pt;">（证件类型：</span>
         <input style="width:80px;" v-model="info.a33" type="text">
         <span style="font-family:宋体; font-size:9pt;">，证件号码：</span>
@@ -91,11 +92,7 @@
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
         <span
           style="font-family:宋体; font-size:9pt; font-weight:bold"
-        >您已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“</span>
-        <span
-          style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-        >____</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:bold">”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
+        >您已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“____”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -108,9 +105,7 @@
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
       >
         <span style="-aw-bookmark-end:_Hlk6927913"></span>
-        <span style="font-family:宋体; font-size:9pt">经贷款人、借款人、</span>
-        <span style="font-family:宋体; font-size:9pt">保证</span>
-        <span style="font-family:宋体; font-size:9pt">人协商一致，根据国家有关法律、法规和规章规定，签订本合同。</span>
+        <span style="font-family:宋体; font-size:9pt">经贷款人、借款人、保证人协商一致，根据国家有关法律、法规和规章规定，签订本合同。</span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -183,18 +178,11 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">第三条</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款金额、期限和用途：</span>
-        <span style="font-family:宋体; font-size:9pt">具体每笔借款的金额和用途，以借款借据或互联网贷款平台上所形成的借款合同及相关电子数据和凭证为准</span>
-        <span style="font-family:宋体; font-size:9pt">，但不得晚于本合同第一条中约定的授信到期日</span>
-        <span style="font-family:宋体; font-size:9pt">。具体每笔借款的期限固定为</span>
+        <span style="font-family:宋体; font-size:9pt">具体每笔借款的金额和用途，以借款借据或互联网贷款平台上所形成的借款合同及相关电子数据和凭证为准，但不得晚于本合同第一条中约定的授信到期日。具体每笔借款的期限固定为</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
           <input style="width:30px;" v-model="info.a19" type="text">
         </span>
-        <span style="font-family:宋体; font-size:9pt">个月，如单笔借款到期日超过第一条中约定的授信到期日，则该笔</span>
-        <span style="font-family:宋体; font-size:9pt">以第一条中约定的</span>
-        <span style="font-family:宋体; font-size:9pt">授信到期日</span>
-        <span style="font-family:宋体; font-size:9pt">为</span>
-        <span style="font-family:宋体; font-size:9pt">借款到期日</span>
-        <span style="font-family:宋体; font-size:9pt">。</span>
+        <span style="font-family:宋体; font-size:9pt">个月，如单笔借款到期日超过第一条中约定的授信到期日，则该笔以第一条中约定的授信到期日为借款到期日。</span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -202,9 +190,7 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">第四条</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款利率：</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">本合同项下单笔借款利率</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">为固定利率，</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">按月利率</span>
+        <span style="font-family:宋体; font-size:9pt; font-weight:normal">本合同项下单笔借款利率为固定利率，按月利率</span>
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">
           <input style="width:30px;" v-model="info.a20" type="text">‰
         </span>
@@ -283,34 +269,19 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">合同担保：</span>
         <span style="font-family:宋体; font-size:9pt">担保人确认</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">:</span>
-        <span style="font-family:宋体; font-size:9pt">本人同意在上述授信期间内为借款人向贷款人循环借款承担最高额保证，最高借款本金</span>
-        <span style="font-family:宋体; font-size:9pt">余额</span>
-        <span style="font-family:宋体; font-size:9pt">限额为</span>
+        <span style="font-family:宋体; font-size:9pt">本人同意在上述授信期间内为借款人向贷款人循环借款承担最高额保证，最高借款本金余额限额为</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
           <input style="width:50px;" v-model="info.a22" type="text">
         </span>
         <span style="font-family:宋体; font-size:9pt">万元</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">_,</span>
-        <span style="font-family:宋体; font-size:9pt">保证责任形式为连带责任保证。该最高额保证适用于借款人通过线下书面及贷款人参与的互联网</span>
-        <span style="font-family:宋体; font-size:9pt">贷款平台（域名包括但不限于</span>
+        <span style="font-family:宋体; font-size:9pt">保证责任形式为连带责任保证。该最高额保证适用于借款人通过线下书面及贷款人参与的互联网贷款平台（域名包括但不限于</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">mybank.cn</span>
         <span style="font-family:宋体; font-size:9pt">；</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">alipay.com</span>
         <span
           style="font-family:宋体; font-size:9pt"
-        >）申请贷款人发放贷款而发生的主债务。保证期限为本合同签订之日起至借款人在本合同项下的债务履行期限届满日后</span>
-        <span style="font-family:宋体; font-size:9pt">三</span>
-        <span
-          style="font-family:宋体; font-size:9pt"
-        >年止。贷款人与借款人就主合同项下债务履行期限达成展期协议的，保证期间至展期协议重新约定的债务履行届满之日后</span>
-        <span style="font-family:宋体; font-size:9pt">三</span>
-        <span
-          style="font-family:宋体; font-size:9pt"
-        >年止。展期无需经本人同意，本人仍承担连带保证责任。若发生法律规定或主合同约定的事项，贷款人宣布债务提前到期，保证期间至债务提前到期之日后</span>
-        <span style="font-family:宋体; font-size:9pt">三</span>
-        <span
-          style="font-family:宋体; font-size:9pt"
-        >年。担保范围为本合同项下全部债务，包括不限于全部本金、利息（包括罚息、复利）、违约金、赔偿金、贷款人实现债权与担保权利而发生的费用（诉讼费、保全费、保全担保费、执行费、执行费评估费、公告费、律师费、拍卖费、公证费、差旅费等）、借款人应向贷款人支付的其他款项。</span>
+        >）申请贷款人发放贷款而发生的主债务。保证期限为本合同签订之日起至借款人在本合同项下的债务履行期限届满日后三年止。贷款人与借款人就主合同项下债务履行期限达成展期协议的，保证期间至展期协议重新约定的债务履行届满之日后三年止。展期无需经本人同意，本人仍承担连带保证责任。若发生法律规定或主合同约定的事项，贷款人宣布债务提前到期，保证期间至债务提前到期之日后三年。担保范围为本合同项下全部债务，包括不限于全部本金、利息（包括罚息、复利）、违约金、赔偿金、贷款人实现债权与担保权利而发生的费用（诉讼费、保全费、保全担保费、执行费、执行费评估费、公告费、律师费、拍卖费、公证费、差旅费等）、借款人应向贷款人支付的其他款项。</span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -324,13 +295,7 @@
       >
         <span
           style="font-family:宋体; font-size:9pt"
-        >（一）未按期偿还贷款本金或未按期支付利息或不按借款借据特别约定的还款方式归还贷款本息的；（二）不按约定的贷款用途使用贷款的；（三）未按约定方式进行贷款资金支付；（四）借款人死亡、失踪或丧失民事行为能力的；（五）不遵守本合同承诺事项；（六）未按期向贷款人清偿其他到期债务；（七）未按期清偿其他任何金融机构或第三人到期债务的；（八）财产遭受哄抢等事件的；（九）卷入重大不利诉讼的；（十）被行政机关处以重大行政处罚的；（十一）</span>
-        <span style="font-family:宋体; font-size:9pt">参股、控股或实际控制的企业</span>
-        <span style="font-family:宋体; font-size:9pt">因经营不善而</span>
-        <span style="font-family:宋体; font-size:9pt">遭受重大经济纠纷、行政处罚、刑事犯罪、</span>
-        <span
-          style="font-family:宋体; font-size:9pt"
-        >停产歇业的；（十二）隐瞒财务状况、经营状况或抽逃资金（本）的；（十三）发生偷（逃）税、被责令停业整顿或被吊销（撤销）营业执照的；（十四）发生其他严重影响偿还债务能力或失去信用情形的。</span>
+        >（一）未按期偿还贷款本金或未按期支付利息或不按借款借据特别约定的还款方式归还贷款本息的；（二）不按约定的贷款用途使用贷款的；（三）未按约定方式进行贷款资金支付；（四）借款人死亡、失踪或丧失民事行为能力的；（五）不遵守本合同承诺事项；（六）未按期向贷款人清偿其他到期债务；（七）未按期清偿其他任何金融机构或第三人到期债务的；（八）财产遭受哄抢等事件的；（九）卷入重大不利诉讼的；（十）被行政机关处以重大行政处罚的；（十一）参股、控股或实际控制的企业因经营不善而遭受重大经济纠纷、行政处罚、刑事犯罪、停产歇业的；（十二）隐瞒财务状况、经营状况或抽逃资金（本）的；（十三）发生偷（逃）税、被责令停业整顿或被吊销（撤销）营业执照的；（十四）发生其他严重影响偿还债务能力或失去信用情形的。</span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -359,13 +324,7 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">第九条</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">违约责任：</span>
-        <span style="font-family:宋体; font-size:9pt">借款人违约及其违约责任：未按期归还借款本金</span>
-        <span style="font-family:宋体; font-size:9pt">、</span>
-        <span style="font-family:宋体; font-size:9pt">未按期偿付借款利息</span>
-        <span style="font-family:宋体; font-size:9pt">、</span>
-        <span style="font-family:宋体; font-size:9pt">未按合同约定使用借款，从</span>
-        <span style="font-family:宋体; font-size:9pt">违约</span>
-        <span style="font-family:宋体; font-size:9pt">之日起按借款合同所约定的利率加收</span>
+        <span style="font-family:宋体; font-size:9pt">借款人违约及其违约责任：未按期归还借款本金、未按期偿付借款利息、未按合同约定使用借款，从违约之日起按借款合同所约定的利率加收</span>
         <span style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline">100</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">%</span>
         <span style="font-family:宋体; font-size:9pt">的罚息利率计收罚息。</span>
@@ -379,10 +338,7 @@
         <span
           style="font-family:宋体; font-size:9pt"
         >（一）本合同借款通过贷款人提供的业务平台（包括但不限于营业网点，互联网贷款平台等电子渠道）发放，贷款人将贷款资金划入借款人</span>
-        <span style="font-family:宋体; font-size:9pt">指定</span>
-        <span
-          style="font-family:宋体; font-size:9pt"
-        >账户时即视为履行了发放贷款之义务。（二）在上述业务平台及借款人账户通过密码验证的借款均视为借款人实施的操作。（三）具体每笔借款的金额、期限、利率和用途以相应的借款借据或互联网贷款平台（域名包括但不限于</span>
+        <span style="font-family:宋体; font-size:9pt">指定账户时即视为履行了发放贷款之义务。（二）在上述业务平台及借款人账户通过密码验证的借款均视为借款人实施的操作。（三）具体每笔借款的金额、期限、利率和用途以相应的借款借据或互联网贷款平台（域名包括但不限于</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">mybank.cn</span>
         <span style="font-family:宋体; font-size:9pt">；</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">alipay.com</span>
@@ -424,11 +380,7 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十四条</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">送达地址：</span>
-        <span style="font-family:宋体; font-size:9pt">借款人及担保人分别确认以下送达地址适用于</span>
-        <span style="font-family:宋体; font-size:9pt">催款函、提前到期通知书、法院</span>
-        <span style="font-family:宋体; font-size:9pt">一审、二审、执行程序</span>
-        <span style="font-family:宋体; font-size:9pt">等所有送达</span>
-        <span style="font-family:宋体; font-size:9pt">。如果送达地址有变更，应当及时书面告知出借人变更后的送达地址。</span>
+        <span style="font-family:宋体; font-size:9pt">借款人及担保人分别确认以下送达地址适用于催款函、提前到期通知书、法院一审、二审、执行程序等所有送达。如果送达地址有变更，应当及时书面告知出借人变更后的送达地址。</span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -462,15 +414,7 @@
         <span style="font-family:宋体; font-size:9pt">）产生的电子数据及凭证为本合同的组成部分，与本合同具有同等的法律效力。</span>
         <span style="font-family:宋体; font-size:9pt">（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
-        <span style="font-family:宋体; font-size:9pt">）</span>
-        <span
-          style="font-family:宋体; font-size:9pt"
-        >本合同项下有关费用的支出，包括但不限于用于公证、评估、保险、保管、鉴定及实现债权的费用，实现债权的费用包括律师费、差旅费、诉讼费</span>
-        <span style="font-family:宋体; font-size:9pt">、保全费、保全担保费、执行费</span>
-        <span style="font-family:宋体; font-size:9pt">和其他合理费用，均由借款人</span>
-        <span style="font-family:宋体; font-size:9pt">及保证人连带</span>
-        <span style="font-family:宋体; font-size:9pt">承担。</span>
-        <span style="font-family:宋体; font-size:9pt">（</span>
+        <span style="font-family:宋体; font-size:9pt">）本合同项下有关费用的支出，包括但不限于用于公证、评估、保险、保管、鉴定及实现债权的费用，实现债权的费用包括律师费、差旅费、诉讼费、保全费、保全担保费、执行费和其他合理费用，均由借款人及保证人连带承担。（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">3</span>
         <span style="font-family:宋体; font-size:9pt">）</span>
         <span
@@ -478,14 +422,11 @@
         >贷款人已提请借款人对本合同各条款作全面、准确的理解，并按借款人的要求对各条款予以充分说明；本合同各条款在订立前均进行了充分磋商；借款人确认对本合同各条款的含义及相应的法律后果已全部通晓并充分理解。</span>
         <span style="font-family:宋体; font-size:9pt">（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">4</span>
-        <span style="font-family:宋体; font-size:9pt">）</span>
-        <span style="font-family:宋体; font-size:9pt">本合同一式</span>
+        <span style="font-family:宋体; font-size:9pt">）本合同一式</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
           <input style="width:20px;" v-model="info.a26" type="text">
         </span>
-        <span style="font-family:宋体; font-size:9pt">份，当事人各执一份，效力同等。</span>
-        <span style="font-family:宋体; font-size:9pt">本合同</span>
-        <span style="font-family:宋体; font-size:9pt">自各方签章之日起生效。</span>
+        <span style="font-family:宋体; font-size:9pt">份，当事人各执一份，效力同等。本合同自各方签章之日起生效。</span>
       </p>
       <p
         style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -602,44 +543,44 @@ export default {
     return {
       info: {
         contractNumber: "",
-        a1: "",
-        a2: "",
-        a3: "",
-        a4: "",
-        a5: "",
-        a6: "",
-        a7: "",
-        a8: "",
-        a9: "",
-        a10: "",
-        a11: "",
-        a12: "",
-        a13: "",
-        partyA: "",
-        a15: "",
-        a16: "",
-        a17: "",
-        a18: "",
-        a19: "",
-        a20: "",
-        a21: "",
-        a22: "",
-        a23: "",
-        a24: "",
-        a25: "",
-        a26: "",
-        a27: "",
-        a28: "",
-        a29: "",
-        a30: "",
-        a31: "",
-        a32: "",
-        a33: "",
-        a34: "",
-        contractCreateAddress: "",
-        operateTip: "",
-        auditTip: "",
-        contractType: "0014"
+          a1: "",
+          a2: "",
+          a3: "",
+          a4: "",
+          a5: "",
+          a6: "",
+          a7: "",
+          a8: "",
+          a9: "",
+          a10: "",
+          a11: "",
+          a12: "",
+          a13: "",
+          partyA: "安徽省安振小额贷款有限公司",
+          a15: "",
+          a16: "",
+          a17: "",
+          a18: "",
+          a19: "",
+          a20: "",
+          a21: "",
+          a22: "",
+          a23: "",
+          a24: "",
+          a25: "",
+          a26: "",
+          a27: "",
+          a28: "",
+          a29: "",
+          a30: "",
+          a31: "",
+          a32: "",
+          a33: "营业执照",
+          a34: "913401006941423604",
+          contractCreateAddress: "合肥市庐阳区",
+          operateTip: "",
+          auditTip: "",
+          contractType: "0014"
       }
     };
   },
