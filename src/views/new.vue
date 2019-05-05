@@ -74,6 +74,11 @@
           :class="selectItem === '0014' ? 'active' : ''"
           @click="select('0014')"
         >个人循环借款合同正式版</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0015' ? 'active' : ''"
+          @click="select('0015')"
+        >借款合同(个人)</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
