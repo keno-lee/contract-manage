@@ -9,7 +9,7 @@
       <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
         <span style="font-family:宋体; font-size:9pt">合同编号：</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
-          <input style="width: 150px; text-align: left;" v-model="info.contractNumber" type="text">
+          <input style="width: 100px; text-align: left;" v-model="info.contractNumber" type="text">
         </span>
       </p>
       <p

@@ -8,7 +8,7 @@
       </p>
       <p style="margin:0pt 63pt 0pt 0pt; orphans:0; widows:0">
         <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-        <input style="width: 150px; text-align: left;" v-model="info.contractNumber" type="text">
+        <input style="width: 100px; text-align: left;" v-model="info.contractNumber" type="text">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; widows:0">
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">抵押人（甲方）：</span>
