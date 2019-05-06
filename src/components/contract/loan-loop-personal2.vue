@@ -9,7 +9,7 @@
       <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
         <span style="font-family:宋体; font-size:9pt">合同编号：</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
-          <input style="width: 100px; text-align: left;" v-model="info.contractNumber" type="text">
+          <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
         </span>
       </p>
       <p
@@ -84,7 +84,7 @@
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
         <span
           style="font-family:宋体; font-size:9pt; font-weight:bold"
-        >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权；</span>
+        >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权。</span>
       </p>
       <p
         style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -115,14 +115,11 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">授信额度：</span>
         <span style="font-family:宋体; font-size:9pt">本合同项下的借款授信额度为本金人民币</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
-          <input style="width:60px;" v-model="info.a10" type="text">
+          <input style="width:30px;" v-model="info.a10" type="text">
         </span>
-        <span style="font-family:宋体; font-size:9pt">万元</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
         <span style="font-family:宋体; font-size:9pt">（大写</span>
         <span style="font-family:宋体; font-size:9pt">：</span>
-        <input style="width:50px;" v-model="info.a18" type="text">
-        <span style="font-family:宋体; font-size:9pt">万元</span>
+        <input style="width:30px;" v-model="info.a18" type="text">
         <span style="font-family:宋体; font-size:9pt">），借款人使用上述授信额度的期限为自</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
           <input style="width:40px;" v-model="info.a11" type="text">
@@ -163,14 +160,7 @@
         <span style="font-family:'Times New Roman'; font-size:9pt">mybank.cn</span>
         <span style="font-family:宋体; font-size:9pt">；</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">alipay.com</span>
-        <span style="font-family:宋体; font-size:9pt">）申请贷款人发放贷款。</span>
-      </p>
-      <p
-        style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span
-          style="font-family:宋体; font-size:9pt"
-        >借款人选择通过互联网贷款平台申请贷款人发放贷款的，除受本合同项下所有条款的约束外，还受互联网贷款平台上所有合约条款的约束。互联网贷款平台上所形成的借款合同及相关电子数据和凭证与本合同项下条款不一致的地方，以互联网贷款平台上所形成的借款合同及相关电子数据和凭证约定为准。互联网贷款平台上所形成的借款合同及相关电子数据和凭证没有约定或约定不明确的，以本合同条款为准。</span>
+        <span style="font-family:宋体; font-size:9pt">）申请贷款人发放贷款。借款人选择通过互联网贷款平台申请贷款人发放贷款的，除受本合同项下所有条款的约束外，还受互联网贷款平台上所有合约条款的约束。互联网贷款平台上所形成的借款合同及相关电子数据和凭证与本合同项下条款不一致的地方，以互联网贷款平台上所形成的借款合同及相关电子数据和凭证约定为准。互联网贷款平台上所形成的借款合同及相关电子数据和凭证没有约定或约定不明确的，以本合同条款为准。</span>
       </p>
       <p
         style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -178,9 +168,9 @@
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">第三条</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款金额、期限和用途：</span>
-        <span style="font-family:宋体; font-size:9pt">具体每笔借款的金额和用途，以借款借据或互联网贷款平台上所形成的借款合同及相关电子数据和凭证为准，但不得晚于本合同第一条中约定的授信到期日。具体每笔借款的期限固定为</span>
+        <span style="font-family:宋体; font-size:9pt">具体每笔借款的金额和用途，以借款借据或互联网贷款平台上所形成的借款合同及相关电子数据和凭证为准，但不得晚于本合同第一条中约定的授信到期日。具体每笔借款的期限固定为（大写）</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
-          <input style="width:30px;" v-model="info.a19" type="text">
+          <input style="width:20px;" v-model="info.a19" type="text">
         </span>
         <span style="font-family:宋体; font-size:9pt">个月，如单笔借款到期日超过第一条中约定的授信到期日，则该笔以第一条中约定的授信到期日为借款到期日。</span>
       </p>
@@ -271,10 +261,8 @@
         <span style="font-family:'Times New Roman'; font-size:9pt">:</span>
         <span style="font-family:宋体; font-size:9pt">本人同意在上述授信期间内为借款人向贷款人循环借款承担最高额保证，最高借款本金余额限额为</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">
-          <input style="width:50px;" v-model="info.a22" type="text">
+          <input style="width:20px;" v-model="info.a22" type="text">
         </span>
-        <span style="font-family:宋体; font-size:9pt">万元</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt">_,</span>
         <span style="font-family:宋体; font-size:9pt">保证责任形式为连带责任保证。该最高额保证适用于借款人通过线下书面及贷款人参与的互联网贷款平台（域名包括但不限于</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">mybank.cn</span>
         <span style="font-family:宋体; font-size:9pt">；</span>
@@ -428,36 +416,31 @@
         </span>
         <span style="font-family:宋体; font-size:9pt">份，当事人各执一份，效力同等。本合同自各方签章之日起生效。</span>
       </p>
-      <p
-        style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
-      >
-        <span style="font-family:'Times New Roman'; font-size:9pt"></span>
-      </p>
     </div>
     <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
+    <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+      <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+    </p>
     <div>
-      <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-        <span style="font-family:宋体; font-size:9pt">贷款人（签章）：</span>
-        <input style="width:120px;" v-model="info.a27" type="text">
-      </p>
-      <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-        <span style="font-family:'Times New Roman'; font-size:9pt"></span>
-      </p>
-      <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-        <span style="font-family:'Times New Roman'; font-size:9pt"></span>
-      </p>
-      <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-        <span style="font-family:宋体; font-size:9pt">借款人（签章）：</span>
-        <input style="width:120px;" v-model="info.a28" type="text">
-      </p>
-      <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-        <span style="font-family:'Times New Roman'; font-size:9pt"></span>
-      </p>
-      <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-        <span style="font-family:宋体; font-size:9pt">保证人（签章）：</span>
+      <div class="clearfix">
+        <div style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: left">
+          <span style="font-family:宋体; font-size:9pt">贷款人（签章）：</span>
+          <input style="width:120px;" v-model="info.a27" type="text">
+        </div>
+        <div style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: right">
+          <span style="font-family:宋体; font-size:9pt">借款人（签章）：</span>
+          <input style="width:120px;" v-model="info.a28" type="text">
+        </div>
+      </div>
+      <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
+      <div class="clearfix">
+        <div style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: right">
+          <span style="font-family:宋体; font-size:9pt">保证人（签章）：</span>
         <input style="width:120px;" v-model="info.a29" type="text">
-      </p>
+        </div>
+      </div>
     </div>
+
     <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
     <div>
       <p style="font-size:9pt; line-height:130%; margin:0pt; orphans:0; text-align:right; widows:0">
@@ -466,7 +449,7 @@
         <span style="font-family:宋体; font-size:9pt">年</span>
         <input style="width:20px;" v-model="info.a31" type="text">
         <span style="font-family:宋体; font-size:9pt">月</span>
-        <input style="width:40px;" v-model="info.a32" type="text">
+        <input style="width:20px;" v-model="info.a32" type="text">
         <span style="font-family:宋体; font-size:9pt">日</span>
       </p>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">      

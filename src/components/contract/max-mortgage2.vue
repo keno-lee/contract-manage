@@ -6,9 +6,9 @@
       >
         <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">最高额抵押合同</span>
       </p>
-      <p style="margin:0pt 63pt 0pt 0pt; orphans:0; widows:0">
+      <p style="font-size:9pt; margin:0pt 63pt 0pt 0pt; orphans:0; widows:0">
         <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-        <input style="width: 100px; text-align: left;" v-model="info.contractNumber" type="text">
+        <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; widows:0">
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">抵押人（甲方）：</span>
@@ -23,8 +23,8 @@
         <input type="text" style="width: 360px;" v-model="info.a2">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
-        <span style="font-family:宋体; font-size:9pt">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
-        <input type="text" style="width: 360px;" v-model="info.a3">
+        <span style="font-family:宋体; font-size:9pt">地址：</span>
+        <input type="text" style="width: 384px;" v-model="info.a3">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt">联系电话：</span>
@@ -36,15 +36,15 @@
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt">负责人：</span>
-        <input type="text" style="width: 372px;" v-model="info.a18">
+        <input type="text" style="width: 373px;" v-model="info.a18">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt">通讯地址：</span>
-        <input type="text" style="width: 360px;" v-model="info.a19">
+        <input type="text" style="width: 362px;" v-model="info.a19">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt">联系电话：</span>
-        <input type="text" style="width: 360px;" v-model="info.a20">
+        <input type="text" style="width: 362px;" v-model="info.a20">
       </p>
       <p
         style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:center; text-indent:20pt; widows:0"
@@ -67,7 +67,7 @@
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
         <span
           style="font-family:宋体; font-size:9pt; font-weight:bold"
-        >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权；</span>
+        >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权。</span>
       </p>
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
@@ -157,7 +157,7 @@
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:'Times New Roman'; font-size:9pt">3.1</span>
         <span style="font-family:宋体; font-size:9pt">双方应于本合同签订后</span>
-        <input style="width: 50px" v-model="info.a7" type="text">
+        <input style="width: 20px" v-model="info.a7" type="text">
         <span style="font-family:宋体; font-size:9pt">个工作日内到相应的登记部门办理抵押登记手续。甲方应于抵押登记完成之日将抵押财产的他项权利证书、抵押登记文件正本原件及其他相关权利证书交乙方持有。抵押登记证书交付于乙方持有后方可发放贷款。</span>
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
@@ -231,7 +231,7 @@
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:'Times New Roman'; font-size:9pt">6.4</span>
         <span style="font-family:宋体; font-size:9pt">甲方应于本合同订立之日（抵押财产续保的，则为续保完成之日）起</span>
-        <input style="width: 50px" v-model="info.a8" type="text">
+        <input style="width: 20px" v-model="info.a8" type="text">
         <span style="font-family:宋体; font-size:9pt">个工作日内将抵押财产的保险单正本交付乙方，并且在乙方预留有关保险索赔或保险权益转让所必需的文件。</span>
       </p>
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
@@ -288,21 +288,11 @@
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">8.2</span>
         <span
           style="font-family:宋体; font-size:9pt; font-weight:normal"
-        >抵押财产发生前款情形后的剩余部分仍作为乙方债权的抵押担保。甲方因上述原因取得的赔偿金或补偿金，应存入乙方指定的账户。乙方有权选择下列方法进行处理</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">：</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">（</span>
+        >抵押财产发生前款情形后的剩余部分仍作为乙方债权的抵押担保。甲方因上述原因取得的赔偿金或补偿金，应存入乙方指定的账户。乙方有权选择本合同第六条第6.5款第（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">1</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">）清偿或提前清偿主合同项下债务本息及相关费用；（</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">2</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">）为主合同项下债务提供质押担保；（</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">3</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">）甲方提供符合乙方要求的新的担保后，由甲方自由处分</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">；</span>
-        <span style="font-family:宋体; font-size:9pt; font-weight:normal">（</span>
+        <span style="font-family:宋体; font-size:9pt; font-weight:normal">）至（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">4</span>
-        <span
-          style="font-family:宋体; font-size:9pt; font-weight:normal"
-        >）经乙方同意，用于修复抵押财产，以恢复抵押财产价值，甲方应协助办理有关手续。</span>
+        <span style="font-family:宋体; font-size:9pt; font-weight:normal">）项约定的任一方法对上述款项进行处理，甲方应协助办理有关手续。</span>
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">第九条</span>
@@ -398,13 +388,11 @@
         <span style="font-family:宋体; font-size:9pt">⑤</span>
         <span style="font-family:宋体; font-size:9pt">法律许可的其他救济措施。（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
-        <span style="font-family:宋体; font-size:9pt">）乙方有权选择下列方法进行处理：（</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
-        <span style="font-family:宋体; font-size:9pt">）清偿或提前清偿主合同项下债务本息及相关费用；（</span>
+        <span style="font-family:宋体; font-size:9pt">）乙方有权选择本合同第六条第6.5款第（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
-        <span style="font-family:宋体; font-size:9pt">）为主合同项下债务提供质押担保；（</span>
-        <span style="font-family:'Times New Roman'; font-size:9pt">3</span>
-        <span style="font-family:宋体; font-size:9pt">）甲方提供符合乙方要求的新的担保后，由甲方自由处分。甲方应协助办理有关手续。（</span>
+        <span style="font-family:宋体; font-size:9pt">）至（</span>
+        <span style="font-family:'Times New Roman'; font-size:9pt">4</span>
+        <span style="font-family:宋体; font-size:9pt">）项约定的任一方法对处分抵押财产所得价款进行处理，甲方应协助办理有关手续。（</span>
         <span style="font-family:'Times New Roman'; font-size:9pt">3</span>
         <span
           style="font-family:宋体; font-size:9pt"
@@ -514,7 +502,7 @@
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">11.13</span>
         <span style="font-family:宋体; font-size:9pt; font-weight:normal">本合同一式</span>
-        <input style="width: 50px" v-model="info.a9" type="text">
+        <input style="width: 20px" v-model="info.a9" type="text">
         <span style="font-family:宋体; font-size:9pt; font-weight:normal">份，经甲方或授权代理人签字或加盖公章（单位）及乙方负责人签字或加盖公章后生效。</span>
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
@@ -796,6 +784,9 @@
         <span style="font-family:'Times New Roman'; font-size:9pt"></span>
       </p>
     </div>
+    <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+      <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+    </p>
     <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
     <div>
       <div class="clearfix">
@@ -810,6 +801,9 @@
           <input style="width: 150px" v-model="info.a12" type="text">
         </div>
       </div>
+      <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0;    widows:0">
+        <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+      </p>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
       <div class="clearfix">
         <div style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: left">
@@ -823,6 +817,7 @@
         </div>
       </div>
     </div>
+    
     <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
     <div>
       <p style="font-size:9pt; line-height:130%; margin:0pt; orphans:0; text-align:right; widows:0">

@@ -6,9 +6,9 @@
       >
         <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">借款合同（适用于个人）</span>
       </p>
-      <p style="margin:0pt 63pt 0pt 0pt; orphans:0; widows:0">
+      <p style="font-size:9pt; margin:0pt 63pt 0pt 0pt; orphans:0; widows:0">
         <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-        <input style="width: 100px; text-align: left;" v-model="info.contractNumber" type="text">
+        <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; widows:0">
         <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款人（甲方）</span>
@@ -24,8 +24,8 @@
         <input type="text" style="width: 360px;" v-model="info.a2">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
-        <span style="font-family:宋体; font-size:9pt">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
-        <input type="text" style="width: 360px;" v-model="info.a3">
+        <span style="font-family:宋体; font-size:9pt">地址：</span>
+        <input type="text" style="width: 384px;" v-model="info.a3">
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt">联系电话：</span>
@@ -39,9 +39,9 @@
         >安徽省安振小额贷款有限公司</span>
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
-        <span style="font-family:宋体; font-size:9pt">负&nbsp;责&nbsp;人：</span>
+        <span style="font-family:宋体; font-size:9pt">负责人：</span>
         <span
-          style="font-size:9pt; line-height:150%; display: inline-block;width: 363px;text-align:center;border-bottom:1px solid #000"
+          style="font-size:9pt; line-height:150%; display: inline-block;width: 372px;text-align:center;border-bottom:1px solid #000"
         >潘 伟</span>
       </p>
       <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
@@ -78,7 +78,7 @@
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
         <span
           style="font-family:宋体; font-size:9pt; font-weight:bold"
-        >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权；</span>
+        >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权。</span>
       </p>
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
@@ -120,7 +120,7 @@
         <span style="font-family:宋体; font-size:9pt"></span>
         <span style="font-family:宋体; font-size:9pt">：</span>
         <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-        <input style="width: 80px" v-model="info.a5" type="text">
+        <input style="width: 50px" v-model="info.a5" type="text">
         <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
         <span style="font-family:宋体; font-size:9pt">。</span>
       </p>
@@ -158,10 +158,10 @@
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:'Times New Roman'; font-size:9pt">2.1</span>
         <span style="font-family:宋体; font-size:9pt">利率：本合同执行月利率</span>
-        <input style="width: 50px" v-model="info.a13" type="text">
+        <input style="width: 30px" v-model="info.a13" type="text">
         <span style="font-family:'Times New Roman'; font-size:9pt">‰</span>
         <span style="font-family:宋体; font-size:9pt">。该利率系中国人民银行现行相应期限档次贷款的基准利率上浮</span>
-        <input style="width: 50px" v-model="info.a14" type="text">
+        <input style="width: 30px" v-model="info.a14" type="text">
         <span style="font-family:'Times New Roman'; font-size:9pt">%</span>
         <span style="font-family:宋体; font-size:9pt">。</span>
       </p>
@@ -679,21 +679,21 @@
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span
           style="font-family:宋体; font-size:9pt"
-        >一、本人确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
+        >本人确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
       </p>
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt">送达地址：</span>
         <input type="text" style="width: 360px;" v-model="info.a33">
       </p>
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
-        <span style="font-family:宋体; font-size:9pt">收&nbsp;&nbsp;件 人：</span>
-        <input type="text" style="width: 360px;" v-model="info.a34">
+        <span style="font-family:宋体; font-size:9pt">收件人：</span>
+        <input type="text" style="width: 372px;" v-model="info.a34">
       </p>
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
         <span style="font-family:宋体; font-size:9pt">联系电话：</span>
         <input type="text" style="width: 360px;" v-model="info.a35">
       </p>
-      <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:21pt; widows:0">
+      <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; widows:0">
         <textarea name id cols="30" rows="1" style="text-indent: 20pt" v-model="info.agree"></textarea>
       </p>
       <p style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
@@ -1127,7 +1127,7 @@ textarea {
   overflow-y: hidden;
   border: none;
   text-decoration: underline;
-  line-height: 140%;
+  line-height: 150%;
   width: 630px;
   resize: none;
   font-family: "宋体";
