@@ -5,14 +5,12 @@
         <p
           style="font-size:10.5pt; line-height:140%; margin:0pt; orphans:0; text-align:center; widows:0"
         >
-          <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">综合授信</span>
-          <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">合同</span>
+          <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">综合授信合同</span>
           <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">（适用于个人）</span>
         </p>
         <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____________</span>
+          <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
@@ -23,26 +21,19 @@
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">甲方</span>
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">）</span>
           <span style="font-family:宋体; font-size:9pt">：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input style="width:160px;" v-model="info.partyA" type="text">
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">证件种类：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 360px;" v-model="info.a1">
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">证件号码：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 360px;" v-model="info.a2">
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -50,13 +41,13 @@
           <span style="font-family:宋体; font-size:9pt">地</span>
           <span style="font-family:宋体; font-size:9pt"></span>
           <span style="font-family:宋体; font-size:9pt">址：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 384px;" v-model="info.a3">
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 360px;" v-model="info.phoneNumber">
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
@@ -178,13 +169,14 @@
         >
           <span style="-aw-bookmark-end:OLE_LINK1"></span>
           <span style="-aw-bookmark-end:OLE_LINK2"></span>
-          <span style="font-family:宋体; font-size:9pt">双方</span>
-          <span style="font-family:宋体; font-size:9pt">经协商一致，于</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">________</span>
+          <span style="font-family:宋体; font-size:9pt">双方经协商一致，于</span>
+          <input style="width: 50px" v-model="info.a4" type="text">
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____</span>
+          <input style="width: 50px" v-model="info.a5" type="text">
+
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____</span>
+          <input style="width: 50px" v-model="info.a6" type="text">
+
           <span style="font-family:宋体; font-size:9pt">日订立本合同，以共同遵照执行：</span>
         </p>
         <p
@@ -200,7 +192,7 @@
           <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">.1</span>
           <span style="font-family:宋体; font-size:9pt">在本合同规定的条件下，乙方同意在授信额度有效期间内向甲方提供人民币</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">______________</span>
+          <input style="width: 50px" v-model="info.a7" type="text">
           <span
             style="font-family:宋体; font-size:9pt"
           >万元整的授信额度。在授信额度的有效期限及额度范围内，甲方使用上述授信额度时，不限次数，并可循环使用。</span>
@@ -225,19 +217,26 @@
           <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">.1</span>
           <span style="font-family:宋体; font-size:9pt">本合同项下授信额度的有效使用期间为</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_____</span>
+          <input style="width: 50px" v-model="info.a8" type="text">
+
           <span style="font-family:宋体; font-size:9pt">年，自</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">________</span>
+          <input style="width: 50px" v-model="info.a9" type="text">
+
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____</span>
+          <input style="width: 50px" v-model="info.a10" type="text">
+
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____</span>
+          <input style="width: 50px" v-model="info.a11" type="text">
+
           <span style="font-family:宋体; font-size:9pt">日至</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">________</span>
+          <input style="width: 50px" v-model="info.a12" type="text">
+
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____</span>
+          <input style="width: 50px" v-model="info.a13" type="text">
+
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____</span>
+          <input style="width: 50px" v-model="info.a14" type="text">
+
           <span style="font-family:宋体; font-size:9pt">日，但贷款额度的具体使用期限应受相关具体借款合同的约定。</span>
         </p>
         <p
@@ -501,69 +500,58 @@
         <p
           style="font-size:14pt; line-height:130%; margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">□</span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >___________________________________</span>
+          <input v-model="info.c1" type="checkbox">
+          <input style="width: 50px" v-model="info.a15" type="text">
+
           <span style="font-family:宋体; font-size:9pt">与乙方签订编号为</span>
           <span style="font-family:宋体; font-size:9pt"></span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >__________________________________</span>
+          <input style="width: 50px" v-model="info.a16" type="text">
+
           <span style="font-family:宋体; font-size:9pt">《最高额保证合同》；</span>
         </p>
         <p
           style="font-size:14pt; line-height:130%; margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">□</span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >___________________________________</span>
+          <input v-model="info.c2" type="checkbox">
+          <input style="width: 50px" v-model="info.a17" type="text">
+
           <span style="font-family:宋体; font-size:9pt">与乙方签订编号为</span>
           <span style="font-family:宋体; font-size:9pt"></span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >__________________________________</span>
+          <input style="width: 50px" v-model="info.a18" type="text">
+
           <span style="font-family:宋体; font-size:9pt">《最高额保证合同（适用于个人保证）》；</span>
         </p>
         <p
           style="font-size:14pt; line-height:130%; margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">□</span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >___________________________________</span>
+          <input v-model="info.c3" type="checkbox">
+          <input style="width: 50px" v-model="info.a19" type="text">
+
           <span style="font-family:宋体; font-size:9pt">与乙方签订编号为</span>
           <span style="font-family:宋体; font-size:9pt"></span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >___________________________________</span>
+          <input style="width: 50px" v-model="info.a20" type="text">
+
           <span style="font-family:宋体; font-size:9pt">《最高额抵押合同》；</span>
         </p>
         <p
           style="font-size:14pt; line-height:130%; margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">□</span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >___________________________________</span>
+          <input v-model="info.c4" type="checkbox">
+          <input style="width: 50px" v-model="info.a21" type="text">
+
           <span style="font-family:宋体; font-size:9pt">与乙方签订编号为</span>
           <span style="font-family:宋体; font-size:9pt"></span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >___________________________________</span>
+          <input style="width: 50px" v-model="info.a22" type="text">
+
           <span style="font-family:宋体; font-size:9pt">《最高额质押合同》；</span>
         </p>
         <p
           style="font-size:14pt; line-height:130%; margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">□</span>
+          <input v-model="info.c5" type="checkbox">
           <span style="font-family:宋体; font-size:9pt">其他</span>
           <span style="font-family:宋体; font-size:9pt"></span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt"
-          >__________________________________________________________________________________________</span>
-          <span style="font-family:宋体; font-size:9pt">。</span>
+          <input style="width: 50px" v-model="info.a23" type="text">
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -607,7 +595,7 @@
           <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">0.1</span>
           <span style="font-family:宋体; font-size:9pt">本合同一式</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_______</span>
+          <input style="width: 50px" v-model="info.a24" type="text">
           <span style="font-family:宋体; font-size:9pt">份，每份具有同等法律效力。</span>
         </p>
         <p
@@ -637,10 +625,7 @@
         >
           <span style="font-family:宋体; font-size:9pt"></span>
           <span style="font-family:宋体; font-size:9pt">送达地址：</span>
-          <span style="font-family:宋体; font-size:9pt">__________________________</span>
-          <span
-            style="font-family:宋体; font-size:9pt"
-          >__________________________________________________</span>
+          <input style="width: 50px" v-model="info.a25" type="text">
           <span style="font-family:'Times New Roman'; font-size:9pt"></span>
         </p>
         <p
@@ -648,9 +633,8 @@
         >
           <span style="font-family:'Times New Roman'; font-size:9pt"></span>
           <span style="font-family:宋体; font-size:9pt">收件人：</span>
-          <span
-            style="font-family:宋体; font-size:9pt"
-          >______________________________________________________________________________</span>
+          <input style="width: 50px" v-model="info.a26" type="text">
+
           <span style="font-family:'Times New Roman'; font-size:9pt"></span>
         </p>
         <p
@@ -658,9 +642,8 @@
         >
           <span style="font-family:'Times New Roman'; font-size:9pt"></span>
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
-          <span
-            style="font-family:宋体; font-size:9pt"
-          >____________________________________________________________________________</span>
+          <input style="width: 50px" v-model="info.a27" type="text">
+
           <span style="font-family:'Times New Roman'; font-size:9pt"></span>
         </p>
         <p
@@ -699,8 +682,7 @@
           style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">甲方或授权代理人（签章）：</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">______________________</span>
+          <input style="width: 50px" v-model="info.a28" type="text">
         </p>
         <p
           style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; widows:0"
@@ -716,8 +698,7 @@
           style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">乙方（公章）：</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">______________________</span>
+          <input style="width: 50px" v-model="info.a29" type="text">
         </p>
         <p
           style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; widows:0"
@@ -728,8 +709,7 @@
           style="font-size:9pt; line-height:200%; margin:0pt; orphans:0; text-align:justify; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____________________</span>
+          <input style="width: 50px" v-model="info.a30" type="text">
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
@@ -738,16 +718,19 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:right; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">签约时间：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a31" type="text">
+
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a32" type="text">
+
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input style="width: 50px" v-model="info.a33" type="text">
+
           <span style="font-family:宋体; font-size:9pt">日</span>
           <span style="font-family:宋体; font-size:9pt"></span>
           <span style="font-family:宋体; font-size:9pt"></span>
           <span style="font-family:宋体; font-size:9pt">签约地点：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">合肥市庐阳区</span>
+          <input style="width: 50px" v-model="info.contractCreateAddress" type="text">
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:'Times New Roman'; font-size:10.5pt"></span>
@@ -792,13 +775,13 @@ export default {
           a9: "",
           a10: "",
           a11: "",
-          a12: "临时周转",
+          a12: "",
           a13: "",
           a14: "",
-          a15: "(2)",
-          a16: "100",
-          a17: "100",
-          a18: "(2)",
+          a15: "",
+          a16: "",
+          a17: "",
+          a18: "",
           a19: "",
           a20: "",
           a21: "",
@@ -814,19 +797,17 @@ export default {
           a31: "",
           a32: "",
           a33: "",
-          a34: "",
-          a35: "",
-          a36: "",
-          a37: "",
-          a38: "",
+          c1: "",
+          c2: "",
+          c3: "",
+          c4: "",
+          c5: "",
           extra:
             "1. 本合同项下贷款在编号为XXXXXX的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力，进行强制执行公证。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
-          agree:
-            "本人认可：如因本人提供的上述地址不准确、送达地址变更未及时告知贵公司、本人或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。",
           contractCreateAddress: "合肥市庐阳区",
           operateTip: "",
           auditTip: "",
-          contractType: "0015"
+          contractType: "0016"
         };
       }
     },
@@ -849,13 +830,13 @@ export default {
         a9: "",
         a10: "",
         a11: "",
-        a12: "临时周转",
+        a12: "",
         a13: "",
         a14: "",
-        a15: "(2)",
-        a16: "100",
-        a17: "100",
-        a18: "(2) ",
+        a15: "",
+        a16: "",
+        a17: "",
+        a18: "",
         a19: "",
         a20: "",
         a21: "",
@@ -871,19 +852,17 @@ export default {
         a31: "",
         a32: "",
         a33: "",
-        a34: "",
-        a35: "",
-        a36: "",
-        a37: "",
-        a38: "",
+        c1: "",
+        c2: "",
+        c3: "",
+        c4: "",
+        c5: "",
         extra:
           "1. 本合同项下贷款在编号为XXXXXX的《综合授信合同》的授信范围内。2. 各方均同意赋予本合同强制执行效力，进行强制执行公证。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
-        agree:
-          "本人认可：如因本人提供的上述地址不准确、送达地址变更未及时告知贵公司、本人或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。",
         contractCreateAddress: "合肥市庐阳区",
         operateTip: "",
         auditTip: "",
-        contractType: "0015"
+        contractType: "0016"
       }
     };
   },
@@ -1016,7 +995,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0015";
+            nv["contractType"] = "0016";
           }
           // console.log("赋值");
           this.info = nv;
