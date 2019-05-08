@@ -15,7 +15,7 @@
         </p>
         <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款人：</span>
-          <input style="width:160px;" v-model="info.a1" type="text">
+          <input style="width:160px;" v-model="info.partyA" type="text">
           <span style="font-family:宋体; font-size:9pt;">（证件类型：</span>
           <input style="width:80px;" v-model="info.a2" type="text">
           <span style="font-family:宋体; font-size:9pt;">，证件号码：</span>
@@ -25,7 +25,7 @@
         <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">贷款人：</span>
           <!-- <input style="width:160px;" v-model="info.a14" type="text"> -->
-          <input style="width:160px;" v-model="info.partyA" type="text">
+          <input style="width:160px;" v-model="info.a1" type="text">
           <span style="font-family:宋体; font-size:9pt;">（证件类型：</span>
           <input style="width:80px;" v-model="info.a33" type="text">
           <span style="font-family:宋体; font-size:9pt;">，证件号码：</span>
@@ -360,7 +360,7 @@
           <input
             ref="extrainput"
             type="text"
-            style="width:462px;"
+            style="width:465px;"
             v-show="info.extra.length < 20"
             v-model="info.extra"
             @input="inputListener"
@@ -442,6 +442,9 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
+      <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
       <div>
         <div class="clearfix">
           <div style="font-size:9pt; line-height:150%; margin:0pt;  float: left">
@@ -454,6 +457,9 @@
           </div>
         </div>
         <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
         <div class="clearfix">
           <div style="font-size:9pt; line-height:150%; margin:0pt;  float: right">
             <span style="font-family:宋体; font-size:9pt">保证人（签章）：</span>
@@ -503,7 +509,7 @@ export default {
       default: () => {
         return {
           contractNumber: "",
-          a1: "",
+          a1: "安徽省安振小额贷款有限公司",
           a2: "",
           a3: "",
           a4: "",
@@ -516,7 +522,7 @@ export default {
           a11: "",
           a12: "",
           a13: "",
-          partyA: "安徽省安振小额贷款有限公司",
+          partyA: "",
           a15: "",
           a16: "",
           a17: "",
@@ -550,7 +556,7 @@ export default {
     return {
       info: {
         contractNumber: "",
-        a1: "",
+        a1: "安徽省安振小额贷款有限公司",
         a2: "",
         a3: "",
         a4: "",
@@ -563,7 +569,7 @@ export default {
         a11: "",
         a12: "",
         a13: "",
-        partyA: "安徽省安振小额贷款有限公司",
+        partyA: "",
         a15: "",
         a16: "",
         a17: "",
