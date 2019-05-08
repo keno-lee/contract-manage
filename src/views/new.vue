@@ -79,6 +79,21 @@
           :class="selectItem === '0015' ? 'active' : ''"
           @click="select('0015')"
         >借款合同(个人)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0016' ? 'active' : ''"
+          @click="select('0016')"
+        >综合授信(个人)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0017' ? 'active' : ''"
+          @click="select('0017')"
+        >最高额保证合同(个人)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0018' ? 'active' : ''"
+          @click="select('0018')"
+        >最高额保证合同(企业)</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
