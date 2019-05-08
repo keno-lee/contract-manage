@@ -35,7 +35,7 @@ export default {
 
       const first = matched[0]
       if (first && first.name.trim().toLocaleLowerCase() !== 'Dashboard'.toLocaleLowerCase()) {
-        matched = [{ path: '/合同系统', meta: { title: '合同系统' }}].concat(matched)
+        matched = [{ path: '/安徽省安振小额贷款有限公司', meta: { title: '安徽省安振小额贷款有限公司' }}].concat(matched)
       }
 
       this.levelList = matched.filter(item => item.meta && item.meta.title && item.meta.breadcrumb !== false)
