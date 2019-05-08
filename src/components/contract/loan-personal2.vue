@@ -116,11 +116,6 @@
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，您必须按约行使权利并主动承担义务。</span>
           <span style="-aw-bookmark-end:_Hlk6927886"></span>
         </p>
-        <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
-        <p style="margin:0pt; orphans:0; widows:0">
-          <span style="-aw-bookmark-end:_Hlk6927913"></span>
-          <span style="font-family:'Times New Roman'; font-size:9pt"></span>
-        </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
@@ -801,16 +796,11 @@
         </p>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
+      <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
+        </p>
       <div>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:宋体; font-size:9pt"></span>
-        </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:'Times New Roman'; font-size:9pt"></span>
-        </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:'Times New Roman'; font-size:9pt"></span>
-        </p>
+        
         <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify"></p>
 
         <div class="clearfix">
@@ -827,7 +817,9 @@
           </div>
         </div>
         <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
-
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
+        </p>
         <div class="clearfix">
           <div
             style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: right"
