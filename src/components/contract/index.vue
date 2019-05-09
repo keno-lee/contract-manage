@@ -184,8 +184,8 @@ import maxMortgage2 from "@/components/contract/max-mortgage2.vue"; // 最高额
 import loanLoopPersonal2 from "@/components/contract/loan-loop-personal2.vue"; // 个人循环借款合同 -2
 import loanPersonal2 from "@/components/contract/loan-personal2.vue"; // 借款合同(个人) -2
 import creditPersonal2 from "@/components/contract/credit-personal2.vue"; // 综合授信(个人) -2
-import ensurePersonal2 from "@/components/contract/ensure-personal2.vue"; // 最高额保证合同(个人) -2
-import ensureBusiness2 from "@/components/contract/ensure-business2.vue"; // 最高额保证合同(企业) -2
+import ensurePersonal2 from "@/components/contract/ensure-personal2.vue"; // 最高额保证合同(个人) -2  0017
+import ensureBusiness2 from "@/components/contract/ensure-business2.vue"; // 最高额保证合同(企业) -2  0018
 
 export default {
   components: {
