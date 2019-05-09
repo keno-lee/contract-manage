@@ -7,7 +7,7 @@
         >
           <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">最高额保证合同（适用于企业）</span>
         </p>
-        <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
+        <p style="font-size: 9pt; margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:9pt">合同编号：</span>
           <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
         </p>
