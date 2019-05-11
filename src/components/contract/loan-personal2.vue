@@ -186,7 +186,7 @@
             <span style="font-family:'Times New Roman'; font-size:9pt">1.5</span>
             <span
               style="font-family:宋体; font-size:9pt"
-            >本合同项下的借款期限起始日与借款借据不一致时，以借款借据所载实际放款日期为准，分期提款的以第一次放款时的借款借据所载实际放款日期为准切借款期限不予延长。借款借据是本合同的组成部分，与本合同具有同等法律效力。</span>
+            >本合同项下的借款期限起始日与借款借据不一致时，以借款借据所载实际放款日期为准，分期提款的以第一次放款时的借款借据所载实际放款日期为准且借款期限不予延长。借款借据是本合同的组成部分，与本合同具有同等法律效力。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"

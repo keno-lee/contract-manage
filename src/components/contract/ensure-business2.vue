@@ -579,9 +579,7 @@
 
         <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
 
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:right; widows:0"
-        >
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:right; widows:0">
           <span style="font-family:宋体; font-size:9pt">签约时间：</span>
           <input type="text" style="width: 40px;" v-model="info.a21">
 
