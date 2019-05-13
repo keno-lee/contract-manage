@@ -63,7 +63,7 @@
           class="select-item"
           :class="selectItem === '0012' ? 'active' : ''"
           @click="select('0012')"
-        >最高额质押合同</div> -->
+        >最高额质押合同</div>-->
         <div
           class="select-item"
           :class="selectItem === '0013' ? 'active' : ''"
@@ -94,6 +94,36 @@
           :class="selectItem === '0018' ? 'active' : ''"
           @click="select('0018')"
         >最高额保证合同(企业)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0019' ? 'active' : ''"
+          @click="select('0019')"
+        >保证合同(个人)(新版)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0020' ? 'active' : ''"
+          @click="select('0020')"
+        >保证合同(企业)(新版)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0021' ? 'active' : ''"
+          @click="select('0021')"
+        >抵押合同(新版)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0022' ? 'active' : ''"
+          @click="select('0022')"
+        >借款合同(企业)(新版)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0023' ? 'active' : ''"
+          @click="select('0023')"
+        >综合授信合同（企业）(新版)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0024' ? 'active' : ''"
+          @click="select('0024')"
+        >最高额质押合同(新版)</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
