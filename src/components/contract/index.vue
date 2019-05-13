@@ -27,7 +27,7 @@
       @reject="reject"
       @pass="pass"
     ></maxMortgage>
-    <guaranteePersonal
+    <maxGuaranteePersonal
       v-if="contractType === '0004'"
       :status="status"
       :infoData="infoData"
@@ -35,7 +35,7 @@
       @submit="submit"
       @reject="reject"
       @pass="pass"
-    ></guaranteePersonal>
+    ></maxGuaranteePersonal>
     <ensurePersonal
       v-if="contractType === '0005'"
       :status="status"
@@ -72,7 +72,7 @@
       @reject="reject"
       @pass="pass"
     ></creditBusiness>
-    <guaranteeBusiness
+    <ensureBusiness
       v-if="contractType === '0009'"
       :status="status"
       :infoData="infoData"
@@ -80,7 +80,7 @@
       @submit="submit"
       @reject="reject"
       @pass="pass"
-    ></guaranteeBusiness>
+    ></ensureBusiness>
     <mortgage
       v-if="contractType === '0010'"
       :status="status"
@@ -90,7 +90,7 @@
       @reject="reject"
       @pass="pass"
     ></mortgage>
-    <ensureBusiness
+    <maxGuaranteeBusiness
       v-if="contractType === '0011'"
       :status="status"
       :infoData="infoData"
@@ -98,7 +98,7 @@
       @submit="submit"
       @reject="reject"
       @pass="pass"
-    ></ensureBusiness>
+    ></maxGuaranteeBusiness>
     <maxZhizha
       v-if="contractType === '0012'"
       :status="status"
@@ -144,7 +144,7 @@
       @reject="reject"
       @pass="pass"
     ></creditPersonal2>
-    <ensurePersonal2
+    <guaranteePersonal2
       v-if="contractType === '0017'"
       :status="status"
       :infoData="infoData"
@@ -152,7 +152,7 @@
       @submit="submit"
       @reject="reject"
       @pass="pass"
-    ></ensurePersonal2>
+    ></guaranteePersonal2>
     <ensureBusiness2
       v-if="contractType === '0018'"
       :status="status"
@@ -162,6 +162,15 @@
       @reject="reject"
       @pass="pass"
     ></ensureBusiness2>
+    <ensurePersonal2
+      v-if="contractType === '0018'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></ensurePersonal2>
   </div>
 </template>
 <script>
@@ -171,33 +180,38 @@
 import loanPersonal from "@/components/contract/loan-personal.vue"; // 借款合同(个人)
 import maxMortgage from "@/components/contract/max-mortgage.vue";
 import creditPersonal from "@/components/contract/credit-personal.vue";
-import guaranteePersonal from "@/components/contract/guarantee-personal.vue";
-import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 最高额保证合同(个人)
 import loanLoopPersonal from "@/components/contract/loan-loop-personal.vue";
 import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
-import guaranteeBusiness from "@/components/contract/guarantee-business.vue";
+
+import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保证合同(个人)
+import ensureBusiness from "@/components/contract/ensure-business.vue";
+
 import mortgage from "@/components/contract/mortgage.vue";
-import ensureBusiness from "@/components/contract/ensure-business.vue"; // 最高额保证合同(企业)
+
+import maxGuaranteePersonal from "@/components/contract/max-guarantee-personal.vue"; // 最高额保证合同(个人)
+import maxGuaranteeBusiness from "@/components/contract/max-guarantee-business.vue"; // 最高额保证合同(企业)
+
 import maxZhizha from "@/components/contract/max-zhizha.vue";
 import maxMortgage2 from "@/components/contract/max-mortgage2.vue"; // 最高额抵押合同 -2
 import loanLoopPersonal2 from "@/components/contract/loan-loop-personal2.vue"; // 个人循环借款合同 -2
 import loanPersonal2 from "@/components/contract/loan-personal2.vue"; // 借款合同(个人) -2
 import creditPersonal2 from "@/components/contract/credit-personal2.vue"; // 综合授信(个人) -2
-import ensurePersonal2 from "@/components/contract/ensure-personal2.vue"; // 最高额保证合同(个人) -2  0017
+import guaranteePersonal2 from "@/components/contract/guarantee-personal2.vue"; // 最高额保证合同(个人) -2  0017
 import ensureBusiness2 from "@/components/contract/ensure-business2.vue"; // 最高额保证合同(企业) -2  0018
+import ensurePersonal2 from "@/components/contract/ensure-personal2.vue"; // 保证合同(个人) -2  0019
 
 export default {
   components: {
     loanPersonal,
     maxMortgage,
     creditPersonal,
-    guaranteePersonal,
+    maxGuaranteePersonal,
     ensurePersonal,
     loanLoopPersonal,
     loanBusiness,
     creditBusiness,
-    guaranteeBusiness,
+    maxGuaranteeBusiness,
     mortgage,
     ensureBusiness,
     maxZhizha,
@@ -205,8 +219,9 @@ export default {
     loanLoopPersonal2,
     loanPersonal2,
     creditPersonal2,
-    ensurePersonal2,
-    ensureBusiness2
+    guaranteePersonal2,
+    ensureBusiness2,
+    ensurePersonal2
   },
   data() {
     return {};
