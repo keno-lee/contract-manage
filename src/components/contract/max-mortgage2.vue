@@ -971,8 +971,8 @@
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
       <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
-          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
-        </p>
+        <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+      </p>
       <div>
         <div class="clearfix">
           <div style="font-size:9pt; line-height:170%; margin:0pt; text-align:justify; float: left">
@@ -1074,6 +1074,20 @@ export default {
           a18: "潘伟",
           a19: "合肥市庐阳区濉溪路278号财富广场B座东楼17层",
           a20: "0551-65667870",
+          table1: "",
+          table2: "",
+          table3: "",
+          table4: "",
+          table5: "",
+          table6: "",
+          table7: "",
+          table8: "",
+          table9: "",
+          table10: "",
+          table11: "",
+          table12: "",
+          table13: "",
+          table14: "",
           extra:
             "各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
           contractCreateAddress: "合肥市庐阳区",
@@ -1111,6 +1125,20 @@ export default {
         a18: "潘伟",
         a19: "合肥市庐阳区濉溪路278号财富广场B座东楼17层",
         a20: "0551-65667870",
+        table1: "",
+        table2: "",
+        table3: "",
+        table4: "",
+        table5: "",
+        table6: "",
+        table7: "",
+        table8: "",
+        table9: "",
+        table10: "",
+        table11: "",
+        table12: "",
+        table13: "",
+        table14: "",
         extra:
           "各方均同意赋予本合同强制执行效力，进行强制执行公证。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
         contractCreateAddress: "合肥市庐阳区",
@@ -1265,28 +1293,28 @@ export default {
 <style scoped>
 .contract-wrap {
   width: 650px;
-  /* height: 891px; */
-  /* background-color: red; */
   margin: 0 auto;
-  /* overflow-x: hidden; */
   position: relative;
+}
+
+.first-part {
+  height: 3150px;
 }
 
 input {
   border: none;
   border-bottom: 1px solid #000;
   text-align: center;
+  line-height: 170%;
 }
 
 textarea {
-  /* width: 630px; */
+  width: 630px;
   resize: none;
-  /* text-align: center; */
   overflow-y: hidden;
   border: none;
   text-decoration: underline;
   line-height: 170%;
-  width: 630px;
   resize: none;
   font-family: "宋体";
   font-size: 9pt;
@@ -1318,13 +1346,5 @@ table textarea {
 .operate-box {
   height: 300px;
   margin-top: 100px;
-}
-
-.clearfix::after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
 }
 </style>
