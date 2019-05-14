@@ -6,23 +6,15 @@
           <p
             style="font-size:10.5pt; line-height:140%; margin:0pt; orphans:0; text-align:center; widows:0"
           >
-            <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">保证</span>
-            <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">合同</span>
-            <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">（适用于企业</span>
-            <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">）</span>
+            <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">保证合同（适用于企业）</span>
           </p>
-          <p style="margin:0pt 63pt 0pt 0pt; orphans:0; widows:0">
+          <p style="margin:0pt 63pt 0pt 0pt; orphans:0; widows:0; font-size:9pt">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
             <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
           </p>
           <p style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; widows:0">
-            <span style="font-family:宋体; font-size:9pt; font-weight:bold">保证</span>
-            <span style="font-family:宋体; font-size:9pt; font-weight:bold">人</span>
-            <span style="font-family:宋体; font-size:9pt; font-weight:bold">（</span>
-            <span style="font-family:宋体; font-size:9pt; font-weight:bold">甲方</span>
-            <span style="font-family:宋体; font-size:9pt; font-weight:bold">）</span>
-            <span style="font-family:宋体; font-size:9pt">：</span>
-            <input style="width:339px;" v-model="info.partyA" type="text">
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">保证人（甲方）：</span>
+            <input style="width:351px;" v-model="info.partyA" type="text">
           </p>
           <p
             style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -39,9 +31,7 @@
           <p
             style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">地</span>
-            <span style="font-family:宋体; font-size:9pt"></span>
-            <span style="font-family:宋体; font-size:9pt">址：</span>
+            <span style="font-family:宋体; font-size:9pt">地址：</span>
             <input type="text" style="width: 384px;" v-model="info.a3">
           </p>
           <p
@@ -107,15 +97,7 @@
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">“</span>
-            <span
-              style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold; text-decoration:underline"
-            ></span>
-            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">”</span>
-            <span
-              style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
+            >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“___”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
           </p>
           <p style="margin:0pt; orphans:0; text-indent:20pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
@@ -128,15 +110,10 @@
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">为确保</span>
-            <input style="width: 50px" v-model="info.a4" type="text">
+            <input style="width: 150px" v-model="info.a4" type="text">
 
-            <span style="font-family:宋体; font-size:9pt">（</span>
-            <span style="font-family:宋体; font-size:9pt">以下称</span>
-            <span style="font-family:宋体; font-size:9pt">“</span>
-            <span style="font-family:宋体; font-size:9pt">债务人</span>
-            <span style="font-family:宋体; font-size:9pt">”）</span>
-            <span style="font-family:宋体; font-size:9pt">与乙方签订的编号为</span>
-            <input style="width: 50px" v-model="info.a5" type="text">
+            <span style="font-family:宋体; font-size:9pt">（以下称“债务人”）与乙方签订的编号为</span>
+            <input style="width: 80px" v-model="info.a5" type="text">
             <span
               style="font-family:宋体; font-size:9pt"
             >的《借款合同》（以下称“主合同”）的履行，保障乙方债权的实现，甲方愿意为债务人在主合同项下的债务提供连带责任保证。甲乙双方经协商一致，订立本合同，以便共同遵守。</span>
@@ -154,31 +131,24 @@
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">1.1</span>
             <span style="font-family:宋体; font-size:9pt">保证人担保的主债权为主合同债务人在债权人办理主合同项下贷款的本金</span>
-            <span style="font-family:宋体; font-size:9pt; text-decoration:underline">人民币</span>
-            <span style="font-family:宋体; font-size:9pt">（</span>
-            <span style="font-family:宋体; font-size:9pt">大写</span>
-            <span style="font-family:宋体; font-size:9pt">金额）</span>
-            <input style="width: 50px" v-model="info.a6" type="text">
-            <span style="font-family:宋体; font-size:9pt">；</span>
-            <span style="font-family:宋体; font-size:9pt">月利率</span>
-            <input style="width: 50px" v-model="info.a7" type="text">
-            <span style="font-family:宋体; font-size:9pt">‰</span>
-            <span style="font-family:宋体; font-size:9pt">；贷款期限自</span>
-            <input style="width: 50px" v-model="info.a8" type="text">
+            <input style="width: 40px" v-model="info.money" type="text">
+            <span style="font-family:宋体; font-size:9pt">（大写金额）</span>
+            <input style="width: 60px" v-model="info.a6" type="text">
+            <span style="font-family:宋体; font-size:9pt">；月利率</span>
+            <input style="width: 20px" v-model="info.a7" type="text">
+            <span style="font-family:宋体; font-size:9pt">‰；贷款期限自</span>
+            <input style="width: 40px" v-model="info.a8" type="text">
             <span style="font-family:宋体; font-size:9pt">年</span>
-            <input style="width: 50px" v-model="info.a9" type="text">
+            <input style="width: 20px" v-model="info.a9" type="text">
             <span style="font-family:宋体; font-size:9pt">月</span>
-            <input style="width: 50px" v-model="info.a10" type="text">
-            <span style="font-family:宋体; font-size:9pt">日</span>
-            <span style="font-family:宋体; font-size:9pt">始至</span>
-            <input style="width: 50px" v-model="info.a11" type="text">
+            <input style="width: 20px" v-model="info.a10" type="text">
+            <span style="font-family:宋体; font-size:9pt">日始至</span>
+            <input style="width: 40px" v-model="info.a11" type="text">
             <span style="font-family:宋体; font-size:9pt">年</span>
-            <input style="width: 50px" v-model="info.a12" type="text">
+            <input style="width: 20px" v-model="info.a12" type="text">
             <span style="font-family:宋体; font-size:9pt">月</span>
-            <input style="width: 50px" v-model="info.a13" type="text">
-            <span style="font-family:宋体; font-size:9pt">日</span>
-            <span style="font-family:宋体; font-size:9pt">止。</span>
-            <span style="font-family:宋体; font-size:9pt"></span>
+            <input style="width: 20px" v-model="info.a13" type="text">
+            <span style="font-family:宋体; font-size:9pt">日止。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -221,21 +191,7 @@
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">4.1</span>
-            <span style="font-family:宋体; font-size:9pt">自本合同生效之日起至主合同项下债务履行期限届满之日后</span>
-            <span style="font-family:宋体; font-size:9pt">三</span>
-            <span style="font-family:宋体; font-size:9pt">年止。甲方同意债务展期的，保证期间至展期协议重新约定的债务履行期限届满之日后</span>
-            <span style="font-family:宋体; font-size:9pt">三</span>
-            <span style="font-family:宋体; font-size:9pt">年止。若乙方根据主合同约定</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt">,</span>
-            <span style="font-family:宋体; font-size:9pt">宣布债务提前到期的</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt">,</span>
-            <span style="font-family:宋体; font-size:9pt">保证期间至乙方宣布的债务提前到期日后</span>
-            <span style="font-family:宋体; font-size:9pt">三</span>
-            <span
-              style="font-family:宋体; font-size:9pt"
-            >年止。如果主合同项下的债务分期履行，则对每期债务而言，保证期间均至最后一期债务履行期限届满之日后</span>
-            <span style="font-family:宋体; font-size:9pt">三</span>
-            <span style="font-family:宋体; font-size:9pt">年止。</span>
+            <span style="font-family:宋体; font-size:9pt">自本合同生效之日起至主合同项下债务履行期限届满之日后三年止。甲方同意债务展期的，保证期间至展期协议重新约定的债务履行期限届满之日后三年止。若乙方根据主合同约定，宣布债务提前到期的，保证期间至乙方宣布的债务提前到期日后三年止。如果主合同项下的债务分期履行，则对每期债务而言，保证期间均至最后一期债务履行期限届满之日后三年止。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -264,15 +220,11 @@
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">5.2</span>
-            <span style="font-family:宋体; font-size:9pt">甲方的保证责任不因出现下列任一情况而减免：</span>
-            <span style="font-family:宋体; font-size:9pt">（</span>
+            <span style="font-family:宋体; font-size:9pt">甲方的保证责任不因出现下列任一情况而减免：（</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
-            <span style="font-family:宋体; font-size:9pt">）</span>
-            <span style="font-family:宋体; font-size:9pt">乙方或债务人发生改制、合并、兼并、分立、增减资本、合资、联营、更名等情形</span>
-            <span style="font-family:宋体; font-size:9pt">；（</span>
+            <span style="font-family:宋体; font-size:9pt">）乙方或债务人发生改制、合并、兼并、分立、增减资本、合资、联营、更名等情形；（</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
-            <span style="font-family:宋体; font-size:9pt">）</span>
-            <span style="font-family:宋体; font-size:9pt">乙方委托第三方履行其在主合同项下的义务。</span>
+            <span style="font-family:宋体; font-size:9pt">）乙方委托第三方履行其在主合同项下的义务。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -311,9 +263,7 @@
               style="font-family:宋体; font-size:9pt"
             >甲方具备担当保证人的合法资格，甲方在本合同项下的担保行为符合法律、行政法规、规章和甲方章程或内部组织文件的规定，且已获得公司内部有权机构及</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">/</span>
-            <span style="font-family:宋体; font-size:9pt">或国家有权机关的批准。因甲方无权签署本合同而产生的一切责任均由甲方承担</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt">,</span>
-            <span style="font-family:宋体; font-size:9pt">包括但不限于全额赔偿乙方因此遭受的损失。</span>
+            <span style="font-family:宋体; font-size:9pt">或国家有权机关的批准。因甲方无权签署本合同而产生的一切责任均由甲方承担，包括但不限于全额赔偿乙方因此遭受的损失。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -403,9 +353,7 @@
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">8.2</span>
-            <span style="font-family:宋体; font-size:9pt">发生承包、托管（接管）、租赁、股份制改造、减少注册资本金、投资、联营、合并、兼并</span>
-            <span style="font-family:宋体; font-size:9pt"></span>
-            <span style="font-family:宋体; font-size:9pt">、收购重组、分立、合资、（被）申请停业整顿、申请解散、被撤销、（被）申请破产、控股股东</span>
+            <span style="font-family:宋体; font-size:9pt">发生承包、托管（接管）、租赁、股份制改造、减少注册资本金、投资、联营、合并、兼并、收购重组、分立、合资、（被）申请停业整顿、申请解散、被撤销、（被）申请破产、控股股东</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">/</span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -418,9 +366,7 @@
             <span
               style="font-family:宋体; font-size:9pt"
             >甲方发生名称、法定代表人（负责人）、住所、经营范围、注册资本金或公司（企业）章程等工商登记事项变更的，应当在变更后</span>
-            <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
             <input type="text" style="width: 20px;" v-model="info.a28">
-            <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
             <span style="font-family:宋体; font-size:9pt">个工作日内书面通知乙方，并附变更后的相关材料。</span>
           </p>
           <p
@@ -446,23 +392,13 @@
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">9.3</span>
-            <span style="font-family:宋体; font-size:9pt">扣划所得款项不足以清偿保证人全部债务时，应首先用于抵偿到期未付的费用，再按以下约定扣划</span>
-            <span style="font-family:宋体; font-size:9pt">：</span>
-            <span style="font-family:宋体; font-size:9pt">贷款本金及利息逾期不足</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt">90</span>
-            <span
-              style="font-family:宋体; font-size:9pt"
-            >天的，抵偿费用后的余额先用于抵偿到期未付的利息或罚息、复利，再用于抵偿到期未付的本金；本金或利息逾期</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt">90</span>
-            <span style="font-family:宋体; font-size:9pt">天的，抵偿费用后的余额先用于抵偿到期未付的本金，再用于抵偿到期未付的利息或罚息、复利。</span>
+            <span style="font-family:宋体; font-size:9pt">扣划所得款项不足以清偿保证人全部债务时，应首先用于抵偿到期未付的费用，再按以下约定扣划：贷款本金及利息逾期不足90天的，抵偿费用后的余额先用于抵偿到期未付的利息或罚息、复利，再用于抵偿到期未付的本金；本金或利息逾期90天的，抵偿费用后的余额先用于抵偿到期未付的本金，再用于抵偿到期未付的利息或罚息、复利。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">9.4</span>
-            <span style="font-family:宋体; font-size:9pt">扣划所得款项与需抵偿的债务币种不一致的</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt">,</span>
-            <span style="font-family:宋体; font-size:9pt">按委托银行在扣划日公布的汇率折算为抵偿债务的金额。</span>
+            <span style="font-family:宋体; font-size:9pt">扣划所得款项与需抵偿的债务币种不一致的，按委托银行在扣划日公布的汇率折算为抵偿债务的金额。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -571,8 +507,7 @@
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">11.10</span>
             <span style="font-family:宋体; font-size:9pt">本合同一式</span>
-            <input type="text" style="width: 50px;" v-model="info.a14">
-
+            <input type="text" style="width: 20px;" v-model="info.a14">
             <span style="font-family:宋体; font-size:9pt">份。</span>
           </p>
           <p
@@ -588,6 +523,9 @@
           </p>
         </div>
         <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
+        </p>
         <div>
           <div class="clearfix">
             <div style="font-size:9pt; line-height:150%; margin:0pt; float: left">
@@ -601,6 +539,9 @@
           </div>
         </div>
         <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
+        </p>
         <div class="clearfix">
           <div style="font-size:9pt; line-height:150%; margin:0pt; float: left">
             <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
@@ -618,11 +559,11 @@
             style="font-size:9pt; line-height:130%; margin:0pt; orphans:0; text-align:right; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">签约时间：</span>
-            <input type="text" style="width: 50px;" v-model="info.a19">
+            <input type="text" style="width: 40px;" v-model="info.a19">
             <span style="font-family:宋体; font-size:9pt">年</span>
-            <input type="text" style="width: 50px;" v-model="info.a20">
+            <input type="text" style="width: 20px;" v-model="info.a20">
             <span style="font-family:宋体; font-size:9pt">月</span>
-            <input type="text" style="width: 50px;" v-model="info.a21">
+            <input type="text" style="width: 20px;" v-model="info.a21">
             <span style="font-family:宋体; font-size:9pt">日</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span style="font-family:宋体; font-size:9pt"></span>
@@ -648,18 +589,12 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本人</span>
-          <span style="font-family:宋体; font-size:9pt">（本公司）</span>
-          <span style="font-family:宋体; font-size:9pt">承诺如下：</span>
+          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本人（本公司）承诺如下：</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">本人</span>
-          <span style="font-family:宋体; font-size:9pt">（本公司）</span>
-          <span
-            style="font-family:宋体; font-size:9pt"
-          >确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
+          <span style="font-family:宋体; font-size:9pt">本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -670,8 +605,8 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">收 件 人：</span>
-          <input type="text" style="width: 320px;" v-model="info.a23">
+          <span style="font-family:宋体; font-size:9pt">收件人：</span>
+          <input type="text" style="width: 331px;" v-model="info.a23">
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -684,35 +619,23 @@
         >
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >本人</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >（本公司）</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >认可：如因本人</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >（本公司）</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >提供的上述地址不准确、送达地址变更未及时告知贵公司、本人</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >（本公司）</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。</span>
+          >本人（本公司）认可：如因本人（本公司）提供的上述地址不准确、送达地址变更未及时告知贵公司、本人（本公司）或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt"></span>
         </p>
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
+        </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">承诺人签章：</span>
+        </p>
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -721,10 +644,10 @@
           <input type="text" style="width: 40px;" v-model="info.a25">
 
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <input type="text" style="width: 40px;" v-model="info.a26">
+          <input type="text" style="width: 20px;" v-model="info.a26">
 
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <input type="text" style="width: 40px;" v-model="info.a27">
+          <input type="text" style="width: 20px;" v-model="info.a27">
 
           <span style="font-family:宋体; font-size:9pt">日</span>
         </p>
@@ -793,6 +716,7 @@ export default {
           a26: "",
           a27: "",
           a28: "叁",
+          money: "人民币",
           extra:
             "各方均同意赋予本合同强制执行效力，进行强制执行公证。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
           contractCreateAddress: "合肥市庐阳区",
@@ -838,6 +762,7 @@ export default {
         a26: "",
         a27: "",
         a28: "叁",
+        money: "人民币",
         extra:
           "各方均同意赋予本合同强制执行效力，进行强制执行公证。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
         contractCreateAddress: "合肥市庐阳区",
