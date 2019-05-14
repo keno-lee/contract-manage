@@ -264,13 +264,11 @@
             <span style="font-family:'Times New Roman'; font-size:9pt">×</span>
             <span style="font-family:宋体; font-size:9pt">贷款天数</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">×</span>
-            <span style="font-family:宋体; font-size:9pt">日利率</span>
-            <span style="font-family:宋体; font-size:9pt">（日利率</span>
+            <span style="font-family:宋体; font-size:9pt">日利率（日利率</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">=</span>
             <span style="font-family:宋体; font-size:9pt">月利率</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">/30</span>
-            <span style="font-family:宋体; font-size:9pt">）</span>
-            <span style="font-family:宋体; font-size:9pt">。</span>
+            <span style="font-family:宋体; font-size:9pt">）。</span>
           </p>
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -336,8 +334,6 @@
             <span style="font-family:'Times New Roman'; font-size:9pt">6</span>
             <span style="font-family:宋体; font-size:9pt">）其他先决条件：</span>
             <input type="text" style="width: 150px;" v-model="info.a19">
-
-            <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
             <span style="font-family:宋体; font-size:9pt">。</span>
           </p>
           <p
@@ -841,13 +837,13 @@
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:right; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">签约时间：</span>
-          <input type="text" style="width: 50px;" v-model="info.a30">
+          <input type="text" style="width: 40px;" v-model="info.a30">
 
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <input type="text" style="width: 30px;" v-model="info.a31">
+          <input type="text" style="width: 20px;" v-model="info.a31">
 
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <input type="text" style="width: 30px;" v-model="info.a32">
+          <input type="text" style="width: 20px;" v-model="info.a32">
 
           <span style="font-family:宋体; font-size:9pt">日</span>
           <span style="font-family:宋体; font-size:9pt"></span>
@@ -897,32 +893,31 @@
         <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0">
           <textarea name id cols="30" rows="1" style="text-indent: 20pt" v-model="info.agree"></textarea>
         </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
-        >
-          <span style="font-family:宋体; font-size:9pt"></span>
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">承诺人签章：</span>
         </p>
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
+        </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">签署时间：</span>
-          <input type="text" style="width: 50px;" v-model="info.a36">
+          <input type="text" style="width: 40px;" v-model="info.a36">
 
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <input type="text" style="width: 30px;" v-model="info.a37">
+          <input type="text" style="width: 20px;" v-model="info.a37">
 
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <input type="text" style="width: 30px;" v-model="info.a38">
+          <input type="text" style="width: 20px;" v-model="info.a38">
 
           <span style="font-family:宋体; font-size:9pt">日</span>
         </p>
-        <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
       </div>
     </div>
 

@@ -9,9 +9,7 @@
         </p>
         <p style="margin:0pt 63pt 0pt 0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">
-            <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
-          </span>
+          <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
         </p>
         <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款人：</span>
