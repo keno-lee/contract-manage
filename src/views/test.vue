@@ -1,5 +1,5 @@
 <template>
-  <Index contractType="0024"></Index>
+  <Index contractType="0021"></Index>
 </template>
 <script>
 import Index from "@/components/contract/index.vue";
