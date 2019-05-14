@@ -12,65 +12,65 @@
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
             <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
           </p>
-          <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+          <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0">
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款人（甲方）</span>
             <span style="font-family:宋体; font-size:9pt">：</span>
             <input type="text" style="width: 347px;" v-model="info.partyA">
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">证件种类：</span>
             <input type="text" style="width: 360px;" v-model="info.a1">
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">证件号码：</span>
             <input type="text" style="width: 360px;" v-model="info.a2">
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">地址：</span>
             <input type="text" style="width: 384px;" v-model="info.a3">
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">联系电话：</span>
             <input type="text" style="width: 360px;" v-model="info.phoneNumber">
           </p>
-          <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; widows:0">
+          <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0">
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">贷款人（乙方）</span>
             <span style="font-family:宋体; font-size:9pt">：</span>
             <span
-              style="font-size:9pt; line-height:150%; display: inline-block;width: 347px;text-align:center;border-bottom:1px solid #000"
+              style="font-size:9pt; line-height:170%; display: inline-block;width: 347px;text-align:center;border-bottom:1px solid #000"
             >安徽省安振小额贷款有限公司</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">负责人：</span>
             <span
-              style="font-size:9pt; line-height:150%; display: inline-block;width: 372px;text-align:center;border-bottom:1px solid #000"
+              style="font-size:9pt; line-height:170%; display: inline-block;width: 372px;text-align:center;border-bottom:1px solid #000"
             >潘 伟</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">通讯地址：</span>
             <span
-              style="font-size:9pt; line-height:150%; display: inline-block;width: 360px;text-align:center;border-bottom:1px solid #000"
+              style="font-size:9pt; line-height:170%; display: inline-block;width: 360px;text-align:center;border-bottom:1px solid #000"
             >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">联系电话：</span>
             <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
             <span
-              style="font-size:9pt; line-height:150%; display: inline-block;width: 360px;text-align:center;border-bottom:1px solid #000"
+              style="font-size:9pt; line-height:170%; display: inline-block;width: 360px;text-align:center;border-bottom:1px solid #000"
             >0551-65667870</span>
           </p>
           <p
@@ -125,7 +125,7 @@
             >甲方向乙方申请借款，乙方同意向甲方发放贷款。根据有关法律法规和规章，甲乙双方经协商一致，订立本合同，以便共同遵守。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第一条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -189,7 +189,7 @@
             >本合同项下的借款期限起始日与借款借据不一致时，以借款借据所载实际放款日期为准，分期提款的以第一次放款时的借款借据所载实际放款日期为准且借款期限不予延长。借款借据是本合同的组成部分，与本合同具有同等法律效力。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -310,7 +310,7 @@
             <span style="font-family:宋体; font-size:9pt">日结息。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第三条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -376,7 +376,7 @@
             <span style="font-family:宋体; font-size:9pt">。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第四条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -388,7 +388,7 @@
             <span style="font-family:宋体; font-size:9pt">借款人应按借款借据记载的还款时间一次性偿还全部借款本金。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第五条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -449,7 +449,7 @@
             >如甲方的给付不足以清偿其对乙方所负的数笔相同种类的全部债务，乙方有权单方决定选择是否按下列顺序抵充：优先抵充已到期的债务；几项债务均到期的，优先抵充对乙方缺乏担保或者担保数额最少的债务；担保数额相同的，优先抵充债务负担较重的债务；负担相同的，按照债务到期的先后顺序抵充；到期时间相同的，按比例抵充。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; widows:0; text-indent:20pt;"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0; text-indent:20pt;"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第六条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -482,7 +482,7 @@
             >借款人经贷款人同意后提前归还部分本金且缩短剩余还款期数的，剩余的贷款本金仍适用原贷款期限对应的中国人民银行相应期限档次贷款的利率，利率浮动水平和调整仍按本合同第二条约定执行。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; widows:0; text-indent:20pt;"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0; text-indent:20pt;"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第七条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -511,7 +511,7 @@
             >借款人在签署和履行本合同过程中向贷款人提供的全部文件、资料及信息是真实、准确、完整和有效的，未向贷款人隐瞒可能影响其还款能力的任何信息。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第八条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -534,7 +534,7 @@
             >对借款人提供的财务、经营资料及信息保密，但法律另有规定或本合同另有约定的除外。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第九条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -640,7 +640,7 @@
             >包括但不限于：担保人停产、歇业、解散、停业整顿、被撤销、营业执照被吊销、申请或被申请破产；担保人的经营或财务状况有重大变化；担保人的收入发生重大变化；担保人涉及重大诉讼或仲裁案件；担保物的价值减少或可能减少或被采取财产保全等强制措施；担保人在担保合同项下有违约行为；担保人与借款人发生争议；担保人要求解除担保合同；担保合同未生效或无效或被撤销；担保物权不成立或无效；或影响贷款人债权安全的其他事件等。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -687,7 +687,7 @@
             <span style="font-family:宋体; font-size:9pt">）为他人债务提供担保可能影响其债务清偿能力时未提前书面通知贷款人，并征得贷款人同意。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十一条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -734,7 +734,7 @@
             >借款人死亡、丧失民事行为能力或经人民法院宣告失踪、死亡的，应由借款人的合法继承人或财产代管人在借款人财产范围内继续履行已借款项的还款义务，若借款人无继承人或财产代管人，或继承人或财产代管人拒绝或者怠于履行借款合同的，贷款人有权处分抵押物和质押权利，追究保证人的连带保证责任。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十二条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -748,7 +748,7 @@
             >本合同在履行过程中发生争议，可以通过协商解决，协商不成，任一方均可向乙方住所地人民法院起诉解决。在诉讼期间，本合同不涉及争议部分的条款仍须履行。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十三条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -782,7 +782,7 @@
             <span style="font-family:宋体; font-size:9pt">份。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十四条</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
@@ -799,17 +799,17 @@
           <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
         </p>
         <div>
-          <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify"></p>
+          <p style="font-size:9pt; line-height:170%; margin:0pt; text-align:justify"></p>
 
           <div class="clearfix">
             <div
-              style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: left"
+              style="font-size:9pt; line-height:170%; margin:0pt; text-align:justify; float: left"
             >
               <span style="font-family:宋体; font-size:9pt">甲方（签字）：</span>
               <input type="text" style="width: 150px;" v-model="info.a27">
             </div>
             <div
-              style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: right"
+              style="font-size:9pt; line-height:170%; margin:0pt; text-align:justify; float: right"
             >
               <span style="font-family:宋体; font-size:9pt">乙方（公章）：</span>
               <span style="font-family:宋体; font-size:9pt"></span>
@@ -822,9 +822,9 @@
           </p>
           <div class="clearfix">
             <div
-              style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify; float: right"
+              style="font-size:9pt; line-height:170%; margin:0pt; text-align:justify; float: right"
             >
-              <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
+              <p style="font-size:9pt; line-height:170%; margin:0pt; text-align:justify">
                 <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
                 <input type="text" style="width: 150px;" v-model="info.a29">
               </p>
@@ -1306,19 +1306,17 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .contract-wrap {
   width: 650px;
-  /* height: 891px; */
-  /* background-color: red; */
   margin: 0 auto;
-  /* overflow-x: hidden; */
   position: relative;
 }
+
 .first-part {
   height: 3150px;
 }
+
 input {
   border: none;
   border-bottom: 1px solid #000;

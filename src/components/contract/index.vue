@@ -230,17 +230,18 @@ import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
 
 import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保证合同(个人)
-import ensureBusiness from "@/components/contract/ensure-business.vue";
+import ensureBusiness from "@/components/contract/ensure-business.vue"; //（备注：max-guarantee-business 和 ensure-business 交换过）
 
 import mortgage from "@/components/contract/mortgage.vue"; // 抵押合同 0010
 
 import maxGuaranteePersonal from "@/components/contract/max-guarantee-personal.vue"; // 最高额保证合同(个人)
-import maxGuaranteeBusiness from "@/components/contract/max-guarantee-business.vue"; // 最高额保证合同(企业)
+import maxGuaranteeBusiness from "@/components/contract/max-guarantee-business.vue"; // 最高额保证合同(企业) （备注：max-guarantee-business 和 ensure-business 交换过）
 
 import maxZhizha from "@/components/contract/max-zhizha.vue"; // 最高额质押合同
-import maxMortgage2 from "@/components/contract/max-mortgage2.vue"; // 最高额抵押合同 -2
-import loanLoopPersonal2 from "@/components/contract/loan-loop-personal2.vue"; // 个人循环借款合同 -2
-import loanPersonal2 from "@/components/contract/loan-personal2.vue"; // 借款合同(个人) -2
+
+import maxMortgage2 from "@/components/contract/max-mortgage2.vue"; // 最高额抵押合同 -2 0013
+import loanLoopPersonal2 from "@/components/contract/loan-loop-personal2.vue"; // 个人循环借款合同 -2 0014
+import loanPersonal2 from "@/components/contract/loan-personal2.vue"; // 借款合同(个人) -2 0015
 import creditPersonal2 from "@/components/contract/credit-personal2.vue"; // 综合授信(个人) -2 0016
 
 import maxGuaranteePersonal2 from "@/components/contract/max-guarantee-personal2.vue"; // 最高额保证合同(个人) -2  0017

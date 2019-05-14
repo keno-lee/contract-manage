@@ -11,7 +11,7 @@
           <span style="font-family:宋体; font-size:9pt">合同编号：</span>
           <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
         </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">借款人：</span>
           <input style="width:160px;" v-model="info.partyA" type="text">
           <span style="font-family:宋体; font-size:9pt;">（证件类型：</span>
@@ -20,7 +20,7 @@
           <input style="width:80px;" v-model="info.a3" type="text">
           <span style="font-family:宋体; font-size:9pt;">）</span>
         </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">贷款人：</span>
           <!-- <input style="width:160px;" v-model="info.a14" type="text"> -->
           <input style="width:160px;" v-model="info.a1" type="text">
@@ -30,7 +30,7 @@
           <input style="width:80px;" v-model="info.a34" type="text">
           <span style="font-family:宋体; font-size:9pt;">）</span>
         </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">保证人：</span>
           <input style="width:160px;" v-model="info.a4" type="text">
           <span style="font-family:宋体; font-size:9pt;">（证件类型：</span>
@@ -39,7 +39,7 @@
           <input style="width:80px;" v-model="info.a6" type="text">
           <span style="font-family:宋体; font-size:9pt;">）</span>
         </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; orphans:0;  widows:0">
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0;  widows:0">
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">保证人：</span>
           <input style="width:160px;" v-model="info.a7" type="text">
           <span style="font-family:宋体; font-size:9pt;">（证件类型：</span>
@@ -445,11 +445,11 @@
         </p>
       <div>
         <div class="clearfix">
-          <div style="font-size:9pt; line-height:150%; margin:0pt;  float: left">
+          <div style="font-size:9pt; line-height:170%; margin:0pt;  float: left">
             <span style="font-family:宋体; font-size:9pt">贷款人（签章）：</span>
             <input style="width:120px;" v-model="info.a27" type="text">
           </div>
-          <div style="font-size:9pt; line-height:150%; margin:0pt;  float: right">
+          <div style="font-size:9pt; line-height:170%; margin:0pt;  float: right">
             <span style="font-family:宋体; font-size:9pt">借款人（签章）：</span>
             <input style="width:120px;" v-model="info.a28" type="text">
           </div>
@@ -459,7 +459,7 @@
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
         <div class="clearfix">
-          <div style="font-size:9pt; line-height:150%; margin:0pt;  float: right">
+          <div style="font-size:9pt; line-height:170%; margin:0pt;  float: right">
             <span style="font-family:宋体; font-size:9pt">保证人（签章）：</span>
             <input style="width:120px;" v-model="info.a29" type="text">
           </div>
@@ -773,15 +773,15 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .contract-wrap {
   width: 650px;
-  /* height: 891px; */
-  /* background-color: red; */
   margin: 0 auto;
-  /* overflow-x: hidden; */
   position: relative;
+}
+
+.first-part {
+  height: 3150px;
 }
 
 input {
@@ -789,15 +789,24 @@ input {
   border-bottom: 1px solid #000;
   text-align: center;
 }
+
 textarea {
-  width: 630px;
+  /* width: 630px; */
   resize: none;
   /* text-align: center; */
   overflow-y: hidden;
   border: none;
   text-decoration: underline;
-  line-height: 24px;
   line-height: 170%;
+  width: 630px;
+  resize: none;
+  font-family: "宋体";
+  font-size: 9pt;
+  font-weight: 600;
+}
+
+table textarea {
+  text-decoration: none;
 }
 
 .btn {
@@ -821,5 +830,13 @@ textarea {
 .operate-box {
   height: 300px;
   margin-top: 100px;
+}
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 </style>
