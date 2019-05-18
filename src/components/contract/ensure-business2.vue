@@ -589,12 +589,12 @@
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本人（本公司）承诺如下：</span>
+          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本公司承诺如下：</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
+          <span style="font-family:宋体; font-size:9pt">本公司确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -619,7 +619,7 @@
         >
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >本人（本公司）认可：如因本人（本公司）提供的上述地址不准确、送达地址变更未及时告知贵公司、本人（本公司）或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。</span>
+          >本公司认可：如因本公司提供的上述地址不准确、送达地址变更未及时告知贵公司、本公司或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"

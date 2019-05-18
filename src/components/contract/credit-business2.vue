@@ -7,6 +7,9 @@
         >
           <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">综合授信合同（适用于企业）</span>
         </p>
+        <p style="font-size:9pt; line-height:100%; margin:2pt 0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
+        </p>
         <p style="margin:0pt 63pt 0pt 0pt; orphans:0; widows:0;font-size:9pt">
           <span style="font-family:宋体; font-size:9pt">合同编号：</span>
           <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
@@ -16,6 +19,13 @@
         >
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">被授信人（甲方）：</span>
           <input style="width:339px;" v-model="info.partyA" type="text">
+        </p>
+        
+        <p
+          style="font-size:9pt; line-height:170%;  margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:9pt">法定代表人：</span>
+          <input type="text" style="width: 348px;" v-model="info.a35">
         </p>
         <p
           style="font-size:9pt; line-height:170%;  margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -77,6 +87,9 @@
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
           <span style="font-size:9pt; line-height:170%;  display: inline-block;width: 361px;text-align:center;border-bottom:1px solid #000">0551-65667870</span>
         </p>
+        <p style="font-size:9pt; line-height:100%; margin:0pt; orphans:0;    widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
+        </p>
         <p style="margin:0pt; orphans:0; text-align:center; widows:0">
           <a name="OLE_LINK1"></a>
           <a name="OLE_LINK2">
@@ -117,7 +130,7 @@
         >
           <span style="-aw-bookmark-end:OLE_LINK1"></span>
           <span style="-aw-bookmark-end:OLE_LINK2"></span>
-          <span style="font-family:宋体; font-size:9pt">双方经协商一致，于</span>
+          <span style="font-family:宋体; font-size:9pt">甲乙双方经协商一致，于</span>
           <input style="width: 40px" v-model="info.a4" type="text">
           <span style="font-family:宋体; font-size:9pt">年</span>
           <input style="width: 20px" v-model="info.a5" type="text">
@@ -227,7 +240,7 @@
           <span style="font-family:'Times New Roman'; font-size:9pt">3.4</span>
           <span
             style="font-family:宋体; font-size:9pt"
-          >乙方与甲方就每一项具体授信所签订的合同或协议与本合同不一致的，以该具体合同或协议为准，但甲方一起对本合同项下或与本合同相关的具体业务合同或协议项下的任何和一切债务承担的连带责任不得因此无效或解除。</span>
+          >乙方与甲方就每一项具体授信所签订的合同或协议与本合同不一致的，以该具体合同或协议为准，但甲方一切对本合同项下或与本合同相关的具体业务合同或协议项下的任何和一切债务承担的连带责任不得因此无效或解除。</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%;  margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -605,6 +618,7 @@ export default {
           a32: "",
           a33: "",
           a34: "",
+          a35: "",
           c1: "",
           c2: "",
           c3: "",
@@ -661,6 +675,7 @@ export default {
           a32: "",
           a33: "",
           a34: "",
+          a35: "",
           c1: "",
           c2: "",
           c3: "",

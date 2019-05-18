@@ -498,11 +498,11 @@
             <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
             <span
               style="font-family:宋体; font-size:9pt"
-            >）主合同项下的债务如有物的担保，甲方同意不以行使代位权为由或任何其他原因对该担保物或其处分后所得价款提出权利主张，上述担保物及所得价款应优先用于清偿乙方尚未获偿的债权（</span>
+            >）主合同项下的债务如有物的担保，甲方同意不以行使代位权为由或任何其他原因对该担保物或其处分后所得价款提出权利主张，上述担保物及所得价款应优先用于清偿乙方尚未获偿的债权；（</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">3</span>
             <span
               style="font-family:宋体; font-size:9pt"
-            >）若债务人或其他担保人为甲方提供了反担保，则甲方基于上述反担保而获得的款项应优先用于清偿乙方以尚未获偿的债权。</span>
+            >）若债务人或其他担保人为甲方提供了反担保，则甲方基于上述反担保而获得的款项应优先用于清偿乙方尚未获偿的债权。</span>
           </p>
           <p
             style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
@@ -671,7 +671,7 @@
             <input
               ref="extrainput"
               type="text"
-              style="width:470px;"
+              style="width:510px;"
               v-show="info.extra.length < 20"
               v-model="info.extra"
               @input="inputListener"
@@ -1200,7 +1200,7 @@ export default {
           a27: "",
           a28: "",
           a29: "",
-          money: "人名币",
+          money: "人民币",
           table1: "",
           table2: "",
           table3: "",
@@ -1260,7 +1260,7 @@ export default {
         a27: "",
         a28: "",
         a29: "",
-        money: "人名币",
+        money: "人民币",
         table1: "",
         table2: "",
         table3: "",

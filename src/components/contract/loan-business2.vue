@@ -63,6 +63,18 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
+            <span style="font-family:宋体; font-size:9pt">证件种类：</span>
+            <input type="text" style="width: 360px;" v-model="info.a40">
+          </p>
+          <p
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+          >
+            <span style="font-family:宋体; font-size:9pt">证件号码：</span>
+            <input type="text" style="width: 360px;" v-model="info.a41">
+          </p>
+          <p
+            style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+          >
             <span style="font-family:宋体; font-size:9pt">通讯地址：</span>
             <span
               style="font-size:9pt; line-height:170%; display: inline-block;width: 360px;text-align:center;border-bottom:1px solid #000"
@@ -199,7 +211,7 @@
             <span style="font-family:宋体; font-size:9pt">利率：本合同执行月利率</span>
             <input style="width: 30px" v-model="info.a13" type="text">
             <span style="font-family:'Times New Roman'; font-size:9pt">‰</span>
-            <span style="font-family:宋体; font-size:9pt">。该利率系中国人民银行现行相应期限档次贷款的基准利率上浮</span>
+            <span style="font-family:宋体; font-size:9pt">。该利率系本合同签订日中国人民银行现行相应期限档次贷款的基准利率上浮</span>
             <input style="width: 30px" v-model="info.a14" type="text">
             <span style="font-family:'Times New Roman'; font-size:9pt">%</span>
             <span style="font-family:宋体; font-size:9pt">。</span>
