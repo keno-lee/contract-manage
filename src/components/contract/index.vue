@@ -230,12 +230,12 @@ import loanBusiness from "@/components/contract/loan-business.vue";
 import creditBusiness from "@/components/contract/credit-business.vue";
 
 import ensurePersonal from "@/components/contract/ensure-personal.vue"; // 保证合同(个人)
-import ensureBusiness from "@/components/contract/ensure-business.vue"; //（备注：max-guarantee-business 和 ensure-business 交换过）
+import ensureBusiness from "@/components/contract/ensure-business.vue"; // 0009（备注：max-guarantee-business 和 ensure-business 交换过）
 
 import mortgage from "@/components/contract/mortgage.vue"; // 抵押合同 0010
 
-import maxGuaranteePersonal from "@/components/contract/max-guarantee-personal.vue"; // 最高额保证合同(个人)
-import maxGuaranteeBusiness from "@/components/contract/max-guarantee-business.vue"; // 最高额保证合同(企业) （备注：max-guarantee-business 和 ensure-business 交换过）
+import maxGuaranteePersonal from "@/components/contract/max-guarantee-personal.vue"; // 最高额保证合同(个人) 0004
+import maxGuaranteeBusiness from "@/components/contract/max-guarantee-business.vue"; // 最高额保证合同(企业) 0010 （备注：max-guarantee-business 和 ensure-business 交换过）
 
 import maxZhizha from "@/components/contract/max-zhizha.vue"; // 最高额质押合同
 

@@ -819,7 +819,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0013";
+            nv["contractType"] = "0023";
           }
           // console.log("赋值");
           this.info = nv;

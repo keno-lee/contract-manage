@@ -1,7 +1,7 @@
 <template>
   <div class="search-index" style="padding-bottom: 20px;width: 100%">
     <!-- 日期选择器 -->
-    <el-date-picker
+    <!-- <el-date-picker
       v-model="time"
       type="daterange"
       align="right"
@@ -11,13 +11,17 @@
       end-placeholder="结束日期"
       :picker-options="pickerOptions"
       value-format="yyyy-MM-dd"
-    ></el-date-picker>
+    ></el-date-picker>-->
     <!-- 合同类型 -->
     <el-select v-model="value" placeholder="请选择合同类型" @change="changeInput">
       <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
     </el-select>
+    <!-- 合同编号 -->
+    <el-input v-model="contractNumber" style="width:200px;" placeholder="请输入合同编号"></el-input>
     <!-- 甲方 partyA -->
     <el-input v-model="partyA" style="width:200px;" placeholder="请输入甲方"></el-input>
+    <!-- 合同操作者 -->
+    <el-input v-model="operator" style="width:200px;" placeholder="请输入合同操作者" v-if="hasPermisson"></el-input>
     <!-- 联系方式 phoneNumber -->
     <!-- <el-input v-model="phoneNumber" style="width:200px;" placeholder="请输入联系方式"></el-input> -->
     <!-- 操作人 operator -->
@@ -69,8 +73,16 @@ export default {
       operator: "",
       options: contractSearch,
       value: "",
-      contractType: ""
+      contractType: "",
+      contractNumber: "",
+      operator: "",
+      hasPermisson: true
     };
+  },
+  created() {
+    if (localStorage.getItem('roleId') === '2') {
+      this.hasPermisson = false
+    }
   },
   methods: {
     changeInput(i) {
@@ -84,7 +96,9 @@ export default {
         createTimeEnd: this.time ? this.time[1] : "",
         partyA: this.partyA,
         operator: this.operator,
-        contractType: this.contractType
+        contractType: this.contractType,
+        contractNumber: this.contractNumber,
+        operator: this.operator
       };
       // console.log("sou", data);
       this.$emit("search", data);

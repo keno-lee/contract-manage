@@ -8,15 +8,11 @@
           >
             <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">抵押合同</span>
           </p>
-          <p
-            style="margin:0pt 63pt 0pt 0pt; orphans:0;widows:0; font-size:9pt"
-          >
+          <p style="margin:0pt 63pt 0pt 0pt; orphans:0;widows:0; font-size:9pt">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
             <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text">
           </p>
-          <p
-            style="font-size:9pt; line-height:125%; margin:0pt; orphans:0;widows:0"
-          >
+          <p style="font-size:9pt; line-height:125%; margin:0pt; orphans:0;widows:0">
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">抵押人（甲方）：</span>
             <input style="width:352px;" v-model="info.partyA" type="text">
           </p>
@@ -1054,77 +1050,53 @@
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
       <div>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;widows:0">
           <span style="font-family:宋体; font-size:9pt">附件:</span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;widows:0">
           <span style="font-family:宋体; font-size:9pt">致安徽省安振小额贷款有限公司：</span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt">作为本合同附件，本人（本公司）承诺如下：</span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span
             style="font-family:宋体; font-size:9pt"
           >本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt">送达地址：</span>
           <input type="text" style="width: 560px;" v-model="info.a23">
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt">收件人：</span>
           <input type="text" style="width: 572px;" v-model="info.a24">
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
           <input type="text" style="width: 560px;" v-model="info.a25">
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
           >本人（本公司）认可：如因本人（本公司）提供的上述地址不准确、送达地址变更未及时告知贵公司、本人（本公司）或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。</span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt"></span>
         </p>
         <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt">承诺人签章：</span>
         </p>
         <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0;    widows:0">
           <span style="font-family:宋体; font-size:14pt">&nbsp;</span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt"></span>
         </p>
-        <p
-          style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0"
-        >
+        <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;text-indent:20pt; widows:0">
           <span style="font-family:宋体; font-size:9pt"></span>
           <span style="font-family:宋体; font-size:9pt">签署时间：</span>
           <input type="text" style="width: 40px;" v-model="info.a26">
@@ -1412,7 +1384,7 @@ export default {
             nv["auditTip"] = "";
           }
           if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0013";
+            nv["contractType"] = "0021";
           }
           // console.log("赋值");
           this.info = nv;
@@ -1420,6 +1392,20 @@ export default {
       },
       immediate: true,
       deep: true
+    },
+    "info.extra": {
+      handler(nv, ov) {
+        // console.log(this.$refs);
+        if (nv.length >= 20) {
+          this.$nextTick(() => {
+            this.$refs.extratextarea.focus();
+          });
+        } else {
+          this.$nextTick(() => {
+            this.$refs.extrainput.focus();
+          });
+        }
+      }
     }
   }
 };
