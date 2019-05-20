@@ -432,10 +432,8 @@
             <span style="font-family:宋体; font-size:9pt">）其他股权出质的，甲方应于质押合同签订后十个工作日内向工商行政登记部门办理出质登记；（</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">4</span>
             <span style="font-family:宋体; font-size:9pt">
-              ）
+               ）
               <input type="checkbox" v-model="info.c12">注册商标专用权
-            </span>
-            <span style="font-family:'Wingdings 2'; font-size:9pt">
               <input type="checkbox" v-model="info.c13">专利权
               <input type="checkbox" v-model="info.c14">著作权等知识产权中的财产权出质的，甲方应于质押合同签订后十个工作日内向有关主管部门办理出质登记；（
             </span>

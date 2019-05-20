@@ -1049,7 +1049,7 @@
         </div>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto">
-      <div>
+      <!-- <div>
         <p style="font-size:9pt;line-height:170%; margin:0pt; orphans:0;widows:0">
           <span style="font-family:宋体; font-size:9pt">附件:</span>
         </p>
@@ -1114,7 +1114,7 @@
         <p style="margin:0pt; orphans:0;widows:0">
           <span style="font-family:'Times New Roman'; font-size:10.5pt"></span>
         </p>
-      </div>
+      </div> -->
     </div>
 
     <!-- 操作 -->
@@ -1419,7 +1419,7 @@ export default {
 }
 
 .first-part {
-  height: 4200px;
+  height: 3200px;
 }
 
 input {

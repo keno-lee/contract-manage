@@ -309,26 +309,83 @@
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">6.1</span>
-          <span style="font-family:宋体; font-size:9pt">如发生以下事件之一即构成甲方违约：（</span>
+          <span style="font-family:宋体; font-size:9pt">如发生以下事件之一即构成甲方违约：</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
-          <span style="font-family:宋体; font-size:9pt">）甲方向乙方提供虚假的资料、信息或故意隐瞒与订立本合同有关的重要事实；（</span>
+          <span style="font-family:宋体; font-size:9pt">）甲方向乙方提供虚假的资料、信息或故意隐瞒与订立本合同有关的重要事实；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
-          <span style="font-family:宋体; font-size:9pt">）甲方没有按期偿还到期的与乙方有关的债务，包括但不限于本合同约定及每笔具体授信项目合同或协议约定的本金、利息、违约金、其他费用或任何应付款项；（</span>
+          <span style="font-family:宋体; font-size:9pt">）甲方没有按期偿还到期的与乙方有关的债务，包括但不限于本合同约定及每笔具体授信项目合同或协议约定的本金、利息、违约金、其他费用或任何应付款项；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">3</span>
-          <span style="font-family:宋体; font-size:9pt">）甲方没有按照本合同或与乙方签订的其他有关合同或协议约定的用途使用授信资金；（</span>
+          <span style="font-family:宋体; font-size:9pt">）甲方没有按照本合同或与乙方签订的其他有关合同或协议约定的用途使用授信资金；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">4</span>
-          <span style="font-family:宋体; font-size:9pt">）甲方或担保人未完全履行或未履行本合同或与乙方签订的其他有关合同或协议项下的任何义务或没有完全遵守其中的任一规定，或在接到乙方书面通知后没有采取令乙方满意的补救措施；（</span>
+          <span style="font-family:宋体; font-size:9pt">）甲方或担保人未完全履行或未履行本合同或与乙方签订的其他有关合同或协议项下的任何义务或没有完全遵守其中的任一规定，或在接到乙方书面通知后没有采取令乙方满意的补救措施；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">5</span>
-          <span style="font-family:宋体; font-size:9pt">）为本合同或本合同项下借款合同提供担保的抵押物或质物被查封、冻结或价值明显减少，影响到乙方权利而抵押人或出质人未增加相应担保的；（</span>
+          <span style="font-family:宋体; font-size:9pt">）为本合同或本合同项下借款合同提供担保的抵押物或质物被查封、冻结或价值明显减少，影响到乙方权利而抵押人或出质人未增加相应担保的；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">6</span>
-          <span style="font-family:宋体; font-size:9pt">）甲方经营状况或财务状况恶化，或丧失商业信誉；（</span>
+          <span style="font-family:宋体; font-size:9pt">）甲方经营状况或财务状况恶化，或丧失商业信誉；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">7</span>
-          <span style="font-family:宋体; font-size:9pt">）甲方有转移财产、抽逃资金及其它逃避债务的行为；甲方与第三人发生纠纷、诉讼、仲裁、行政处罚或其它乙方认为会对其权益带来威胁或不利的事件，可能影响甲方履行本合同项下义务的；（</span>
+          <span style="font-family:宋体; font-size:9pt">）甲方有转移财产、抽逃资金及其它逃避债务的行为；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">8</span>
-          <span style="font-family:宋体; font-size:9pt">）无论任何原因导致甲方已经或将要丧失还款能力；（</span>
+          <span style="font-family:宋体; font-size:9pt">）甲方与第三人发生纠纷、诉讼、仲裁、行政处罚或其它乙方认为会对其权益带来威胁或不利的事件，可能影响甲方履行本合同项下义务的；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">9</span>
-          <span style="font-family:宋体; font-size:9pt">）部分或全部担保条款或担保文件未生效、无效、被撤销，甲方未按乙方要求落实新的担保的；（</span>
+          <span style="font-family:宋体; font-size:9pt">）无论任何原因导致甲方已经或将要丧失还款能力；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">10</span>
+          <span style="font-family:宋体; font-size:9pt">）部分或全部担保条款或担保文件未生效、无效、被撤销，甲方未按乙方要求落实新的担保的；</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
+        >
+        <span style="font-family:宋体; font-size:9pt">（</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt">11</span>
           <span style="font-family:宋体; font-size:9pt">）发生据乙方合理的判断可能会危及、损害乙方权益的与本合同有关的其他事件。</span>
         </p>
         <p
@@ -337,16 +394,33 @@
           <span style="font-family:'Times New Roman'; font-size:9pt">6.2</span>
           <span style="font-family:宋体; font-size:9pt">违约事件发生或出现本合同第</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">6.1</span>
-          <span style="font-family:宋体; font-size:9pt">款约定的情形，乙方有权根据情节轻重调整、减少或终止本授信额度及授信期间，并有权采取但不限于以下部分或全部措施：（</span>
+          <span style="font-family:宋体; font-size:9pt">款约定的情形，乙方有权根据情节轻重调整、减少或终止本授信额度及授信期间，并有权采取但不限于以下部分或全部措施：</span>
+        </p>
+
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
-          <span style="font-family:宋体; font-size:9pt">）宣布直接或间接源于本合同的一切债务提前到期，并要求甲方立即清偿；（</span>
+          <span style="font-family:宋体; font-size:9pt">）宣布直接或间接源于本合同的一切债务提前到期，并要求甲方立即清偿；</span>
+        </p>
+
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">2</span>
-          <span style="font-family:宋体; font-size:9pt">）要求甲方承担乙方因实现债权而发生的各项合理费用（包括但不限于诉讼费、律师费、财产保全费、保全担保费、鉴定费、公告费、评估费、差旅费等）；（</span>
+          <span style="font-family:宋体; font-size:9pt">）要求甲方承担乙方因实现债权而发生的各项合理费用（包括但不限于诉讼费、律师费、财产保全费、保全担保费、鉴定费、公告费、评估费、差旅费等）；</span>
+        </p>
+
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">3</span>
-          <span style="font-family:宋体; font-size:9pt">）要求甲方提供或追加担保，担保的形式包括保证、抵押和质押；（</span>
+          <span style="font-family:宋体; font-size:9pt">）要求甲方提供或追加担保，担保的形式包括保证、抵押和质押；</span>
+        </p>
+
+        <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">4</span>
           <span style="font-family:宋体; font-size:9pt">）采取维护其在本合同项下权益的符合有关法律规定的其他措施。</span>
         </p>
+
         <p
           style="font-size:9pt; line-height:170%;  margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
