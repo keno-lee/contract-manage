@@ -61,51 +61,50 @@
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
           <input type="text" style="width: 362px;" v-model="info.a20">
         </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:center; text-indent:20pt; widows:0"
-        >
-          <a name="OLE_LINK1"></a>
-          <a name="OLE_LINK2">
+        <p style="margin:0pt; orphans:0; text-align:center; widows:0">
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">特别告知</span>
-          </a>
-        </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
-        >
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold"
-          >为了维护您的利益，在您签署本合同之前，请仔细阅读如下条款并确认有关事实，如果您对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
-        </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
-        >
-          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">1.</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">您所提交的文件、材料及所作陈述是真实、合法、有效的。</span>
-        </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
-        >
-          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold"
-          >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权。</span>
-        </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
-        >
-          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold"
-          >您已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“___”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
-        </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
-        >
-          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，您必须按约行使权利并主动承担义务。</span>
-          <span style="-aw-bookmark-end:OLE_LINK1"></span>
-          <span style="-aw-bookmark-end:OLE_LINK2"></span>
-        </p>
+          </p>
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">为了维护您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方的利益，在您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方签署本合同之前，请仔细阅读如下条款并确认有关事实，如果您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
+          </p>
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">1.</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span
+              style="font-family:宋体; font-size:9pt; font-weight:bold"
+            >贵方所提交的文件、材料及所作陈述是真实、合法、有效的。</span>
+          </p>
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span
+              style="font-family:宋体; font-size:9pt; font-weight:bold"
+            >贵方有权签署本合同，若依法需要取得他人同意的，您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方已经取得充分授权。</span>
+          </p>
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span
+              style="font-family:宋体; font-size:9pt; font-weight:bold"
+            >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“___”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
+          </p>
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方必须按约行使权利并主动承担义务。</span>
+          </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >

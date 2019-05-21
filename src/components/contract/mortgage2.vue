@@ -74,9 +74,13 @@
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">特别告知</span>
           </p>
           <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
-            <span
-              style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >为了维护您/贵方的利益，在您/贵方签署本合同之前，请仔细阅读如下条款并确认有关事实，如果您/贵方对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">为了维护您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方的利益，在您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方签署本合同之前，请仔细阅读如下条款并确认有关事实，如果您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
           </p>
           <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">1.</span>
@@ -92,7 +96,9 @@
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >贵方有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权。</span>
+            >贵方有权签署本合同，若依法需要取得他人同意的，您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方已经取得充分授权。</span>
           </p>
           <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>

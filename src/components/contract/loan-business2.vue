@@ -98,31 +98,31 @@
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0">
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold"
-          >为了维护您的利益，在您签署本合同之前，请仔细阅读如下条款并确认有关事实，如果您对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
+          >为了维护贵方的利益，在贵方签署本合同之前，请仔细阅读如下条款并确认有关事实，如果贵方对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">1.</span>
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">您所提交的文件、材料及所作陈述是真实、合法、有效的。</span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方所提交的文件、材料及所作陈述是真实、合法、有效的。</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold"
-          >您有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权。</span>
+          >贵方有权签署本合同，若依法需要取得他人同意的，贵方已经取得充分授权。</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold"
-          >您已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“___”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
+          >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“___”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，您必须按约行使权利并主动承担义务。</span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，贵方必须按约行使权利并主动承担义务。</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -349,7 +349,7 @@
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:9pt">3.3</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt">3.2</span>
           <span style="font-family:宋体; font-size:9pt">在下列条件全部符合前，贷款人有权拒绝放款：</span>
         </p>
         <p
@@ -385,13 +385,13 @@
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:9pt">3.5</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt">3.3</span>
           <span style="font-family:宋体; font-size:9pt">借款人应按借款借据记载的还款时间一次性偿还全部借款本金。</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:9pt">3.6</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt">3.4</span>
           <span style="font-family:宋体; font-size:9pt">借款人要求提前还款的，应在还款日前至少提前</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">10</span>
           <span style="font-family:宋体; font-size:9pt">个工作日向贷款人提出申请，经贷款人同意后，方可办理有关手续。</span>
@@ -399,7 +399,7 @@
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:9pt">3.7</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt">3.5</span>
           <span style="font-family:宋体; font-size:9pt">当甲方款项给付不足以清偿全部债务时，乙方有权按照下列顺序优先抵充：（</span>
           <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
           <span style="font-family:宋体; font-size:9pt">）甲方应承担的有关费用、乙方实现债权的有关费用；（</span>
@@ -411,7 +411,7 @@
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
         >
-          <span style="font-family:'Times New Roman'; font-size:9pt">3.8</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt">3.6</span>
           <span
             style="font-family:宋体; font-size:9pt"
           >如甲方的给付不足以清偿其对乙方所负的数笔相同种类的全部债务，乙方有权单方决定选择是否按下列顺序抵充：优先抵充已到期的债务；几项债务均到期的，优先抵充对乙方缺乏担保或者担保数额最少的债务；担保数额相同的，优先抵充债务负担较重的债务；负担相同的，按照债务到期的先后顺序抵充；到期时间相同的，按比例抵充。</span>

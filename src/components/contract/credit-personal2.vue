@@ -133,7 +133,7 @@
         >
           <span style="-aw-bookmark-end:OLE_LINK1"></span>
           <span style="-aw-bookmark-end:OLE_LINK2"></span>
-          <span style="font-family:宋体; font-size:9pt">双方经协商一致，于</span>
+          <span style="font-family:宋体; font-size:9pt">甲乙双方经协商一致，于</span>
           <input style="width: 40px" v-model="info.a4" type="text">
           <span style="font-family:宋体; font-size:9pt">年</span>
           <input style="width: 20px" v-model="info.a5" type="text">

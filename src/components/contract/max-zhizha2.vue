@@ -73,39 +73,42 @@
           <p style="margin:0pt; orphans:0; text-align:center; widows:0">
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">特别告知</span>
           </p>
-          <p style="margin:0pt; orphans:0; text-indent:20pt; widows:0">
-            <span
-              style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >为了维护您/贵方的利益，在您/贵方签署本合同之前，请仔细阅读如下条款并确认有关事实，如果您/贵方对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">为了维护您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方的利益，在您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方签署本合同之前，请仔细阅读如下条款并确认有关事实，如果您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方对本合同条款及相关的业务有任何不解之处，请向我方咨询，仍有疑问，请暂缓签署本合同：</span>
           </p>
-          <p style="margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">1.</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">您</span>
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
             >贵方所提交的文件、材料及所作陈述是真实、合法、有效的。</span>
           </p>
-          <p style="margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">您</span>
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >贵方有权签署本合同，若依法需要取得他人同意的，您已经取得充分授权。</span>
+            >贵方有权签署本合同，若依法需要取得他人同意的，您</span>
+            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方已经取得充分授权。</span>
           </p>
-          <p style="margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
-            <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"></span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">您</span>
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
             >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“___”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
           </p>
-          <p style="margin:0pt; orphans:0; text-indent:20pt; widows:0">
+          <p style="margin:0pt; orphans:0;text-indent:20pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，您</span>
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
@@ -458,7 +461,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第八条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第八条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -467,7 +470,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第九条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第九条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -476,7 +479,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span style="font-family:宋体; font-size:9pt">甲方应于</span>
             <input type="text" style="width: 80px;" v-model="info.a33">
@@ -492,7 +495,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十一条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十一条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -501,7 +504,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十二条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十二条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -510,7 +513,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十三条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十三条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -523,7 +526,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十四条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十四条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -532,7 +535,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十五条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十五条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -541,7 +544,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十六条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十六条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -557,7 +560,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十七条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十七条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -566,7 +569,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第十八条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十八条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -586,7 +589,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0;text-indent:20pt; "
           >
-            <span style="font-family:宋体; font-size:9pt">第十九条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十九条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -621,7 +624,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第二十条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二十条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -630,7 +633,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第二十一条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二十一条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -639,7 +642,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第二十二条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二十二条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span style="font-family:宋体; font-size:9pt">乙方依法处分质押财产或权利所得价款，有权根据需要选择不同顺序对以下各项进行清偿：（</span>
             <span style="font-family:'Times New Roman'; font-size:9pt">1</span>
@@ -658,14 +661,14 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第二十三条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二十三条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
             >本合同履行期间，甲、乙任何一方均不得擅自变更或解除合同。需变更合同时，须经双方协商同意，达成书面协议。</span>
           </p>
-          <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0">
-            <span style="font-family:宋体; font-size:9pt">第二十四条</span>
+          <p style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; widows:0;text-indent:20pt;">
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二十四条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -674,7 +677,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第二十五条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二十五条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
@@ -683,7 +686,7 @@
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">第二十六条</span>
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二十六条</span>
             <span style="font-family:宋体; font-size:9pt"></span>
             <span style="font-family:宋体; font-size:9pt">本合同一式</span>
             <input type="text" style="width: 30px;" v-model="info.a35">
@@ -727,7 +730,7 @@
             <input
               ref="extrainput"
               type="text"
-              style="width:470px;"
+              style="width:420px;"
               v-show="info.extra.length < 20"
               v-model="info.extra"
               @input="inputListener"
@@ -831,7 +834,7 @@
         >
           <span
             style="font-family:宋体; font-size:9pt"
-          >一、本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
+          >本人（本公司）确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -855,15 +858,8 @@
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:21pt; widows:0"
         >
           <span
-            style="font-family:宋体; font-size:9pt"
+            style="font-family:宋体; font-size:9pt; font-weight:bold;border-bottom:1px solid #000"
           >本人（本公司）认可：如因本人（本公司）提供的上述地址不准确、送达地址变更未及时告知贵公司、本人（本公司）或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。</span>
-        </p>
-        <p
-          style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
-        >
-          <span
-            style="font-family:宋体; font-size:9pt"
-          >二、本人（本公司）是保证人或抵押人或出质人：担保范围除合同约定之外，还包括贵司因诉讼保全或诉前保全向担保公司交纳的保全担保费用。</span>
         </p>
         <p style="font-size:14pt; line-height:170%; margin:5pt 0pt; orphans:0; widows:0">
           <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
