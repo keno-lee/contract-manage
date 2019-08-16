@@ -64,13 +64,19 @@
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">证件种类：</span>
-            <input type="text" style="width: 360px;" v-model="info.a40">
+            <!-- <input type="text" style="width: 360px;" v-model="info.a40"> -->
+            <span
+              style="font-size:9pt; line-height:170%; display: inline-block;width: 360px;text-align:center;border-bottom:1px solid #000"
+            >营业执照</span>
           </p>
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">证件号码：</span>
-            <input type="text" style="width: 360px;" v-model="info.a41">
+            <!-- <input type="text" style="width: 360px;" v-model="info.a41"> -->
+            <span
+              style="font-size:9pt; line-height:170%; display: inline-block;width: 360px;text-align:center;border-bottom:1px solid #000"
+            >913401006941423604</span>
           </p>
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -1039,15 +1045,6 @@ export default {
           a39: "",
           a40: "",
           a41: "",
-          a42: "",
-          a43: "",
-          a44: "",
-          a45: "",
-          a46: "",
-          a47: "",
-          a48: "",
-          a49: "",
-          a50: "",
           extra:
             "本合同项下贷款在编号为XXXXXX的《综合授信合同》的授信范围内。",
           agree: "本公司认可：如因本公司提供的上述地址不准确、送达地址变更未及时告知贵公司、本公司或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本公司实际接收的，文书退回之日视为送达之日。",
@@ -1108,15 +1105,6 @@ export default {
           a39: "",
           a40: "",
           a41: "",
-          a42: "",
-          a43: "",
-          a44: "",
-          a45: "",
-          a46: "",
-          a47: "",
-          a48: "",
-          a49: "",
-          a50: "",
           extra:
             "本合同项下贷款在编号为XXXXXX的《综合授信合同》的授信范围内。",
           agree: "本公司认可：如因本公司提供的上述地址不准确、送达地址变更未及时告知贵公司、本公司或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本公司实际接收的，文书退回之日视为送达之日。",

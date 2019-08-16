@@ -558,7 +558,7 @@
           </p>
           <div class="clearfix">
             <div
-              style="font-size:9pt; line-height:150%; margin:0pt; float: right"
+              style="font-size:9pt; line-height:150%; margin:0pt; float: left"
             >
               <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
                 <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
@@ -567,7 +567,7 @@
             </div>
 
             <div
-              style="font-size:9pt; line-height:150%; margin:0pt; float: left"
+              style="font-size:9pt; line-height:150%; margin:0pt; float: right"
             >
               <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
                 <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
