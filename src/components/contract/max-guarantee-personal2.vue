@@ -57,9 +57,10 @@
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">负责人：</span>
-            <span
+            <!-- <span
               style="font-size:9pt; line-height:170%; display: inline-block;width: 375px;text-align:center;border-bottom:1px solid #000"
-            >潘 伟</span>
+            >潘 伟</span> -->
+            <input type="text" style="width: 360px;" v-model="info.partyB" />
           </p>
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"
@@ -668,44 +669,7 @@ export default {
   props: {
     infoData: {
       default: () => {
-        return {
-          contractNumber: "",
-          partyA: "",
-          phoneNumber: "",
-          a1: "",
-          a2: "",
-          a3: "",
-          a4: "",
-          a5: "",
-          a6: "",
-          a7: "",
-          a8: "",
-          a9: "",
-          a10: "",
-          a11: "",
-          a12: "",
-          a13: "",
-          a14: "",
-          a15: "",
-          a16: "",
-          a17: "",
-          a18: "",
-          a19: "",
-          a20: "",
-          a21: "",
-          a22: "",
-          a23: "",
-          a24: "",
-          a25: "",
-          a26: "",
-          a27: "",
-          extra:
-            "各方均同意赋予本合同强制执行效力，进行强制执行公证。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
-          contractCreateAddress: "合肥市庐阳区",
-          operateTip: "",
-          auditTip: "",
-          contractType: "0017"
-        };
+        return {};
       }
     },
     status: ""
@@ -716,6 +680,7 @@ export default {
         contractNumber: "",
         partyA: "",
         phoneNumber: "",
+        partyB: /new/.test(window.location.href) ? "徐静" : "潘伟",
         a1: "",
         a2: "",
         a3: "",
@@ -872,20 +837,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        if (nv.contractNumber !== undefined) {
-          // 如果没有值，就给个空值
-          if (nv["operateTip"] === undefined) {
-            nv["operateTip"] = "";
-          }
-          if (nv["auditTip"] === undefined) {
-            nv["auditTip"] = "";
-          }
-          if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0017";
-          }
-          // console.log("赋值");
-          this.info = nv;
-        }
+        this.info = Object.assign(this.info, this.infoData);
       },
       immediate: true,
       deep: true

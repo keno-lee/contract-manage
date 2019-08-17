@@ -1049,51 +1049,7 @@ export default {
   props: {
     infoData: {
       default: () => {
-        return {
-          contractNumber: "",
-          partyA: "",
-          phoneNumber: "",
-          a1: "",
-          a2: "",
-          a3: "",
-          a4: "",
-          a5: "",
-          a6: "",
-          a7: "",
-          a8: "",
-          a9: "",
-          a10: "",
-          a11: "",
-          a12: "",
-          a13: "",
-          a14: "",
-          a15: "",
-          a16: "",
-          a17: "安徽省安振小额贷款有限公司",
-          a18: "潘伟",
-          a19: "合肥市庐阳区濉溪路278号财富广场B座东楼17层",
-          a20: "0551-65667870",
-          table1: "",
-          table2: "",
-          table3: "",
-          table4: "",
-          table5: "",
-          table6: "",
-          table7: "",
-          table8: "",
-          table9: "",
-          table10: "",
-          table11: "",
-          table12: "",
-          table13: "",
-          table14: "",
-          extra:
-            "各方均同意赋予本合同强制执行效力。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
-          contractCreateAddress: "合肥市庐阳区",
-          operateTip: "",
-          auditTip: "",
-          contractType: "0013"
-        };
+        return {};
       }
     },
     status: ""
@@ -1104,6 +1060,7 @@ export default {
         contractNumber: "",
         partyA: "",
         phoneNumber: "",
+        a18: /new/.test(window.location.href) ? "徐静" : "潘伟",
         a1: "",
         a2: "",
         a3: "",
@@ -1121,7 +1078,7 @@ export default {
         a15: "",
         a16: "",
         a17: "安徽省安振小额贷款有限公司",
-        a18: "潘伟",
+        // a18: "潘伟",
         a19: "合肥市庐阳区濉溪路278号财富广场B座东楼17层",
         a20: "0551-65667870",
         table1: "",
@@ -1267,20 +1224,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        if (nv.contractNumber !== undefined) {
-          // 如果没有值，就给个空值
-          if (nv["operateTip"] === undefined) {
-            nv["operateTip"] = "";
-          }
-          if (nv["auditTip"] === undefined) {
-            nv["auditTip"] = "";
-          }
-          if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0013";
-          }
-          // console.log("赋值");
-          this.info = nv;
-        }
+        this.info = Object.assign(this.info, this.infoData);
       },
       immediate: true,
       deep: true
