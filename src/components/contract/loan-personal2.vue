@@ -55,7 +55,7 @@
             <!-- <span
               style="font-size:9pt; line-height:170%; display: inline-block;width: 372px;text-align:center;border-bottom:1px solid #000"
             >潘 伟</span>-->
-            <input type="text" style="width: 360px;" v-model="info.partyB" />
+            <input type="text" style="width: 372px;" v-model="info.partyB" />
           </p>
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
