@@ -56,9 +56,10 @@
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt">负责人：</span>
-            <span
+            <!-- <span
               style="font-size:9pt; line-height:170%; display: inline-block;width: 372px;text-align:center;border-bottom:1px solid #000"
-            >潘 伟</span>
+            >潘 伟</span> -->
+            <input type="text" style="width: 360px;" v-model="info.partyB" />
           </p>
           <p
             style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -1000,59 +1001,7 @@ export default {
   props: {
     infoData: {
       default: () => {
-        return {
-          contractNumber: "",
-          partyA: "",
-          phoneNumber: "",
-          a1: "",
-          a2: "",
-          a3: "",
-          a4: "",
-          a5: "人民币",
-          a6: "",
-          a7: "",
-          a8: "",
-          a9: "",
-          a10: "",
-          a11: "",
-          a12: "临时周转",
-          a13: "",
-          a14: "",
-          a15: "（2）",
-          a16: "100",
-          a17: "100",
-          a18: "（2）",
-          a19: "",
-          a20: "",
-          a21: "",
-          a22: "",
-          a23: "",
-          a24: "",
-          a25: "",
-          a26: "",
-          a27: "",
-          a28: "",
-          a29: "",
-          a30: "",
-          a31: "",
-          a32: "",
-          a33: "",
-          a34: "",
-          a35: "",
-          a36: "",
-          a37: "",
-          a38: "",
-          a39: "",
-          a40: "",
-          a41: "",
-          extra:
-            "本合同项下贷款在编号为XXXXXX的《综合授信合同》的授信范围内。",
-          agree: "本公司认可：如因本公司提供的上述地址不准确、送达地址变更未及时告知贵公司、本公司或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本公司实际接收的，文书退回之日视为送达之日。",
-          contractCreateAddress: "合肥市庐阳区",
-          operateTip: "",
-          auditTip: "",
-          contractType: "0022"
-        };
+        return {};
       }
     },
     status: ""
@@ -1063,6 +1012,7 @@ export default {
         contractNumber: "",
           contractNumber: "",
           partyA: "",
+          partyB: /new/.test(window.location.href) ? "徐静" : "潘伟",
           phoneNumber: "",
           a1: "",
           a2: "",
@@ -1235,20 +1185,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        if (nv.contractNumber !== undefined) {
-          // 如果没有值，就给个空值
-          if (nv["operateTip"] === undefined) {
-            nv["operateTip"] = "";
-          }
-          if (nv["auditTip"] === undefined) {
-            nv["auditTip"] = "";
-          }
-          if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0022";
-          }
-          // console.log("赋值");
-          this.info = nv;
-        }
+        this.info = Object.assign(this.info, this.infoData);
       },
       immediate: true,
       deep: true
