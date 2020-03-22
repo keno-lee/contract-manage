@@ -9,80 +9,135 @@
         </p>
         <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">____________</span>
-        </p>
-        <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
-        >
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">抵押人</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">（</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">甲方</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">）</span>
-          <span style="font-family:宋体; font-size:9pt">：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text" />
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+        >
+          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">&#xa0;</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; widows:0"
+        >
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">抵押人（甲方）：</span>
+          <input
+            ref="partyAinput"
+            type="text"
+            style="width:400px;"
+            v-show="info.partyA.length < 20"
+            v-model="info.partyA"
+            @input="inputListener"
+          />
+          <textarea
+            ref="partyAtextarea"
+            style="text-decoration:underline; border:none;width: 400px;"
+            v-show="info.partyA.length >= 20"
+            cols="30"
+            v-model="info.partyA"
+            rows="1"
+          ></textarea>
+        </p>
+        <p
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+        >
+          <span style="font-family:宋体; font-size:9pt">法定代表人：</span>
+          <input
+            ref="personChargeinput"
+            type="text"
+            style="width:370px;"
+            v-show="info.personCharge.length < 12"
+            v-model="info.personCharge"
+            @input="inputListener"
+          />
+          <textarea
+            ref="personChargetextarea"
+            style="text-decoration:underline; border:none;width: 370px;"
+            v-show="info.personCharge.length >= 12"
+            cols="30"
+            v-model="info.personCharge"
+            rows="1"
+          ></textarea>
+        </p>
+        <p
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">证件种类：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 360px;" v-model="info.idtype" />
         </p>
         <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">证件号码：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input
+            ref="idcardinput"
+            type="text"
+            style="width:458px;"
+            v-show="info.idcard.length < 20"
+            v-model="info.idcard"
+            @input="inputListener"
+          />
+          <textarea
+            ref="idcardtextarea"
+            style="text-decoration:underline; border:none;width: 458px;"
+            v-show="info.idcard.length >= 20"
+            cols="30"
+            v-model="info.idcard"
+            rows="1"
+          ></textarea>
         </p>
         <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">地 址：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:9pt">地址：</span>
+          <input type="text" style="width: 384px;" v-model="info.address" />
         </p>
         <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input
+            ref="phoneNumberinput"
+            type="text"
+            style="width:456px;"
+            v-show="info.phoneNumber.length < 20"
+            v-model="info.phoneNumber"
+            @input="inputListener"
+          />
+          <textarea
+            ref="phoneNumbertextarea"
+            style="text-decoration:underline; border:none;width: 456px;"
+            v-show="info.phoneNumber.length >= 20"
+            cols="30"
+            v-model="info.phoneNumber"
+            rows="1"
+          ></textarea>
         </p>
         <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">抵押权人</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">（</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">乙方</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">）</span>
-          <span style="font-family:宋体; font-size:9pt">：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">安徽省安振小额贷款有限公司</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">抵押权人（乙方）：</span>
+          <span
+            style="font-size:9pt; line-height:170%;  display: inline-block;width: 352px;text-align:center;border-bottom:1px solid #000"
+          >安徽省安振小额贷款有限公司</span>
         </p>
         <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">负 责 人：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">徐虹波</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <span style="font-family:宋体; font-size:9pt">法定代表人：</span>
+          <input type="text" style="width: 373px;" v-model="info.partyB" />
         </p>
         <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">通讯地址：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">合肥市庐阳区濉溪路</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline">278</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">号财富广场</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline">B</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">座东楼</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline">17</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">层</span>
+          <span
+            style="font-family:宋体; font-size:9pt; text-decoration:underline"
+          >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
         </p>
         <p
-          style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+          style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
           <span
             style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline"
           >0551-65667870</span>
@@ -137,7 +192,9 @@
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold"
           >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"></span>
+          <span
+            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
         </p>
         <p
@@ -153,24 +210,11 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">鉴于乙方</span>
-          <span style="font-family:宋体; font-size:9pt">与</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt">（下称</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">“</span>
-          <span style="font-family:宋体; font-size:9pt">债务人</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">”</span>
-          <span style="font-family:宋体; font-size:9pt">）签订编号为：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt">的《</span>
-          <span style="font-family:宋体; font-size:9pt">商业承兑汇票贴现业务合作协议</span>
-          <span style="font-family:宋体; font-size:9pt">》</span>
-          <span style="font-family:宋体; font-size:9pt">。甲方愿意为债务人</span>
-          <span style="font-family:宋体; font-size:9pt">（</span>
-          <span style="font-family:宋体; font-size:9pt">承兑人？</span>
-          <span style="font-family:宋体; font-size:9pt">）</span>
-          <span style="font-family:宋体; font-size:9pt">在主合同</span>
-          <span style="font-family:宋体; font-size:9pt">项</span>
+          <span style="font-family:宋体; font-size:9pt">鉴于乙方与</span>
+          <input type="text" style="width: 60px;" v-model="info.a1" />
+          <span style="font-family:宋体; font-size:9pt">（下称债务人）签订编号为：</span>
+          <input type="text" style="width: 60px;" v-model="info.a2" />
+          <span style="font-family:宋体; font-size:9pt">的《商业承兑汇票贴现业务合作协议》。甲方愿意为债务人（承兑人？）在主合同项</span>
           <span
             style="font-family:宋体; font-size:9pt"
           >下的一系列债务提供最高额抵押担保。根据有关法律法规和规章，甲乙双方经协商一致，订立本合同，以便共同遵守执行。</span>
@@ -213,7 +257,7 @@
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同中债务人指</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline">。</span>
+          <input type="text" style="width: 60px;" v-model="info.a3" />
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -274,7 +318,7 @@
           <span style="font-family:宋体; font-size:9pt">（</span>
           <span style="font-family:宋体; font-size:9pt">大写金额</span>
           <span style="font-family:宋体; font-size:9pt">）</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 100px;" v-model="info.a4" />
           <span style="font-family:宋体; font-size:9pt">。</span>
         </p>
         <p
@@ -308,7 +352,7 @@
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">3.1</span>
           <span style="font-family:宋体; font-size:9pt">双方应于本合同签订后</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 60px;" v-model="info.a5" />
           <span
             style="font-family:宋体; font-size:9pt"
           >个工作日内到相应的登记部门办理抵押登记手续。甲方应于抵押登记完成之日将抵押财产的他项权利证书、抵押登记文件正本原件及其他</span>
@@ -429,8 +473,7 @@
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">6.4</span>
           <span style="font-family:宋体; font-size:9pt">甲方应于本合同订立之日（抵押财产续保的，则为续保完成之日）起</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">_</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">__</span>
+          <input type="text" style="width: 60px;" v-model="info.a6" />
           <span
             style="font-family:宋体; font-size:9pt"
           >个工作日内将抵押财产的保险单正本交付乙方，并且在乙方预留有关保险索赔或保险权益转让所必需的文件。</span>
@@ -789,21 +832,19 @@
           <span style="font-family:宋体; font-size:9pt">。</span>
         </p>
         <p
-          style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+          style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">11.11</span>
           <span style="font-family:宋体; font-size:9pt; font-weight:normal">其他约定事项</span>
           <span style="font-family:宋体; font-size:9pt; font-weight:normal">：</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >各方均同意赋予本合同强制执行效力</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >，进行强制执行公证</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold"></span>
+          <textarea
+            name
+            id
+            cols="30"
+            rows="1"
+            style="text-indent: 20pt; font-size: 9pt; font-weight:600;"
+            v-model="info.extra"
+          ></textarea>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -844,157 +885,225 @@
         >
           <tr style="height:36.85pt">
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:31.35pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:40pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
+              <p style="font-size:9pt; line-height:170%; margin:0pt">
                 <span style="font-family:宋体; font-size:9pt">抵押财产名称</span>
               </p>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:83.9pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:83.9pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
+              <p style="font-size:9pt; line-height:170%; margin:0pt">
                 <span style="font-family:宋体; font-size:9pt">权属证书及其他有关证书编号</span>
               </p>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:156.95pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:120pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt">处</span>
-                <span style="font-family:宋体; font-size:9pt"></span>
-                <span style="font-family:宋体; font-size:9pt">所</span>
+              <p style="font-size:9pt; line-height:170%; margin:0pt">
+                <span style="font-family:宋体; font-size:9pt">处所</span>
               </p>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:25.7pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:34pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
+              <p style="font-size:9pt; line-height:170%; margin:0pt">
                 <span style="font-family:宋体; font-size:9pt">面积</span>
               </p>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:40.2pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:50pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
+              <p style="font-size:9pt; line-height:170%; margin:0pt">
                 <span style="font-family:宋体; font-size:9pt">抵押财产的价值</span>
               </p>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:69.4pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:76pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
+              <p style="font-size:9pt; line-height:170%; margin:0pt">
                 <span style="font-family:宋体; font-size:9pt">已为其他债权设定抵押的金额</span>
               </p>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:23.75pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:30pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
+              <p style="font-size:9pt; line-height:170%; margin:0pt">
                 <span style="font-family:宋体; font-size:9pt">备注</span>
               </p>
             </td>
           </tr>
           <tr style="height:36.85pt">
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:31.35pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:31.35pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 8px"
+                name
+                id
+                cols="2"
+                rows="1"
+                v-model="info.table1"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:83.9pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:83.9pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table2"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:156.95pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:156.95pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table3"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:25.7pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:25.7pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table4"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:40.2pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:40.2pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table5"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:69.4pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:69.4pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:'Times New Roman'; font-size:9pt">&#xa0;</span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table6"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:23.75pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; "
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table7"
+              ></textarea>
             </td>
           </tr>
           <tr style="height:36.85pt">
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:31.35pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:31.35pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table8"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:83.9pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:83.9pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table9"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:156.95pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:156.95pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table10"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:25.7pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:25.7pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table11"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:40.2pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:40.2pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table12"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:69.4pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle; width:69.4pt"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table13"
+              ></textarea>
             </td>
             <td
-              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:23.75pt"
+              style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:2pt; padding-right:2pt; vertical-align:middle;"
             >
-              <p style="font-size:9pt; line-height:140%; margin:0pt">
-                <span style="font-family:宋体; font-size:9pt"></span>
-              </p>
+              <textarea
+                style="width: 100%; border:none; font-size: 11px"
+                name
+                id
+                cols="30"
+                rows="1"
+                v-model="info.table14"
+              ></textarea>
             </td>
           </tr>
         </table>
@@ -1059,31 +1168,35 @@
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto" />
       <div>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:宋体; font-size:9pt">甲方（</span>
-          <span style="font-family:宋体; font-size:9pt">签章</span>
-          <span style="font-family:宋体; font-size:9pt">）：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt"></span>
+        <div class="clearfix">
+          <div style="font-size:9pt; line-height:170%;  margin:0pt; float: left">
+            <span style="font-family:宋体; font-size:9pt">甲方（签章）：</span>
+            <input type="text" style="width: 150px;" v-model="info.partyASign" />
+          </div>
+          <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
+            <span style="font-family:宋体; font-size:9pt">乙方（公章）：</span>
+            <input type="text" style="width: 150px;" v-model="info.partyBSign" />
+          </div>
+        </div>
+        <br style="clear:both; mso-break-type:section-break; page-break-before:auto" />
+        <p style="font-size:14pt; line-height:100%; margin:5pt 0pt; orphans:0; widows:0">
+          <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
         </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:'Times New Roman'; font-size:9pt">&#xa0;</span>
-        </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-        </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:宋体; font-size:9pt">乙方（公章）：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-        </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:'Times New Roman'; font-size:9pt">&#xa0;</span>
-        </p>
-        <p style="font-size:9pt; line-height:150%; margin:0pt; text-align:justify">
-          <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-        </p>
+        <div class="clearfix">
+          <div style="font-size:9pt; line-height:170%;  margin:0pt; float: left">
+            <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">
+              <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
+              <input type="text" style="width: 150px;" v-model="info.partyAWrite" />
+            </p>
+          </div>
+
+          <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
+            <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">
+              <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
+              <input type="text" style="width: 150px;" v-model="info.partyBWrite" />
+            </p>
+          </div>
+        </div>
       </div>
       <br style="clear:both; mso-break-type:section-break; page-break-before:auto" />
       <div>
@@ -1091,14 +1204,14 @@
           style="font-size:9pt; line-height:130%; margin:0pt; orphans:0; text-align:right; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">签约时间：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 40px;" v-model="info.contractCreateYear" />
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 40px;" v-model="info.contractCreateMonth" />
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
+          <input type="text" style="width: 40px;" v-model="info.contractCreateDay" />
           <span style="font-family:宋体; font-size:9pt">日</span>
           <span style="font-family:宋体; font-size:9pt">签约地点：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">合肥市庐阳区</span>
+          <input type="text" style="width: 100px;" v-model="info.contractCreateAddress" />
         </p>
       </div>
     </div>
@@ -1125,53 +1238,7 @@ export default {
   props: {
     infoData: {
       default: () => {
-        return {
-          contractNumber: "",
-          partyA: "",
-          a3: "",
-          a4: "",
-          a5: "",
-          phoneNumber: "",
-          a7: "",
-          a8: "",
-          a9: "",
-          a10: "",
-          a11: "",
-          a12: "",
-          a13: "",
-          a14: "",
-          a15: "",
-          a16: "",
-          a17: "",
-          a18: "",
-          a19: "",
-          a20: "",
-          a21: "",
-          a22: "",
-          a23: "",
-          a24: "",
-          a25: "",
-          a26: "",
-          a27: "",
-          contractCreateAddress: "合肥市庐阳区",
-          a28: "",
-          a29: "",
-          a30: "",
-          a31: "",
-          a32: "",
-          a29: "",
-          a30: "",
-          a31: "",
-          a32: "",
-          a33: "",
-          a34: "",
-          a35: "",
-          a36: "",
-          a37: "",
-          operateTip: "",
-          auditTip: "",
-          contractType: "0005" // TODO 修改
-        };
+        return {};
       }
     },
     status: ""
@@ -1181,48 +1248,48 @@ export default {
       info: {
         contractNumber: "",
         partyA: "",
+        personCharge: "",
+        partyB: "徐虹波",
+        phoneNumber: "",
+        idcard: "",
+        address: "",
+        idtype: "",
+        a1: "",
+        a2: "",
         a3: "",
         a4: "",
         a5: "",
-        phoneNumber: "",
-        a7: "",
-        a8: "",
-        a9: "",
-        a10: "",
-        a11: "",
-        a12: "",
-        a13: "",
-        a14: "",
-        a15: "",
-        a16: "",
-        a17: "",
-        a18: "",
-        a19: "",
-        a20: "",
-        a21: "",
-        a22: "",
-        a23: "",
-        a24: "",
-        a25: "",
-        a26: "",
-        a27: "",
-        contractCreateAddress: "",
-        a28: "",
-        a29: "",
-        a30: "",
-        a31: "",
-        a32: "",
-        a29: "",
-        a30: "",
-        a31: "",
-        a32: "",
-        a33: "",
-        a34: "",
-        a35: "",
-        a36: "",
-        a37: "",
+        a6: "",
+        extra:
+          "各方均同意赋予本合同强制执行效力，进行强制执行公证。本合同解决争议的方式发生冲突时，约定赋予本合同强制执行效力的解决方式优先适用。",
+        partyASign: "",
+        partyBSign: "",
+        partyAWrite: "",
+        partyBWrite: "",
+        sendAddress: "",
+        sendWho: "",
+        sendNumber: "",
+        contractCreateYear: "",
+        contractCreateMonth: "",
+        contractCreateDay: "",
+        contractCreateAddress: "合肥市庐阳区",
+        table1: "",
+        table2: "",
+        table3: "",
+        table4: "",
+        table5: "",
+        table6: "",
+        table7: "",
+        table8: "",
+        table9: "",
+        table10: "",
+        table11: "",
+        table12: "",
+        table13: "",
+        table14: "",
         operateTip: "",
-        auditTip: ""
+        auditTip: "",
+        contractType: "0026"
       }
     };
   },
@@ -1346,20 +1413,7 @@ export default {
   watch: {
     infoData: {
       handler(nv, ov) {
-        if (nv.contractNumber !== undefined) {
-          // 如果没有值，就给个空值
-          if (nv["operateTip"] === undefined) {
-            nv["operateTip"] = "";
-          }
-          if (nv["auditTip"] === undefined) {
-            nv["auditTip"] = "";
-          }
-          if (nv["contractType"] === undefined) {
-            nv["contractType"] = "0005";
-          }
-          // console.log("赋值");
-          this.info = nv;
-        }
+        this.info = Object.assign(this.info, nv);
       },
       immediate: true,
       deep: true
@@ -1378,100 +1432,30 @@ export default {
         }
       }
     },
-    "info.a4": {
+    "info.personCharge": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.a4textarea.focus();
+            this.$refs.personChargetextarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.a4input.focus();
+            this.$refs.personChargeinput.focus();
           });
         }
       }
     },
-    "info.a28": {
+    "info.idcard": {
       handler(nv, ov) {
         // console.log(this.$refs);
         if (nv.length >= 20) {
           this.$nextTick(() => {
-            this.$refs.a28textarea.focus();
+            this.$refs.idcardtextarea.focus();
           });
         } else {
           this.$nextTick(() => {
-            this.$refs.a28input.focus();
-          });
-        }
-      }
-    },
-    "info.a29": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a29textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a29input.focus();
-          });
-        }
-      }
-    },
-    "info.a30": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a30textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a30input.focus();
-          });
-        }
-      }
-    },
-    "info.a31": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a31textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a31input.focus();
-          });
-        }
-      }
-    },
-    "info.a32": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a32textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a32input.focus();
-          });
-        }
-      }
-    },
-    "info.a5": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.a5textarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.a5input.focus();
+            this.$refs.idcardinput.focus();
           });
         }
       }

@@ -1,5 +1,5 @@
 <template>
-  <Index :contractType="id"></Index>
+  <Index :contractType="contractType"></Index>
 </template>
 <script>
 import Index from "@/components/contract/index.vue";
@@ -7,14 +7,14 @@ import Index from "@/components/contract/index.vue";
 export default {
   data() {
     return {
-      id: id
+      contractType: "0001"
     };
   },
   components: {
     Index
   },
   created() {
-    this.id = this.$route.query.id;
+    this.contractType = this.$route.query.id || "0001";
   }
 };
 </script>
