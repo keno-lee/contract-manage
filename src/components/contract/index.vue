@@ -216,6 +216,46 @@
       @reject="reject"
       @pass="pass"
     ></maxZhizha2>
+
+    <shangyehuipiao
+      v-if="contractType === '0025'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></shangyehuipiao>
+
+    <zuigaoediya
+      v-if="contractType === '0026'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></zuigaoediya>
+
+    <zuigaoebaozhengP
+      v-if="contractType === '0027'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></zuigaoebaozhengP>
+
+    <zuigaoebaozhengB
+      v-if="contractType === '0028'"
+      :status="status"
+      :infoData="infoData"
+      @save="save"
+      @submit="submit"
+      @reject="reject"
+      @pass="pass"
+    ></zuigaoebaozhengB>
   </div>
 </template>
 <script>
@@ -254,6 +294,11 @@ import loanBusiness2 from "@/components/contract/loan-business2.vue"; // 借款�
 import creditBusiness2 from "@/components/contract/credit-business2.vue"; // 综合授信合同（企业） -2 0023
 import maxZhizha2 from "@/components/contract/max-zhizha2.vue"; // 最高额质押合同 -2 0024
 
+import shangyehuipiao from "@/components/contract/shangyehuipiao.vue"; // 商业汇票合同 -2 0025
+import zuigaoediya from "@/components/contract/zuigaoediya.vue"; // 最高额抵押合同-适用商业汇票 -2 0026
+import zuigaoebaozhengP from "@/components/contract/zuigaoebaozheng-p.vue"; // 最高的保证个人 -2 0027
+import zuigaoebaozhengB from "@/components/contract/zuigaoebaozheng-b.vue"; // 最高额保证企业 -2 0028
+
 export default {
   components: {
     loanPersonal,
@@ -279,7 +324,11 @@ export default {
     mortgage2,
     loanBusiness2,
     creditBusiness2,
-    maxZhizha2
+    maxZhizha2,
+    shangyehuipiao,
+    zuigaoediya,
+    zuigaoebaozhengP,
+    zuigaoebaozhengB
   },
   data() {
     return {};
