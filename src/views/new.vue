@@ -124,6 +124,26 @@
           :class="selectItem === '0024' ? 'active' : ''"
           @click="select('0024')"
         >最高额质押合同(新版)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0025' ? 'active' : ''"
+          @click="select('0025')"
+        >商业汇票贴现合同</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0026' ? 'active' : ''"
+          @click="select('0026')"
+        >最高额抵押合同(商票保贴业务)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0027' ? 'active' : ''"
+          @click="select('0027')"
+        >最高额保证合同个人(商票保贴业务)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0028' ? 'active' : ''"
+          @click="select('0028')"
+        >最高额保证合同企业(商票保贴业务)</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
