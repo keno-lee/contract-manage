@@ -9,7 +9,7 @@
         </p>
         <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
           <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-          <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text" />
+          <input style="width: 150px; text-align: left;" v-model="info.contractNumber" type="text" />
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -23,14 +23,14 @@
           <input
             ref="partyAinput"
             type="text"
-            style="width:400px;"
+            style="width:300px;"
             v-show="info.partyA.length < 20"
             v-model="info.partyA"
             @input="inputListener"
           />
           <textarea
             ref="partyAtextarea"
-            style="text-decoration:underline; border:none;width: 400px;"
+            style="text-decoration:underline; border:none;width: 300px;"
             v-show="info.partyA.length >= 20"
             cols="30"
             v-model="info.partyA"
@@ -44,14 +44,14 @@
           <input
             ref="personChargeinput"
             type="text"
-            style="width:370px;"
+            style="width:320px;"
             v-show="info.personCharge.length < 12"
             v-model="info.personCharge"
             @input="inputListener"
           />
           <textarea
             ref="personChargetextarea"
-            style="text-decoration:underline; border:none;width: 370px;"
+            style="text-decoration:underline; border:none;width: 320px;"
             v-show="info.personCharge.length >= 12"
             cols="30"
             v-model="info.personCharge"
@@ -62,7 +62,7 @@
           style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">证件种类：</span>
-          <input type="text" style="width: 360px;" v-model="info.a2" />
+          <input type="text" style="width: 332px;" v-model="info.a2" />
         </p>
         <p
           style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -71,14 +71,14 @@
           <input
             ref="idcardinput"
             type="text"
-            style="width:458px;"
+            style="width:333px;"
             v-show="info.idcard.length < 20"
             v-model="info.idcard"
             @input="inputListener"
           />
           <textarea
             ref="idcardtextarea"
-            style="text-decoration:underline; border:none;width: 458px;"
+            style="text-decoration:underline; border:none;width: 333px;"
             v-show="info.idcard.length >= 20"
             cols="30"
             v-model="info.idcard"
@@ -89,7 +89,7 @@
           style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">地址：</span>
-          <input type="text" style="width: 384px;" v-model="info.a4" />
+          <input type="text" style="width: 358px;" v-model="info.a4" />
         </p>
         <p
           style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -98,14 +98,14 @@
           <input
             ref="phoneNumberinput"
             type="text"
-            style="width:456px;"
+            style="width:334px;"
             v-show="info.phoneNumber.length < 20"
             v-model="info.phoneNumber"
             @input="inputListener"
           />
           <textarea
             ref="phoneNumbertextarea"
-            style="text-decoration:underline; border:none;width: 456px;"
+            style="text-decoration:underline; border:none;width: 334px;"
             v-show="info.phoneNumber.length >= 20"
             cols="30"
             v-model="info.phoneNumber"
@@ -117,7 +117,7 @@
         >
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">贴现人（乙方）：</span>
           <span
-            style="font-size:9pt; line-height:170%;  display: inline-block;width: 352px;text-align:center;border-bottom:1px solid #000"
+            style="font-size:9pt; line-height:170%;  display: inline-block;width: 328px;text-align:center;border-bottom:1px solid #000"
           >安徽省安振小额贷款有限公司</span>
         </p>
         <p
@@ -125,28 +125,25 @@
         >
           <span style="font-family:宋体; font-size:9pt">法定代表人：</span>
           <!-- 徐静 -->
-          <input type="text" style="width: 373px;" v-model="info.partyB" />
+          <input type="text" style="width: 324px;" v-model="info.partyB" />
         </p>
+
         <p
           style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">证件种类：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline">营业执照</span>
+          <span style="font-family:宋体; font-size:9pt; display: inline-block;width: 124px;text-align:center;border-bottom:1px solid #000">营业执照</span>
           <span style="font-family:宋体; font-size:9pt">证件号码：</span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
-          <span
-            style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline"
-          >913401006941423604</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt; display: inline-block;width: 144px;text-align:center;border-bottom:1px solid #000">
+            913401006941423604
+          </span>
         </p>
         <p
           style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">通讯地址：</span>
           <span
-            style="font-family:宋体; font-size:9pt; text-decoration:underline"
+            style="font-family:宋体; font-size:9pt; display: inline-block;width: 335px;text-align:center;border-bottom:1px solid #000"
           >合肥市庐阳区濉溪路278号财富广场B座东楼17层</span>
         </p>
         <p
@@ -155,7 +152,7 @@
           <span style="font-family:宋体; font-size:9pt">联系电话：</span>
           <span style="font-family:宋体; font-size:9pt; text-decoration:underline"></span>
           <span
-            style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline"
+            style="font-family:'Times New Roman'; font-size:9pt; display: inline-block;width: 335px;text-align:center;border-bottom:1px solid #000"
           >0551-65667870</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:center; widows:0">
@@ -171,33 +168,23 @@
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">1.</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">所提交的文件、材料及所作陈述是真实、合法、有效的。</span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方所提交的文件、材料及所作陈述是真实、合法、有效的。</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">2.</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">有权签署本合同，若依法需要取得他人同意的，</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">已经取得充分授权。</span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方有权签署本合同，若依法需要取得他人同意的，贵方已经取得充分授权。</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方</span>
-          <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold"
-          >已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">“</span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“</span>
           <span
             style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold; text-decoration:underline;"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">”</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
+          >______</span>
+          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
         </p>
         <p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">签署生效后，贵方必须按约行使权利并主动承担义务。</span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，贵方必须按约行使权利并主动承担义务。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -225,7 +212,7 @@
         >
           <span
             style="font-family:宋体; font-size:9pt"
-          >1.1贴现是指甲方在票据到期日前将票据权利背书转让给乙方，由乙方扣除一定利息后，将实付金额支付给甲方的票据行为。</span>
+          >1.1 贴现是指甲方在票据到期日前将票据权利背书转让给乙方，由乙方扣除一定利息后，将实付金额支付给甲方的票据行为。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -271,15 +258,15 @@
           <span style="font-family:宋体; font-size:9pt">双方合作期限为自</span>
           <input style="width: 40px" v-model="info.a5" type="text" />
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <input style="width: 40px" v-model="info.a6" type="text" />
+          <input style="width: 20px" v-model="info.a6" type="text" />
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <input style="width: 40px" v-model="info.a7" type="text" />
+          <input style="width: 20px" v-model="info.a7" type="text" />
           <span style="font-family:宋体; font-size:9pt">日起至</span>
           <input style="width: 40px" v-model="info.a8" type="text" />
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <input style="width: 40px" v-model="info.a9" type="text" />
+          <input style="width: 20px" v-model="info.a9" type="text" />
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <input style="width: 40px" v-model="info.a10" type="text" />
+          <input style="width: 20px" v-model="info.a10" type="text" />
           <span style="font-family:宋体; font-size:9pt">日止，甲方应在合作期间提出贴现申请，所贴现票据的到期日可以晚于合作期限截止日。</span>
         </p>
         <p
@@ -325,7 +312,7 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">4.1贴现申请人需办理贴现时，应向贴现人提交下列文件：</span>
+          <span style="font-family:宋体; font-size:9pt">4.1 贴现申请人需办理贴现时，应向贴现人提交下列文件：</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -341,8 +328,7 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">
-            (3)
-            证明出票人或其直接前手之间具有真实交易关系的商品交易合同、增值税专用发票或普通发票、货运单据等文件的原件与复印件各一套；
+            (3) 证明出票人或其直接前手之间具有真实交易关系的商品交易合同、增值税专用发票或普通发票、货运单据等文件的原件与复印件各一套；
           </span>
         </p>
         <p
@@ -364,8 +350,7 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">
-            4.2
-            贴现申请人应协助贴现人在贴现前取得汇票承兑人的确认。贴现人有权自主决定是否接受贴现申请人的贴现申请办理贴现。
+            4.2 贴现申请人应协助贴现人在贴现前取得汇票承兑人的确认。贴现人有权自主决定是否接受贴现申请人的贴现申请办理贴现。
           </span>
         </p>
         <p
@@ -377,8 +362,7 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">
-            4.4
-            贴现人同意贴现的，应在《商业汇票贴现申请书》记载的贴现日或电子商业汇票系统记载的贴现日将贴现款项划入贴现申请人指定的账户。但在贴现人支付贴现款项前存在下列情况的，贴现人有权拒绝支付贴现款项：
+            4.4 贴现人同意贴现的，应在《商业汇票贴现申请书》记载的贴现日或电子商业汇票系统记载的贴现日将贴现款项划入贴现申请人指定的账户。但在贴现人支付贴现款项前存在下列情况的，贴现人有权拒绝支付贴现款项：
           </span>
         </p>
         <p
@@ -390,8 +374,7 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">
-            (2)
-            贴现票据被利害关系人申请挂失、公示催告或被有权机关采取查封、冻结等保全或执行措施；
+            (2) 贴现票据被利害关系人申请挂失、公示催告或被有权机关采取查封、冻结等保全或执行措施；
           </span>
         </p>
         <p
@@ -452,14 +435,16 @@
         >
           <span
             style="font-family:宋体; font-size:9pt"
-          >5.3贴现申请人根据本合同申请贴现时向贴现人提供的商业汇票及其他所有文件均真实、合法、有效，不存在伪造、变造的情形；票据及所有文件上的签字均为有权签字人的真实签署；贴现申请人未向贴现人隐瞒可能影响其履约能力的任何信息。</span>
+          >5.3
+            贴现申请人根据本合同申请贴现时向贴现人提供的商业汇票及其他所有文件均真实、合法、有效，不存在伪造、变造的情形；票据及所有文件上的签字均为有权签字人的真实签署；贴现申请人未向贴现人隐瞒可能影响其履约能力的任何信息。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:9pt"
-          >5.4贴现申请人保证其通过合法手续取得本合同项下所有商业汇票及相应的票据权利。对经背书的商业汇票，贴现申请人保证在该汇票项下与其直接前手间的转让是真实、有效的，如果贴现汇票系基于提供商品或服务取得，该商品或服务交易真实、有效且贴现申请人已经或将根据基础交易合同支付相应对价。</span>
+          >5.4
+            贴现申请人保证其通过合法手续取得本合同项下所有商业汇票及相应的票据权利。对经背书的商业汇票，贴现申请人保证在该汇票项下与其直接前手间的转让是真实、有效的，如果贴现汇票系基于提供商品或服务取得，该商品或服务交易真实、有效且贴现申请人已经或将根据基础交易合同支付相应对价。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -522,41 +507,40 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">7.1出现下列情形之一，贴现人有权向贴现申请人追索：</span>
+          <span style="font-family:宋体; font-size:9pt">7.1 出现下列情形之一，贴现人有权向贴现申请人追索：</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:9pt"
-          >(1)本合同项下任一商业汇票到期被拒绝付款的，贴现人有权就该被拒绝付款的商业汇票向贴现申请人追索；</span>
+          >(1) 本合同项下任一商业汇票到期被拒绝付款的，贴现人有权就该被拒绝付款的商业汇票向贴现申请人追索；</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:9pt"
-          >(2)贴现汇票到期前，承兑人被宣告破产或被有权部门责令终止业务活动的，贴现人有权就该承兑人承兑的所有商业汇票向贴现申请人追索；</span>
+          >(2) 贴现汇票到期前，承兑人被宣告破产或被有权部门责令终止业务活动的，贴现人有权就该承兑人承兑的所有商业汇票向贴现申请人追索；</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">(3)其他因为贴现申请人的原因致使贴现人未能取得贴现汇票项下款项或取得后被他人依法追索的。</span>
+          <span style="font-family:宋体; font-size:9pt">(3) 其他因为贴现申请人的原因致使贴现人未能取得贴现汇票项下款项或取得后被他人依法追索的。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:9pt"
-          >7.2汇票到期后乙方未足额收回票款的，乙方有权将未收回部分转为甲方的逾期贷款，并自汇票到期日或提示付款日起计收罚息，罚息利率在该票据的贴现利率的基础上浮</span>
+          >7.2 汇票到期后乙方未足额收回票款的，乙方有权将未收回部分转为甲方的逾期贷款，并自汇票到期日或提示付款日起计收罚息，罚息利率在该票据的贴现利率的基础上浮</span>
           <input style="width: 40px" v-model="info.a12" type="text" />
           <span style="font-family:宋体; font-size:9pt">%。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">7</span>
-          <span style="font-family:宋体; font-size:9pt">.3</span>
+          <span style="font-family:宋体; font-size:9pt">7.3</span>
           <span
             style="font-family:宋体; font-size:9pt"
           >乙方取得拒绝付款通知、破产文件等证明的，应及时书面通知甲方。甲方收到通知后三个工作日内将汇票票面金额、逾期罚息以及乙方行使追索权产生的全部费用支付至乙方指定账户。</span>
@@ -564,8 +548,7 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">7</span>
-          <span style="font-family:宋体; font-size:9pt">.3</span>
+          <span style="font-family:宋体; font-size:9pt">7.4</span>
           <span
             style="font-family:宋体; font-size:9pt"
           >本合同项下每份商业汇票的贴现均是独立的，任何一张商业汇票项下出现追索事由，贴现人均有权就该商业汇票向贴现申请人行使追索权。</span>
@@ -591,12 +574,7 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">9.1</span>
-          <span style="font-family:宋体; font-size:9pt">贴现申请人</span>
-          <span style="font-family:宋体; font-size:9pt">已通读上述条款，贴现人已应</span>
-          <span style="font-family:宋体; font-size:9pt">贴现申请人</span>
-          <span style="font-family:宋体; font-size:9pt">的要求作了相应说明，</span>
-          <span style="font-family:宋体; font-size:9pt">贴现申请人</span>
-          <span style="font-family:宋体; font-size:9pt">对所有内容无异议。</span>
+          <span style="font-family:宋体; font-size:9pt">贴现申请人已通读上述条款，贴现人已应贴现申请人的要求作了相应说明，贴现申请人对所有内容无异议。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -610,19 +588,7 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">9.3</span>
-          <span style="font-family:宋体; font-size:9pt">本合同经贴现申请人法定代表人</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">(</span>
-          <span style="font-family:宋体; font-size:9pt">负责人</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">)</span>
-          <span style="font-family:宋体; font-size:9pt">或授权代表签字</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">(</span>
-          <span style="font-family:宋体; font-size:9pt">或盖章</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">)</span>
-          <span style="font-family:宋体; font-size:9pt">并加盖公章、贴现人负责人或授权代表签字</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">(</span>
-          <span style="font-family:宋体; font-size:9pt">或盖章</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt">)</span>
-          <span style="font-family:宋体; font-size:9pt">并加盖单位印章后生效。</span>
+          <span style="font-family:宋体; font-size:9pt">本合同经贴现申请人法定代表人(负责人)或授权代表签字(或盖章)并加盖公章、贴现人负责人或授权代表签字(或盖章)并加盖单位印章后生效。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -644,7 +610,6 @@
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">第十条</span>
-          <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">&#xa0;</span>
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">其他约定事项：</span>
         </p>
         <textarea
@@ -696,7 +661,7 @@
         <div class="clearfix">
           <div style="font-size:9pt; line-height:170%;  margin:0pt; float: left">
             <span style="font-family:宋体; font-size:9pt">甲方（签章）：</span>
-            <input type="text" style="width: 150px;" v-model="info.partyASign" />
+            <input type="text" style="width: 185px;" v-model="info.partyASign" />
           </div>
           <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
             <span style="font-family:宋体; font-size:9pt">乙方（公章）：</span>
@@ -746,9 +711,9 @@
           <span style="font-family:宋体; font-size:9pt">签约时间：</span>
           <input type="text" style="width: 40px;" v-model="info.contractCreateYear" />
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <input type="text" style="width: 40px;" v-model="info.contractCreateMonth" />
+          <input type="text" style="width: 20px;" v-model="info.contractCreateMonth" />
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <input type="text" style="width: 40px;" v-model="info.contractCreateDay" />
+          <input type="text" style="width: 20px;" v-model="info.contractCreateDay" />
           <span style="font-family:宋体; font-size:9pt">日</span>
           <span style="font-family:宋体; font-size:9pt">签约地点：</span>
           <input type="text" style="width: 50px;" v-model="info.contractCreateAddress" />
@@ -781,17 +746,12 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本</span>
-          <span style="font-family:宋体; font-size:9pt">公司</span>
-          <span style="font-family:宋体; font-size:9pt">承诺如下：</span>
+          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本公司承诺如下：</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">本公司</span>
-          <span
-            style="font-family:宋体; font-size:9pt"
-          >确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
+          <span style="font-family:宋体; font-size:9pt">本公司确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -803,7 +763,7 @@
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">收件人：</span>
-          <input type="text" style="width: 300px;" v-model="info.sendWho" />
+          <input type="text" style="width: 312px;" v-model="info.sendWho" />
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -889,9 +849,9 @@
           <span style="font-family:宋体; font-size:9pt">签署时间：</span>
           <input style="width: 40px" v-model="info.a14" type="text" />
           <span style="font-family:宋体; font-size:9pt">年</span>
-          <input style="width: 40px" v-model="info.a15" type="text" />
+          <input style="width: 20px" v-model="info.a15" type="text" />
           <span style="font-family:宋体; font-size:9pt">月</span>
-          <input style="width: 40px" v-model="info.a16" type="text" />
+          <input style="width: 20px" v-model="info.a16" type="text" />
           <span style="font-family:宋体; font-size:9pt">日</span>
         </p>
         <p
