@@ -1,7 +1,7 @@
 <template>
   <div class="contract-wrap">
-    <div class="contract-content" style="height: 6500px;">
-      <div style="height: 3200px;">
+    <div class="contract-content">
+      <div style="height: 3160px;">
         <div>
           <p
             style="font-size:10.5pt; line-height:140%; margin:0pt 0pt 0pt 10.5pt; orphans:0; text-align:center; widows:0"
@@ -10,11 +10,7 @@
           </p>
           <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-            <input
-              style="width: 150px; text-align: left;"
-              v-model="info.contractNumber"
-              type="text"
-            />
+            <input style="width: 60px; text-align: left;" v-model="info.contractNumber" type="text" />
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -162,6 +158,11 @@
               style="font-family:'Times New Roman'; font-size:9pt; display: inline-block;width: 335px;text-align:center;border-bottom:1px solid #000"
             >0551-65667870</span>
           </p>
+          <p
+            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          >
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
+          </p>
           <p style="margin:0pt; orphans:0; text-align:center; widows:0">
             <a name="OLE_LINK1"></a>
             <a name="OLE_LINK2">
@@ -189,19 +190,18 @@
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“</span>
-            <span
-              style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold; text-decoration:underline;"
-            >______</span>
-            <span
-              style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold"
-            >”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
+            >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“____”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
           </p>
           <p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
             >本合同签署生效后，贵方必须按约行使权利并主动承担义务。</span>
+          </p>
+          <p
+            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          >
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -803,7 +803,7 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span
-            style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
+            style="font-family:宋体; font-size:9pt;  text-decoration:underline"
           >本公司认可：如因本公司提供的上述地址不准确、送达地址变更未及时告知贵公司、本公司或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本公司实际接收的，文书退回之日视为送达之日。</span>
         </p>
         <p
@@ -1174,6 +1174,7 @@ input {
   border: none;
   border-bottom: 1px solid #000;
   text-align: center;
+  font-size: 9pt;
 }
 textarea {
   width: 630px;
