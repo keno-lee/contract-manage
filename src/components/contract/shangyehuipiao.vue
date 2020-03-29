@@ -8,9 +8,13 @@
           >
             <span style="font-family:宋体; font-size:10.5pt; font-weight:bold">商业汇票贴现合同</span>
           </p>
-          <p style="margin:0pt 63pt 0pt 0pt; orphans:0; text-align:justify; widows:0">
+          <p style="margin:0pt; orphans:0; text-align:justify; widows:0;font-size:9pt;">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-            <input style="width: 60px; text-align: left;" v-model="info.contractNumber" type="text" />
+            <input
+              style="width: 80px; text-align: left;"
+              v-model="info.contractNumber"
+              type="text"
+            />
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
