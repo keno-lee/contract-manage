@@ -1,7 +1,7 @@
 <template>
   <div class="contract-wrap">
     <div class="contract-content">
-      <div style="height: 3200px;">
+      <div style="height: 3160px;">
         <div>
           <p
             style="font-size:10.5pt; line-height:140%; margin:0pt; orphans:0; text-align:center; widows:0"
@@ -10,11 +10,7 @@
           </p>
           <p style="margin:0pt; orphans:0; text-align:justify; widows:0;font-size:9pt;">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-            <input
-              style="width: 80px; text-align: left;"
-              v-model="info.contractNumber"
-              type="text"
-            />
+            <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text" />
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -149,6 +145,11 @@
             >0551-65667870</span>
           </p>
           <p
+            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          >
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
+          </p>
+          <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0"
           >
             <a name="_Hlk6927886"></a>
@@ -185,13 +186,7 @@
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">3.</span>
             <span
               style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“</span>
-            <span
-              style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-            >______</span>
-            <span
-              style="font-family:宋体; font-size:9pt; font-weight:bold"
-            >”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
+            >贵方已经仔细阅读并同意接受本合同的所有条款，特别是加粗字体并带有“____”（下划线）标记的条款，并对其含义及法律后果有充分理解。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -201,6 +196,11 @@
               style="font-family:宋体; font-size:9pt; font-weight:bold"
             >本合同签署生效后，贵方必须按约行使权利并主动承担义务。</span>
             <span style="-aw-bookmark-end:_Hlk6927886"></span>
+          </p>
+          <p
+            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          >
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -223,25 +223,21 @@
               style="font-family:宋体; font-size:9pt"
             >最高额保证，是指债权人与保证人之间就债务人在一定期间内连续发生的多笔债务，确定一个最高额度，由保证人在此最高额度内对债务人履行债务向债权人提供保证。该最高额度是指债务人在债权人处的各项债务本金的总余额。包括但不限于全部本金、利息（包括复利和各项罚息）、违约金、赔偿金、债务人应向乙方支付的其他款项（包括但不限于乙方垫付的有关手续费、信用证项下受益人拒绝承担的有关银行费用等）、乙方实现债权与担保权利而发生的费用（包括但不限于诉讼费、仲裁费、财产保全费、差旅费、执行费、评估费、拍卖费、公证费、送达费、保全担保费、公告费、律师费等）。</span>
           </p>
-          <p
-            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
-          >
-            <span style="font-family:'Times New Roman'; font-size:9pt">1.2</span>
-            <span style="font-family:宋体; font-size:9pt">被保证的主债权是指自</span>
-            <input style="width: 40px" v-model="info.a5" type="text" />
-            <span style="font-family:宋体; font-size:9pt">年</span>
-            <input style="width: 20px" v-model="info.a6" type="text" />
-            <span style="font-family:宋体; font-size:9pt">月</span>
-            <input style="width: 20px" v-model="info.a7" type="text" />
-            <span style="font-family:宋体; font-size:9pt">日起至</span>
-            <input style="width: 40px" v-model="info.a8" type="text" />
-            <span style="font-family:宋体; font-size:9pt">年</span>
-            <input style="width: 20px" v-model="info.a9" type="text" />
-            <span style="font-family:宋体; font-size:9pt">月</span>
-            <input style="width: 20px" v-model="info.a10" type="text" />
-            <span style="font-family:宋体; font-size:9pt">日期间，因本合同乙方根据与债务人</span>
-            <input style="width: 100px" v-model="info.a11" type="text" />
-          </p>
+          <span style="font-family:'Times New Roman'; font-size:9pt">1.2</span>
+          <span style="font-family:宋体; font-size:9pt">被保证的主债权是指自</span>
+          <input style="width: 40px" v-model="info.a5" type="text" />
+          <span style="font-family:宋体; font-size:9pt">年</span>
+          <input style="width: 20px" v-model="info.a6" type="text" />
+          <span style="font-family:宋体; font-size:9pt">月</span>
+          <input style="width: 20px" v-model="info.a7" type="text" />
+          <span style="font-family:宋体; font-size:9pt">日起至</span>
+          <input style="width: 40px" v-model="info.a8" type="text" />
+          <span style="font-family:宋体; font-size:9pt">年</span>
+          <input style="width: 20px" v-model="info.a9" type="text" />
+          <span style="font-family:宋体; font-size:9pt">月</span>
+          <input style="width: 20px" v-model="info.a10" type="text" />
+          <span style="font-family:宋体; font-size:9pt">日期间，因本合同乙方根据与债务人</span>
+          <input style="width: 100px" v-model="info.a11" type="text" />
           <span style="font-family:宋体; font-size:9pt">之间签订的《商业承兑汇票贴现业务合作协议》向债务人</span>
           <input style="width: 100px" v-model="info.a12" type="text" />
           <span style="font-family:宋体; font-size:9pt">授信（合同编号为：</span>
@@ -1089,6 +1085,7 @@ input {
   border: none;
   border-bottom: 1px solid #000;
   text-align: center;
+  font-size: 9pt;
 }
 textarea {
   width: 630px;

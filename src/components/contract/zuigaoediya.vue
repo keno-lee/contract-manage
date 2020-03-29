@@ -144,6 +144,11 @@
           >0551-65667870</span>
         </p>
         <p
+          style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+        >
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
+        </p>
+        <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0"
         >
           <a name="OLE_LINK1"></a>
@@ -209,30 +214,39 @@
           <span style="-aw-bookmark-end:OLE_LINK2"></span>
         </p>
         <p
+          style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+        >
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
+        </p>
+        <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:宋体; font-size:9pt">鉴于乙方与</span>
           <input type="text" style="width: 60px;" v-model="info.a1" />
           <span style="font-family:宋体; font-size:9pt">（下称债务人）签订编号为：</span>
           <input type="text" style="width: 100px;" v-model="info.a2" />
-          <span style="font-family:宋体; font-size:9pt">的《商业承兑汇票贴现业务合作协议》。甲方愿意为债务人（承兑人？）在主合同项下的一系列债务提供最高额抵押担保。根据有关法律法规和规章，甲乙双方经协商一致，订立本合同，以便共同遵守执行。前述《商业承兑汇票贴现业务合作协议》以及债权人与债务人根据《商业承兑汇票贴现业务合作协议》所签订的一系列商业汇票贴现合同及相关协议和其他法律文件为本合同的主合同。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >的《商业承兑汇票贴现业务合作协议》。甲方愿意为债务人（承兑人？）在主合同项下的一系列债务提供最高额抵押担保。根据有关法律法规和规章，甲乙双方经协商一致，订立本合同，以便共同遵守执行。前述《商业承兑汇票贴现业务合作协议》以及债权人与债务人根据《商业承兑汇票贴现业务合作协议》所签订的一系列商业汇票贴现合同及相关协议和其他法律文件为本合同的主合同。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">为确保债权确定期间内债务人在最高融资余额内与乙方签订的所有融资合同(以下简称主合同)项下债务人的义务能得以切实履行，甲方愿意提供不可微销的抵押担保。为明确双方的权利、义务，遵照《中华人民共和国合同法》《中华人民共和国担保法》、《中华人民共和国物权法》、《中华人民共和国票据法》及其他有关法律法规的规定，甲，乙双方经平等协商一致，订立本合同，</span>
+          <span
+            style="font-family:宋体; font-size:9pt;"
+          >为确保债权确定期间内债务人在最高融资余额内与乙方签订的所有融资合同(以下简称主合同)项下债务人的义务能得以切实履行，甲方愿意提供不可微销的抵押担保。为明确双方的权利、义务，遵照《中华人民共和国合同法》《中华人民共和国担保法》、《中华人民共和国物权法》、《中华人民共和国票据法》及其他有关法律法规的规定，甲，乙双方经平等协商一致，订立本合同，</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">融资合同:是指债务人与本合同乙方发生借款、票据贴现、商业承兑汇票保贴业务等签订的合同。</span>
+          <span style="font-family:宋体; font-size:9pt;">融资合同:是指债务人与本合同乙方发生借款、票据贴现、商业承兑汇票保贴业务等签订的合同。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同中债务人指</span>
+          <span style="font-family:宋体; font-size:9pt;">本合同中债务人指</span>
           <input type="text" style="width: 100px;" v-model="info.a3" />
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">。</span>
+          <span style="font-family:宋体; font-size:9pt;">。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -249,7 +263,9 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">1.2</span>
-          <span style="font-family:宋体; font-size:9pt">抵押财产换发新的所有权或其他权利证书（明），导致本合同“抵押财产清单”或者乙方收执的他项权利（抵押权）证书或抵押权证明文件与上述新的权利证书（明）或登记机关的登记簿相关记载不一致的，甲方不得以此为由拒绝承担担保责任。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >抵押财产换发新的所有权或其他权利证书（明），导致本合同“抵押财产清单”或者乙方收执的他项权利（抵押权）证书或抵押权证明文件与上述新的权利证书（明）或登记机关的登记簿相关记载不一致的，甲方不得以此为由拒绝承担担保责任。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -284,7 +300,9 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">2.2</span>
-          <span style="font-family:宋体; font-size:9pt">本最高额抵押的担保范围为主合同项下全部债务，包括但不限于全部本金、利息（包括复利和各项罚息）、违约金、赔偿金、债务人应向乙方支付的其他款项、乙方实现债权与担保权利而发生的费用（包括但不限于诉讼费、仲裁费、财产保全费、保全担保费、差旅费、执行费、评估费、拍卖费、公证费、送达费、公告费、律师费等）。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >本最高额抵押的担保范围为主合同项下全部债务，包括但不限于全部本金、利息（包括复利和各项罚息）、违约金、赔偿金、债务人应向乙方支付的其他款项、乙方实现债权与担保权利而发生的费用（包括但不限于诉讼费、仲裁费、财产保全费、保全担保费、差旅费、执行费、评估费、拍卖费、公证费、送达费、公告费、律师费等）。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -326,19 +344,25 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">4.2</span>
-          <span style="font-family:宋体; font-size:9pt">甲方的担保责任不因出现下列任一情况而减免：（1）乙方或债务人发生改制、合并、兼并、分立、增减资本、合资、联营、更名等情形；（2）乙方委托第三方履行其在主合同项下的义务。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >甲方的担保责任不因出现下列任一情况而减免：（1）乙方或债务人发生改制、合并、兼并、分立、增减资本、合资、联营、更名等情形；（2）乙方委托第三方履行其在主合同项下的义务。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">4.3</span>
-          <span style="font-family:宋体; font-size:9pt">主合同项下债权全部或部分转移给任何第三人的，相应部分的抵押权随之转让，甲方应协助乙方及该第三人办理法律所要求的抵押变更登记手续，抵押变更登记手续是否办理完毕不影响抵押权的转让。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >主合同项下债权全部或部分转移给任何第三人的，相应部分的抵押权随之转让，甲方应协助乙方及该第三人办理法律所要求的抵押变更登记手续，抵押变更登记手续是否办理完毕不影响抵押权的转让。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">4.4</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:normal">主合同项下债权或债务全部或部分的转移行为未生效、无效、被撤销、被解除，甲方仍按照本合同对乙方承担担保责任。</span>
+          <span
+            style="font-family:宋体; font-size:9pt; font-weight:normal"
+          >主合同项下债权或债务全部或部分的转移行为未生效、无效、被撤销、被解除，甲方仍按照本合同对乙方承担担保责任。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -412,7 +436,9 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">6.5</span>
-          <span style="font-family:宋体; font-size:9pt">就抵押财产取得的保险赔偿金，乙方有权选择下列方法进行处理，甲方应协助办理有关手续：（1）经乙方同意，用于修复抵押财产，以恢复抵押财产价值；（2）清偿或提前清偿主合同项下债务本息及相关费用；（3）为主合同项下债务提供质押担保；（4）甲方提供符合乙方要求的新的担保后，由甲方自由处分。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >就抵押财产取得的保险赔偿金，乙方有权选择下列方法进行处理，甲方应协助办理有关手续：（1）经乙方同意，用于修复抵押财产，以恢复抵押财产价值；（2）清偿或提前清偿主合同项下债务本息及相关费用；（3）为主合同项下债务提供质押担保；（4）甲方提供符合乙方要求的新的担保后，由甲方自由处分。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -473,7 +499,9 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">9.2</span>
-          <span style="font-family:宋体; font-size:9pt">本合同《抵押财产清单》记载的或双方另行约定的抵押财产价值（下称“暂定价值”），无论是否记载于登记机关的登记簿，均不表明抵押财产的最终价值，其最终价值为乙方处分抵押财产所得价款在扣除各项税费后的净额。若以抵押财产抵偿乙方债权的，上述暂定价值并不作为抵押财产抵偿乙方债权的依据，届时抵押财产的价值应由甲乙双方协商一致或依法公平评估确定。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >本合同《抵押财产清单》记载的或双方另行约定的抵押财产价值（下称“暂定价值”），无论是否记载于登记机关的登记簿，均不表明抵押财产的最终价值，其最终价值为乙方处分抵押财产所得价款在扣除各项税费后的净额。若以抵押财产抵偿乙方债权的，上述暂定价值并不作为抵押财产抵偿乙方债权的依据，届时抵押财产的价值应由甲乙双方协商一致或依法公平评估确定。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -502,7 +530,9 @@
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">9.6</span>
           <span style="font-family:宋体; font-size:9pt">无论乙方对主合同项下的债权是否拥有其他担保（包括但不限于保证、抵押、质押、</span>
-          <span style="font-family:宋体; font-size:9pt">定金、保函、备用信用证等担保方式），不论上述其他担保何时成立、是否有效、乙方是否向其他担保人提出权利主张，也不论是否有第三方同意承担主合同项下的全部或部分债务，也不论其他担保是否由债务人自己所提供，甲方在本合同项下的担保责任均不因此减免，乙方均可直接要求甲方依照本合同约定在其担保范围内承担担保责任，甲方将不提出任何异议。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >定金、保函、备用信用证等担保方式），不论上述其他担保何时成立、是否有效、乙方是否向其他担保人提出权利主张，也不论是否有第三方同意承担主合同项下的全部或部分债务，也不论其他担保是否由债务人自己所提供，甲方在本合同项下的担保责任均不因此减免，乙方均可直接要求甲方依照本合同约定在其担保范围内承担担保责任，甲方将不提出任何异议。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -537,13 +567,17 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">10.1</span>
-          <span style="font-family:宋体; font-size:9pt">甲方违约责任：（1）甲方违反本合同的任一约定或陈述与保证的事项存在任何虚假、错误、遗漏，乙方有权采取以下一项或多项措施：①要求甲方限期纠正违约行为；②要求甲方提供新的担保；③要求甲方赔偿损失；④处分抵押财产；⑤法律许可的其他救济措施。（2）乙方有权选择本合同第六条第6.5款第（2）至（4）项约定的任一方法对处分抵押财产所得价款进行处理，甲方应协助办理有关手续。（3）如果因甲方原因导致抵押权未有效设立，或者导致抵押财产价值减少，或者导致乙方未及时或未充分实现抵押权，且甲方与债务人不是同一人，乙方有权要求甲方在本合同约定的担保范围内对担保的债务与债务人承担连带责任。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >甲方违约责任：（1）甲方违反本合同的任一约定或陈述与保证的事项存在任何虚假、错误、遗漏，乙方有权采取以下一项或多项措施：①要求甲方限期纠正违约行为；②要求甲方提供新的担保；③要求甲方赔偿损失；④处分抵押财产；⑤法律许可的其他救济措施。（2）乙方有权选择本合同第六条第6.5款第（2）至（4）项约定的任一方法对处分抵押财产所得价款进行处理，甲方应协助办理有关手续。（3）如果因甲方原因导致抵押权未有效设立，或者导致抵押财产价值减少，或者导致乙方未及时或未充分实现抵押权，且甲方与债务人不是同一人，乙方有权要求甲方在本合同约定的担保范围内对担保的债务与债务人承担连带责任。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">10.2</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:normal">乙方违约责任：如果乙方因过错遗失甲方交付的抵押财产权利证书；或者主合同项下债务清偿完毕后，乙方不及时返还抵押财产权利证书或在甲方提出申请后不依法协助办理抵押登记注销手续，甲方有权采取以下一项或多项措施：（1）要求乙方承担抵押财产权利证书的补办费用；（2）要求乙方限期返还抵押财产的权利证书，或协助甲方注销抵押财产登记。</span>
+          <span
+            style="font-family:宋体; font-size:9pt; font-weight:normal"
+          >乙方违约责任：如果乙方因过错遗失甲方交付的抵押财产权利证书；或者主合同项下债务清偿完毕后，乙方不及时返还抵押财产权利证书或在甲方提出申请后不依法协助办理抵押登记注销手续，甲方有权采取以下一项或多项措施：（1）要求乙方承担抵押财产权利证书的补办费用；（2）要求乙方限期返还抵押财产的权利证书，或协助甲方注销抵押财产登记。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -631,7 +665,9 @@
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span style="font-family:'Times New Roman'; font-size:9pt">11.10</span>
-          <span style="font-family:宋体; font-size:9pt">甲方为自然人的，如果发生以下情况之一，乙方有权要求甲方增加其他担保、或者提前实现抵押权：（1）甲方被宣告死亡、宣告失踪、丧失民事行为能力、被采取强制措施限制人身自由或因重大健康状况、婚姻、工作、收入、财产等导致履约能力可能出现风险的；（2）甲方涉重大的诉讼、仲裁、刑事及其他法律纠纷，或发生其他足以影响其偿债能力的；（3）其他可能影响抵押权实现的情形。</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >甲方为自然人的，如果发生以下情况之一，乙方有权要求甲方增加其他担保、或者提前实现抵押权：（1）甲方被宣告死亡、宣告失踪、丧失民事行为能力、被采取强制措施限制人身自由或因重大健康状况、婚姻、工作、收入、财产等导致履约能力可能出现风险的；（2）甲方涉重大的诉讼、仲裁、刑事及其他法律纠纷，或发生其他足以影响其偿债能力的；（3）其他可能影响抵押权实现的情形。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-indent:21pt; widows:0"
@@ -661,7 +697,9 @@
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:normal">11.13</span>
           <span style="font-family:宋体; font-size:9pt; font-weight:normal">本合同一式</span>
           <input style="width: 40px" v-model="info.a7" type="text" />
-          <span style="font-family:宋体; font-size:9pt; font-weight:normal">份，经甲方或授权代理人签字或加盖公章（单位）及乙方负责人签字或加盖公章后生效。</span>
+          <span
+            style="font-family:宋体; font-size:9pt; font-weight:normal"
+          >份，经甲方或授权代理人签字或加盖公章（单位）及乙方负责人签字或加盖公章后生效。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -1281,6 +1319,7 @@ input {
   border: none;
   border-bottom: 1px solid #000;
   text-align: center;
+  font-size: 9pt;
 }
 textarea {
   width: 630px;

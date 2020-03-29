@@ -1,7 +1,7 @@
 <template>
   <div class="contract-wrap">
     <div class="contract-content">
-      <div style="height: 3200px;">
+      <div style="height: 3160px;">
         <div>
           <p
             style="font-size:10.5pt; line-height:140%; margin:0pt; orphans:0; text-align:center; widows:0"
@@ -10,11 +10,7 @@
           </p>
           <p style="margin:0pt; orphans:0; text-align:justify; widows:0;font-size:9pt;">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-            <input
-              style="width: 80px; text-align: left;"
-              v-model="info.contractNumber"
-              type="text"
-            />
+            <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text" />
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -149,6 +145,11 @@
             >0551-65667870</span>
           </p>
           <p
+            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          >
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
+          </p>
+          <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:center; text-indent:21pt; widows:0"
           >
             <a name="_Hlk6927886">
@@ -196,6 +197,11 @@
             <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">4.</span>
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">本合同签署生效后，您必须按约行使权利并主动承担义务。</span>
             <span style="-aw-bookmark-end:_Hlk6927886"></span>
+          </p>
+          <p
+            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; widows:0"
+          >
+            <span style="font-family:宋体; font-size:9pt; font-weight:bold">&#xa0;</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -1050,6 +1056,7 @@ input {
   border: none;
   border-bottom: 1px solid #000;
   text-align: center;
+  font-size: 9pt;
 }
 textarea {
   width: 630px;
