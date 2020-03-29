@@ -1324,6 +1324,7 @@ input {
 textarea {
   width: 630px;
   resize: none;
+  font-size: 9pt;
 }
 
 .btn {
