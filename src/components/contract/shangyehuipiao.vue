@@ -263,12 +263,6 @@
             >除非双方另有约定，汇票到期日为工作日的，以汇票到期日为止息日；汇票到期日为法定节假日的，以法定节假日后的第一个工作日为止息日。</span>
           </p>
           <p
-            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:9pt"></span>
-            <span style="font-family:宋体; font-size:9pt">贴现利息的计息天数应另加三天的划款日期。</span>
-          </p>
-          <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
             <span style="font-family:宋体; font-size:9pt; font-weight:bold">第二条 合作期限</span>
@@ -300,7 +294,7 @@
           >
             <span
               style="font-family:宋体; font-size:9pt"
-            >在本合同合作期间，双方叙做的每笔贴现业务的金额、利率及期限以具体办理该业务时乙方审批确认的金额、利率和期限为准。</span>
+            >在本合同合作期间，双方所做的每笔贴现业务的金额、利率及期限以具体办理该业务时乙方审批确认的金额、利率和期限为准。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -316,15 +310,15 @@
               style="font-family:宋体; font-size:9pt"
             >申请贴现的商业汇票的承兑人未使用的商票保贴额度小于贴现申请人申请贴现的票面金额的，贴现人有权拒绝为贴现申请人办理贴现业务。</span>
           </p>
-          <p
-            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
-          >
-            <span
-              style="font-family:宋体; font-size:9pt"
-            >本协议项下贴现资金用途应当符合《商业汇票贴现申请书》。未经乙方书面同意，不得挪作他用，如甲方未按约定用途使用贴现资金，乙方有权对挪用部分每日按挪用金额的万分之</span>
-            <input style="width: 40px" v-model="info.a11" type="text" />
-            <span style="font-family:宋体; font-size:9pt">计收利息，并停止对其办理商业汇票贴现业务。</span>
-          </p>
+<!--          <p-->
+<!--            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"-->
+<!--          >-->
+<!--            <span-->
+<!--              style="font-family:宋体; font-size:9pt"-->
+<!--            >本协议项下贴现资金用途应当符合《商业汇票贴现申请书》。未经乙方书面同意，不得挪作他用，如甲方未按约定用途使用贴现资金，乙方有权对挪用部分每日按挪用金额的万分之</span>-->
+<!--            <input style="width: 40px" v-model="info.a11" type="text" />-->
+<!--            <span style="font-family:宋体; font-size:9pt">计收利息，并停止对其办理商业汇票贴现业务。</span>-->
+<!--          </p>-->
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
@@ -355,7 +349,7 @@
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">(4) 营业执照副本复印件、法定代表人资格证明文件；</span>
+            <span style="font-family:宋体; font-size:9pt">(4) 营业执照副本复印件、法人代码证书、法定代表人资格证明文件、贷款证（卡）；</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -372,7 +366,7 @@
           >
             <span
               style="font-family:宋体; font-size:9pt"
-            >4.2 贴现申请人应协助贴现人在贴现前取得汇票承兑人的确认。贴现人有权自主决定是否接受贴现申请人的贴现申请办理贴现。</span>
+            >4.2 贴现人有权自主决定是否接受贴现申请人的贴现申请办理贴现。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -421,7 +415,7 @@
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
-            <span style="font-family:宋体; font-size:9pt">(7) 贴现申请人违反本合同其他约定的。</span>
+            <span style="font-family:宋体; font-size:9pt">(7) 贴现申请人存在其他违反本合同其他约定或法律规定情形的。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -472,7 +466,7 @@
           >
             <span style="font-family:宋体; font-size:9pt">
               5.5
-              贴现申请人保证申请办理贴现的商业汇票不存在被利害关系人申请挂失、公示催告或被有权机关采取查封、冻结等保全或执行措施的情形。
+              贴现申请人保证申请办理贴现的商业汇票不存在被利害关系人申请挂失、公示催告或被有权机关采取查封、冻结等保全或执行措施等限制情形的。
             </span>
           </p>
           <p
@@ -551,27 +545,27 @@
               style="font-family:宋体; font-size:9pt"
             >(3) 其他因为贴现申请人的原因致使贴现人未能取得贴现汇票项下款项或取得后被他人依法追索的。</span>
           </p>
+<!--          <p-->
+<!--            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"-->
+<!--          >-->
+<!--            <span-->
+<!--              style="font-family:宋体; font-size:9pt"-->
+<!--            >7.2 汇票到期后乙方未足额收回票款的，乙方有权将未收回部分转为甲方的逾期贷款，并自汇票到期日或提示付款日起计收罚息，罚息利率在该票据的贴现利率的基础上浮</span>-->
+<!--            <input style="width: 40px" v-model="info.a12" type="text" />-->
+<!--            <span style="font-family:宋体; font-size:9pt">%。</span>-->
+<!--          </p>-->
+<!--          <p-->
+<!--            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"-->
+<!--          >-->
+<!--            <span style="font-family:宋体; font-size:9pt">7.3</span>-->
+<!--            <span-->
+<!--              style="font-family:宋体; font-size:9pt"-->
+<!--            >乙方取得拒绝付款通知、破产文件等证明的，应及时书面通知甲方。甲方收到通知后三个工作日内将汇票票面金额、逾期罚息以及乙方行使追索权产生的全部费用支付至乙方指定账户。</span>-->
+<!--          </p>-->
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
-            <span
-              style="font-family:宋体; font-size:9pt"
-            >7.2 汇票到期后乙方未足额收回票款的，乙方有权将未收回部分转为甲方的逾期贷款，并自汇票到期日或提示付款日起计收罚息，罚息利率在该票据的贴现利率的基础上浮</span>
-            <input style="width: 40px" v-model="info.a12" type="text" />
-            <span style="font-family:宋体; font-size:9pt">%。</span>
-          </p>
-          <p
-            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:9pt">7.3</span>
-            <span
-              style="font-family:宋体; font-size:9pt"
-            >乙方取得拒绝付款通知、破产文件等证明的，应及时书面通知甲方。甲方收到通知后三个工作日内将汇票票面金额、逾期罚息以及乙方行使追索权产生的全部费用支付至乙方指定账户。</span>
-          </p>
-          <p
-            style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:9pt">7.4</span>
+            <span style="font-family:宋体; font-size:9pt">7.2</span>
             <span
               style="font-family:宋体; font-size:9pt"
             >本合同项下每份商业汇票的贴现均是独立的，任何一张商业汇票项下出现追索事由，贴现人均有权就该商业汇票向贴现申请人行使追索权。</span>
@@ -709,7 +703,7 @@
 
             <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
               <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">
-                <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
+                <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
                 <input type="text" style="width: 150px;" v-model="info.partyBWrite" />
               </p>
             </div>
@@ -953,14 +947,14 @@ export default {
         a8: "",
         a9: "",
         a10: "",
-        a11: "",
-        a12: "",
+        // a11: "",
+        // a12: "",
         a13: "",
         a14: "",
         a15: "",
         a16: "",
         extra:
-          "甲方对乙方业务记录的准确性、真实性及合法性予以确认，并且放弃任何异议。",
+          "本合同属于编号为xxxxxx的《商业承兑汇票贴现业务合作协议》的组成部分。在每笔票据到期前，乙方依据有关规定及时向电子商业汇票承兑人xxxxxx提示付款。如乙方实际收妥票款的时间超过了提示付款期限，乙方有权按照逾期贷款规定向甲方及商业汇票承兑人计收罚息。",
         partyASign: "",
         partyBSign: "",
         partyAWrite: "",

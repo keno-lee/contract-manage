@@ -187,7 +187,7 @@
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
           <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方有权签署本合同，若依法需要取得他人同意的，您</span>
           <span style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold">/</span>
-          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方已经取得充分授权；</span>
+          <span style="font-family:宋体; font-size:9pt; font-weight:bold">贵方已经取得充分授权。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -223,18 +223,18 @@
         >
           <span style="font-family:宋体; font-size:9pt">鉴于乙方与</span>
           <input type="text" style="width: 60px;" v-model="info.a1" />
-          <span style="font-family:宋体; font-size:9pt">（下称债务人）签订编号为：</span>
+          <span style="font-family:宋体; font-size:9pt">（下称"债务人"）签订编号为：</span>
           <input type="text" style="width: 100px;" v-model="info.a2" />
           <span
             style="font-family:宋体; font-size:9pt"
-          >的《商业承兑汇票贴现业务合作协议》。甲方愿意为债务人（承兑人？）在主合同项下的一系列债务提供最高额抵押担保。根据有关法律法规和规章，甲乙双方经协商一致，订立本合同，以便共同遵守执行。前述《商业承兑汇票贴现业务合作协议》以及债权人与债务人根据《商业承兑汇票贴现业务合作协议》所签订的一系列商业汇票贴现合同及相关协议和其他法律文件为本合同的主合同。</span>
+          >的《商业承兑汇票贴现业务合作协议》。甲方愿意为债务人在主合同项下的一系列债务提供最高额抵押担保。根据有关法律法规和规章，甲乙双方经协商一致，订立本合同，以便共同遵守执行。前述《商业承兑汇票贴现业务合作协议》以及债权人与债务人根据《商业承兑汇票贴现业务合作协议》所签订的一系列商业汇票贴现合同及相关协议和其他法律文件为本合同的主合同。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
           <span
             style="font-family:宋体; font-size:9pt;"
-          >为确保债权确定期间内债务人在最高融资余额内与乙方签订的所有融资合同(以下简称主合同)项下债务人的义务能得以切实履行，甲方愿意提供不可微销的抵押担保。为明确双方的权利、义务，遵照《中华人民共和国合同法》《中华人民共和国担保法》、《中华人民共和国物权法》、《中华人民共和国票据法》及其他有关法律法规的规定，甲，乙双方经平等协商一致，订立本合同，</span>
+          >为确保债权确定期间内债务人在最高融资余额内与乙方签订的所有融资合同(以下简称主合同)项下债务人的义务能得以切实履行，甲方愿意提供不可撤销的抵押担保。为明确双方的权利、义务，遵照《中华人民共和国合同法》《中华人民共和国担保法》、《中华人民共和国物权法》及其他有关法律法规的规定，甲、乙双方经平等协商一致，订立本合同。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -265,7 +265,7 @@
           <span style="font-family:'Times New Roman'; font-size:9pt">1.2</span>
           <span
             style="font-family:宋体; font-size:9pt"
-          >抵押财产换发新的所有权或其他权利证书（明），导致本合同“抵押财产清单”或者乙方收执的他项权利（抵押权）证书或抵押权证明文件与上述新的权利证书（明）或登记机关的登记簿相关记载不一致的，甲方不得以此为由拒绝承担担保责任。</span>
+          >抵押财产换发新的所有权或其他权利证书（明），导致本合同“抵押财产清单”或者乙方收执的他项权利（抵押权）证书或抵押权证明文件与上述新的权利证书（明）或登记机关的登记簿相关记载不一致的，以登记机关登记薄上的为准，且甲方不得以此为由拒绝承担担保责任。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -439,6 +439,14 @@
           <span
             style="font-family:宋体; font-size:9pt"
           >就抵押财产取得的保险赔偿金，乙方有权选择下列方法进行处理，甲方应协助办理有关手续：（1）经乙方同意，用于修复抵押财产，以恢复抵押财产价值；（2）清偿或提前清偿主合同项下债务本息及相关费用；（3）为主合同项下债务提供质押担保；（4）甲方提供符合乙方要求的新的担保后，由甲方自由处分。</span>
+        </p>
+        <p
+          style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
+        >
+          <span style="font-family:'Times New Roman'; font-size:9pt">6.6</span>
+          <span
+            style="font-family:宋体; font-size:9pt"
+          >若因甲方原因导致保险无法进行理赔，且保险物价值遭受损失或灭失，甲方应提供符合乙方及主合同、本合同约定要求的新担保。</span>
         </p>
         <p
           style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -1018,7 +1026,7 @@
 
           <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
             <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">
-              <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
+              <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
               <input type="text" style="width: 150px;" v-model="info.partyBWrite" />
             </p>
           </div>
@@ -1075,7 +1083,7 @@ export default {
         contractNumber: "",
         partyA: "",
         personCharge: "",
-        partyB: "徐虹波",
+        partyB: "徐静",
         phoneNumber: "",
         idcard: "",
         address: "",

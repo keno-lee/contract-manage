@@ -10,7 +10,7 @@
           </p>
           <p style="margin:0pt; orphans:0; text-align:justify; widows:0;font-size:9pt;">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-            <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text" />
+            <input style="width: 50px; text-align: left;" v-model="info.contractNumber" type="text" />
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -38,27 +38,27 @@
               rows="1"
             ></textarea>
           </p>
-          <p
-            style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
-          >
-            <span style="font-family:宋体; font-size:9pt">法定代表人：</span>
-            <input
-              ref="personChargeinput"
-              type="text"
-              style="width:316px;"
-              v-show="info.personCharge.length < 12"
-              v-model="info.personCharge"
-              @input="inputListener"
-            />
-            <textarea
-              ref="personChargetextarea"
-              style="text-decoration:underline; border:none;width: 316px;"
-              v-show="info.personCharge.length >= 12"
-              cols="30"
-              v-model="info.personCharge"
-              rows="1"
-            ></textarea>
-          </p>
+<!--          <p-->
+<!--            style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"-->
+<!--          >-->
+<!--            <span style="font-family:宋体; font-size:9pt">法定代表人：</span>-->
+<!--            <input-->
+<!--              ref="personChargeinput"-->
+<!--              type="text"-->
+<!--              style="width:316px;"-->
+<!--              v-show="info.personCharge.length < 12"-->
+<!--              v-model="info.personCharge"-->
+<!--              @input="inputListener"-->
+<!--            />-->
+<!--            <textarea-->
+<!--              ref="personChargetextarea"-->
+<!--              style="text-decoration:underline; border:none;width: 316px;"-->
+<!--              v-show="info.personCharge.length >= 12"-->
+<!--              cols="30"-->
+<!--              v-model="info.personCharge"-->
+<!--              rows="1"-->
+<!--            ></textarea>-->
+<!--          </p>-->
           <p
             style="font-size:9pt; line-height:125%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
@@ -208,7 +208,7 @@
           >
             <span
               style="font-family:宋体; font-size:9pt"
-            >为保障债权人债权的实现，保证人自愿为债权人与债务人之间形成的相关债权提供最高额保证。为此，依据《合同法》、《担保法》、《票据法》及其他有关法律、法规的规定，保证人和债权人经平等协商，订立本合同内容如下：</span>
+            >为保障债权人债权的实现，保证人自愿为债权人与债务人之间形成的相关债权提供最高额保证。为此，依据《合同法》、《担保法》及其他有关法律、法规的规定，保证人和债权人经平等协商，订立本合同内容如下：</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -239,10 +239,10 @@
             <input style="width: 20px" v-model="info.a9" type="text" />
             <span style="font-family:宋体; font-size:9pt">月</span>
             <input style="width: 20px" v-model="info.a10" type="text" />
-            <span style="font-family:宋体; font-size:9pt">日期间因本合同乙方根据与债务人（承兑人？）</span>
+            <span style="font-family:宋体; font-size:9pt">日期间因本合同乙方根据与债务人</span>
             <input style="width: 60px" v-model="info.a11" type="text" />
             <span style="font-family:'Times New Roman'; font-size:9pt; text-decoration:underline"></span>
-            <span style="font-family:宋体; font-size:9pt">之间的《商业承兑汇票贴现业务合作协议》向债务人（承兑人？）</span>
+            <span style="font-family:宋体; font-size:9pt">之间的《商业承兑汇票贴现业务合作协议》向债务人</span>
             <input style="width: 80px" v-model="info.a12" type="text" />
             <span style="font-family:宋体; font-size:9pt">授信（合同编号为：</span>
             <input style="width: 100px" v-model="info.a13" type="text" />
@@ -268,7 +268,7 @@
             <span style="font-family:'Times New Roman'; font-size:9pt">1.2</span>
             <span
               style="font-family:宋体; font-size:9pt"
-            >中的最高本金余额额度是指债务人在乙方处办理主合同项下约定的贷款业务所形成的债权本金额度，该本金所产生的利息、违约金、损害赔偿金、乙方实现债权及担保权的费用等仍属甲方所担保之范围，而不论该本金余额与利息（包括各项罚息、复利）、违约金、损害赔偿金、乙方实现债权及担保权的费用等之和是否超过甲方所担保的本金最高限额，也不论除本金之外的其他债务发生时间是否处于主合同约定的期间之外。</span>
+            >中的最高本金余额额度是指债务人在乙方处办理主合同项下约定的贷款业务所形成的债权本金额度，该本金所产生的利息、违约金、损害赔偿金、乙方实现债权及担保权的费用（包括但不限于诉讼费、律师费等）等仍属甲方所担保之范围，而不论该本金余额与利息（包括各项罚息、复利）、违约金、损害赔偿金、乙方实现债权及担保权的费用等之和是否超过甲方所担保的本金最高限额，也不论除本金之外的其他债务发生时间是否处于主合同约定的期间之外。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -279,7 +279,7 @@
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">2.1</span>
-            <span style="font-family:宋体; font-size:9pt">甲方在本合同项下提供的保证为连带责任保证。</span>
+            <span style="font-family:宋体; font-size:9pt">甲方在本合同项下提供的保证为不可撤销的连带责任保证。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -291,21 +291,21 @@
           >
             <span
               style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold; text-decoration:underline"
-            >3.1 本合同项下的保证期间按乙方为债务人办理的单笔授信业务分别计算，即自单笔授信业务的主合同签订之日起至债务人在该主合同项下的债务履行期限届满日后两年止。</span>
+            >3.1 本合同项下的保证期间按乙方为债务人办理的单笔授信业务分别计算，即自单笔授信业务的主合同签订之日起至债务人在该主合同项下的债务履行期限届满日后三年止。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
             <span
               style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold; text-decoration:underline"
-            >3.2 乙方与债务人就主合同项下债务履行期限达成展期协议的,保证期间至展期协议重新约定的债务履行期限届满之日后两年止。展期无需经保证人同意，保证人仍需承担连带保证责任。</span>
+            >3.2 乙方与债务人就主合同项下债务履行期限达成展期协议的,保证期间至展期协议重新约定的债务履行期限届满之日后三年止。展期无需经保证人同意，保证人仍需承担连带保证责任。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
             <span
               style="font-family:'Times New Roman'; font-size:9pt; font-weight:bold; text-decoration:underline"
-            >3.3 若发生法律法规规定或主合同约定的事项，乙方宣布债务提前到期的，保证期间至债务提前到期之日后三两年止。</span>
+            >3.3 若发生法律法规规定或主合同约定的事项，乙方宣布债务提前到期的，保证期间至债务提前到期之日后三年止。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -416,7 +416,7 @@
             <span style="font-family:'Times New Roman'; font-size:9pt">7.3</span>
             <span
               style="font-family:宋体; font-size:9pt"
-            >甲方发生国籍变更、住所地变更、婚姻情况变动、重大疾病、受到行政或刑事处罚、涉及重大民事法律纠纷、财务状况恶化，或者因任何原因丧失或可能丧失担保能力，应立即书面通知乙方，并按照乙方要求落实本合同项下保证责任的承担、转移或承继，或者为主合同的履行提供令乙方满意的新担保。如甲方未依据上述约定将其变更后住所地告知乙方，乙方依其合同载明通讯地址向其送达相关文书，即视为乙方已有效送达。</span>
+            >甲方发生国籍变更、住所地变更、婚姻情况变动、重大疾病、受到行政或刑事处罚、涉及重大民事法律纠纷、被列为失信被执行财务状况恶化，或者因任何原因丧失或可能丧失担保能力，应立即书面通知乙方，并按照乙方要求落实本合同项下保证责任的承担、转移或承继，或者为主合同的履行提供令乙方满意的新担保。如甲方未依据上述约定将其变更后住所地告知乙方，乙方依其合同载明通讯地址向其送达相关文书，即视为乙方已有效送达。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -493,7 +493,7 @@
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">8.8</span>
-            <span style="font-family:宋体; font-size:9pt">本合同经甲方签字及乙方负责人签字并加盖公章后生效。</span>
+            <span style="font-family:宋体; font-size:9pt">本合同经甲方签字及乙方法定代表人（负责人）签字并加盖公章后生效。</span>
           </p>
           <p
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -571,16 +571,16 @@
             <span style="font-family:宋体; font-size:9pt">&nbsp;</span>
           </p>
           <div class="clearfix">
-            <div style="font-size:9pt; line-height:170%;  margin:0pt; float: left">
-              <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">
-                <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
-                <input type="text" style="width: 150px;" v-model="info.partyAWrite" />
-              </p>
-            </div>
+<!--            <div style="font-size:9pt; line-height:170%;  margin:0pt; float: left">-->
+<!--              <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">-->
+<!--                <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>-->
+<!--                <input type="text" style="width: 150px;" v-model="info.partyAWrite" />-->
+<!--              </p>-->
+<!--            </div>-->
 
             <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
               <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">
-                <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
+                <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
                 <input type="text" style="width: 150px;" v-model="info.partyBWrite" />
               </p>
             </div>
@@ -648,17 +648,12 @@
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本</span>
-          <span style="font-family:宋体; font-size:9pt">公司</span>
-          <span style="font-family:宋体; font-size:9pt">承诺如下：</span>
+          <span style="font-family:宋体; font-size:9pt">作为本合同附件，本人承诺如下：</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
         >
-          <span style="font-family:宋体; font-size:9pt">本公司</span>
-          <span
-            style="font-family:宋体; font-size:9pt"
-          >确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
+          <span style="font-family:宋体; font-size:9pt">本人确认在本合同履行过程中或因履行该合同发生争议引起诉讼、仲裁时，以下地址作为贵公司、人民法院、仲裁机关等邮寄送达有关通知、相关法律文书的接收地址：</span>
         </p>
         <p
           style="font-size:9pt; line-height:170%; margin:0pt; orphans:0; text-indent:20pt; widows:0"
@@ -683,7 +678,7 @@
         >
           <span
             style="font-family:宋体; font-size:9pt; font-weight:bold; text-decoration:underline"
-          >本公司认可：如因本公司提供的上述地址不准确、送达地址变更未及时告知贵公司、本公司或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本公司实际接收的，文书退回之日视为送达之日。</span>
+          >本人认可：如因本人提供的上述地址不准确、送达地址变更未及时告知贵公司、本人或者指定代收人拒绝签收等原因，导致通知或相关法律文书未能被本人实际接收的，文书退回之日视为送达之日。</span>
         </p>
         <p
           style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -815,8 +810,8 @@ export default {
       info: {
         contractNumber: "",
         partyA: "",
-        personCharge: "",
-        partyB: "徐虹波",
+        // personCharge: "",
+        partyB: "徐静",
         phoneNumber: "",
         idcard: "",
         a1: "",
@@ -996,20 +991,20 @@ export default {
         }
       }
     },
-    "info.personCharge": {
-      handler(nv, ov) {
-        // console.log(this.$refs);
-        if (nv.length >= 20) {
-          this.$nextTick(() => {
-            this.$refs.personChargetextarea.focus();
-          });
-        } else {
-          this.$nextTick(() => {
-            this.$refs.personChargeinput.focus();
-          });
-        }
-      }
-    },
+    // "info.personCharge": {
+    //   handler(nv, ov) {
+    //     // console.log(this.$refs);
+    //     if (nv.length >= 20) {
+    //       this.$nextTick(() => {
+    //         this.$refs.personChargetextarea.focus();
+    //       });
+    //     } else {
+    //       this.$nextTick(() => {
+    //         this.$refs.personChargeinput.focus();
+    //       });
+    //     }
+    //   }
+    // },
     "info.idcard": {
       handler(nv, ov) {
         // console.log(this.$refs);

@@ -10,7 +10,7 @@
           </p>
           <p style="margin:0pt; orphans:0; text-align:justify; widows:0;font-size:9pt;">
             <span style="font-family:宋体; font-size:9pt">合同编号：</span>
-            <input style="width: 80px; text-align: left;" v-model="info.contractNumber" type="text" />
+            <input style="width: 50px; text-align: left;" v-model="info.contractNumber" type="text" />
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -262,7 +262,7 @@
             <span style="font-family:'Times New Roman'; font-size:9pt"></span>
             <span
               style="font-family:宋体; font-size:9pt"
-            >为避免歧义，本条1.2中的最高本金余额额度是指债务人在乙方处办理主合同项下约定的贷款业务所形成的债权本金额度，该本金所产生的利息、违约金、损害赔偿金、乙方实现债权及担保权的费用等仍属甲方所担保之范围，而不论该本金余额与利息（包括各项罚息、复利）、违约金、损害赔偿金、乙方实现债权及担保权的费用等之和是否超过甲方所担保的本金最高限额，也不论除本金之外的其他债务发生时间是否处于主合同约定的期间之外。</span>
+            >为避免歧义，本条1.2中的最高本金余额额度是指债务人在乙方处办理主合同项下约定的贷款业务所形成的债权本金额度，该本金所产生的利息、违约金、损害赔偿金、乙方实现债权及担保权的费用（包括但不限于诉讼费、律师费等）等仍属甲方所担保之范围，而不论该本金余额与利息（包括各项罚息、复利）、违约金、损害赔偿金、乙方实现债权及担保权的费用等之和是否超过甲方所担保的本金最高限额，也不论除本金之外的其他债务发生时间是否处于主合同约定的期间之外。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -273,7 +273,7 @@
             style="font-size:9pt; line-height:140%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
           >
             <span style="font-family:'Times New Roman'; font-size:9pt">2.1</span>
-            <span style="font-family:宋体; font-size:9pt">甲方在主合同项下提供的保证为连带责任保证。</span>
+            <span style="font-family:宋体; font-size:9pt">甲方在主合同项下提供的保证为不可撤销的连带责任保证。</span>
           </p>
           <p
             style="font-size:9pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"
@@ -589,7 +589,7 @@
         <div>
           <div class="clearfix">
             <div style="font-size:9pt; line-height:170%;  margin:0pt; float: left">
-              <span style="font-family:宋体; font-size:9pt">甲方（签章）：</span>
+              <span style="font-family:宋体; font-size:9pt">甲方（公章）：</span>
               <input type="text" style="width: 186px;" v-model="info.partyASign" />
             </div>
             <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
@@ -611,7 +611,7 @@
 
             <div style="font-size:9pt; line-height:170%;  margin:0pt; float: right">
               <p style="font-size:9pt; line-height:170%;  margin:0pt; text-align:justify">
-                <span style="font-family:宋体; font-size:9pt">负责人（签字）：</span>
+                <span style="font-family:宋体; font-size:9pt">法定代表人（签字）：</span>
                 <input type="text" style="width: 150px;" v-model="info.partyBWrite" />
               </p>
             </div>
@@ -845,7 +845,7 @@ export default {
         contractNumber: "",
         partyA: "",
         personCharge: "",
-        partyB: "徐虹波",
+        partyB: "徐静",
         phoneNumber: "",
         idcard: "",
         a1: "",
