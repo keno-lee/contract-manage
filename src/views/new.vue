@@ -144,6 +144,11 @@
           :class="selectItem === '0028' ? 'active' : ''"
           @click="select('0028')"
         >最高额保证合同企业(商票保贴业务)</div>
+        <div
+          class="select-item"
+          :class="selectItem === '0029' ? 'active' : ''"
+          @click="select('0029')"
+        >商业承兑汇票贴现业务合作协议</div>
       </div>
       <div class="next-btn btn" @click="next">下一步</div>
     </div>
