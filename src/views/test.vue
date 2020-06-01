@@ -14,7 +14,7 @@ export default {
     Index
   },
   created() {
-    this.contractType = this.$route.query.id || "0026";
+    this.contractType = this.$route.query.id || "0029";
   }
 };
 </script>

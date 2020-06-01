@@ -28,8 +28,8 @@ store.dispatch('setLanguage', 'zh')
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset-UTF-8';
 // axios.defaults.headers.withCredentials = true;
 axios.defaults.withCredentials = true
-// axios.defaults.baseURL = 'http://47.97.158.248:8080'
-axios.defaults.baseURL = 'http://roshan.frpgz1.idcfengye.com/'
+axios.defaults.baseURL = 'http://47.97.158.248:8080'
+// axios.defaults.baseURL = 'http://roshan.frpgz1.idcfengye.com/'
 axios.interceptors.response.use(
   function (response) {
     if (response.data.msg === 'login') {
